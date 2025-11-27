@@ -16,7 +16,7 @@ Current waitlist: {$waitlist}/{$waitlist2} users.
 {$nosidebar=true}
 {include file='mini-header.tpl'}
 <div class="alert alert-info text-center lead">
-Current waitlist: {$waitlist} users. {$waitlist2} accounts invited. 
+Current waitlist: {$waitlist} users. {$waitlist2} accounts invited but haven't made an account yet.  
 </div>
         <h2 class="mb-3">{t}Check your email now{/t}</h2>
 	<p>{t}Please follow the link in your email to activate your account!{/t}</p>
@@ -26,7 +26,7 @@ Current waitlist: {$waitlist} users. {$waitlist2} accounts invited.
 {else}
 {include file='mini-header.tpl'}
 <div class="alert alert-info text-center lead">
-Current waitlist: {$waitlist} users. {$waitlist2} accounts invited. 
+Current waitlist: {$waitlist} users. {$waitlist2} accounts invited but haven't made an account yet.  
 </div>
 
       <h2 class="mb-3">Join the waitlist</h2>
