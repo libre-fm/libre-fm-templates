@@ -16,7 +16,7 @@ Current waitlist: {$waitlist}/{$waitlist2} users.
 {$nosidebar=true}
 {include file='mini-header.tpl'}
 <div class="alert alert-info text-center lead">
-Current waitlist: {$waitlist} users. New accounts added every day. Count is cached for 10 mins.
+Current waitlist: {$waitlist} users. {$waitlist2} accounts invited. 
 </div>
         <h2 class="mb-3">{t}Check your email now{/t}</h2>
 	<p>{t}Please follow the link in your email to activate your account!{/t}</p>
@@ -26,7 +26,7 @@ Current waitlist: {$waitlist} users. New accounts added every day. Count is cach
 {else}
 {include file='mini-header.tpl'}
 <div class="alert alert-info text-center lead">
-Current waitlist: {$waitlist} users. New accounts added every day. Count is cached for 10 mins.
+Current waitlist: {$waitlist} users. {$waitlist2} accounts invited. 
 </div>
 
       <h2 class="mb-3">Join the waitlist</h2>
