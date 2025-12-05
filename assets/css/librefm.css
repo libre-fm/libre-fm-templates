@@ -8,6 +8,7 @@ textarea {font-family: monospace !important;}
 padding: 0; background: transparent; display: flex; flex-wrap: wrap;
 }
 
+h1,h2,h3,h4,h5,h6 {font-weight: 700 !important;}
 
 .list-group-item:hover{background: #383f47} 
 .album-list li {display: inline-table; padding-right: 8px; padding-bottom: 8px; background: transparent; }
