@@ -317,9 +317,6 @@
                 <a href="https://libre.fm/waitlist.php" class="main-btn btn-hover">
                   Register now
               </a>
-              <a href="https://libre.fm/donate.php" class="main-btn btn-success">
-                Donate
-              </a>
             </div>
           </div>
         </div>
