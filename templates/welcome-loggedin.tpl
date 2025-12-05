@@ -1,9 +1,8 @@
 {include file='header.tpl'}
 
+<h2 class="text-center mt-5 mb-5">Welcome back, <a href="/user/{t name=$this_user->name}%1{/t}">{t name=$this_user->name}%1{/t}</a>!</h2>
+
 <div class="alert alert-dark">
-
-<h2>Welcome back, <a href="/user/{t name=$this_user->name}%1{/t}">{t name=$this_user->name}%1{/t}</a>!</h2>
-
 <h3>What's new?</h3>
 
 <ul>
