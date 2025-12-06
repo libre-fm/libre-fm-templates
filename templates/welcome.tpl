@@ -3,6 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta http-equiv="refresh" content="90">
     <title>Libre.fm &mdash; Track your listening habits, discover new music</title>
     <meta name="description" content="Libre.fm lets you keep track of your music listening habits." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
