@@ -25,13 +25,4 @@
 {$recents}
 {/if}
 
-{if ($tops)}
-<!-- <div class="d-none d-lg-block">
-<h3>Recently active users</h3>
-<ul style="column-count: 3; column-gap: 1em;">
-{$tops}
-</ul>
-</div> -->
-{/if}
-
 {include file='footer.tpl'}
