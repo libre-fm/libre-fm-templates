@@ -60,6 +60,10 @@ You'll get an email inviting you to pick a username later
           <input class="form-check-input" type="checkbox" required value="remember-me" id="foo-check" name="foo-check"> 
         <label class="form-check-label" for="foo-check">I read this form carefully, double-checked my email address and agree to the <a href="/terms" target="_blank">terms and conditions</a> and <a href="/privacy" target="_blank">privacy policy</a>. I am over 18 years of age. Gen AI is trash. LLMs are trash. Open Web forever.</label>
 </div>
+<div class="mb-3 form-check">
+          <input class="form-check-input" type="checkbox" required value="" id="foo-wait" name="foo-wait"> 
+        <label class="form-check-label" for="foo-wait">I understand this is a waitlist and accounts may take 1-2 weeks to receive an invite.</label>
+</div>
 <div class="mb-3">
         <button class="btn btn-lg btn-success" name="register" type="submit" value="{t}Join waitlist{/t}">Join waitlist</button>
 </div>
