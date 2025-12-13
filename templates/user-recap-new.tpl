@@ -40,11 +40,24 @@
 
 {$months|@var_dump}
 
+<h2>By month</h2>
 
 		{for $var=1 to 12}
         <details>
-  <summary>{$months[$var]}</summary>
-foo
+  <summary>{$months[$var]} {$year}</summary>
+
+
+{$topartists = $monthlyartists[$var]}
+
+<ol class="list-group">
+		{section name=i loop=$topartists}
+            {if ($topartists[i].freq > 1)}
+			<li class="list-group-item"><a href="{$topartists[i].artisturl}">{$topartists[i].artist}</a> ({$topartists[i].freq} plays)</li>
+	        {/if}
+		{/section}
+	</ol>
+
+
 </details>
         {/for}
 
