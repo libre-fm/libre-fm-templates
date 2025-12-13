@@ -48,11 +48,18 @@
 {$toptrack = $monthlytracks[$var]}
 {$topmonthlycount = $monthlycount[$var]}
 
-{$monthlycount|@var_dump}
-
-
         <details>
   <summary>{$months[$var]} {$year} ({$topmonthlycount} scrobbles)</summary>
+
+{if !empty($toptrack)}
+<div class="alert alert-secondary">
+	<span class="lead">{t name=$me->name}%1{/t} had one favorite song in {$months[$var]} {$year}: <a href="{$toptrack[0].trackurl}">{$toptrack[0].track} by {$toptrack[0].artist}</a> with {$toptrack[0].freq} plays</span>
+</div>
+{else}
+<div class="alert alert-danger">
+<span class="lead">No top song data for {$months[$var]} {$year}</span>
+</div>
+{/if}
 
 <ol class="list-group">
 		{section name=i loop=$topartists}
