@@ -43,11 +43,15 @@
 <h2>By month</h2>
 
 		{for $var=1 to 12}
-        <details>
-  <summary>{$months[$var]} {$year}</summary>
-
 
 {$topartists = $monthlyartists[$var]}
+{$toptrack = $monthlytracks[$var]}
+{$monthlycount = $monthlycount[$var]}
+
+{if $monthlycount}
+
+        <details>
+  <summary>{$months[$var]} {$year} ({$monthlycount} scrobbles)</summary>
 
 <ol class="list-group">
 		{section name=i loop=$topartists}
@@ -59,6 +63,9 @@
 
 
 </details>
+
+{/if}
+
         {/for}
 
 {if ($user_first_year < 2024)}
