@@ -38,10 +38,8 @@
 </div>
 {/if}
 
-{$months|@var_dump}
-
 <h2>By month</h2>
-
+<div class="alert alert-secondary">
 		{for $var=1 to 12}
 
 {$topartists = $monthlyartists[$var]}
@@ -75,6 +73,7 @@
 
 
         {/for}
+</div>
 
 {if ($user_first_year < 2024)}
 
