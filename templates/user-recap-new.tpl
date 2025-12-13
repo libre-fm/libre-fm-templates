@@ -43,7 +43,7 @@
 
 		{for $var=1 to 12}
         <details>
-  <summary>{ $months[$var] }</summary>
+  <summary>{$months[$var]}</summary>
 foo
 </details>
         {/for}
