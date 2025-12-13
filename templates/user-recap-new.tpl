@@ -48,6 +48,7 @@
 {$toptrack = $monthlytracks[$var]}
 {$monthlycount = $monthlycount[$var]}
 
+{$monthlycount|@var_dump}
 
 
         <details>
