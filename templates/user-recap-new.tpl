@@ -43,7 +43,7 @@
   <summary>{ $months[$var] }</summary>
 foo
 </details>
-        {/if}
+        {/for}
 
 {if ($user_first_year < 2024)}
 
