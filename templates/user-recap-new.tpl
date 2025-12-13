@@ -38,6 +38,9 @@
 </div>
 {/if}
 
+{$months|@var_dump}
+
+
 		{for $var=1 to 12}
         <details>
   <summary>{ $months[$var] }</summary>
