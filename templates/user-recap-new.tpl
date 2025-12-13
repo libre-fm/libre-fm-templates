@@ -48,7 +48,7 @@
 {$toptrack = $monthlytracks[$var]}
 {$monthlycount = $monthlycount[$var]}
 
-{if $monthlycount}
+
 
         <details>
   <summary>{$months[$var]} {$year} ({$monthlycount} scrobbles)</summary>
@@ -64,7 +64,7 @@
 
 </details>
 
-{/if}
+
 
         {/for}
 
