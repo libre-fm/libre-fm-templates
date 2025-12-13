@@ -46,13 +46,13 @@
 
 {$topartists = $monthlyartists[$var]}
 {$toptrack = $monthlytracks[$var]}
-{$monthlycount = $monthlycount[$var]}
+{$topmonthlycount = $monthlycount[$var]}
 
 {$monthlycount|@var_dump}
 
 
         <details>
-  <summary>{$months[$var]} {$year} ({$monthlycount} scrobbles)</summary>
+  <summary>{$months[$var]} {$year} ({$topmonthlycount} scrobbles)</summary>
 
 <ol class="list-group">
 		{section name=i loop=$topartists}
