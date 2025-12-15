@@ -55,7 +55,7 @@
               <div class="footer-widget">
                 <h3>Our friends</h3>
                 <ul class="links">
-                  <li><a href="https://alexandragallant.itch.io/">Buy comics and zines</a></li>
+                  <li><a href="https://alexandragallant.com/">Buy comics and zines</a></li>
                   <li><a href="https://bugsrock.online/">Buy candles</a></li>
                   <li><a href="https://tedium.co/">Tedium</a></li>
                   <li><a href="https://artlung.com">Artlung</a></li>
