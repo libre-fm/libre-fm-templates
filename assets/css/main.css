@@ -988,6 +988,10 @@
   color: #fff;
 }
 
+.footer .widget-wrapper .footer-widget ul.links {
+  padding: 0 !important;
+}
+
 .footer .widget-wrapper .footer-widget ul.links li {
   font-size: 18px;
   line-height: 34px;
@@ -997,9 +1001,7 @@
   color: #fff;
 }
 
-.footer .widget-wrapper .footer-widget ul.links li a:hover {
-  padding-left: 8px;
-}
+
 
 .mt-5 {
   margin-top: 5px;
