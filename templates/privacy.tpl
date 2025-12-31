@@ -1,5 +1,5 @@
 {include file='mini-header.tpl'}
-<h2>Privacy policy for Libre.fm (Last updated: March 16th 2025)</h2>
+<h2>Privacy policy for Libre.fm (Last updated: December 31st 2025)</h2>
 
 <ul>
 <li>Your avatar is taken from libravatar.org. You cannot upload a profile image on our website.</li>
