@@ -122,7 +122,7 @@ Libre.fm is not closing. Please <a href="/waitlist.php">join the waitlist</a> an
 {else}
 {if ($thisusertotaltracks > 3)}
 <div class="alert alert-info text-center">
-Libre.fm is not closing. Thank you <strong>{$this_user->name}</strong> for the ongoing support. If you can please consider <a href="/donate.php">making a donation</a> to help keep the lights on.
+Thank you <strong>{$this_user->name}</strong> for using Libre.fm! <a href="/user/{$this_user->name}/recap/2025">Did you see your 2025 recap?</a> If you can please consider <a href="/donate.php">making a donation</a> to help keep the lights on.
 {else}
 <div class="alert alert-info">
 {include file='getting-started-help.tpl'}
