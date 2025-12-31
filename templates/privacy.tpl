@@ -9,7 +9,7 @@
 <li>Libre.fm runs no advertising on the website whatsoever.</li>
 <li>Libre.fm links to third-party websites including the personal websites of users, social networking profiles of users and websites relevant to musical acts.</li>
 <li>If you wish to delete your account you may do so by editing your profile when logged in. This requires you being able to receive an email at the email address you provided. If you have no access to the email address in question, please contact us at <a href="mailto:support@libre.fm">support@libre.fm</a>, we may be able to help you if you are able to successfully provide the email address on file.</li>
-<li>Amazon Web Services is used to send email related to your account including registration and password reset emails. AWS may log things.</li>
+<li>Namecrane.com is used to send email related to your account including registration and password reset emails. They may log things.</li>
 <li>Cloudflare is used as both a cache (for performance reasons) and a web application firewall to ensure our little website isn't attacked by bots. Cloudflare may log things.</li>
 <li>Libre.fm does not store user IP addresses in web server log files if the website is accessed via HTTPS. All HTTPS traffic is routed via our HAProxy server, and we only see the IP address of the HAproxy server.</li>
 <li>Libre.fm does not store any log files from our HAProxy server.</li>
