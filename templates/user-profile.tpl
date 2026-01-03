@@ -1,6 +1,6 @@
 {include file='header.tpl' subheader='user-header.tpl' showbio=true}
 
-{if !($isme)}<div class="alert alert-info"><h2>What did {$me->name} listen to in 2024?</h2><p class="lead"><a class="btn btn-success" href="/user/{$me->name}/recap/2024">See {$me->name}'s 2024 recap</a></p></div>{/if}
+{if !($isme)}<div class="alert alert-info"><h2>What did {$me->name} listen to in 2025?</h2><p class="lead"><a class="btn btn-success" href="/user/{$me->name}/recap/2025">See {$me->name}'s 2025 recap</a></p></div>{/if}
 
 {if $nowplaying}
 <div class="alert alert-secondary">
