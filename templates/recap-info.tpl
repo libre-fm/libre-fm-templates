@@ -1,3 +1,4 @@
+{include file='mini-header.tpl'}
 <div class="h-card alert alert-dark">
 <h2>See your listening habits from the previous year or any previous year...</h2>
 
@@ -5,3 +6,4 @@
 
 <p>For 2025 and beyond I've added monthly statistics too.</p>
 </div>
+{include file='mini-footer.tpl'}
