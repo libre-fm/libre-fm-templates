@@ -9,9 +9,7 @@
     </section>
     <!-- ======== feature-section end ======== -->
 
-
-
-
+<a href="/login.php">Login</a> &middot; <a href="/reset.php">Reset my password</a>
 
         {include file="footer-footer.tpl"}
 
