@@ -8,8 +8,9 @@
 </div>
     </section>
     <!-- ======== feature-section end ======== -->
-
+<div class="alert alert-secondary text-center">
 <a href="/login.php">Login</a> &middot; <a href="/reset.php">Reset my password</a>
+</div>
 
         {include file="footer-footer.tpl"}
 
