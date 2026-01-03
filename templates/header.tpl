@@ -112,19 +112,19 @@
         <div class="row justify-content-center">
 <div class="col-12 mt-20">
 
-<!-- <div class="alert alert-danger text-center">
+<!-- <div class="alert alert-danger text-center text-wrap">
 Libre.fm support will be taking a break for the holidays from Dec 23-27th, so unless there's a server issue I'll get back to you in a few days
 </div> -->
 
 {if (!$logged_in)}
-<div class="alert alert-success text-center">
+<div class="alert alert-success text-center text-wrap">
 Libre.fm is not closing. Please <a href="/waitlist.php">join the waitlist</a> and consider <a href="/donate.php">making a donation</a> to help keep the lights on.
 {else}
 {if ($thisusertotaltracks > 3)}
-<div class="alert alert-info text-center">
+<div class="alert alert-info text-center text-wrap">
 Thank you <strong>{$this_user->name}</strong> for using Libre.fm! <a href="/user/{$this_user->name}/recap/2025">Did you see your 2025 recap?</a> If you can please consider <a href="/donate.php">making a donation</a> to help keep the lights on.
 {else}
-<div class="alert alert-info">
+<div class="alert alert-info text-center text-wrap">
 {include file='getting-started-help.tpl'}
 <hr>
 <p>Once you've successfully scrobbled a few songs, this help box will move to <a href="/about/">the help page</a></p>
