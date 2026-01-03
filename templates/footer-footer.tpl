@@ -28,6 +28,7 @@
                   <li><a href="/#features">Features</a></li>
                   <li><a href="/#how">About</a></li>
                   {/if}
+                  <li><a href="/recap">Recap</a></li>
                   <li><a href="/about">Help/FAQ</a></li>
                   <li><a href="mailto:support@libre.fm">support@libre.fm</a></li>
                   <li><a href="https://blog.libre.fm">Blog</a> &amp; <a href="https://roadmap.libre.fm">roadmap</a></li>
