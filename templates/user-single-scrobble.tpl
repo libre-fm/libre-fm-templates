@@ -4,9 +4,7 @@
 
 <div class="h-entry alert alert-dark">
 
-<h2 class="p-name"><a href="/user/{$me->name}">{$me->name}</a></h2>
-
-	<p><img loading="lazy" class="u-photo" src="{$me->getAvatar(158)}" alt=""></p>
+<h2 class="p-name"><a href="/user/{$me->name}"><img loading="lazy" class="u-photo" width="32" height="32" src="{$me->getAvatar(32)}" alt="{$me->name}'s profile"></a></h2>
 
 {if $album}
 <p><a href="{$url}"><img loading="lazy" src="https://turtle.libre.fm/cover.php?artist={$artist}&album={$album}" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat; " width="250" height="250" alt=""></a></p>
@@ -32,6 +30,8 @@
 {/section}
 </ul>
 
+{if ($logged_in)}
+{if $isme}
 <div class="alert alert-warning">
 This is a new feature that gives you a unique URL for each song you've ever listened to. You can share it elsewhere and it can also be embedded on another website.
 </div>
@@ -55,6 +55,8 @@ This is a new feature that gives you a unique URL for each song you've ever list
 [url={$bob}][img width="480" height="90" alt="{$me->name} listened to {$track|escape:'html':'UTF-8'} by {$artist|escape:'html':'UTF-8'} ({$album|escape:'html':'UTF-8'})"]{$bob}/image[/img][/url]
 </textarea>
 </div>
+{/if}
+{/if}
 
 {/if}
 
