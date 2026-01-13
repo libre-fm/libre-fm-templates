@@ -39,9 +39,9 @@
 <td>
 			{if $fartist}
 				{if $i.artistlibraryurl}
-					<a href="{$i.artistlibraryurl|escape:'html'}">{$i.artist|escape:'html'}</a>
+					<a href="{$i.artistlibraryurl|escape:'html'}">{$i.artist}</a>
 				{else}
-					<a href="{$i.artisturl|escape:'html'}">{$i.artist|escape:'html'}</a>
+					<a href="{$i.artisturl|escape:'html'}">{$i.artist}</a>
 				{/if}
 			{/if}
                 {if $me->uniqueid}
