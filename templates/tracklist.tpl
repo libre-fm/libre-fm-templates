@@ -31,17 +31,17 @@
 	<tr>
 		<td class="name">
 			{if $i.tracklibraryurl}
-				<a href="{$i.tracklibraryurl|escape:'html'}">{$i.track}</a>
+				<a href="{$i.tracklibraryurl|escape:'html'}">{$i.track|escape:'html'}</a>
 			{else}
-				<a href="{$i.trackurl|escape:'html'}">{$i.track}</a>
+				<a href="{$i.trackurl|escape:'html'}">{$i.track|escape:'html'}</a>
 			{/if}
 </td>
 <td>
 			{if $fartist}
 				{if $i.artistlibraryurl}
-					<a href="{$i.artistlibraryurl|escape:'html'}">{$i.artist}</a>
+					<a href="{$i.artistlibraryurl|escape:'html'}">{$i.artist|escape:'html'}</a>
 				{else}
-					<a href="{$i.artisturl|escape:'html'}">{$i.artist}</a>
+					<a href="{$i.artisturl|escape:'html'}">{$i.artist|escape:'html'}</a>
 				{/if}
 			{/if}
                 {if $me->uniqueid}
