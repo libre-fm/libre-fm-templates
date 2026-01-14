@@ -73,7 +73,7 @@ We use <a href="https://libravatar.org" target="_blank">Libravatar.org</a> for a
 
 	<p>Enter your new password in the following two fields:</p>
 <div class="form-group mb-3">
-    <label class="form-label" for='password_1'>{t}Password:{/t}
+    <label class="form-label" for='password_1'>{t}Password:{/t} (32 characters max)
       <span>{t}Leave this blank if you don't want to change your password.{/t}</span>
     </label>
     <input class="form-control form-control-lg" name='password_1' id='password_1' size="32" maxlength="32" type='password' autocomplete="off" value='' />
