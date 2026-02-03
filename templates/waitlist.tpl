@@ -67,7 +67,7 @@ You'll get an email inviting you to pick a username later
 
 <div class="mb-3 form-check">
           <input class="form-check-input" type="checkbox" required value="remember-me" id="foo-check" name="foo-check"> 
-        <label class="form-check-label" for="foo-check">I read this form carefully, double-checked my email address and agree to the <a href="/terms" target="_blank">terms and conditions</a> and <a href="/privacy" target="_blank">privacy policy</a>. I am over 18 years of age. Gen AI is trash. LLMs are trash. Open Web forever.</label>
+        <label class="form-check-label" for="foo-check">I read this form carefully, <mark>double-checked my email address</mark> and agree to the <a href="/terms" target="_blank">terms and conditions</a> and <a href="/privacy" target="_blank">privacy policy</a>. I am over 18 years of age. Gen AI is trash. LLMs are trash. Open Web forever.</label>
 </div>
 <!-- <div class="mb-3 form-check">
           <input class="form-check-input" type="checkbox" required value="" id="foo-wait" name="foo-wait"> 
