@@ -21,7 +21,7 @@
 	{else}
 		<a target="_blank" href="{$clienturl}">{$clientname}</a>
 	{/if}
-	wants your permission to post to your Libre.fm account.
+	wants your permission to post the songs you listen to onto your Libre.fm account.
 </div>
 	<form method="post" action="">
 		{if !$logged_in}
