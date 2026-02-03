@@ -10,7 +10,7 @@
 	  <li class="nav-item"><a href="{$base_url}/login.php">
 	    {t}Log in{/t}
 	</a></li>
-<li class="nav-item"><a href="{$base_url}/waitlist.php">
+<li class="nav-item"><a href="{$base_url}/register.php">
 	    {t}Register{/t}
 	</a></li>
 <li class="nav-item"><a href="/about">Help</a></li>
