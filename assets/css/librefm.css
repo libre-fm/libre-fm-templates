@@ -20,6 +20,11 @@ h3 {margin-top: 3em;}
 
 .navbar-nav .nav-item a:hover, .footer .widget-wrapper .footer-widget ul.links li a:hover {color: black !important;}
 
+.hero-section-app {
+background-image: none !important;
+background: #d40000;
+}
+
 .list-group-item:hover{background: #383f47} 
 .album-list li {display: inline-table; padding-right: 8px; padding-bottom: 8px; background: transparent; }
 
