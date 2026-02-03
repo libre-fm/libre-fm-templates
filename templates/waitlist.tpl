@@ -62,7 +62,7 @@ You'll get an email inviting you to pick a username later
 </div>
 <div class="mb-3 form-check">
           <input class="form-check-input" type="checkbox" required value="" id="foo-wait" name="foo-wait"> 
-        <label class="form-check-label" for="foo-wait">I understand this is a waitlist and accounts may take 1-2 weeks to receive an invite.</label>
+        <label class="form-check-label" for="foo-wait">I understand this is a waitlist and accounts may take 1-2 weeks to receive an invite (but often much faster).</label>
 </div>
 <div class="mb-3">
         <button class="btn btn-lg btn-success" name="register" type="submit" value="{t}Join waitlist{/t}">Join waitlist</button>
@@ -75,9 +75,6 @@ You'll get an email inviting you to pick a username later
       	{t}We won't sell, swap or give away your email address. You can optionally include personal data on your profile, which is displayed publicly.{/t}
         </div>
 
-
-
-{include file='tips.tpl'}
 
 {include file='mini-footer.tpl'}
 {/if}
