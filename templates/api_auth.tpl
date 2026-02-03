@@ -17,6 +17,7 @@
 		{if $cb}
 			Callback URL: <b>{$cb}</b><br />
 		{/if}
+        <p><a target="_blank" href="http://developer.libre.fm">Developer? Follow our documentation</a></p>
 	{else}
 		<a target="_blank" href="{$clienturl}">{$clientname}</a>
 	{/if}
