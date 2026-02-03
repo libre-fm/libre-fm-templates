@@ -33,6 +33,13 @@ Current waitlist: {$waitlist} users. {$waitlist2} accounts invited but haven't m
 
       <h2 class="mb-3">Register for Libre.fm</h2>
 
+      <div class="alert alert-info">
+	  <p>This free site allows you to keep track of your music listening habits using a variety of <a href="http://wiki.libre.fm/Clients" target="_blank">third-party clients</a>. For streaming music, we recommend <a target="_blank" href="https://webscrobbler.com">Web Scrobbler</a>.</p>
+      {if ($totals)}
+		{$totals}
+	  {/if}
+      </div>
+
 {if (!$logged_in)}
 <!-- <div class="alert alert-secondary">
 Expected time to get an account after joining the waitlist is currently a few minutes. New accounts are being added daily.
