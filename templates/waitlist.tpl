@@ -3,9 +3,6 @@
 {if isset($activated)}
 {$nosidebar=true}
 {include file='mini-header.tpl'}
-<div class="alert alert-info text-center lead">
-Current waitlist: {$waitlist}/{$waitlist2} users.
-</div>
         <h2 class="mb-3">{t}You're in!{/t}</h2>
 	<p>{t escape=no}Your account has been activated! Check your email to get started.{/t}</p>
 
