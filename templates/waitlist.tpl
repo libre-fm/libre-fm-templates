@@ -35,11 +35,11 @@ Current waitlist: {$waitlist} users. {$waitlist2} accounts invited but haven't m
 
 {if (!$logged_in)}
 <div class="alert alert-secondary">
-Expected time to get an account after joining the waitlist is currently 1-2 weeks. New accounts are being added daily.
+Expected time to get an account after joining the waitlist is currently a few minutes. New accounts are being added daily.
 </div>
 {/if}
 
-      <p class="lead">This is a waitlist for Libre.fm. In future you will also be invited to join 1800www.com, which will use the same account as Libre.fm.</p>
+      <p class="lead">This is a waitlist for Libre.fm.</p>
 
       <form class="form-signin mt-1" method="post" action=''>
 
