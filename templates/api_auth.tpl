@@ -2,25 +2,25 @@
 
 {if $error_msg}
 <div class="alert alert-error">
-	<p>{$error_msg}</p>
+	$error_msg}
 </div>
 {elseif $stage == 'deskapp2.2'}
 <div class="alert alert-success">
-	<p>Thank you very much {$username}. Your authorization has been recorded.</p>
+	<p class="lead">Thank you very much {$username}. Your authorization has been recorded.</p>
 	<p>You may now close this page.</p>
 </div>
 {else}
 <div class="alert alert-primary">
 	{if $username}<h2>Hello {$username}</h2>{/if}
 	{if $clientname == 'Unknown client'}
-		<p><a target="_blank" href="{$clienturl}">{$clientname}</a> with<br /> API key: <b>{$api_key}</b><br />
+		<a target="_blank" href="{$clienturl}">{$clientname}</a> with<br /> API key: <b>{$api_key}</b><br />
 		{if $cb}
 			Callback URL: <b>{$cb}</b><br />
 		{/if}
 	{else}
-		<p><a target="_blank" href="{$clienturl}">{$clientname}</a>
+		<a target="_blank" href="{$clienturl}">{$clientname}</a>
 	{/if}
-	wants your permission to post to your Libre.fm account.</p>
+	wants your permission to post to your Libre.fm account.
 </div>
 	<form method="post" action="">
 		{if !$logged_in}
