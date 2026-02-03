@@ -27,9 +27,9 @@ Current waitlist: {$waitlist} users. {$waitlist2} accounts invited but haven't m
 {include file='mini-footer.tpl'}
 {else}
 {include file='mini-header.tpl'}
-<div class="alert alert-info text-center lead">
+<!-- <div class="alert alert-info text-center lead">
 Current waitlist: {$waitlist} users. {$waitlist2} accounts invited but haven't made an account yet.  
-</div>
+</div> -->
 
       <h2 class="mb-3">Register for Libre.fm</h2>
 
