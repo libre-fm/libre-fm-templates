@@ -34,7 +34,7 @@
   <input class="form-control form-control-lg" id='password' name='password' type='password' value='' required>
 </div>
 		{/if}
-		<button type="submit" class="btn btn-success btn-lg" value="Log in" />
+		<button type="submit" class="btn btn-success btn-lg" value="Log in">Log in</button>
 		<input type="hidden" name="api_key" value="{$api_key}" />
 		<input type="hidden" name="token" value="{$token}" />
 		{if $cb}
