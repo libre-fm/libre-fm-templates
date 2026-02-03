@@ -11,7 +11,7 @@
 	    {t}Log in{/t}
 	</a></li>
 <li class="nav-item"><a href="{$base_url}/waitlist.php">
-	    {t}Join waitlist{/t}
+	    {t}Register{/t}
 	</a></li>
 <li class="nav-item"><a href="/about">Help</a></li>
 <li class="nav-item"><a target="_blank" href="https://libre.fm/donate.php">Donate</a></li>
