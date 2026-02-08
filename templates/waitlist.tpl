@@ -4,7 +4,9 @@
 {$nosidebar=true}
 {include file='mini-header.tpl'}
         <h2 class="mb-3">{t}You're in!{/t}</h2>
-	<p>{t escape=no}Your account has been activated! Check your email to get started.{/t}</p>
+	<p>{t escape=no}Your account has been activated!</p>
+
+    <p>You will receive an email soon to let you pick a username and get started.{/t}</p>
 
     <p>Libre.fm is run by one person, and sometimes that one person needs a break between adding new features and adding new accounts. Be kind and please be patient.</p>
 
