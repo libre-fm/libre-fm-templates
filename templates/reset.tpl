@@ -11,7 +11,7 @@
 
     {if isset($changed)}
     <div class="alert alert-info alert-dismissable">
-      {t}Your new password has been emailed to you.{/t}
+      {t}A new temporary password has been emailed to you.{/t}
     </div>
     {elseif isset($sent)}
     <div class="alert alert-info alert-dismissable">
