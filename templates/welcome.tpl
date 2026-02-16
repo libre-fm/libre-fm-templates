@@ -304,8 +304,8 @@
     </section>
     <!-- ======== feature-section end ======== -->
 
-    <!-- <!-- ======== subscribe-section start ======== -->
-    <section id="contact" class="subscribe-section pt-120">
+    <!-- ======== subscribe-section start ======== -->
+    <!-- <section id="contact" class="subscribe-section pt-120">
       <div class="container">
         <div class="subscribe-wrapper img-bg">
           <div class="row align-items-center">
@@ -326,8 +326,8 @@
           </div>
         </div>
       </div>
-    </section>
-    <!-- ======== subscribe-section end ======== --> -->
+    </section> -->
+    <!-- ======== subscribe-section end ======== --> 
 
         {include file="footer-footer.tpl"}
 
