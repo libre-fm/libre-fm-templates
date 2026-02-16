@@ -175,7 +175,8 @@
               <div class="content">
                 <h3>Open Source</h3>
                 <p>
-                  The music player app reports what you're listening to to Libre.fm and we show it on your profile and on the community page. Want to do this in private? Libre.fm is 100% open source so you can run your own server instead.
+                  The music player app reports what you're listening to to Libre.fm and we show it on your profile and on the community page.</p>
+				   <p>Want to do this in private? Libre.fm is 100% open source so you can run your own server instead.
                 </p>
               </div>
             </div>
