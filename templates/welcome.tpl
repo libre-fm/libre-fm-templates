@@ -126,9 +126,11 @@
               <h1>
                 Track your listening habits, discover new music
               </h1>
+              {if ($totals)}
               <p>
                 Since 2009, {$totals} We think that's something to be proud of.
               </p>
+              {/if}
 
 
             </div>
@@ -208,9 +210,11 @@
                 <h2 class="mb-25">
                   Why use Libre.fm over something else?
                 </h2>
+                 {if ($daily)}
                 <p>
                   {$daily}
                 </p>
+                 {/if}
               </div>
             </div>
           </div>
@@ -224,7 +228,7 @@
                 <div class="content">
                   <h3>Humans only</h3>
                   <p>
-                    We block so-called AI scrapers and bots and provide Libre.fm for humans only. We block IP addresses, entire networks, bots and more using Cloudflare and our own in-house data. If you're having any issues, please contact us and we will help you.
+                    We block so-called "AI" scrapers and bots and provide Libre.fm for humans only. We block IP addresses, entire networks, bots and more using Cloudflare and our own in-house data. If you're having any issues, please contact us and we will help you.
                   </p>
                 </div>
               </div>
@@ -263,7 +267,7 @@
                 <div class="content">
                   <h3>Minimal JavaScript</h3>
                   <p>
-                    Libre.fm is designed to work without JavaScript. This means the site is faster to load and has no invasive trackers. We support any and all operating systems. If you can GET and POST, you're in.
+                    Libre.fm is designed to work <em>without</em> JavaScript. This means the site is faster to load and has no invasive trackers. We support any and all operating systems. If you can GET and POST, you're in.
                   </p>
                 </div>
               </div>
@@ -300,7 +304,7 @@
     </section>
     <!-- ======== feature-section end ======== -->
 
-    <!-- ======== subscribe-section start ======== -->
+    <!-- <!-- ======== subscribe-section start ======== -->
     <section id="contact" class="subscribe-section pt-120">
       <div class="container">
         <div class="subscribe-wrapper img-bg">
@@ -323,7 +327,7 @@
         </div>
       </div>
     </section>
-    <!-- ======== subscribe-section end ======== -->
+    <!-- ======== subscribe-section end ======== --> -->
 
         {include file="footer-footer.tpl"}
 
