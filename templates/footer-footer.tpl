@@ -56,11 +56,11 @@
               <div class="footer-widget">
                 <h3>Our friends</h3>
                 <ul class="links">
-                  <li><a href="https://alexandragallant.com/">Buy comics and zines</a></li>
-                  <li><a href="https://bugsrock.online/">Buy candles</a></li>
-                  <li><a href="https://tedium.co/">Tedium</a></li>
-                  <li><a href="https://artlung.com">Artlung</a></li>
-                  <li><a href="https://home.omg.lol/referred-by/mattl">omg.lol</a></li>
+                  <li><a target="_blank" href="https://alexandragallant.com/">Buy comics and zines</a></li>
+                  <li><a target="_blank" href="https://bugsrock.online/">Buy candles</a></li>
+                  <li><a target="_blank" href="https://tedium.co/">Tedium</a></li>
+                  <li><a target="_blank" href="https://artlung.com">Artlung</a></li>
+                  <li><a target="_blank" href="https://home.omg.lol/referred-by/mattl">omg.lol</a></li>
                 </ul>
               </div>
             </div>
