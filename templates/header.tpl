@@ -118,7 +118,7 @@ Libre.fm support will be taking a break for the holidays from Dec 23-27th, so un
 
 {if (!$logged_in)}
 <div class="alert alert-success text-center text-wrap">
-Libre.fm is not closing. Please <a href="/waitlist.php">join the waitlist</a> and consider <a href="/donate.php">making a donation</a> to help keep the lights on.
+Please consider <a href="/donate.php">making a donation</a> to help keep the lights on.
 {else}
 {if ($thisusertotaltracks > 3)}
 <div class="alert alert-info text-center text-wrap">
