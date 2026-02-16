@@ -162,7 +162,7 @@
               <div class="content">
                 <h3>Listen to your music</h3>
                 <p>
-                  Many music player apps already support Libre.fm, and for streaming music there's Web Scrobbler
+                  Many music player apps already support Libre.fm, and for streaming music there's Web Scrobbler. You sign into one of these using your Libre.fm account.
                 </p>
               </div>
             </div>
@@ -175,7 +175,7 @@
               <div class="content">
                 <h3>Open Source</h3>
                 <p>
-                  Your device reports what you're listening to. Libre.fm is 100% open source so you can use our server, or run your own FM server (PHP, PostgreSQL)
+                  The music player app reports what you're listening to to Libre.fm and we show it on your profile and on the community page. Want to do this in private? Libre.fm is 100% open source so you can run your own server instead.
                 </p>
               </div>
             </div>
@@ -186,9 +186,9 @@
                 <i class="lni lni-creative-commons"></i>
               </div>
               <div class="content">
-                <h3>Discover new music</h3>
+                <h3>Track your listening habits</h3>
                 <p>
-                  Libre.fm started out promoting freely licensed music and all data is freely licensed for humans (but not scrapers).
+                  See what you've listened to weeks or even years ago and via the community page you can see what other people are listening to. 
                 </p>
               </div>
             </div>
