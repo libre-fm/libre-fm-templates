@@ -1,8 +1,8 @@
 <style>
   #color-scheme {
 display: block;
-height: 32px;
-width: 32px;
+height: 4px;
+width: 4px;
 position: absolute;
 bottom: 0;
 right: 0;
