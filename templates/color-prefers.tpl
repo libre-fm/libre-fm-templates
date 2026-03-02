@@ -1,11 +1,12 @@
 <style>
   #color-scheme {
 display: block;
-height: 3px;
-width: 3px;
+height: 32px;
+width: 32px;
 position: absolute;
 bottom: 0;
 right: 0;
+border: 1px solid white;
 }
 
 @media (prefers-color-scheme: light) {
