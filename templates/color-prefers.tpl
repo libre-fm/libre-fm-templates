@@ -13,10 +13,12 @@ border: 1px solid white;
   #color-scheme {
   background-image: url(/color.php?scheme=light);
 }
+}
 
 @media (prefers-color-scheme: dark) {
   #color-scheme {
   background-image: url(/color.php?scheme=dark);
+}
 }
 </style>
   <div id="color-scheme" title="This is just a box to figure out if more people use Libre.fm with dark mode or light mode">&nbsp;</div>
