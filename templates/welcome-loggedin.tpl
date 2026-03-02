@@ -25,5 +25,4 @@
 {$recents}
 {/if}
 
-{include file='color-prefers.tpl'}
 {include file='footer.tpl'}
