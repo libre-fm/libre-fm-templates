@@ -24,9 +24,11 @@ world with some <a href="https://creativecommons.org" target="_blank">Creative
 
 <h3>Can I import my listening habits from Last.fm, etc?</h3>
 
-<p>This is something we hope to offer in the first few months of 2026. <a
-href="https://github.com/kabniel/last2libre" target="_blank">Previous solutions
-   exist but require command line experience</a>.</p>
+<p>This is something we hope to offer in the first few months of 2026.</p>
+
+<p>If you've been a user of Libre.fm for a few years, have more than a few thousand scrobbles on here and have a Last.fm account and would like to scrobble there and have those scrobbles appear on Libre.fm, please email support.</p>
+
+<p>New users: hold tight, we want to make sure this works well first but it is very much coming. It will be offered to everyone in due course.</p>
 
 <h3>Can I export my data?</h3>
 
