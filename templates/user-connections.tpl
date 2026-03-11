@@ -45,6 +45,7 @@
 	{if isset($lastfm_key)}
 		<p><a class="btn btn-primary" href='http://www.last.fm/api/auth/?api_key={$lastfm_key}'>{t}Connect to a Last.fm account{/t}</a></p>
 	    <p>This does <strong>not</strong> import your history from Last.fm. That is a feature that will be coming in 2026.</p>
+        <p>If you have more than 1000 scrobbles on Libre.fm, and your account is a few years old... please email support and let me know your Last.fm username. All <strong>new</strong> scrobbles (ie. ones in the future) will be imported every few minutes.</p>
 	{/if}
  
 	{if isset($gnufm_key)}
