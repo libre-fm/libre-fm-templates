@@ -8,7 +8,9 @@
 
     <p>You will receive an email soon to let you pick a username and get started.{/t}</p>
 
-    <p>Libre.fm is run by one person, and sometimes that one person needs a break between adding new features and adding new accounts. Be kind and please be patient.</p>
+    <p>Libre.fm is run by one person. Please be kind and please be patient.</p>
+
+    {include file='kofi-tip.tpl'}
 
 </main>
 {include file='footer.tpl'}
