@@ -1,7 +1,8 @@
 {include file='header.tpl'}
 
 <div class="alert alert-warning text-center lead" role="alert">
-Got Last.fm? <a href='{$base_url}/user-connections.php'>Connect your account</a> and scrobbles to Libre.fm go to both services!</strong>
+Got Last.fm? <a href='{$base_url}/user-connections.php'>Connect your account</a> and tracks you scrobble to Libre.fm go to both services!</strong>
+<p><small>If you've been a user of Libre.fm for a few years, have more than a few thousand scrobbles and have a Last.fm account and would like to scrobble there and have those scrobbles appear on Libre.fm, please email support.</small></p>
 </div>
 
 <hr />
