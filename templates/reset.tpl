@@ -13,10 +13,15 @@
     <div class="alert alert-info alert-dismissable">
       {t}A new temporary password has been emailed to you.{/t}
     </div>
+
+	{include file='kofi-tip.tpl'}
+
     {elseif isset($sent)}
     <div class="alert alert-info alert-dismissable">
       If we have an account that matches, {t}an email with further information has been sent to the email address associated with your profile.{/t}
     </div>
+
+	{include file='kofi-tip.tpl'}
 
     {else}
 <form action="{$base_url}/reset.php" method='post' role='form' class="form-signin">
