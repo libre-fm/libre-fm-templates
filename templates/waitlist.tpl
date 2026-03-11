@@ -31,6 +31,12 @@ Current waitlist: {$waitlist} users. {$waitlist2} accounts invited but haven't m
 
       <h2 class="mb-3">Register for Libre.fm</h2>
 
+{if isset($errors)}
+            <div class="alert alert-danger alert-dismissable">
+	      <p id='errors'>{$errors}</p>
+	    </div>	
+{else}
+
       <div class="alert alert-info">
 	  <p>This free site allows you to keep track of your music listening habits using a variety of <a href="http://wiki.libre.fm/Clients" target="_blank">third-party clients</a>. For streaming music, we recommend <a target="_blank" href="https://webscrobbler.com">Web Scrobbler</a>.</p>
       {if ($totals)}
@@ -48,10 +54,7 @@ Expected time to get an account after joining the waitlist is currently a few mi
 
       <form class="form-signin mt-1" method="post" action=''>
 
-      	{if isset($errors)}
-            <div class="alert alert-danger alert-dismissable">
-	      <p id='errors'>{$errors}</p>
-	    </div>	
+      	
 	{/if}
 
 <fieldset>
@@ -77,6 +80,8 @@ You'll get an email inviting you to pick a username later
 </fieldset>
 
       </form>
+
+{/if}
 
 	    <div class="alert alert-primary">
       	{t}We won't sell, swap or give away your email address. You can optionally include personal data on your profile, which is displayed publicly.{/t}
