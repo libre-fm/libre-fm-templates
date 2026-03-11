@@ -58,7 +58,7 @@ Expected time to get an account after joining the waitlist is currently a few mi
       <form class="form-signin mt-1" method="post" action=''>
 
       	
-	{/if}
+
 
 <fieldset>
 <!-- <div class="alert alert-warning">
