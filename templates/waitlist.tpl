@@ -19,6 +19,7 @@
 {$nosidebar=true}
 {include file='mini-header.tpl'}
         <h2 class="mb-3">{t}Check your email now{/t}</h2>
+<p>An invite email was just sent to: <mark>{$emailaddress}</mark></p>
 	<p>{t}Please follow the link in your email to activate your account!{/t}</p>
 
 </main>
