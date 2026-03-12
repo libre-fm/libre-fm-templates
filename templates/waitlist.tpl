@@ -22,6 +22,9 @@
 <p>An invite email was just sent to: <mark>{$emailaddress}</mark></p>
 	<p>{t}Please follow the link in your email to activate your account!{/t}</p>
 
+    {include file='kofi-tip.tpl'}
+
+
 </main>
 {include file='mini-footer.tpl'}
 {else}
