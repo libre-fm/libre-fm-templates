@@ -108,9 +108,9 @@
 
     <!-- ======== feature-section start ======== -->
     <section id="how" class="feature-section pt-40">
-      <div class="container-sm">
+      <div class="container-lg">
         <div class="row justify-content-center">
-<div class="col-8 mt-20">
+<div class="container mt-20">
 
 <!-- <div class="alert alert-danger text-center">
 Libre.fm support will be taking a break for the holidays from Dec 23-27th, so unless there's a <a href="https://status.libre.fm">server issue</a> I'll get back to you in a few days
