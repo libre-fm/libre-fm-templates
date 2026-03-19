@@ -87,10 +87,6 @@ You'll get an email inviting you to pick a username later
 
 {/if}
 
-      {if ($totals)}
-		<div class="text-center" style="text-wrap: balance">{$totals}</div>
-	  {/if}
-
 	    <div class="alert alert-primary">
       	{t}We won't sell, swap or give away your email address. You can optionally include personal data on your profile, which is displayed publicly.{/t}
         </div>
