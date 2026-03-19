@@ -39,6 +39,8 @@
 
 </div>
 
+<hr>
+
 	  <p class="text-center pt-20" style="margin-bottom: 50px; padding-bottom: 50px; text-wrap: balance">Thank you for using Libre.fm!</p>
 
 {include file='mini-footer.tpl'}
