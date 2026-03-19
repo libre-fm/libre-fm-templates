@@ -2,11 +2,11 @@
 
 <h3>Can I import my listening habits from Last.fm, etc?</h3>
 
-<p>Yes... soon. This is something we hope to start to offer to more people in the first few months of 2026.</p>
+<p>Yes... soon. A version of this is now working for both new scrobbles and also historical ones. This is something we hope to start to offer to more people in the first few months of 2026.</p>
 
-<p>But, if you've been a user of Libre.fm for a few years, have more than a few thousand scrobbles on here and have a Last.fm account and would like to scrobble there and have those scrobbles appear on Libre.fm, please email support. Especially if you're on IRC.</p>
+<p>But, if you've been a user of Libre.fm for a few years, have more than a few thousand scrobbles on here and have a Last.fm account and would like to scrobble there and have those scrobbles appear on Libre.fm, please email <a href="mailto:support@libre.fm</a>support@libre.fm</a>. Especially if you're on IRC as it'll be helpful to chat to you while debugging things..</p>
 
-<p>New users: hold tight, we want to make sure this works well first but it is very much coming. It will be offered to everyone in due course.</p>
+<p>New users: hold tight, I want to make sure this works well first but it is very much coming. It will be offered to everyone in due course.</p>
 
 <h3 class="pt-20">General tips</h3>
 
