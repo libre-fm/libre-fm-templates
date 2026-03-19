@@ -9,7 +9,7 @@
 
 {include file='kofi-tip.tpl'}
 
-<div style="width: 100%; max-width: 500px; margin: 0 auto;" id="paypal">
+<div style="width: 100%; max-width: 500px; margin: 0 auto; margin-bottom: 50px;" id="paypal">
 
 	  <h3 class="text-center pt-20">One time donation via PayPal</h3>
 
