@@ -44,7 +44,7 @@ Current waitlist: {$waitlist} users. {$waitlist2} accounts invited but haven't m
 
 
       <div class="alert alert-info">
-	  <p>This free site allows you to keep track of your music listening habits using a variety of <a href="http://wiki.libre.fm/Clients" target="_blank">third-party clients</a>. For streaming music, we recommend <a target="_blank" href="https://webscrobbler.com">Web Scrobbler</a>.</p>
+	  <p>This free site allows you to keep track of your music listening habits using a variety of <a href="http://wiki.libre.fm/Clients" target="_blank">third-party clients</a>. For users of streaming music websites such as Apple Music and Spotify, we recommend <a target="_blank" href="https://webscrobbler.com">Web Scrobbler</a>.</p>
       {if ($totals)}
 		{$totals}
 	  {/if}
