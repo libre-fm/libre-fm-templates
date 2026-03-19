@@ -9,7 +9,7 @@
 
 {include file='kofi-tip.tpl'}
 
-<div style="width: 100%; max-width: 500px; margin: 0 auto; margin-bottom: 50px; padding-bottom: 50px;" id="paypal">
+<div style="width: 100%; max-width: 500px; margin: 0 auto;" id="paypal">
 
 	  <h3 class="text-center pt-20" style="text-wrap: balance">One time donation via PayPal</h3>
 
@@ -39,7 +39,7 @@
 
 </div>
 
-	  <p class="text-center pt-20" style="text-wrap: balance">Thank you for using Libre.fm!</p>
+	  <p class="text-center pt-20" style="margin-bottom: 50px; padding-bottom: 50px; text-wrap: balance">Thank you for using Libre.fm!</p>
 
 {include file='mini-footer.tpl'}
 
