@@ -43,11 +43,8 @@ Current waitlist: {$waitlist} users. {$waitlist2} accounts invited but haven't m
 
 
 
-      <div class="alert alert-info">
+      <div class="alert alert-info text-center" style="text-wrap: balance">
 	  <p>This free site allows you to keep track of your music listening habits using a variety of <a href="http://wiki.libre.fm/Clients" target="_blank">third-party clients</a>. For users of streaming music websites such as Apple Music and Spotify, we recommend <a target="_blank" href="https://webscrobbler.com">Web Scrobbler</a>.</p>
-      {if ($totals)}
-		{$totals}
-	  {/if}
       </div>
 
 {if (!$logged_in)}
@@ -89,6 +86,10 @@ You'll get an email inviting you to pick a username later
       </form>
 
 {/if}
+
+      {if ($totals)}
+		<div class="text-center" style="text-wrap: balance">{$totals}</div>
+	  {/if}
 
 	    <div class="alert alert-primary">
       	{t}We won't sell, swap or give away your email address. You can optionally include personal data on your profile, which is displayed publicly.{/t}
