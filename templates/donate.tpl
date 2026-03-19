@@ -13,7 +13,7 @@
 
 	  <h3 class="text-center pt-20">One time donation via PayPal</h3>
 
-	  <form class="pt-20 mb-3" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+	  <form class="pt-20 mb-3 text-center" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 	    <input type="hidden" name="cmd" value="_s-xclick">
 	    <input type="hidden" name="hosted_button_id" value="9PTTFVFY4ETFE">
 	    <input type="image" class="pt-10" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
@@ -22,10 +22,10 @@
 
 	  <h3 class="text-center pt-20">Monthly recurring donation via PayPal</h3>
 
-	  <form class="pt-20 mb-3" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+	  <form class="pt-20 mb-3 text-center" action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
 	    <input type="hidden" name="cmd" value="_s-xclick">
 	    <input type="hidden" name="hosted_button_id" value="Q5PEP4MQWPY3J">
-	    <table>
+	    <table style="margin: 0 auto">
 	      <tr><td><input type="hidden" name="on0" value=""></td></tr><tr><td><select class="form-select" name="os0">
 		<option value="$5">$5 : $5.00 USD - monthly</option>
 		<option value="$10">$10 : $10.00 USD - monthly</option>
