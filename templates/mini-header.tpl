@@ -1,6 +1,6 @@
 {config_load file='theme.conf' scope='global'}
 <!DOCTYPE html>
-<html lang="en" data-bs-theme="dark">
+<html lang="en" data-bs-theme="light">
   <head>
     <meta charset="utf-8" />
     {if !($pagetitle)}
@@ -14,38 +14,12 @@
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://libre.fm/feed.xml">
 
 
-       <meta property="og:title" content="Libre.fm">
-       <meta property="og:description" content="Libre.fm lets you keep track of your music listening habits.">
-       <meta property="og:type" content="website">
-       <meta property="og:site_name" content="Libre.fm">
-       <meta property="og:url" content="https://libre.fm">
-       <meta property="og:image" content="https://libre.fm/themes/2024-end-times/social.png">
-<!--
-
-    Dear Mr McGee,
-
-    Please find enclosed the latest demo from Liquid Greek.
-
-    Derided by the mainstream as ‘shoegazing also-rans’, the band
-    have nevertheless persevered with their off-kilter-or-nothing
-    policy in the hope that someone like your good self will
-    eventually realise, and thus promote, this violent yet
-    ultimately beautiful genre which we have dubbed ‘new noise’.
-
-    The first track is based upon the high-pitched lamentations of
-    an unbalanced Lincoln woman, who nurses injured buzzards back
-    to health inside her dead child’s wardrobe.
-
-    We hope you like it.
-
-    Yours sincerely,
-
-    Liquid Greek
-
-    P.S. – We don’t like sport of any kind, and friends at school
-    were very much thin on the ground
-
-    -->
+    <meta property="og:title" content="Libre.fm">
+    <meta property="og:description" content="Libre.fm lets you keep track of your music listening habits.">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Libre.fm">
+    <meta property="og:url" content="https://libre.fm">
+    <meta property="og:image" content="https://libre.fm/themes/2024-end-times/social.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/lineicons.css" />
     <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/main.css" />
