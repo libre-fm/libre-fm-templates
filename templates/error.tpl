@@ -5,6 +5,8 @@
 {$error_message|escape:'htmlall'}
 </div>
 
-{include file='tips.tpl'}
+<div class="alert">
+<p>Need help? <a href="mailto:support@libre.fm">support@libre.fm</a></p>
+</div>
 
 {include file='mini-footer.tpl'}
