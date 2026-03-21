@@ -1,7 +1,7 @@
 {include file='mini-header.tpl'}
 
-<div class="alert alert-info">
-<h2>{$pagetitle}</h2>
+<div class="alert alert-danger">
+<h2 style='color: white'>{$pagetitle}</h2>
 {$error_message|escape:'htmlall'}
 </div>
 
@@ -9,8 +9,8 @@
 <p>Need help? <a href="mailto:support@libre.fm">support@libre.fm</a></p>
 </div>
 
-<div class="alert">
-<h3>Where next?</h3>
+<div class="alert alert-info">
+<h3 style='color: black'>Where next?</h3>
 <ul>
 {if (!$logged_in)}
                   <li><a href="/login.php">Login</a></li>
