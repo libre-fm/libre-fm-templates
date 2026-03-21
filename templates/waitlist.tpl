@@ -30,19 +30,22 @@
 Current waitlist: {$waitlist} users. {$waitlist2} accounts invited but haven't made an account yet.  
 </div> -->
 
-      <h2 class="mb-3">Register for Libre.fm</h2>
 
 {if isset($errors)}
-            <div class="alert alert-danger alert-dismissable">
+            <div class="alert">
+<h2 class="mb-3">There was an error</h2>
 	      <p id='errors'>{$errors}</p>
 	    </div>	
-{/if}
+{else}
+      <h2 class="mb-3">Register for Libre.fm</h2>
 
 
 
       <div class="alert alert-info text-center" style="text-wrap: balance">
 	  This free site allows you to keep track of your music listening habits using a variety of <a href="http://wiki.libre.fm/Clients" target="_blank">third-party clients</a>. For users of streaming music websites such as Apple Music and Spotify, we recommend <a target="_blank" href="https://webscrobbler.com">Web Scrobbler</a>.
       </div>
+
+{/if}
 
 {if (!$logged_in)}
 <!-- <div class="alert alert-secondary">
@@ -88,10 +91,13 @@ You'll get an email inviting you to pick a username later
 
 {/if}
 
+{if !isset($errors)}
+
 	    <div class="alert alert-primary">
       	{t}We won't sell, swap or give away your email address. You can optionally include personal data on your profile, which is displayed publicly.{/t}
         </div>
 
+{/if}
 
 {include file='mini-footer.tpl'}
 {/if}
