@@ -1,7 +1,7 @@
 {include file='mini-header.tpl'}
 
 <div class="alert alert-danger">
-<h2 style='color: white'>{$pagetitle}</h2>
+<h2 style='color: red'>{$pagetitle}</h2>
 {$error_message|escape:'htmlall'}
 </div>
 
