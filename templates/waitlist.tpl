@@ -3,12 +3,9 @@
 {if isset($activated)}
 {$nosidebar=true}
 {include file='mini-header.tpl'}
-        <h2 class="mb-3">{t}You're in!{/t}</h2>
-	<p>{t escape=no}Your account has been activated!</p>
+        <h2 class="mb-3">Your account has been activated! Check your email...</h2>
 
-    <p>You will receive an email soon to let you pick a username and get started.{/t}</p>
-
-    <p>Libre.fm is run by one person. Please be kind and please be patient.</p>
+    <p>You will receive an email in a minute to let you pick a username.</p>
 
     {include file='kofi-tip.tpl'}
 
