@@ -1,3 +1,26 @@
+{*
+
+'404 Error' Template for GNU FM
+Copyright (c) 2009-2026 Free Software Foundation, Inc
+
+'404 Error' Template for Libre.fm
+Copyright (c) 2026 Matt Lee <mattl@cnuk.org>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+*}
+
 {*	------------------
 	tracklist.tpl
 	------------------
@@ -18,25 +41,25 @@
 	@param string url_sort_count  URL string to toggle sort order by count
 	@param string type            Type of list, 'tagged' (used to show correct button)
 *}
-	<ul class="list-group {$class}">
-	{foreach from=$items item=i}
-	<li class="list-group-item">
-    {if $me->uniqueid}
-     <a aria-label="Share listening to {$i.track} by {$i.artist}, {$i.timehuman}" title="Share {$i.track} by {$i.artist}" href="/user/{$me->name}/scrobble/{$i.time}">{$i.track}{if $fartist} by {$i.artist}{/if}</a>
-    {else}
-			{if $i.tracklibraryurl}
-				<a href="{$i.tracklibraryurl|escape:'html'}">{$i.track}</a>
-			{else}
-				<a href="{$i.trackurl|escape:'html'}">{$i.track}</a>
-			{/if}
-			{if $fartist} by
-				{if $i.artistlibraryurl}
-					<a href="{$i.artistlibraryurl|escape:'html'}">{$i.artist}</a>
-				{else}
-					<a href="{$i.artisturl|escape:'html'}">{$i.artist}</a>
-				{/if}
-			{/if}
-    {/if}
-  </li>
-	{/foreach}
-	</ul>
+<ul class="list-group {$class}">
+    {foreach from=$items item=i}
+    <li class="list-group-item">
+        {if $me->uniqueid}
+        <a aria-label="Share listening to {$i.track} by {$i.artist}, {$i.timehuman}" title="Share {$i.track} by {$i.artist}" href="/user/{$me->name}/scrobble/{$i.time}">{$i.track}{if $fartist} by {$i.artist}{/if}</a>
+        {else}
+        {if $i.tracklibraryurl}
+        <a href="{$i.tracklibraryurl|escape:'html'}">{$i.track}</a>
+        {else}
+        <a href="{$i.trackurl|escape:'html'}">{$i.track}</a>
+        {/if}
+        {if $fartist} by
+        {if $i.artistlibraryurl}
+        <a href="{$i.artistlibraryurl|escape:'html'}">{$i.artist}</a>
+        {else}
+        <a href="{$i.artisturl|escape:'html'}">{$i.artist}</a>
+        {/if}
+        {/if}
+        {/if}
+    </li>
+    {/foreach}
+</ul>

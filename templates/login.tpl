@@ -1,21 +1,43 @@
+{*
+
+'404 Error' Template for GNU FM
+Copyright (c) 2009-2026 Free Software Foundation, Inc
+
+'404 Error' Template for Libre.fm
+Copyright (c) 2026 Matt Lee <mattl@cnuk.org>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+*}
+
 {include file='mini-header.tpl'}
 
-      <h2 class="text-center">Welcome back!</h1>
+<h2 class="text-center">Welcome back!</h1>
 
-	<p class="pt-20">Please note that we are required to have a <a href="/privacy">privacy policy</a> and <a href="/terms">terms and conditions</a> posted now. <strong>By logging in you agree to these terms.</strong></p>
+    <p class="pt-20">Please note that we are required to have a <a href="/privacy">privacy policy</a> and <a href="/terms">terms and conditions</a> posted now. <strong>By logging in you agree to these terms.</strong></p>
 
     {if isset($errors)}
     <div class="alert alert-danger alert-dismissable">
-      <button type="button" class="close" data-dismiss="alert"
-	      aria-hidden="true">&times;</button>
-      <p id='errors'>{$errors}</p>
-    </div>	
+        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+        <p id='errors'>{$errors}</p>
+    </div>
     {/if}
 
     <form method="post" class="form-signin" role='form'>
-      {include file='login-form.tpl'}
+        {include file='login-form.tpl'}
     </form>
 
-{include file='tips.tpl'}
+    {include file='tips.tpl'}
 
-{include file='mini-footer.tpl'}
+    {include file='mini-footer.tpl'}

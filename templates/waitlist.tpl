@@ -1,13 +1,34 @@
+{*
 
+'404 Error' Template for GNU FM
+Copyright (c) 2009-2026 Free Software Foundation, Inc
+
+'404 Error' Template for Libre.fm
+Copyright (c) 2026 Matt Lee <mattl@cnuk.org>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+*}
 
 {if isset($activated)}
 {$nosidebar=true}
 {include file='mini-header.tpl'}
-        <h2 class="mb-3">Your account has been activated! Check your email...</h2>
+<h2 class="mb-3">Your account has been activated! Check your email...</h2>
 
-    <p>You will receive an email in a minute to let you pick a username.</p>
+<p>You will receive an email in a minute to let you pick a username.</p>
 
-    {include file='kofi-tip.tpl'}
+{include file='kofi-tip.tpl'}
 
 </main>
 {include file='footer.tpl'}
@@ -15,11 +36,11 @@
 {elseif isset($registered)}
 {$nosidebar=true}
 {include file='mini-header.tpl'}
-        <h2 class="mb-3">{t}Check your email now{/t}</h2>
+<h2 class="mb-3">{t}Check your email now{/t}</h2>
 <p>An email was just sent to: <mark>{$emailaddress}</mark></p>
-	<p>{t}Please follow the link in your email to activate your account!{/t}</p>
+<p>{t}Please follow the link in your email to activate your account!{/t}</p>
 
-    {include file='kofi-tip.tpl'}
+{include file='kofi-tip.tpl'}
 
 
 </main>
@@ -27,23 +48,23 @@
 {else}
 {include file='mini-header.tpl'}
 <!-- <div class="alert alert-info text-center lead">
-Current waitlist: {$waitlist} users. {$waitlist2} accounts invited but haven't made an account yet.  
+Current waitlist: {$waitlist} users. {$waitlist2} accounts invited but haven't made an account yet.
 </div> -->
 
 
 {if isset($errors)}
-            <div class="alert">
-<h2 class="mb-3">There was an error</h2>
-	      <p id='errors'>{$errors}</p>
-	    </div>	
+<div class="alert">
+    <h2 class="mb-3">There was an error</h2>
+    <p id='errors'>{$errors}</p>
+</div>
 {else}
-      <h2 class="mb-3">Register for Libre.fm</h2>
+<h2 class="mb-3">Register for Libre.fm</h2>
 
 
 
-      <div class="alert alert-info text-center" style="text-wrap: balance">
-	  This free site allows you to keep track of your music listening habits using a variety of <a href="http://wiki.libre.fm/Clients" target="_blank">third-party clients</a>. For users of streaming music websites such as Apple Music and Spotify, we recommend <a target="_blank" href="https://webscrobbler.com">Web Scrobbler</a>.
-      </div>
+<div class="alert alert-info text-center" style="text-wrap: balance">
+    This free site allows you to keep track of your music listening habits using a variety of <a href="http://wiki.libre.fm/Clients" target="_blank">third-party clients</a>. For users of streaming music websites such as Apple Music and Spotify, we recommend <a target="_blank" href="https://webscrobbler.com">Web Scrobbler</a>.
+</div>
 
 {/if}
 
@@ -53,52 +74,51 @@ Expected time to get an account after joining the waitlist is currently a few mi
 </div> -->
 {/if}
 
-      <!-- <p class="lead">This is a waitlist for Libre.fm.</p> -->
+<!-- <p class="lead">This is a waitlist for Libre.fm.</p> -->
 
 {if (!isset($errors))}
-      <form class="form-signin mt-1" method="post" action=''>
-
-      	
+<form class="form-signin mt-1" method="post" action=''>
 
 
-<fieldset>
-<!-- <div class="alert alert-warning">
+
+
+    <fieldset>
+        <!-- <div class="alert alert-warning">
 You'll get an email inviting you to pick a username later
-</div> --> 
-<div class="mb-3">
-  <label class="form-label" for='email'>{t}Email address{/t}</label>
-        <input type="email" class="form-control form-control-lg" placeholder="{t}Your e-mail address:{/t}" id="email" name="email" required />
-</div>
+</div> -->
+        <div class="mb-3">
+            <label class="form-label" for='email'>{t}Email address{/t}</label>
+            <input type="email" class="form-control form-control-lg" placeholder="{t}Your e-mail address:{/t}" id="email" name="email" required />
+        </div>
 
-<div class="mb-3 form-check">
-          <input class="form-check-input" type="checkbox" required value="remember-me" id="foo-check" name="foo-check"> 
-        <label class="form-check-label" for="foo-check">I read this form carefully, <mark>double-checked my email address</mark> and agree to the <a href="/terms" target="_blank">terms and conditions</a> and <a href="/privacy" target="_blank">privacy policy</a>. I am over 18 years of age and a human being. Gen AI is trash. LLMs are trash. Open Web forever.</label>
-</div>
-<div class="mb-3 form-check">
-          <input class="form-check-input" type="checkbox" required value="remember-me" id="foo2-check" name="foo2-check"> 
-        <label class="form-check-label" for="foo2-check">I understand Libre.fm is run by one person. I will be kind and patient.</label>
-</div>
-<!-- <div class="mb-3 form-check">
-          <input class="form-check-input" type="checkbox" required value="" id="foo-wait" name="foo-wait"> 
+        <div class="mb-3 form-check">
+            <input class="form-check-input" type="checkbox" required value="remember-me" id="foo-check" name="foo-check">
+            <label class="form-check-label" for="foo-check">I read this form carefully, <mark>double-checked my email address</mark> and agree to the <a href="/terms" target="_blank">terms and conditions</a> and <a href="/privacy" target="_blank">privacy policy</a>. I am over 18 years of age and a human being. Gen AI is trash. LLMs are trash. Open Web forever.</label>
+        </div>
+        <div class="mb-3 form-check">
+            <input class="form-check-input" type="checkbox" required value="remember-me" id="foo2-check" name="foo2-check">
+            <label class="form-check-label" for="foo2-check">I understand Libre.fm is run by one person. I will be kind and patient.</label>
+        </div>
+        <!-- <div class="mb-3 form-check">
+          <input class="form-check-input" type="checkbox" required value="" id="foo-wait" name="foo-wait">
         <label class="form-check-label" for="foo-wait">I understand there may be a small delay to receive an invite.</label>
-</div> --> 
-<div class="mb-3">
-        <button class="btn btn-lg btn-success" name="register" type="submit" value="{t}Join waitlist{/t}">Register</button>
-</div>
-</fieldset>
+</div> -->
+        <div class="mb-3">
+            <button class="btn btn-lg btn-success" name="register" type="submit" value="{t}Join waitlist{/t}">Register</button>
+        </div>
+    </fieldset>
 
-      </form>
+</form>
 
 {/if}
 
 {if !isset($errors)}
 
-	    <div class="alert alert-primary">
-      	{t}We won't sell, swap or give away your email address. You can optionally include personal data on your profile, which is displayed publicly.{/t}
-        </div>
+<div class="alert alert-primary">
+    {t}We won't sell, swap or give away your email address. You can optionally include personal data on your profile, which is displayed publicly.{/t}
+</div>
 
 {/if}
 
 {include file='mini-footer.tpl'}
 {/if}
-

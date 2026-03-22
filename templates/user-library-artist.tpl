@@ -1,44 +1,66 @@
+{*
+
+'404 Error' Template for GNU FM
+Copyright (c) 2009-2026 Free Software Foundation, Inc
+
+'404 Error' Template for Libre.fm
+Copyright (c) 2026 Matt Lee <mattl@cnuk.org>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+*}
+
 {include file='header.tpl' subheader='user-header.tpl'}
 
 <h2>Library</h2> {include file='submenu.tpl' submenu=$page->menu}
 
 <div class="row">
-  <div class="col-sm-2">
-    <img class="img-responsive margin-top" src="{$page->artist_image}" 
-	 alt="[ Artist Photo  ]"/>
-  </div>
-  <div class="col-sm-10">
+    <div class="col-sm-2">
+        <img class="img-responsive margin-top" src="{$page->artist_image}" alt="[ Artist Photo  ]" />
+    </div>
+    <div class="col-sm-10">
 
-    <h3>{$page->artist->name}</h3>
-    {if $page->artist->homepage}
-    <p>
-      <small>
-	<a href="{$page->artist->homepage}">
-	  {$page->artist->homepage}
-	</a>
-      </small> 
-    </p>
-    {/if}
-     <p><a href="{$page->artist_url}">Go to artist page</a></p>
-  </div>
+        <h3>{$page->artist->name}</h3>
+        {if $page->artist->homepage}
+        <p>
+            <small>
+                <a href="{$page->artist->homepage}">
+                    {$page->artist->homepage}
+                </a>
+            </small>
+        </p>
+        {/if}
+        <p><a href="{$page->artist_url}">Go to artist page</a></p>
+    </div>
 </div>
 
 <p class="margin-top">
-  <a href="{$page->section_url|escape:'html'}">
-    <span class="glyphicon glyphicon-chevron-left">
-    </span>
-    Show all Artists
-  </a>
+    <a href="{$page->section_url|escape:'html'}">
+        <span class="glyphicon glyphicon-chevron-left">
+        </span>
+        Show all Artists
+    </a>
 </p>
 
 {if $page->albums}
-	<h4>Albums by this artist</h4>
-	{include file='albumlist.tpl' class=#librarytable# items=$page->albums thead=true fimage=true fcount=true fstream=true}
+<h4>Albums by this artist</h4>
+{include file='albumlist.tpl' class=#librarytable# items=$page->albums thead=true fimage=true fcount=true fstream=true}
 {/if}
 
 {if $page->tracks}
-	<h4>Tracks by this artist</h4>
-	{include file='tracklist.tpl' class=#librarytable# items=$page->tracks thead=true fstream=true flove=true ftag=true fcount=true}
+<h4>Tracks by this artist</h4>
+{include file='tracklist.tpl' class=#librarytable# items=$page->tracks thead=true fstream=true flove=true ftag=true fcount=true}
 {/if}
 
 {include file='footer.tpl'}
