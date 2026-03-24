@@ -25,11 +25,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h2 class="mb-3">Your API key for Libre.fm:</h2>
 
 <ul>
-<li>API key: {apikey}</li>
-<li>Secret: {secret}</li>
-<li>Issued at: {issued_at}</li>
-<li>Expires at: {expires_at}</li>
-<li>Description: {description}</li>
+<li>API key: {$apikey}</li>
+<li>Secret: {$secret}</li>
+<li>Issued at: {$issued_at}</li>
+<li>Expires at: {$expires_at}</li>
+<li>Description: {$description}</li>
 </ul>
 
 <p><a href="https://developer.libre.fm">Developer documentation</a> but generally we implement the Last.fm API.</p>
