@@ -1,9 +1,9 @@
 {*
 
-'404 Error' Template for GNU FM
+'Login page' Template for GNU FM
 Copyright (c) 2009-2026 Free Software Foundation, Inc
 
-'404 Error' Template for Libre.fm
+'Login page' Template for Libre.fm
 Copyright (c) 2026 Matt Lee <mattl@cnuk.org>
 
 This program is free software: you can redistribute it and/or modify
