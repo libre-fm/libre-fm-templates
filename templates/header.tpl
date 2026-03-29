@@ -28,9 +28,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <head>
     <meta charset="utf-8" />
     {if !($pagetitle)}
-    <title>{$site_name}</title>
+    <title>{$site_name} &mdash; the open source music community for keeping track of your music listening habits</title>
     {else}
-    <title>{$pagetitle|escape:'html':'UTF-8'} &middot; {$site_name}</title>
+    <title>{$pagetitle|escape:'html':'UTF-8'} &middot; {$site_name} &mdash; the open source music community</title>
     {/if}
     <meta name="description" content="Libre.fm lets you keep track of your music listening habits." />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
