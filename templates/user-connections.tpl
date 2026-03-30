@@ -87,7 +87,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <li>Your Last.fm username: <a href="https://last.fm/user/{$lastfmimportusername}" target="_blank">{$lastfmimportusername}</a></li>
     <li>Last checked: {$lastfmimportlastcheck|date_format:"%A, %B %e, %Y %H:%M:%S"}</li>
     <li>Current time: {$smarty.now|date_format:"%A, %B %e, %Y %H:%M:%S"}</li>
-    <li>Last track imported: {$lastfmtrack}</li>
+    <li>Last track imported: <mark>{$lastfmtrack}</mark></li>
 </ul>
     </div>
 
