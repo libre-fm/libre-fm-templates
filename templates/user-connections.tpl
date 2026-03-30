@@ -71,9 +71,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <h4>{t}Add a connection{/t}</h4>
     {if isset($lastfm_key)}
     <p><a class="btn btn-primary" href='http://www.last.fm/api/auth/?api_key={$lastfm_key}'>{t}Connect to a Last.fm account{/t}</a></p>
-    <p>This does <strong>not</strong> import your history from Last.fm. That is a feature that will be coming in 2026.</p>
-    <p>If you have more than 1000 scrobbles on Libre.fm, and your account is a few years old... please email support and let me know your Last.fm username. All <strong>new</strong> scrobbles (ie. ones in the future) will be imported every few minutes.</p>
     {/if}
+
+    <div class="alert alert-info">
+    <h5>How about importing from Last.fm?</h5>
+    <p>This does <strong>not</strong> import your history from Last.fm.</p>
+    <p>If you wish to use this please email <a href="mailto:support@libre.fm">support@libre.fm</a> and let us know your Libre.fm and Last.fm usernames.</p>
+    <p>Recent scrobbles will be imported and future scrobbles too. Your historical scrobbles to Last.fm will be imported later.</p>
+    </div>
 
     {if isset($gnufm_key)}
     <details>
