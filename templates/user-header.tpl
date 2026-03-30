@@ -32,18 +32,19 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/if}
 
 <div class="h-card alert alert-dark">
-    {if ($isme)}<a style="float: right" class="edit-profile-link btn btn-success btn-sm" href="/user-edit.php">Edit your profile</a>{/if}
+    {if ($isme)}<a style="float: right" class="edit-profile-link btn btn-success btn-lg" href="/user-edit.php">Edit your profile</a>{/if}
     <h2 class="p-name">{$me->name}</h2>    
     
     <p><img class="u-photo" loading="lazy" height="170" width="170" src="{$me->getAvatar(170)}" alt></p>
 
-    <p class="d-inline-flex gap-1 card-subtitle mb-2 text-body-secondary">{if $me->fullname}
+    {if $me->fullname}
+    <p class="mb-2 text-body-secondary">
     <strong><span class="p-name card-title">{$me->fullname}</span></strong>
+    </p>
     {/if}
     {if $totaltracks}
-        &middot; <strong>{$totaltracks}</strong> tracks{if $this_user_first_year} since {$this_user_first_year}{/if}
-
-    {/if}
+    <p class="mb-2 text-body-secondary">
+        &middot; <strong>{$totaltracks}</strong> tracks
     {if $me->location}
         &middot; <span class="h-geo">{$me->location}</span>
     {/if}
