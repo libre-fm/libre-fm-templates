@@ -85,7 +85,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {if ($lastfmimport > 0)}<p>Currently importing from Last.fm</p>{else}<p>Not importing from Last.fm</p>{/if}
     <p>Your Last.fm username: <a href="https://last.fm/user/{$lastfmusername}" target="_blank">{$lastfmusername}</a></p>
     <p>Last checked: {$lastfmlastcheck|date_format:"%A, %B %e, %Y %H:%M:%S"}</p>
-    {/if}
     </div>
     {/if}
 
