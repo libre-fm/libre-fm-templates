@@ -121,7 +121,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <!-- ======== hero-section end ======== -->
 
     <!-- ======== feature-section start ======== -->
-    <section id="how" class="feature-section pt-40">
+    <section id="how" class="feature-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 mt-20">
@@ -134,10 +134,7 @@ Libre.fm support will be taking a break for the holidays from Dec 23-27th, so un
                     <div class="alert alert-success text-center text-wrap">
                         Please consider <a href="/donate.php">making a donation</a> to help keep the lights on.
                         {else}
-                        {if ($thisusertotaltracks > 3)}
-                        <div class="alert alert-info text-center text-wrap">
-                            Thank you <strong>{$this_user->name}</strong> for using Libre.fm! <a href="/user/{$this_user->name}/recap/2025">Did you see your 2025 recap?</a> If you can please consider <a href="/donate.php">making a donation</a> to help keep the lights on.
-                            {else}
+                        {if ($thisusertotaltracks < 3)}
                             <div class="alert alert-info text-center text-wrap">
                                 {include file='getting-started-help.tpl'}
                                 <hr>
