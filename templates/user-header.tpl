@@ -23,7 +23,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="h-card alert alert-dark">
     {if $me->fullname}
-    <h2>{$me->name}</p>
+    <h2>{$me->name}</h2>
     <p><span class="p-name card-title">{$me->fullname}</span></p>
     {else}
     <h2 class="p-name card-title">{$me->name}</h2>
