@@ -72,14 +72,24 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <p><a class="btn btn-primary" href='http://www.last.fm/api/auth/?api_key={$lastfm_key}'>{t}Connect to a Last.fm account{/t}</a></p>
     {/if}
 
+    {if (!$lastfmimport)}
     <div class="alert alert-info">
     <h5>How about importing from Last.fm?</h5>
     <p>This does <strong>not</strong> import your history from Last.fm.</p>
     <p>If you wish to use this please email <a href="mailto:support@libre.fm">support@libre.fm</a> and let us know your Libre.fm and Last.fm usernames.</p>
     <p>Recent scrobbles will be imported and future scrobbles too. Your historical scrobbles to Last.fm will be imported later.</p>
     </div>
+    {else}
+    <div class="alert alert-info">
+    <h5>Last.fm import status</h5>
+    {if ($lastfmimport > 0)}<p>Currently importing from Last.fm</p>{else}<p>Not importing from Last.fm</p>{/if}
+    <p>Your Last.fm username: <a href="https://last.fm/user/{$lastfmusername}" target="_blank">{$lastfmusername}</a></p>
+    <p>Last checked: {$lastfmlastcheck|date_format:"%A, %B %e, %Y %H:%M:%S"}</p>
+    {/if}
+    </div>
+    {/if}
 
-    {if isset($gnufm_key)}
+    <!-- {if isset($gnufm_key)}
     <details>
         <summary>Connect to another GNU FM server</summary>
         <form method="post" class="well">
@@ -92,7 +102,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             <button class="btn btn-primary" type="submit">Connect</button>
         </form>
     </details>
-    {/if}
+    {/if} -->
 </div>
 
 {include file='footer.tpl'}
