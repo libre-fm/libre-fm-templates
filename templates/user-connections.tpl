@@ -73,7 +73,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/if}
 
     {if empty($lastfmimport)}
-    <div class="alert alert-info">
+    <div class="alert {if ($lastfmimport > 0)}alert-success{else}alert-info{/if}">
     <h5>How about importing from Last.fm?</h5>
     <p>This does <strong>not</strong> import your history from Last.fm.</p>
     <p>If you wish to use this please email <a href="mailto:support@libre.fm">support@libre.fm</a> and let us know your Libre.fm and Last.fm usernames.</p>
