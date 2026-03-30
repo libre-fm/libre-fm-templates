@@ -23,9 +23,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl'}
 
-<h2 class="text-center mt-5 mb-5">Welcome back, <a href="/user/{t name=$this_user->name}%1{/t}">{t name=$this_user->name}%1{/t}</a>!</h2>
+<h2 class="text-center mt-3 mb-3">Welcome back, <a href="/user/{t name=$this_user->name}%1{/t}">{t name=$this_user->name}%1{/t}</a>!</h2>
 
-<div class="alert alert-dark">
+<!-- <div class="alert alert-dark">
     <h3>What's new?</h3>
 
     <ul>
@@ -35,7 +35,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <li><a href="https://mat.tl">I quit social media</a>, so I made <a target="_blank" href="https://status.libre.fm">status.libre.fm</a> for server status.</li>
         <li>Libre.fm has a <a target="_blank" href="https://libre.fm/donate.php">donations page</a>.</li>
     </ul>
-</div>
+</div> -->
 
 {if ($totals)}
 <div class="alert alert-primary">
@@ -44,7 +44,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/if}
 
 {if ($recents)}
-<h3>Recently listened to by the Libre.fm community (and it is a community)</h3>
+<h3 class="text-center">Recently listened to by the Libre.fm community</h3>
 {$recents}
 {/if}
 
