@@ -102,7 +102,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </p>
 </div>
 
-        <div class="alert alert-secondary" class="collapse" role="alert" id="change-pw">
+        <div class="alert alert-secondary collapse" role="alert" id="change-pw">
 
             <h3>Changing your password</h3>
 
