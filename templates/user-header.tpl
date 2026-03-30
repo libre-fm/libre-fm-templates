@@ -43,6 +43,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {/if}
     </p>
     {/if}
+    {else}
     {if ($logged_in)}
     {if $isme}
             <div class="alert alert-danger">
