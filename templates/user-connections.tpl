@@ -87,6 +87,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <p>Last checked: {$lastfmimportlastcheck|date_format:"%A, %B %e, %Y %H:%M:%S"}</p>
     <p>Current time: {$smarty.now|date_format:"%A, %B %e, %Y %H:%M:%S"}</p>
     </div>
+
+    <p>Self service coming soon, but please email <a href="mailto:support@libre.fm">support@libre.fm</a> if you want to change this for now</p>
+
     {/if}
 
     <!-- {if isset($gnufm_key)}
