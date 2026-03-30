@@ -25,13 +25,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {if $track}
 
-<div class="h-entry">
+<div class="h-entry alert alert-dark">
 
     <h2 class="p-name"><a href="/user/{$me->name}">{$me->name}</a></h2>
 
     <p><a href="/user/{$me->name}"><img loading="lazy" class="u-photo" width="170" height="170" src="{$me->getAvatar(170)}" alt="{$me->name}'s profile"></a></h2>
 
-<div class="alert alert-dark">
     {if $album}
     <p><a href="{$url}"><img loading="lazy" src="https://turtle.libre.fm/cover.php?artist={$artist}&album={$album}" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat; " width="250" height="250" alt=""></a></p>
 
