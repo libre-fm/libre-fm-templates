@@ -72,7 +72,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <p><a class="btn btn-primary" href='http://www.last.fm/api/auth/?api_key={$lastfm_key}'>{t}Connect to a Last.fm account{/t}</a></p>
     {/if}
 
-    {if (!$lastfmimport)}
+    {if empty($lastfmimport)}
     <div class="alert alert-info">
     <h5>How about importing from Last.fm?</h5>
     <p>This does <strong>not</strong> import your history from Last.fm.</p>
