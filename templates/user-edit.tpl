@@ -54,8 +54,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <div class="form-group mb-3">
         {if "" != $this_user->getAvatar(128)}<p><img class="img-thumbnail" src="{$this_user->getAvatar(128)}" width="128" height="128" alt loading="lazy"></p>{/if}
         <p class="d-inline-flex gap-1">
-        <a class="btn btn-small btn-primary" href="https://libravatar.org/accounts/profile/" target="_blank">Update at Libravatar.org</a>
-        <a class="btn btn-small btn-primary" href="https://gravatar.com/profile/avatars target="_blank">Update at Gravatar</a>
+        <a class="btn btn-sm btn-primary" href="https://libravatar.org/accounts/profile/" target="_blank">Update at Libravatar.org</a>
+        <a class="btn btn-sm btn-primary" href="https://gravatar.com/profile/avatars target="_blank">Update at Gravatar</a>
         </p>
     </div>
 
