@@ -52,7 +52,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <form class="form-signin" action='{$base_url}/user-edit.php' method='post'>
 
     <div class="form-group mb-3">
-        {if "" != $this_user->getAvatar(128)}<p><img class="img-thumbnail" src="{$this_user->getAvatar(64)}" width="128" height="128" alt loading="lazy"></p>{/if}
+        {if "" != $this_user->getAvatar(128)}<p><img class="img-thumbnail" src="{$this_user->getAvatar(128)}" width="128" height="128" alt loading="lazy"></p>{/if}
         <div class="form-help">Update your profile image: <a href="https://libravatar.org" target="_blank">Libravatar.org</a> or <a href="https://gravatar.com">Gravatar</a></div>
     </div>
 
