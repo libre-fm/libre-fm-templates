@@ -83,8 +83,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <div class="alert alert-info">
     <h5>Last.fm import status</h5>
     {if ($lastfmimport > 0)}<p>Currently importing from Last.fm</p>{else}<p>Not importing from Last.fm</p>{/if}
-    <p>Your Last.fm username: <a href="https://last.fm/user/{$lastfmusername}" target="_blank">{$lastfmusername}</a></p>
-    <p>Last checked: {$lastfmlastcheck|date_format:"%A, %B %e, %Y %H:%M:%S"}</p>
+    <p>Your Last.fm username: <a href="https://last.fm/user/{$lastfmimportusername}" target="_blank">{$lastfmimportusername}</a></p>
+    <p>Last checked: {$lastfmimportlastcheck|date_format:"%A, %B %e, %Y %H:%M:%S"}</p>
     </div>
     {/if}
 
