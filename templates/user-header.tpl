@@ -49,9 +49,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {if $totaltracks > 10}
     {if $me->homepage}
     <ul class="list-inline">
-        <li class="list-inline-item"><a class="u-url card-link btn-success badge rounded-pill bg-primary" rel="me nofollow" target="Link to {$me->$homepage}" style="text-decoration: none !important" href="{$me->homepage}" target="_blank">Personal website</a></li>
+        <li class="list-inline-item"><a class="u-url card-link btn-success badge rounded-pill bg-primary" rel="me nofollow" title="Link to {$me->$homepage}" style="text-decoration: none !important" href="{$me->homepage}" target="_blank">Personal website</a></li>
         {if $me->laconica_profile}
-        <li class="list-inline-item"><a class="u-url card-link badge rounded-pill bg-secondary" rel="me nofollow" target="Link to {$me->$laconica_profile}" style="text-decoration: none !important" href="{$me->laconica_profile}" target="_blank">Social Web Profile</a></li>
+        <li class="list-inline-item"><a class="u-url card-link badge rounded-pill bg-secondary" rel="me nofollow" title="Link to {$me->$laconica_profile}" style="text-decoration: none !important" href="{$me->laconica_profile}" target="_blank">Social Web Profile</a></li>
         {/if}
     </ul>
     {/if}
