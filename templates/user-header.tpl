@@ -22,57 +22,35 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 *}
 
 <div class="h-card alert alert-dark">
-    {if $me->fullname}
-    <h2>{$me->name}</h2>
-    <p><span class="p-name card-title">{$me->fullname}</span></p>
-    {else}
-    <h2 class="p-name card-title">{$me->name}</h2>
+    <h2 class="p-name">{$me->name}</h2>    
+    <p><img class="u-photo" loading="lazy" height="170" width="170" src="{$me->getAvatar(170)}" alt></p>
+    <p class="d-inline-flex gap-1 card-subtitle mb-2 text-body-secondary">{if $me->fullname}
+    <span class="p-name card-title">{$me->fullname}</span>
     {/if}
-    <p><img class="u-photo"  loading="lazy" height="170" width="170" src="{$me->getAvatar(170)}" alt></p>
-
-
-
     {if $totaltracks}
-    <p class="card-subtitle mb-2 text-body-secondary">
-        <strong>{$totaltracks}</strong> tracks recorded
+        &middot; <strong>{$totaltracks}</strong> tracks
+    {/if}
+    {if $me->location}
+        &middot; <span class="h-geo">{$me->location}</span>
+    {/if}
     </p>
-    {else}
+
+    {if $totaltracks > 10}{if $me->homepage}
+    <p class="d-inline-flex gap-1 card-subtitle mb-2">
+        <a class="u-url card-link" rel="me nofollow" href="{$me->homepage}" target="_blank">Personal website</a>
+        {if $me->laconica_profile}
+        &middot; <a class="u-url card-link" rel="me nofollow" href="{$me->laconica_profile}" target="_blank">Social Web Profile</a>
+        {/if}
+    </p>
+    {/if}
     {if ($logged_in)}
     {if $isme}
-    {if $totaltracks < 10}
-    <div class="container">
-        <div class="row justify-content-center">
-            <div class="col-12 col-xs-12 mt-20 alert alert-danger">
+            <div class="alert alert-danger">
                 Please configure your <a href="https://wiki.libre.fm/Clients">music client</a> to post to Libre.fm or use <a href="https://webscrobbler.com">Web Scrobbler</a>. Need help? <a href="mailto:support@libre.fm">support@libre.fm</a>.
             </div>
-        </div>
-    </div>
     {/if}
     {/if}
-    {/if}
-    {/if}
-
-    {if $totaltracks}
-    {if $me->bio}
-    <p class="p-note" id="bio">
-        {$me->bio|escape:'html':'UTF-8'}
-    </p>
-    <p class="h-geo">
-        {$me->location}
-    </p>
-    
-
-    <ul>
-        {if $me->homepage}
-        <li class="card-text">Personal website: <a class="u-url card-link" rel="me nofollow" href="{$me->homepage}">{$me->homepage}</a></li>
-        {/if}
-        {if $me->laconica_profile}
-        <li class="card-text">Fediverse profile: <a class="u-url card-link" rel="me nofollow" href="{$me->laconica_profile}">{$me->laconica_profile}</a></li>
-        {/if}
-
-        {/if}
-    </ul>
-    {/if}
+    {/if} 
 
 </div>
 
