@@ -32,6 +32,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/if}
 
 <div class="h-card alert alert-dark">
+    {if ($isme)}<a style="float: right" class="edit-profile-link btn-success btn-sm" href="/user-edit.php">Edit your profile</a>{/if}
     <h2 class="p-name">{$me->name}</h2>    
     
     <p><img class="u-photo" loading="lazy" height="170" width="170" src="{$me->getAvatar(170)}" alt></p>
