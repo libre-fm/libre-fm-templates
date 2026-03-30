@@ -73,14 +73,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/if}
 
     {if empty($lastfmimport)}
-    <div class="alert {if ($lastfmimport > 0)}alert-success{else}alert-info{/if}">
+    <div class="alert alert-info">
     <h5>How about importing from Last.fm?</h5>
     <p>This does <strong>not</strong> import your history from Last.fm.</p>
     <p>If you wish to use this please email <a href="mailto:support@libre.fm">support@libre.fm</a> and let us know your Libre.fm and Last.fm usernames.</p>
     <p>Recent scrobbles will be imported and future scrobbles too. Your historical scrobbles to Last.fm will be imported later.</p>
     </div>
     {else}
-    <div class="alert alert-info">
+    <div class="alert {if ($lastfmimport > 0)}alert-success{else}alert-info{/if}">
     <h5>Last.fm import status</h5>
     {if ($lastfmimport > 0)}<p>Currently importing from Last.fm</p>{else}<p>Not importing from Last.fm</p>{/if}
 <ul>
@@ -89,8 +89,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <li>Current time: {$smarty.now|date_format:"%A, %B %e, %Y %H:%M:%S"}</li>
 </ul>
     </div>
-
-    <p>{$lastfmimport}</p>
 
     <p>Self service coming soon, but please email <a href="mailto:support@libre.fm">support@libre.fm</a> if you want to change this for now</p>
 
