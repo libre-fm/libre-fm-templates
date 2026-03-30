@@ -33,8 +33,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="h-card alert alert-dark">
     <h2 class="p-name">{$me->name}</h2>    
+    
+    <p><img class="u-photo" loading="lazy" height="170" width="170" src="{$me->getAvatar(170)}" alt></p>
+
     <p class="d-inline-flex gap-1 card-subtitle mb-2 text-body-secondary">{if $me->fullname}
-    <span class="p-name card-title">{$me->fullname}</span>
+    <strong><span class="p-name card-title">{$me->fullname}</span></strong>
     {/if}
     {if $totaltracks}
         &middot; <strong>{$totaltracks}</strong> tracks
@@ -43,9 +46,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         &middot; <span class="h-geo">{$me->location}</span>
     {/if}
     </p>
-    <p><img class="u-photo" loading="lazy" height="170" width="170" src="{$me->getAvatar(170)}" alt></p>
-
-
     {if $totaltracks > 10}
     {if $me->homepage}
     <ul class="list-inline">
