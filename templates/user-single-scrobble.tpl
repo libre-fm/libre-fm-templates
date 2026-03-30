@@ -25,13 +25,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {if $track}
 
-<div class="h-entry alert alert-dark">
+<div class="h-entry">
 
     <h2 class="p-name"><a href="/user/{$me->name}">{$me->name}</a></h2>
 
-    <p><a href="/user/{$me->name}"><img loading="lazy" class="u-photo" width="64" height="64" src="{$me->getAvatar(64)}" alt="{$me->name}'s profile"></a></h2>
+    <p><a href="/user/{$me->name}"><img loading="lazy" class="u-photo" width="170" height="170" src="{$me->getAvatar(170)}" alt="{$me->name}'s profile"></a></h2>
 
-        {if $album}
+<div class="alert alert-dark">
+    {if $album}
     <p><a href="{$url}"><img loading="lazy" src="https://turtle.libre.fm/cover.php?artist={$artist}&album={$album}" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat; " width="250" height="250" alt=""></a></p>
 
     <p class="lead">Listened to <a href="{$url}"><span class="p-music-track">{$track|escape:'html':'UTF-8'}</span> {if $artist}by <span class="p-music-artist">{$artist|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album|escape:'html':'UTF-8'}</span>{/if}</a></p>
@@ -49,9 +50,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 </div>
 
-<ul>
+<ul class="list-inline">
     {section name=i loop=$extra_head_links}
-    <li><a rel="{$extra_head_links[i].rel|escape:'html':'UTF-8'}" href="{$extra_head_links[i].href|escape:'UTF-8'}" type="{$extra_head_links[i].type|escape:'html':'UTF-8'}">{$extra_head_links[i].title|escape:'html':'UTF-8'}</a></li>
+    <li class="list-inline-item"><a rel="{$extra_head_links[i].rel|escape:'html':'UTF-8'}" href="{$extra_head_links[i].href|escape:'UTF-8'}" type="{$extra_head_links[i].type|escape:'html':'UTF-8'}">{$extra_head_links[i].title|escape:'html':'UTF-8'}</a></li>
     {/section}
 </ul>
 
