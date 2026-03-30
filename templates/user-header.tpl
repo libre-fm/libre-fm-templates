@@ -40,7 +40,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <strong><span class="p-name card-title">{$me->fullname}</span></strong>
     {/if}
     {if $totaltracks}
-        &middot; <strong>{$totaltracks}</strong> tracks
+        &middot; <strong>{$totaltracks}</strong> tracks{if $this_user_first_year} since {$this_user_first_year}{/if}
+
     {/if}
     {if $me->location}
         &middot; <span class="h-geo">{$me->location}</span>
