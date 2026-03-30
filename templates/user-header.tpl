@@ -21,6 +21,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 *}
 
+{if $totaltracks < 10}
+    {if ($logged_in)}
+    {if $isme}
+            <div class="alert alert-danger">
+                Please configure your <a href="https://wiki.libre.fm/Clients">music client</a> to post to Libre.fm or use <a href="https://webscrobbler.com">Web Scrobbler</a>. Need help? <a href="mailto:support@libre.fm">support@libre.fm</a>.
+            </div>
+    {/if}
+    {/if}
+{/if}
+
 <div class="h-card alert alert-dark">
     <h2 class="p-name">{$me->name}</h2>    
     <p class="d-inline-flex gap-1 card-subtitle mb-2 text-body-secondary">{if $me->fullname}
@@ -44,14 +54,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <a class="u-url card-link badge rounded-pill bg-secondary" rel="me nofollow" href="{$me->laconica_profile}" target="_blank">Social Web Profile</a>
         {/if}
     </p>
-    {/if}
-    {else}
-    {if ($logged_in)}
-    {if $isme}
-            <div class="alert alert-danger">
-                Please configure your <a href="https://wiki.libre.fm/Clients">music client</a> to post to Libre.fm or use <a href="https://webscrobbler.com">Web Scrobbler</a>. Need help? <a href="mailto:support@libre.fm">support@libre.fm</a>.
-            </div>
-    {/if}
     {/if}
     {/if} 
 
