@@ -23,7 +23,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="h-card alert alert-dark">
     <h2 class="p-name">{$me->name}</h2>    
-    <p><img class="u-photo" loading="lazy" height="170" width="170" src="{$me->getAvatar(170)}" alt></p>
     <p class="d-inline-flex gap-1 card-subtitle mb-2 text-body-secondary">{if $me->fullname}
     <span class="p-name card-title">{$me->fullname}</span>
     {/if}
@@ -34,12 +33,15 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         &middot; <span class="h-geo">{$me->location}</span>
     {/if}
     </p>
+    <p><img class="u-photo" loading="lazy" height="170" width="170" src="{$me->getAvatar(170)}" alt></p>
 
-    {if $totaltracks > 10}{if $me->homepage}
+
+    {if $totaltracks > 10}
+    {if $me->homepage}
     <p class="d-inline-flex gap-1 card-subtitle mb-2">
-        <a class="u-url card-link" rel="me nofollow" href="{$me->homepage}" target="_blank">Personal website</a>
+        <a class="u-url card-link btn-success badge rounded-pill bg-primary" rel="me nofollow" href="{$me->homepage}" target="_blank">Personal website</a>
         {if $me->laconica_profile}
-        &middot; <a class="u-url card-link" rel="me nofollow" href="{$me->laconica_profile}" target="_blank">Social Web Profile</a>
+        <a class="u-url card-link badge rounded-pill bg-secondary" rel="me nofollow" href="{$me->laconica_profile}" target="_blank">Social Web Profile</a>
         {/if}
     </p>
     {/if}
