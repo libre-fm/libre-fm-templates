@@ -21,15 +21,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 *}
 
-{include file='header.tpl' subheader='user-header.tpl'}
+{include file='header.tpl'}
 
-<h3>{t}Connections to other services{/t}</h3>
+<h2>{t}Connections to other services{/t}</h2>
 
 {if isset($errors)}
 <div id="errors">
     {section loop=$errors name=error}
     <div class="alert alert-danger">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
         <p>{$errors[error]}</p>
     </div>
     {/section}
@@ -45,18 +44,18 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/if}
 
 
-    <div class="alert alert-info">
+    <!-- <div class="alert alert-info">
         <p>{t}Connections to other services allow us to do nifty things like forwarding your scrobbles to other places around the web.{/t}<br />
             {t}If that sounds cool then simply make a connection below.{/t}</p>
-    </div>
+    </div> -->
 
     {if !empty($connections)}
-    <h2>{t}Current connections{/t}</h2>
-    <table class="table">
+    <h3>{t}Current connections{/t}</h3>
+    <table class="endtimes-table table table-condensed table-striped table-hover library tracklist">
         <tr>
-            <th>{t}Service{/t}</th>
-            <th>{t}Username{/t}</th>
-            <th>{t}Forward Scrobbles?{/t}</th>
+            <th scope='col'>{t}Service{/t}</th>
+            <th scope='col'>{t}Username{/t}</th>
+            <th scope='col'>{t}Forward Scrobbles?{/t}</th>
         </tr>
         {foreach from=$connections item=conn}
         <tr>
