@@ -23,12 +23,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="h-card alert alert-dark">
     {if $me->fullname}
-    <h2 class="p-name card-title">{$me->fullname}</h2>
-    <p class="lead">{$me->name}</p>
+    <h2>{$me->name}</p>
+    <p><span class="p-name card-title">{$me->fullname}</span></p>
     {else}
     <h2 class="p-name card-title">{$me->name}</h2>
     {/if}
-    <p><img class="u-photo img-thumbnail" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat; " loading="lazy" height="90" width="90" src="{$me->getAvatar(90)}" alt=""></p>
+    <p><img class="u-photo" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat; " loading="lazy" height="170" width="170" src="{$me->getAvatar(170)}" alt></p>
 
 
 
