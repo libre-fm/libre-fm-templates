@@ -39,6 +39,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {else}
     {if ($logged_in)}
     {if $isme}
+    {if $totaltracks < 10}
     <div class="container">
         <div class="row justify-content-center">
             <div class="col-12 col-xs-12 mt-20 alert alert-danger">
@@ -46,6 +47,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             </div>
         </div>
     </div>
+    {/if}
     {/if}
     {/if}
     {/if}
@@ -58,7 +60,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <p class="h-geo">
         {$me->location}
     </p>
-    {/if}
+    
 
     <ul>
         {if $me->homepage}
@@ -70,6 +72,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
         {/if}
     </ul>
+    {/if}
 
 </div>
 
