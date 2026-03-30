@@ -53,7 +53,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     <div class="form-group mb-3">
         {if "" != $this_user->getAvatar(64)}<p><img class="img-thumbnail" src="{$this_user->getAvatar(64)}" width="64" height="64" alt loading="lazy"></p>{/if}
-        <div class="form-help">We use <a href="https://libravatar.org" target="_blank">Libravatar.org</a> for avatars.  You can sign up there and make sure you use the same email address ({$email|lower}) so it'll show up here too. If you have an account with <a href="https://gravatar.com">Gravatar</a> that'll work too.</div>
+        <div class="form-help">Update your profile image: <a href="https://libravatar.org" target="_blank">Libravatar.org</a> or <a href="https://gravatar.com">Gravatar</a></div>
     </div>
 
     <div class="form-group mb-3">
