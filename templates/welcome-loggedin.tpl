@@ -38,7 +38,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div> -->
 
 {if ($totals)}
-<div class="alert alert-primary">
+<div class="alert alert-info text-center">
     {$totals}
 </div>
 {/if}
