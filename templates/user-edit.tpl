@@ -93,6 +93,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="form-group mb-3">
 <p class="d-inline-flex gap-1">
+  <button class="btn btn-success btn-lg" type="submit" value="{t}Change{/t}">{t}Update profile{/t}</button>
   <button class="btn btn-primary" type="button" data-bs-toggle="collapse" href="#change-pw" aria-expanded="false" aria-controls="change-pw">
     Change password
   </button>
@@ -127,10 +128,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             </div>
         </div>
 
-        <div class="form-group mb-3">
-            <button class="btn btn-success btn-lg" type="submit" value="{t}Change{/t}">{t}Update profile{/t}</button>
-            <input name='submit' value='1' type='hidden' />
-        </div>
+  <input name='submit' value='1' type='hidden' />
 
 </form>
 
