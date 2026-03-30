@@ -48,7 +48,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {if $me->location}
         &middot; <span class="h-geo">{$me->location}</span>
     {/if}
-        &middot; Joined {$me->created|date_format:"%A, %B %e, %Y %H:%M:%S"}
+        &middot; Joined {$me->created|date_format:"%B %e, %Y"}
     </p>
     {/if}
     {if $totaltracks > 10}
