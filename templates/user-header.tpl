@@ -54,7 +54,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     {if $totaltracks}
     {if $me->bio}
-    <p class="p-note alert alert-primary" id="bio">
+    <p class="p-note" id="bio">
         {$me->bio|escape:'html':'UTF-8'}
     </p>
     <p class="h-geo">
