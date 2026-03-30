@@ -44,10 +44,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/if}
     {if $totaltracks}
     <p class="mb-2 text-body-secondary">
-        &middot; <strong>{$totaltracks}</strong> tracks
+        <strong>{$totaltracks}</strong> tracks
     {if $me->location}
         &middot; <span class="h-geo">{$me->location}</span>
     {/if}
+        &middot; Joined {$me->created|date_format:"%A, %B %e, %Y %H:%M:%S"}
     </p>
     {/if}
     {if $totaltracks > 10}
