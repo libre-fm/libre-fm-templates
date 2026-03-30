@@ -90,6 +90,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </ul>
     </div>
 
+    <p>{$lastfmimport}</p>
+
     <p>Self service coming soon, but please email <a href="mailto:support@libre.fm">support@libre.fm</a> if you want to change this for now</p>
 
     {/if}
