@@ -2,6 +2,12 @@
     #contact a, footer a {color: white; text-decoration: underline !important;}
     #contact .main-btn {text-decoration: none !important; }
 
+td a { text-decoration: none;}
+
+td:hover a { text-decoration: underline;}
+
+.table > :not(caption) > * > * { padding: .4rem .4rem }
+
 textarea {font-family: monospace !important;}
 
 .album-list {
