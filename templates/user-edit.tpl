@@ -24,7 +24,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {include file='header.tpl'}
 
 <div class="alert alert-primary text-center" role="alert">
-    Got Last.fm? <a href='{$base_url}/user-connections.php'>Connect your account</a> and tracks you scrobble to Libre.fm go to both services!</strong>
+    Got Last.fm? <a href='{$base_url}/user-connections.php'>Connect your account</a>
 </div>
 
 <h2>Edit your profile</h2>
