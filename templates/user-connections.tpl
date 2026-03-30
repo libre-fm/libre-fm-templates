@@ -83,9 +83,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <div class="alert alert-info">
     <h5>Last.fm import status</h5>
     {if ($lastfmimport > 0)}<p>Currently importing from Last.fm</p>{else}<p>Not importing from Last.fm</p>{/if}
-    <p>Your Last.fm username: <a href="https://last.fm/user/{$lastfmimportusername}" target="_blank">{$lastfmimportusername}</a></p>
-    <p>Last checked: {$lastfmimportlastcheck|date_format:"%A, %B %e, %Y %H:%M:%S"}</p>
-    <p>Current time: {$smarty.now|date_format:"%A, %B %e, %Y %H:%M:%S"}</p>
+<ul>
+    <li>Your Last.fm username: <a href="https://last.fm/user/{$lastfmimportusername}" target="_blank">{$lastfmimportusername}</a></li>
+    <li>Last checked: {$lastfmimportlastcheck|date_format:"%A, %B %e, %Y %H:%M:%S"}</li>
+    <li>Current time: {$smarty.now|date_format:"%A, %B %e, %Y %H:%M:%S"}</li>
+</ul>
     </div>
 
     <p>Self service coming soon, but please email <a href="mailto:support@libre.fm">support@libre.fm</a> if you want to change this for now</p>
