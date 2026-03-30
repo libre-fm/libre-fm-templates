@@ -49,6 +49,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         &middot; <span class="h-geo">{$me->location}</span>
     {/if}
     </p>
+    {/if}
     {if $totaltracks > 10}
     {if $me->homepage}
     <ul class="list-inline">
