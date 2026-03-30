@@ -28,7 +28,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {else}
     <h2 class="p-name card-title">{$me->name}</h2>
     {/if}
-    <p><img class="u-photo" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat; " loading="lazy" height="170" width="170" src="{$me->getAvatar(170)}" alt></p>
+    <p><img class="u-photo"  loading="lazy" height="170" width="170" src="{$me->getAvatar(170)}" alt></p>
 
 
 
