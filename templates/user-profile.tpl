@@ -23,11 +23,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl' subheader='user-header.tpl' showbio=true}
 
-{if !($isme)}<div class="alert alert-info">
-    <h2>What did {$me->name} listen to in 2025?</h2>
-    <p class="lead"><a class="btn btn-success" href="/user/{$me->name}/recap/2025">See {$me->name}'s 2025 recap</a></p>
-</div>{/if}
-
 {if $nowplaying}
 <div class="alert alert-secondary">
     <p><strong>{t name=$me->name}%1{/t} is currently listening to: </strong></p>
