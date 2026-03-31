@@ -54,7 +54,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h4 id="top-scrobble-days">Top scrobble days</h4>
 
 <ol>
-{foreach $topplaybydays|@sortby:"#count" as $day}
+{foreach $sorttopplaybydays as $day}
 <li>{$day['date']} &mdash; {$day['count']}</li>
 {/foreach}
 </ol>
