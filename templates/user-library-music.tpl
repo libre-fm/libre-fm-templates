@@ -27,7 +27,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='paginate.tpl'}                                                                                                                       
 
-<h3>Top 100 Artists by playcount</h3>
+<h3>Top Artists by playcount</h3>
 <p>This page is <a href="/donate.php">cached for 24 hours</a>.</p>
 
 {if $page->artists}
