@@ -23,10 +23,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl' subheader='user-header.tpl'}
 
-{userscrobbles userid=$me->uniqueid limit=500}
+{userscrobbles userid=$me->uniqueid}
 <h3>Recent plays</h3>
 {include file="tracklist.tpl" class=#table# items=$userscrobbles fimage=true fstream=true fartist=true flove=true ftime=true}
-
-{include file='paginate.tpl'}                                                                                                                       
 
 {include file='footer.tpl'}
