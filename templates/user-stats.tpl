@@ -79,6 +79,25 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h4 id="stats_by_day">{t name=$me->name|escape:'html':'UTF-8'}%1's scrobbles by day{/t}</h4>
 
+<table class="endtimes-table table table-condensed table-striped table-hover library tracklist">
+    <thead>
+        <tr>
+            <th class="title w-50" scope="col">Date</th>
+            <th class="artist w-25" scope="col">Date</th>
+            <th class="time w-25" scope="col">Plays</th>
+        </tr>
+    </thead>
+    <tbody>
+        {foreach $topplaybydays as $day}
+        <tr>
+<td>{$day['date']}</td>
+<td>{$day['date']|date_format:"%B %e, %Y"}</td>
+<td>{$day['count']}</td>
+</tr>
+{/foreach}
+</tbody>
+</table>
+
 <ol>
 {foreach $topplaybydays as $day}
 <li><span title="{$day['date']}">{$day['date']|date_format:"%B %e, %Y"}</span> &mdash; {$day['count']}</li>
@@ -86,6 +105,25 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </ol>
 
 <h4 id="top-scrobble-days">Top scrobble days</h4>
+
+<table class="endtimes-table table table-condensed table-striped table-hover library tracklist">
+    <thead>
+        <tr>
+            <th class="title w-50" scope="col">Date</th>
+            <th class="artist w-25" scope="col">Date</th>
+            <th class="time w-25" scope="col">Plays</th>
+        </tr>
+    </thead>
+    <tbody>
+        {foreach $topplaybydays as $day}
+        <tr>
+<td>{$day['date']}</td>
+<td>{$day['date']|date_format:"%B %e, %Y"}</td>
+<td>{$day['count']}</td>
+</tr>
+{/foreach}
+</tbody>
+</table>
 
 <ol>
 {foreach $sortdays as $day}
