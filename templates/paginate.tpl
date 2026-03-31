@@ -26,9 +26,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <li class="page-item {if $page->page_number <= 1}disabled{/if}">
       <a class="page-link" href="{$page->urls.page_prev}">Previous</a>
     </li>
-    <li class="page-item"><a class="page-link" href="{$page->page_number+1}">{$page->page_number+1}</a></li>
-    <li class="page-item"><a class="page-link" href="{$page->page_number+2}">{$page->page_number+2}</a></li>
-    <li class="page-item"><a class="page-link" href="{$page->page_number+3}">{$page->page_number+3}</a></li>
+    <li class="page-item"><a class="page-link" href="?page={$page->page_number+1}">{$page->page_number+1}</a></li>
+    <li class="page-item"><a class="page-link" href="?page={$page->page_number+2}">{$page->page_number+2}</a></li>
+    <li class="page-item"><a class="page-link" href="?page={$page->page_number+3}">{$page->page_number+3}</a></li>
     <li class="page-item">
       <a class="page-link" href="{$page->urls.page_next}">Next</a>
     </li>
