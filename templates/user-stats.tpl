@@ -46,7 +46,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         </tr>
     </thead>
     <tbody>
-        {foreach $toptracksdata as $i}}
+        {foreach $toptracksdata as $i}
         <tr>
             <td class="name">
                 {if $i.tracklibraryurl}
@@ -71,11 +71,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </tbody>
 </table>
 
-<ol>
+<!-- <ol>
 {foreach $toptracksdata as $track}
 <li>{$track|@print_r}</li>
 {/foreach}
-</ol>
+</ol> -->
 
 <h4 id="stats_by_day">{t name=$me->name|escape:'html':'UTF-8'}%1's scrobbles by day{/t}</h4>
 
