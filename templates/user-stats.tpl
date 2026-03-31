@@ -98,11 +98,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </tbody>
 </table>
 
-<ol>
+<details><ol>
 {foreach $topplaybydays as $day}
 <li><span title="{$day['date']}">{$day['date']|date_format:"%B %e, %Y"}</span> &mdash; {$day['count']}</li>
 {/foreach}
-</ol>
+</ol></details>
 
 <h4 id="top-scrobble-days">Top scrobble days</h4>
 
@@ -115,7 +115,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         </tr>
     </thead>
     <tbody>
-        {foreach $topplaybydays as $day}
+        {foreach $sortdays as $day}
         <tr>
 <td>{$day['date']}</td>
 <td>{$day['date']|date_format:"%B %e, %Y"}</td>
@@ -125,10 +125,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </tbody>
 </table>
 
-<ol>
+<details><ol>
 {foreach $sortdays as $day}
 <li><span title="{$day['date']}">{$day['date']|date_format:"%B %e, %Y"}</span> &mdash; {$day['count']}</li>
 {/foreach}
-</ol>
+</ol></details>
 
 {include file='footer.tpl'}
