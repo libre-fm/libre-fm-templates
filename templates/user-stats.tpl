@@ -37,7 +37,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h4 id="stats_by_track">{t name=$me->name|escape:'html':'UTF-8'}%1's top tracks{/t} {$timeperiod}</h4>
 
-<table class="endtimes-table table table-condensed table-striped table-hover library tracklist">
+<table class="endtimes-table table table-condensed table-sortable table-striped table-hover library tracklist">
     <thead>
         <tr>
             <th class="title w-50" scope="col">Track</th>
@@ -79,7 +79,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h4 id="stats_by_day">{t name=$me->name|escape:'html':'UTF-8'}%1's scrobbles by day{/t}</h4>
 
-<table class="endtimes-table table table-condensed table-striped table-hover library tracklist">
+<table class="endtimes-table table table-condensed  table-sortable table-striped table-hover library tracklist">
     <thead>
         <tr>
             <th class="title w-50" scope="col">Date</th>
@@ -106,7 +106,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h4 id="top-scrobble-days">Top scrobble days</h4>
 
-<table class="endtimes-table table table-condensed table-striped table-hover library tracklist">
+<table class="endtimes-table table table-condensed  table-sortable table-striped table-hover library tracklist">
     <thead>
         <tr>
             <th class="title w-50" scope="col">Date</th>
