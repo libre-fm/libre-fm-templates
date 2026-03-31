@@ -31,7 +31,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <ol>
 {foreach $topartists as $topartist}
-<li><a href="$topartist['artisturl']">$topartist['artist']</a> ($topartist['freq'] plays)</li>
+<li><a href="{$topartist['artisturl']}">{$topartist['artist']}</a> ({$topartist['freq']} plays)</li>
 {/foreach}
 </ol>
 
