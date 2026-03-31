@@ -24,7 +24,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {if $track}
 ## {$me->name} <https: //libre.fm/user/{$me->name}>
 
-    Listened to {$track} {if $artist}by {$artist}{/if}{if $album} on {$album}{/if}
+    Listened to {$track->name} {if $artist}by {$artist}{/if}{if $album} on {$album->name}{/if}
 
 
     {$stomp}
