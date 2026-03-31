@@ -41,7 +41,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {$graphtopartists|@var_dump}
 
-{$graphtopartists->$artists};
+{$graphtopartists}
 
 <!-- {$graphtopartists->$artists};
 {$graphtopartists->artists_data};
