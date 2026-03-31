@@ -43,7 +43,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
 
-{$graphtopartists->$artists};
+<!-- {$graphtopartists->$artists};
 {$graphtopartists->artists_data};
 {$graphtopartists->tick_interval};
 {$graphtopartists->max_x_axis};
@@ -51,6 +51,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {$graphtoptracks->tracks_data};
 {$graphtoptracks->tick_interval};
 {$graphtoptracks->max_x_axis};
-{$graphplaysbydays->plays_by_days};
+{$graphplaysbydays->plays_by_days}; -->
 
 {include file='footer.tpl'}
