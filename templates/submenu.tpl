@@ -28,9 +28,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <a class="nav-link{if $i.active} active{/if}" {if $i.active}aria-current="page" {/if} href='{$i.url|escape:'html'}'>{$i.name}</a>
     </li>
     {/foreach}
-    {if !($isme)}
-    <li><a class="nav-link" href="/user/{$me->name}/recap/2025">2025 recap</a></li>
-    {/if}
+
 </ul>
 {else}&nbsp;
 {/if}
