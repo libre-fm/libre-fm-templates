@@ -45,9 +45,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {if $totaltracks}
     <p class="mb-2 text-body-secondary">
         <strong>{$totaltracks}</strong> tracks
-    {if $me->location}
-        &middot; <span class="h-geo">{$me->location}</span>
-    {/if}
+        &middot; <span class="h-geo">{if $me->location}{$me->location}{else}Cyberspace{/if}</span>
         &middot; Joined {$me->created|date_format:"%B %e, %Y"}
     </p>
     {/if}
