@@ -72,17 +72,18 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <p><a class="btn btn-primary" href='http://www.last.fm/api/auth/?api_key={$lastfm_key}'>{t}Connect to a Last.fm account{/t}</a></p>
     {/if}
 
-    {if empty($lastfmimportusername)}
 <h2>Entering Libre.fm: importing from other places</h2>
+
+    {if empty($lastfmimportusername)}
     <div class="alert alert-info">
-    <h5>How about importing from Last.fm?</h5>
+    <h3>How about importing from Last.fm?</h3>
     <p>This does <strong>not</strong> import your history from Last.fm.</p>
     <p>If you wish to use this please email <a href="mailto:support@libre.fm">support@libre.fm</a> and let us know your Libre.fm and Last.fm usernames.</p>
     <p>Recent scrobbles will be imported and future scrobbles too. Your historical scrobbles to Last.fm will be imported later.</p>
     </div>
     {else}
     <div class="alert {if ($lastfmimport > 0)}alert-success{else}alert-info{/if}">
-    <h5>Last.fm import status</h5>
+    <h3>Last.fm import status</h3>
     {if ($lastfmimport > 0)}<p>Currently importing from Last.fm</p>{else}<p>Not importing from Last.fm</p>{/if}
 <ul>
     <li>Your Last.fm username: <a href="https://last.fm/user/{$lastfmimportusername}" target="_blank">{$lastfmimportusername}</a></li>
