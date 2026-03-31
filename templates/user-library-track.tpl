@@ -41,6 +41,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </div>
 </div>
 
+{include file='paginate.tpl'}                                                                                                                       
+
 <h4>Personalized track info here</h4>
 
 {include file='footer.tpl'}
