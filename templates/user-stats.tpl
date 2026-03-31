@@ -23,12 +23,17 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl' subheader='user-header.tpl'}
 
+<p>Sorry this page looks kind of empty and ugly right now. I am working on it. 17 year old JavaScript was very broken.</p>
+
 <h3>Total tracks: {$totaltracks}</h3>
 
 <h4 id="stats_by_artist">{t name=$me->name|escape:'html':'UTF-8'}%1's most played artists{/t} {$timeperiod}</h4>
+
+<ol>
 {foreach $topartists as $topartist}
-{$topartist|@print_r}
+<li><a href="$topartist['artisturl']">$topartist['artist']</a> ($topartist['freq'] plays)</li>
 {/foreach}
+</ol>
 
 <h4 id="stats_by_track">{t name=$me->name|escape:'html':'UTF-8'}%1's top tracks{/t} {$timeperiod}</h4>
 
