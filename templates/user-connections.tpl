@@ -24,7 +24,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {include file='header.tpl'}
 
 <h2 class="mt-5 mb-5">Leaving Libre.fm: {t}Connections to other services{/t}</h2>
-
+<div class="alert alert-info">
 {if isset($errors)}
 <div id="errors">
     {section loop=$errors name=error}
@@ -71,6 +71,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {if isset($lastfm_key)}
     <p><a class="btn btn-primary" href='http://www.last.fm/api/auth/?api_key={$lastfm_key}'>{t}Connect to a Last.fm account{/t}</a></p>
     {/if}
+</div>
 
 <h2 class="mt-5 mb-5">Entering Libre.fm: importing from other places</h2>
 
@@ -97,7 +98,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     {/if}
 
-    <!-- {if isset($gnufm_key)}
+<h2 class="mt-5 mb-5">Advanced: connection to another GNU FM server</h2>
+
+    {if isset($gnufm_key)}
     <details>
         <summary>Connect to another GNU FM server</summary>
         <form method="post" class="well">
@@ -110,7 +113,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             <button class="btn btn-primary" type="submit">Connect</button>
         </form>
     </details>
-    {/if} -->
+    {/if}
 </div>
 
 {include file='footer.tpl'}
