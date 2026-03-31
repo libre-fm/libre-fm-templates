@@ -29,4 +29,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {include file='tracklist.tpl' class=#librarytable# items=$page->scrobbles thead=true fartist=true ftag=true ftime=true fbutton=true flove=true fstream=true type='scrobble'}
 {/if}
 
+{include file='paginate.tpl'}                                                                                                                       
+
+
 {include file='footer.tpl'}
