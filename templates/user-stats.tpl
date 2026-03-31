@@ -27,7 +27,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h3>Total tracks: {$totaltracks}</h3>
 
-<h4 id="stats_by_artist">{t name=$me->name|escape:'html':'UTF-8'}%1's most played artists{/t} {$timeperiod}</h4>
+<h4 id="stats_by_artist">Last 6 months: {t name=$me->name|escape:'html':'UTF-8'}%1's most played artists{/t} {$timeperiod}</h4>
 
 <ol>
 {foreach $topartists as $topartist}
@@ -35,7 +35,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/foreach}
 </ol>
 
-<h4 id="stats_by_track">{t name=$me->name|escape:'html':'UTF-8'}%1's top tracks{/t} {$timeperiod}</h4>
+<h4 id="stats_by_track">Last 6 months: {t name=$me->name|escape:'html':'UTF-8'}%1's top tracks{/t}</h4>
 
 <table class="endtimes-table table table-condensed table-sortable table-striped table-hover library tracklist">
     <thead>
@@ -77,7 +77,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/foreach}
 </ol> -->
 
-<h4 id="stats_by_day">{t name=$me->name|escape:'html':'UTF-8'}%1's scrobbles by day{/t}</h4>
+<h4 id="stats_by_day">Last 6 months: {t name=$me->name|escape:'html':'UTF-8'}%1's scrobbles by day{/t}</h4>
 
 <table class="endtimes-table table table-condensed  table-sortable table-striped table-hover library tracklist">
     <thead>
@@ -104,7 +104,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/foreach}
 </ol></details>
 
-<h4 id="top-scrobble-days">Top scrobble days</h4>
+<h4 id="top-scrobble-days">Last 6 months: Top scrobble days</h4>
 
 <table class="endtimes-table table table-condensed  table-sortable table-striped table-hover library tracklist">
     <thead>
