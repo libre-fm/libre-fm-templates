@@ -51,4 +51,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/foreach}
 </ol>
 
+<h4 id="top-scrobble-days">Top scrobble days</h4>
+
+<ol>
+{foreach $topplaybydays|@sortby:"#count" as $day}
+<li>{$day['date']} &mdash; {$day['count']}</li>
+{/foreach}
+</ol>
+
 {include file='footer.tpl'}
