@@ -81,7 +81,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <ol>
 {foreach $topplaybydays as $day}
-<li>{$day['date']} &mdash; {$day['count']}</li>
+<li><span title="{$day['date']">{$day['date']|date_format:"%B %e, %Y"}></span> &mdash; {$day['count']}</li>
 {/foreach}
 </ol>
 
@@ -89,7 +89,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <ol>
 {foreach $sortdays as $day}
-<li>{$day['date']} &mdash; {$day['count']}</li>
+<li><span title="{$day['date']">{$day['date']|date_format:"%B %e, %Y"}></span> &mdash; {$day['count']}</li>
 {/foreach}
 </ol>
 
