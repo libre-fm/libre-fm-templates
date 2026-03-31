@@ -39,9 +39,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h4 id="stats_by_day">{t name=$me->name|escape:'html':'UTF-8'}%1's scrobbles by day{/t}</h4>
 
-{$graphtopartists|@var_dump}
-
-{$graphtopartists}
+{$graphtoptracks->tracks};
 
 <!-- {$graphtopartists->$artists};
 {$graphtopartists->artists_data};
