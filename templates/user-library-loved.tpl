@@ -29,4 +29,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {include file='tracklist.tpl' class=#librarytable# items=$page->loved_tracks thead=true fstream=true flove=true fartist=true ftime=true fbutton=true type='loved'}
 {/if}
 
+{include file='paginate.tpl'}                                                                                                                       
+
+
 {include file='footer.tpl'}
