@@ -23,7 +23,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl'}
 
-<h2>Leaving Libre.fm: {t}Connections to other services{/t}</h2>
+<h2 class="mt-5 mb-5">Leaving Libre.fm: {t}Connections to other services{/t}</h2>
 
 {if isset($errors)}
 <div id="errors">
@@ -72,7 +72,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <p><a class="btn btn-primary" href='http://www.last.fm/api/auth/?api_key={$lastfm_key}'>{t}Connect to a Last.fm account{/t}</a></p>
     {/if}
 
-<h2>Entering Libre.fm: importing from other places</h2>
+<h2 class="mt-5 mb-5">Entering Libre.fm: importing from other places</h2>
 
     {if empty($lastfmimportusername)}
     <div class="alert alert-info">
