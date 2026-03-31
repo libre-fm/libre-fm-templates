@@ -22,10 +22,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 *}
 
 {include file='header.tpl' subheader='user-header.tpl'}
+<script type="text/javascript" src="{$base_url}/js/stats/user.js"></script>                                                              
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/jquery.jqplot.min.js" integrity="sha512-FQKKXM+/7s6LVHU07eH2zShZHunHqkBCIcDqodXfdV/NNXW165npscG8qOHdxVsOM4mJx38Ep1oMBcNXGB3BCw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/jquery.jqplot.min.css" integrity="sha512-x1sYGOeCnohzDAuU02Ecjrjcyiy3iYTGGQjuiFenhGpoQsEtK2V+/ELYnOGFjFY7LDx609Ndm6O01CzRBkZsxA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/plugins/jqplot.barRenderer.min.js" integrity="sha512-3bSkTDeICvspsuOVk5OoL165Cw/+7/9l2dBLQfSxdEni9mqsU8bClh1jE6qkoP77m21dfNU3Nh7hpYo3XPNEEw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/plugins/jqplot.canvasAxisLabelRenderer.min.js" integrity="sha512-jyWWi85r3j7GnE61AF6IHvTcwsqNC++XaC8HpzQzUs930S/ndGKo1uMx3YuGWqgtomnp3HdrQc/NN9AbNYK1HQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/plugins/jqplot.dateAxisRenderer.min.js" integrity="sha512-yJjgvCexVLrfcNiaB+R/82eXqsyGO4zAde3AWF1rGYPxBWFGLpNkVw5iFz/2DLyTPq7qcC2/Ujzzg/77I1OMJQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jqPlot/1.0.9/plugins/jqplot.pointLabels.min.js" integrity="sha512-F+8GbJQ3NDhRUC5Rj8En/Qdmtvu5KJ+DFdFR1LSU1Wf/yLWnaL7dm4RYeScH6rN8tnoDjRPQCWd1MVxbdt+DCg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
 <h3>Total tracks: {$totaltracks}</h3>
 
-<!--
 <h4 id="stats_by_artist">{t name=$me->name|escape:'html':'UTF-8'}%1's most played artists{/t} {$timeperiod}</h4>
 
 <h4 id="stats_by_track">{t name=$me->name|escape:'html':'UTF-8'}%1's top tracks{/t} {$timeperiod}</h4>
@@ -40,6 +46,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {$graphtoptracks->tracks_data};
 {$graphtoptracks->tick_interval};
 {$graphtoptracks->max_x_axis};
-{$graphplaysbydays->plays_by_days}; -->
+{$graphplaysbydays->plays_by_days};
 
 {include file='footer.tpl'}
