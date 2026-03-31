@@ -32,8 +32,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <p><a href="/user/{$me->name}"><img loading="lazy" class="u-photo" width="170" height="170" src="{$me->getAvatar(170)}" alt="{$me->name}'s profile"></a></h2>
 
     {if $album}
-    <p><a href="{$url}"><img loading="lazy" src="https://turtle.libre.fm/cover.php?artist={$artist}&album={$album}" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat; " width="250" height="250" alt=""></a></p>
-
+{if $album->mbid}
+<p><a href="{$url}"><img class="img-responsive" src="https://coverartarchive.org/release-group/{$album->mbid}/front-250" alt="" height="250" loading="lazy" /></a></p>
+{else}
+<p>No MusicBrainz ID found for {$album->name}, searching...</p>
+<p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album->name|escape:'url'}&artist={$artist->name|escape:'url'}" alt="" loading="lazy" /></p>
+{/if}
     <p class="lead">Listened to <a href="{$url}"><span class="p-music-track">{$track|escape:'html':'UTF-8'}</span> {if $artist}by <span class="p-music-artist">{$artist|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album|escape:'html':'UTF-8'}</span>{/if}</a></p>
 
     {else}
