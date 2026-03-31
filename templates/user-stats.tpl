@@ -37,6 +37,42 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h4 id="stats_by_track">{t name=$me->name|escape:'html':'UTF-8'}%1's top tracks{/t} {$timeperiod}</h4>
 
+<table class="endtimes-table {$class} tracklist">
+    <thead>
+        <tr>
+            <th class="title w-50" scope="col">Track</th>
+            <th class="artist w-25" scope="col">Artist</th>
+            <th class="time w-25" scope="col">Count</th>
+        </tr>
+    </thead>
+    <tbody>
+        {foreach $toptracksdata as $i}}
+        <tr>
+            <td class="name">
+                {if $i.tracklibraryurl}
+                <a href="{$i.tracklibraryurl|escape:'html'}">{$i.track|unescape:'html'}</a>
+                {else}
+                <a href="{$i.trackurl|escape:'html'}">{$i.track|unescape:'html'}</a>
+                {/if}
+            </td>
+            <td>
+                {if $fartist}
+                {if $i.artistlibraryurl}
+                <a href="{$i.artistlibraryurl|escape:'html'}">{$i.artist|unescape:'html'}</a>
+                {else}
+                <a href="{$i.artisturl|escape:'html'}">{$i.artist|unescape:'html'}</a>
+                {/if}
+                {/if}
+            </td>
+
+            <td class="count">
+                {$i.freq}
+            </td>
+        </tr>
+        {/foreach}
+    </tbody>
+</table>
+
 <ol>
 {foreach $toptracksdata as $track}
 <li>{$track|@print_r}</li>
