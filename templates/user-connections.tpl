@@ -23,7 +23,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl'}
 
-<h2>{t}Connections to other services{/t}</h2>
+<h2>Leaving Libre.fm: {t}Connections to other services{/t}</h2>
 
 {if isset($errors)}
 <div id="errors">
@@ -73,6 +73,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/if}
 
     {if empty($lastfmimportusername)}
+<h2>Entering Libre.fm: importing from other places</h2>
     <div class="alert alert-info">
     <h5>How about importing from Last.fm?</h5>
     <p>This does <strong>not</strong> import your history from Last.fm.</p>
