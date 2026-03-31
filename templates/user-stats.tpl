@@ -47,7 +47,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <ol>
 {foreach $topplaybydays as $day}
-<li>{$day|@print_r}</li>
+<li>{$day['date']} &mdash; {$day['count']}</li>
 {/foreach}
 </ol>
 
