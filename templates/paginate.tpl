@@ -21,7 +21,21 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 *}
 
-	<ul class="pager">
+<nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center">
+    <li class="page-item {if $page->page_number <= 1}disabled{/if}">
+      <a class="page-link" href="{$page->urls.page_prev}">Previous</a>
+    </li>
+    <li class="page-item"><a class="page-link" href="{$page->page_number+1}">{$page->page_number+1}</a></li>
+    <li class="page-item"><a class="page-link" href="{$page->page_number+2}">{$page->page_number+2}</a></li>
+    <li class="page-item"><a class="page-link" href="{$page->page_number+3}">{$page->page_number+3}</a></li>
+    <li class="page-item">
+      <a class="page-link" href="{$page->urls.page_next}">Next</a>
+    </li>
+  </ul>
+</nav>
+
+	<!-- <ul class="pager">
 	    <li class="previous {if $page->page_number <= 1}disabled{/if}">
 	        <a href="{$page->urls.page_prev}">
 	           &larr;
@@ -33,4 +47,4 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 	        </a>
 	    </li>
 	</ul>
-	<p class="text-center">page <span class="badge">{$page->page_number}</span></p>
+	<p class="text-center">page <span class="badge">{$page->page_number}</span></p> -->
