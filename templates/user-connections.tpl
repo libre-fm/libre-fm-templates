@@ -72,6 +72,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <p><a class="btn btn-primary" href='http://www.last.fm/api/auth/?api_key={$lastfm_key}'>{t}Connect to a Last.fm account{/t}</a></p>
     {/if}
 </div>
+</div>
 
 <h2 class="mt-5 mb-5">Entering Libre.fm: importing from other places</h2>
 
@@ -99,6 +100,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/if}
 
 <h2 class="mt-5 mb-5">Advanced: connection to another GNU FM server</h2>
+
+<div class="alert alert-info">
 
     {if isset($gnufm_key)}
     <details>
