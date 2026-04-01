@@ -40,8 +40,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {if isset($extra_head_stuff)}                                                                                                                       
     {section name=i loop=$extra_head_stuff}                                                                                                             
     {$extra_head_stuff[i]}
-    {/section}                                                                                                                                          
-    {/if}          
+    {/section}                                                                                                                       
+    {/if}
+    {$extra_head_stuff|@print_r}
+
     <meta property="og:title" content="Libre.fm">
     <meta property="og:description" content="Libre.fm lets you keep track of your music listening habits.">
     <meta property="og:type" content="website">
