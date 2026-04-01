@@ -79,12 +79,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/lineicons.css" />
     <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/main.css" />
     <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/librefm.css" />
-    {if isset($extra_head_links)}                                                                                                                       
-    {section name=i loop=$extra_head_links}                                                                                                             
-    <link rel="{$extra_head_links[i].rel|escape:'html':'UTF-8'}" href="{$extra_head_links[i].href|escape:'UTF-8'}" type="{$extra_head_links[i].\
-type|escape:'html':'UTF-8'}" title="{$extra_head_links[i].title|escape:'html':'UTF-8'}"  />                                                         
-    {/section}                                                                                                                                          
-    {/if}          
+    
 
 </head>
 
