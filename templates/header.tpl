@@ -37,6 +37,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <meta name="author" content="FooCorp catalogue number FOO200 and contributors" />
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://libre.fm/feed.xml">
 
+    {if isset($extra_head_stuff)}                                                                                                                       
+    {section name=i loop=$extra_head_stuff}                                                                                                             
+    {$extra_head_stuff}                                                     
+    {/section}                                                                                                                                          
+    {/if}          
     <meta property="og:title" content="Libre.fm">
     <meta property="og:description" content="Libre.fm lets you keep track of your music listening habits.">
     <meta property="og:type" content="website">
@@ -73,6 +78,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/lineicons.css" />
     <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/main.css" />
     <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/librefm.css" />
+    {if isset($extra_head_links)}                                                                                                                       
+    {section name=i loop=$extra_head_links}                                                                                                             
+    <link rel="{$extra_head_links[i].rel|escape:'html':'UTF-8'}" href="{$extra_head_links[i].href|escape:'UTF-8'}" type="{$extra_head_links[i].\
+type|escape:'html':'UTF-8'}" title="{$extra_head_links[i].title|escape:'html':'UTF-8'}"  />                                                         
+    {/section}                                                                                                                                          
+    {/if}          
 
 </head>
 
@@ -89,7 +100,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="/">
                                 <img src="/themes/2024-end-times/assets/img/logo/logo.svg" alt="Libre.fm" />
-                                <span title="17 years of independence on  the web!" style="font-size: 10px; padding-left: 1.5vh; overflow: hidden;">Since 2009</span>
+                                <span title="17 years of independence on the web!" style="font-size: 10px; padding-left: 1.5vh; overflow: hidden;">Since 2009</span>
                             </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
