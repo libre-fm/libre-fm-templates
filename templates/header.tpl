@@ -89,6 +89,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                         <nav class="navbar navbar-expand-lg">
                             <a class="navbar-brand" href="/">
                                 <img src="/themes/2024-end-times/assets/img/logo/logo.svg" alt="Libre.fm" />
+                                <span title="17 years of independence on  the web!" style="font-size: 10px; padding-left: 3vh; overflow: hidden;">Since 2009</span>
                             </a>
                             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                 <span class="toggler-icon"></span>
