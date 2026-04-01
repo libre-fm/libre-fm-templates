@@ -39,7 +39,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     {if isset($extra_head_stuff)}                                                                                                                       
     {section name=i loop=$extra_head_stuff}                                                                                                             
-    {$extra_head_stuff}                                                     
+    {$extra_head_stuff[i]}
     {/section}                                                                                                                                          
     {/if}          
     <meta property="og:title" content="Libre.fm">
