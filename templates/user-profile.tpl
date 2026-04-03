@@ -28,7 +28,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <p><strong>{t name=$me->name}%1{/t} is currently listening to: </strong></p>
 
 	{if $nowplaying[0].mbid}
-    <p><img src="https://coverartarchive.org/release/{nowplaying[0].mbid}/front-250" loading="lazy" alt="" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat; " width="120" height="120"></p>
+    <p><img src="https://coverartarchive.org/release/{$nowplaying[0].mbid}/front-250" loading="lazy" alt="" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat; " width="120" height="120"></p>
 	{else}
     <p><img src="https://turtle.libre.fm/cover.php?artist={$nowplaying[0].artist}&album={$nowplaying[0].album}" loading="lazy" alt="" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat; " width="120" height="120"></p>
     {/if}
