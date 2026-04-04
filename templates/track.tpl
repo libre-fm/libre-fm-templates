@@ -34,30 +34,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <li property="rdfs:comment">{t}Listeners {/t} <span class="badge">{$track->getListenerCount()}</span></li>
 </ul>
 
-<!-- {if $track->licenseurl && $track->license}
-<p id='license'><a rel=":license" href="{$track->licenseurl}"><img class="img-responsive" src="{$img_url}/licenses/{$track->license}.png" alt="[ Track License ]" /></a></p>
-{/if} 
-
-
-
-{if $track->streamable}
-{if $track->downloadurl}
-<p>
-    <a class="btn btn-primary btn-xs" href='{$track->downloadurl}'>
-        <span class="glyphicon glyphicon-download-alt"></span>
-        {t}Download track{/t}
-    </a>
-</p>
-{elseif $track->streamurl}
-<p>
-    <a class="btn btn-primary btn-xs" href='{$track->streamurl}'>
-        <span class="glyphicon glyphicon-download-alt"></span>
-        {t}Download track{/t}
-    </a>
-</p>
-{/if}
-{/if} -->
-
 {if $logged_in}
 <h3>Love this track?</h3>
 {if $isloved}
@@ -87,10 +63,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </ul>
 {/if}
 
-{* Hack to get player if track is streamable *}
-{if $track->streamable}
-{$streamable = true}
-{/if}
 
 <p>{if $album->mbid}<a href="https://musicbrainz.org/release-group/{$album->mbid}">{$album->name} on MusicBrainz</a> &middot;{/if}</p>
 
