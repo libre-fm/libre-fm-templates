@@ -34,9 +34,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <li property="rdfs:comment">{t}Listeners {/t} <span class="badge">{$track->getListenerCount()}</span></li>
 </ul>
 
-{if $track->licenseurl && $track->license}
+<!-- {if $track->licenseurl && $track->license}
 <p id='license'><a rel=":license" href="{$track->licenseurl}"><img class="img-responsive" src="{$img_url}/licenses/{$track->license}.png" alt="[ Track License ]" /></a></p>
-{/if}
+{/if} 
 
 
 
@@ -56,8 +56,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </a>
 </p>
 {/if}
-{/if}
-
+{/if} -->
 
 {if $logged_in}
 <h3>Love this track?</h3>
