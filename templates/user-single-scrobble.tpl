@@ -29,7 +29,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     <h2 class="p-name"><a href="/user/{$me->name}">{$me->name}</a></h2>
 
-    <p><a href="/user/{$me->name}"><img loading="lazy" class="u-photo" width="170" height="170" src="{$me->getAvatar(170)}" alt="{$me->name}'s profile"></a></h2>
+    <p><a href="/user/{$me->name}"><img loading="lazy" class="u-photo" width="48" height="48" src="{$me->getAvatar(48)}" alt="{$me->name}'s profile"></a></h2>
 
     {if $album}
 {if $album->mbid}
