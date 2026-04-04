@@ -49,7 +49,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {/section}
     </ul>
 
-    {if artist->getListenerCount()}
+    {if $artist->getListenerCount()}
     <section class="h-feed" id="tops">
         <h3 id="listeners">Top listeners</h3>
         <ul>
