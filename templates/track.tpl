@@ -23,10 +23,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl' subheader='track-header.tpl'}
 
-<h4>Appears on</h4>
+<!-- <h4>Appears on</h4>
 {trackalbums artist=$track->artist_name track=$track->name}
 
-{include file='albumlist.tpl' class=#table# items=$trackalbums fimage=false fstream=true ftime=true}
+{include file='albumlist.tpl' class=#table# items=$trackalbums fimage=false fstream=true ftime=true} -->
 
 <ul>
     {if !empty($track->duration)}<li property="mo:durationXSD" datatype="xsd:duration" content="PT{$track->duration}S">Duration: {$duration}</li>{/if}
@@ -93,7 +93,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {$streamable = true}
 {/if}
 
-<p>{if $album->mbid}<a href="https://musicbrainz.org/release-group/{$album->mbid}">{$album->name} on MusicBrainz</a> &middot;{/if} <a href="https://www.discogs.com/search?q={$track->artist_name}+{$track->name}">Find {$track->name} on Discogs</a> &middot; <a href="https://bandcamp.com/search?q={$track->artist_name}+{$track->name}&from=results">Find {$track->name} on Bandcamp</a> &middot; <a href="https://www.youtube.com/results?search_query={$track->artist_name}+{$track->name}">Find {$track->name} on YouTube</a></p>
+<p>{if $album->mbid}<a href="https://musicbrainz.org/release-group/{$album->mbid}">{$album->name} on MusicBrainz</a> &middot;{/if}</p>
 
 
 
