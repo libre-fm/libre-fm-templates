@@ -22,7 +22,7 @@ function smarty_function_artistalbums($params, $template) {
 	$query = 'SELECT a.name as album, a.artist_name as artist, a.image, MAX(t.streamable) as streamable, COALESCE(MAX(a.releasedate), 0) as releasedate FROM Album a LEFT JOIN Track t ON (a.name=t.album_name AND a.artist_name=t.artist_name) WHERE a.artist_name=? GROUP BY a.name, a.artist_name, a.image ORDER BY releasedate DESC, a.name ASC';
 	$qparams = array($artist);
 
-	$data = $adodb->CacheGetAll(600, $query, $qparams);
+	$data = $adodb->CacheGetAll(86400, $query, $qparams);
 	foreach($data as &$item) {
 		if (!$item['image']) {
 			$item['image'] = $default_album_image;
