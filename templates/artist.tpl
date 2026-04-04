@@ -27,20 +27,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     <div class="vcard">
 
-        <!-- {if $fastmode != "1"}
-        <!-- slow mode -->
-        {else}
-        <!-- fast mode -->
-        {/if}
-
-        {* We load player in sidebar instead, see footer include at bottom of file
-		{if $fastmode != "1" && $streamable}
-		<div id='player-container'>
-		{include file='player.tpl'}
-		</div>
-		{/if}
-*} -->
-
         {if $bio_summary}
         <div class="note" id="bio" property="bio:olb" datatype="" style='clear: left;'>
             <h4>{t}Biography{/t}</h4>
@@ -65,9 +51,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </ul>
 
     {if $add_album_link}<a href='{$add_album_link}'><strong>[{t}Add new album{/t}]</strong></a>{/if}
-
-
-    {/if}
 
     {if !empty($similarArtists)}
     <h3>{t}Similar free artists{/t}</h3>
