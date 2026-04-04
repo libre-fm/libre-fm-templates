@@ -36,7 +36,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </div>
 
     <h3>{t}Albums{/t}</h3>
-    <ul class="album-list">
+    <ul>
         {section name=i loop=$albums max=100}
         {if $albums[i]->name}
         <li about="{$albums[i]->id}" property="dc:title" content="{$albums[i]->name|escape:'html':'UTF-8'}" typeof="mo:Record" class="haudio">
@@ -74,10 +74,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <p><small>Biography: <a href="https://last.fm/artist/{$artist->name}/+wiki">Last FM wiki</a> (CC BY-SA 3.0)</a></small></p>
         {/if}
     </div>
-
-    {/if}
-
-   
 
 </div>
 
