@@ -30,7 +30,7 @@ function smarty_function_userscrobbles($params, $template) {
 	$qparams[] = (int) $offset;
 
 	$adodb->SetFetchMode(ADODB_FETCH_ASSOC);
-	$data = $adodb->CacheGetAll(6000, $query, $qparams);
+	$data = $adodb->CacheGetAll(86400, $query, $qparams);
 
 	foreach($data as &$item) {
 		$item['artisturl'] = Server::getArtistURL($item['artist']);
