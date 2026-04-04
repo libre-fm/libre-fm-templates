@@ -34,7 +34,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h2>
     {$track->name}
 </h2>
-<h3>from <a href="{$album->getURL()}">{$album->name}</a> by <a href="{$artist->getURL()}">{$artist->name}</a></h3>
+<h3>from <a href="{$album->getURL()}">{$album->name}</a></h3>
+<h4>by <a href="{$artist->getURL()}">{$artist->name}</a></h4>
 {else}
 <h2>
     {$track->name}
