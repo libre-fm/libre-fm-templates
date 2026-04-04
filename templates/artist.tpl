@@ -27,7 +27,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     <div class="vcard">
 
-        {if $fastmode != "1"}
+        <!-- {if $fastmode != "1"}
         <!-- slow mode -->
         {else}
         <!-- fast mode -->
@@ -39,7 +39,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 		{include file='player.tpl'}
 		</div>
 		{/if}
-*}
+*} -->
 
         {if $bio_summary}
         <div class="note" id="bio" property="bio:olb" datatype="" style='clear: left;'>
@@ -48,7 +48,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         </div>
         {/if}
     </div>
-    {if $fastmode != "1"}
 
     <h3>{t}Albums{/t}</h3>
     <!-- <p><small>Limited to 25 albums</small></p> -->
@@ -64,12 +63,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         </li>{/if}
         {/section}
     </ul>
+
     {if $add_album_link}<a href='{$add_album_link}'><strong>[{t}Add new album{/t}]</strong></a>{/if}
 
 
     {/if}
 
-    {if $fastmode != "1" && !empty($similarArtists)}
+    {if !empty($similarArtists)}
     <h3>{t}Similar free artists{/t}</h3>
     <ul class="long-list">
         {section name=i loop=$similarArtists}
@@ -79,7 +79,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/if}
 
 
-    {if $fastmode != "1" && !empty($tagcloud)}
+    {if !empty($tagcloud)}
     <h3>{t}Tags used to describe this artist{/t}</h3>
     <ul class="long-list">
         {section name=i loop=$tagcloud}
@@ -90,7 +90,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     <hr>
 
-    {if $fastmode != "1" && $artist->getListenerCount()}
+    {if artist->getListenerCount()}
     <section class="h-feed" id="tops">
         <h3 id="listeners">Top listeners</h3>
         <ul>
@@ -103,18 +103,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </section>
     {/if}
 
-    {if $fastmode != "1"}
-
-    <h3>Elsewhere</h3>
-
-    <ul class="long-list">
-        <li><a href="https://www.youtube.com/results?search_query={$artist->name}">Find {$artist->name} on YouTube</a></li>
-        {if $fastmode != "1" && $mblinks}
-        {foreach from=$mblinks item=v}
-        <li><a href="{$v}" rel="nofollow">{$artist->name} on {$v|get_domain_name_from_url}</a></li>
-        {/foreach}
-        {/if}
-    </ul>
 
     <div class="credits-box">
         {if $mblinks}
@@ -130,15 +118,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     {/if}
 
-    <!--
-
-https://www.discogs.com/search?q=new+order&type=artist&strict=true&page=1
-
-	<a href="https://www.discogs.com/search?q={$artist->name}&type=artist">Find {$artist->name} on Discogs</a> | <a href="https://bandcamp.com/search?q={$artist->name}&item_type=b&from=results">Find {$artist->name} on Bandcamp</a> | <a href="https://www.youtube.com/results?search_query={$artist->name}">Find {$artist->name} on YouTube</a></p>
-	 -->
+   
 
 </div>
 
-{if $fastmode != "1"}
 {include file='footer.tpl' sideplayer=true}
-{/if}
