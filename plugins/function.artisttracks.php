@@ -31,7 +31,7 @@ function smarty_function_artisttracks($params, $template) {
 
 	$query .= ' GROUP BY LOWER(TRIM(t.name)), LOWER(TRIM(t.artist_name)), a.image, a.name ORDER BY LOWER(TRIM(a.name)), LOWER(TRIM(t.name)) ASC';
 
-	$data = $adodb->CacheGetAll(600, $query, $qparams);
+	$data = $adodb->CacheGetAll(86400, $query, $qparams);
 	foreach($data as &$item) {
 		$item['trackurl'] = Server::getTrackURL($artist, null, $item['track']);
 		if (!$item['image']) {
