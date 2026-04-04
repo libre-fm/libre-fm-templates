@@ -36,7 +36,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </div>
 
     <h3>{t}Albums{/t}</h3>
-    <!-- <p><small>Limited to 25 albums</small></p> -->
     <ul class="album-list">
         {section name=i loop=$albums max=100}
         {if $albums[i]->name}
@@ -49,29 +48,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         </li>{/if}
         {/section}
     </ul>
-
-    {if $add_album_link}<a href='{$add_album_link}'><strong>[{t}Add new album{/t}]</strong></a>{/if}
-
-    {if !empty($similarArtists)}
-    <h3>{t}Similar free artists{/t}</h3>
-    <ul class="long-list">
-        {section name=i loop=$similarArtists}
-        <li><a href='{$similarArtists[i].url}'>{$similarArtists[i].artist}</a></li>
-        {/section}
-    </ul>
-    {/if}
-
-
-    {if !empty($tagcloud)}
-    <h3>{t}Tags used to describe this artist{/t}</h3>
-    <ul class="long-list">
-        {section name=i loop=$tagcloud}
-        <li><a href='{$tagcloud[i].pageurl}' rel='tag'>{$tagcloud[i].name} ({$tagcloud[i].count})</a></li>
-        {/section}
-    </ul>
-    {/if}
-
-    <hr>
 
     {if artist->getListenerCount()}
     <section class="h-feed" id="tops">
