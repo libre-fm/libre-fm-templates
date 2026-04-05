@@ -54,12 +54,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file="tracklist.tpl" class=#table# items=$scrobbles fimage=true fstream=true fartist=true flove=true ftime=true}
 
+<h3>{$this_user->name}'s top artists</h3>
+
 <div class="card" style="width: 18rem;">
   <!-- <img src="..." class="card-img-top" alt="..."> -->
   <div class="card-body">
 {foreach $topartists as $i}
   {if $i@first}
-<h5 class="card-title">{$topartists[0].artist}</h5>
+<p class="card-title"><a href='{$i.url}'>{$topartists[0].artist}</a></p>
     <p class="card-text"></p>
   <ul class="list-group list-group-flush">
   {else}
