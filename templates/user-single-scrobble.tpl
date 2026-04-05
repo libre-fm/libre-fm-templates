@@ -39,7 +39,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {if $artist->name}
     <p class="lead">Listened to <a href="{$track->getURL()}"><span class="p-music-track">{$track->name|escape:'html':'UTF-8'}</span> {if $track->artist_name}by <span class="p-music-artist">{$track->artist_name|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album->name|escape:'html':'UTF-8'}</span>{/if}</a></p>
     {else}
-    <p class="lead">Listened to <span class="p-music-track">{$track|escape:'html':'UTF-8'}</span> {if $artist}by <span class="p-music-artist">{$artist|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album|escape:'html':'UTF-8'}</span>{/if}</a></p>
+    <p class="lead">Listened to <span class="p-music-track">{$track-only|escape:'html':'UTF-8'}</span> {if $artist-only}by <span class="p-music-artist">{$artist-only|escape:'html':'UTF-8'}</span>{/if}{if $album-only} on <span class="p-music-album">{$album-only|escape:'html':'UTF-8'}</span>{/if}</p>
     <!-- <p class="text-center">Listened to <span class="p-music-track">{$track->name|escape:'html':'UTF-8'}</span> {if $track->artist_name}by <span class="p-music-artist"><a href="/artist/{$artist|escape:'html':'UTF-8'}">{$track->artist_name|escape:'html':'UTF-8'}</a></span>{/if}</p> -->
 {/if}
 
