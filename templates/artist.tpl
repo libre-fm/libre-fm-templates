@@ -56,7 +56,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {foreach from=$toptracks item=i}
   <li class="list-group-item d-flex justify-content-between align-items-center">
     <a href="{$i.trackurl}">{$i.track}</a>
-    <span class="badge text-bg-primary rounded-pill">{i.freq}</span>
+    <span class="badge text-bg-primary rounded-pill">{$i.freq}</span>
   </li>{/foreach}
 </ul>
 
