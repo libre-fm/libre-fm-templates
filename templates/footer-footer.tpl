@@ -70,7 +70,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                             <li><a href="https://status.libre.fm/">Server status</a></li>
                             <li><a href="/privacy">Privacy policy</a></li>
                             <li><a href="/terms">Terms of service</a></li>
-                            <li><a href="/ai>"AI" policy (LOL)</a></li>
+                            <li><a href="/ai">&quot;AI&quot; policy (LOL)</a></li>
                             <li><a href="https://wiki.libre.fm/Clients">Clients wiki</a></li>
                             <li><a href="https://developer.libre.fm">Developer wiki</a></li>
                             <li><a href="https://github.com/foocorp/end-times-code/">Open source</a></li>
