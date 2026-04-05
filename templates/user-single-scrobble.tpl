@@ -31,18 +31,20 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     <p><a href="/user/{$me->name}"><img loading="lazy" class="u-photo" width="48" height="48" src="{$me->getAvatar(48)}" alt="{$me->name}'s profile"></a></h2>
 
-    {if $album}
 {if $album->mbid}
 <p><a href="{$url}"><img class="img-responsive" src="https://coverartarchive.org/release-group/{$album->mbid}/front-250" alt="" height="250" loading="lazy" /></a></p>
-{else}
-<p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album->name|escape:'url'}&artist={$track->artist_name|escape:'url'}" alt="" loading="lazy" /></p>
-{/if}
     <p class="lead">Listened to <a href="{$track->getURL()}"><span class="p-music-track">{$track->name|escape:'html':'UTF-8'}</span> {if $track->artist_name}by <span class="p-music-artist">{$track->artist_name|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album->name|escape:'html':'UTF-8'}</span>{/if}</a></p>
     {else}
     {if $image}
     <p class="text-center"><img height="250" style="outline: 1px solid white;" src="{$image}" alt="" /></p>
     {/if}
+{$track}
+{$artist}
+{$album}
     <p class="text-center">Listened to <span class="p-music-track">{$track->name|escape:'html':'UTF-8'}</span> {if $track->artist_name}by <span class="p-music-artist"><a href="/artist/{$artist|escape:'html':'UTF-8'}">{$track->artist_name|escape:'html':'UTF-8'}</a></span>{/if}</p>
+{else}
+<p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album->name|escape:'url'}&artist={$track->artist_name|escape:'url'}" alt="" loading="lazy" /></p>
+{/if}
 
 
     {/if}
