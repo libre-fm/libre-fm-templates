@@ -63,8 +63,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <p class="card-text"></p>
   <ul class="list-group list-group-flush">
   {/if}
-<li class="list-group-item"><a href='{$artist.url}'>{$artist.artist}</a></li>
-
+<li class="list-group-item"><a href='{$i.url}'>{$i.artist}</a></li>
 {/foreach}
    <div class="card-body">
     <a href="/user/{$this_user->name}/stats" class="card-link">More stats...</a>   
