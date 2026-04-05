@@ -33,6 +33,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {if $album->mbid}
 <p><a href="{$url}"><img class="img-responsive" src="https://coverartarchive.org/release-group/{$album->mbid}/front-250" alt="" height="250" loading="lazy" /></a></p>
+{else}
+{if $nomb}
+    <p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album-only|escape:'url'}&artist={$artist-only|escape:'url'}" alt="" loading="lazy" /></p>
+{else}
+    <p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album->name|escape:'url'}&artist={$track->artist_name|escape:'url'}" alt="" loading="lazy" /></p>
 {/if}
 {if $nomb}
     <p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album-only|escape:'url'}&artist={$artist-only|escape:'url'}" alt="" loading="lazy" /></p>
