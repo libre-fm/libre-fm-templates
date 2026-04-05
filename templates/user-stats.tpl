@@ -23,6 +23,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl' subheader='user-header.tpl'}
 
+<h3>Total tracks: {$totaltracks}</h3>
+
 <p><mark>Sorry this page looks kind of empty and ugly right now. I am working on it. 17 year old JavaScript was very broken.</mark></p>
 
 <ul>
@@ -31,8 +33,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <li><a href="#top-scrobble-days">Top scrobble days</a></li>
 <li><a href="#stats_by_day">Scrobbles by day</a></li>
 </ul>
-
-<h3>Total tracks: {$totaltracks}</h3>
 
 <h4 id="stats_by_artist">Last 6 months: {t name=$me->name|escape:'html':'UTF-8'}%1's most played artists{/t} {$timeperiod}</h4>
 
