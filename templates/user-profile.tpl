@@ -69,7 +69,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/if}
 {/foreach}
    <div class="card-body">
-    <a href="/user/{$this_user->name}/stats" class="card-link">More stats...</a>   
+    <a href="/user/{$this_user->name}/stats" class="btn btn-primary">More stats...</a>   
   </div>
 </div>
 
