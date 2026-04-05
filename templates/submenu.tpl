@@ -22,7 +22,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 *}
 
 {if isset($submenu)}
-<ul class="nav nav-pills nav-fill mb-3">
+<nav>
+<ul class="nav nav-tabs nav-fill mb-3">
     {foreach $submenu as $i}
     <li class='nav-item'>
         <a class="nav-link{if $i.active} active{/if}" {if $i.active}aria-current="page" {/if} href='{$i.url|escape:'html'}'>{$i.name}</a>
@@ -30,5 +31,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/foreach}
 
 </ul>
+</nav>
 {else}&nbsp;
 {/if}
