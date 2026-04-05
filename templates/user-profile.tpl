@@ -62,8 +62,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h5 class="card-title">{$topartists[0].artist}</h5>
     <p class="card-text"></p>
   <ul class="list-group list-group-flush">
-  {/if}
+  {else}
 <li class="list-group-item"><a href='{$i.url}'>{$i.artist}</a></li>
+{/if}
 {/foreach}
    <div class="card-body">
     <a href="/user/{$this_user->name}/stats" class="card-link">More stats...</a>   
