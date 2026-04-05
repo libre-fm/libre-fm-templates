@@ -66,15 +66,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <li class="list-group-item"><a href='{$artist.url}'>{$artist.artist}</a></li>
 
 {/foreach}
-    
-  </div>
-  <ul class="list-group list-group-flush">
-{foreach from= item=artist}
-			<li class="list-group-item"><a href='{$artist.url}'>{$artist.artist}</a></li>
-{/foreach}
-  </ul>
-  <div class="card-body">
-    <a href="/user/{$this_user->name}/stats" class="card-link">More stats...</a>
+   <div class="card-body">
+    <a href="/user/{$this_user->name}/stats" class="card-link">More stats...</a>   
   </div>
 </div>
 
