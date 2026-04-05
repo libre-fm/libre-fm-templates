@@ -25,6 +25,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <p>Sorry this page looks kind of empty and ugly right now. I am working on it. 17 year old JavaScript was very broken.</p>
 
+<ul>
+<li><a href="#stats_by_artist">Top artists</a></li>
+<li><a href="#stats_by_track">Top tracks</a></li>
+<li><a href="#top-scrobble-days">Top scrobble days</a></li>
+<li><a href="#stats_by_day">Scrobbles by day</a></li>
+</ul>
+
 <h3>Total tracks: {$totaltracks}</h3>
 
 <h4 id="stats_by_artist">Last 6 months: {t name=$me->name|escape:'html':'UTF-8'}%1's most played artists{/t} {$timeperiod}</h4>
@@ -71,11 +78,27 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </tbody>
 </table>
 
-<!-- <ol>
-{foreach $toptracksdata as $track}
-<li>{$track|@print_r}</li>
+<h4 id="top-scrobble-days">Last 6 months: Top scrobble days</h4>
+
+<table class="endtimes-table table table-condensed  table-sortable table-striped table-hover library tracklist">
+    <thead>
+        <tr>
+            <th class="title w-50" scope="col">Date</th>
+            <th class="artist w-25" scope="col">Date</th>
+            <th class="time w-25" scope="col">Plays</th>
+        </tr>
+    </thead>
+    <tbody>
+        {foreach $sortdays as $day}
+        <tr>
+<td>{$day['date']}</td>
+<td>{$day['date']|date_format:"%B %e, %Y"}</td>
+<td>{$day['count']}</td>
+</tr>
 {/foreach}
-</ol> -->
+</tbody>
+</table>
+
 
 <h4 id="stats_by_day">Last 6 months: {t name=$me->name|escape:'html':'UTF-8'}%1's scrobbles by day{/t}</h4>
 
@@ -98,37 +121,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </tbody>
 </table>
 
-<details><ol>
-{foreach $topplaybydays as $day}
-<li><span title="{$day['date']}">{$day['date']|date_format:"%B %e, %Y"}</span> &mdash; {$day['count']}</li>
-{/foreach}
-</ol></details>
 
-<h4 id="top-scrobble-days">Last 6 months: Top scrobble days</h4>
 
-<table class="endtimes-table table table-condensed  table-sortable table-striped table-hover library tracklist">
-    <thead>
-        <tr>
-            <th class="title w-50" scope="col">Date</th>
-            <th class="artist w-25" scope="col">Date</th>
-            <th class="time w-25" scope="col">Plays</th>
-        </tr>
-    </thead>
-    <tbody>
-        {foreach $sortdays as $day}
-        <tr>
-<td>{$day['date']}</td>
-<td>{$day['date']|date_format:"%B %e, %Y"}</td>
-<td>{$day['count']}</td>
-</tr>
-{/foreach}
-</tbody>
-</table>
 
-<details><ol>
-{foreach $sortdays as $day}
-<li><span title="{$day['date']}">{$day['date']|date_format:"%B %e, %Y"}</span> &mdash; {$day['count']}</li>
-{/foreach}
-</ol></details>
+
+
 
 {include file='footer.tpl'}
