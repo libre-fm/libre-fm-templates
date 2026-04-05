@@ -54,8 +54,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file="tracklist.tpl" class=#table# items=$scrobbles fimage=true fstream=true fartist=true flove=true ftime=true}
 
-{$topartists|@print_r}
-
 
 <h3>{$this_user->name}'s top artists</h3>
 
@@ -68,7 +66,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <p class="card-text"></p>
   <ul class="list-group list-group-flush">
   {else}
-<li class="list-group-item"><a title="Artist info for {$i.artist}" href="{$i.artisturl}">{$i.artist}</a></li>
+<li class="list-group-item d-flex justify-content-between align-items-center"><a title="Artist info for {$i.artist}" href="{$i.artisturl}">{$i.artist}</a>
+    <span class="badge text-bg-primary rounded-pill">{$i.freq} listens</span>
+</li>
 {/if}
 {/foreach}
    <div class="card-body">
