@@ -53,7 +53,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <h3>Top tracks</h3>
 
     <ul>
-        {foreach from=$artist->getTopListeners() item=i}
+        {foreach from=$toptracks item=i}
         <li>{$i|@print_r}</li>
         {/foreach}
     </ul>
