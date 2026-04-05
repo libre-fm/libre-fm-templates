@@ -26,6 +26,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 	<ul id="popular">
 	    {section name=i loop=$tagcloud}
-	    <li style='display: inline; font-size:{$tagcloud[i].size}'><a href='{$tagcloud[i].pageurl|unescape:'html'}' title='{t loves=$tagcloud[i].count}This artist was loved %1 times{/t}' rel='tag'>{$tagcloud[i].name}</a></li>
+	    <li style='display: inline; font-size:{$tagcloud[i].size}'><a href='{$tagcloud[i].pageurl|unescape:'url'}' title='{t loves=$tagcloud[i].count}This artist was loved %1 times{/t}' rel='tag'>{$tagcloud[i].name}</a></li>
 	    {/section}
 	</ul>
