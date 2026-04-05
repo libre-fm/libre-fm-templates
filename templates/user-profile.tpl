@@ -55,7 +55,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {include file="tracklist.tpl" class=#table# items=$scrobbles fimage=true fstream=true fartist=true flove=true ftime=true}
 
 
-<h3>{$this_user->name}'s top artists</h3>
+<h3>{t name=$me->name}%1{/t}'s top artists</h3>
 
 <div class="card" style="width: 18rem;">
   <!-- <img src="..." class="card-img-top" alt="..."> -->
@@ -71,7 +71,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </li>
 {/if}
 {/foreach}
-   <div class="card-body d-grid gap-2 col-6 mx-auto">
+   <div class="card-body">
     <a href="/user/{$this_user->name}/stats" class="btn btn-primary">More stats...</a>   
   </div>
 </div>
