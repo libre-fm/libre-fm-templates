@@ -27,9 +27,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <li class="nav-item"><a href="/user/{$this_user->name}/recap/2025" title="Your 2025 recap">2025</a>{if ($this_user_first_year)}{if ($this_user_first_year < 2024)}&mdash;<a href="/user/{$this_user->name}/recap/{$this_user_first_year}" title="Your first year of data recapped!">{$this_user_first_year}</a>{/if}{/if}</li>
     <li class="nav-item"><a target="_blank" href="https://libre.fm/donate.php">Donate</a></li>
     <li class="nav-item"><a href="/about">Help</a></li>
-    <li><a href="mailto:support@libre.fm">support@libre.fm</a></li>
+    <li class="nav-item"><a href="mailto:support@libre.fm">support@libre.fm</a></li>
     {else}
-    <li><a href="mailto:support@libre.fm">support@libre.fm</a></li>
+    <li class="nav-item"><a href="mailto:support@libre.fm">support@libre.fm</a></li>
     <li class="nav-item"><a href="{$base_url}/login.php">
             {t}Log in{/t}
         </a></li>
