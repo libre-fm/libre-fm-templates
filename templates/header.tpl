@@ -161,9 +161,6 @@ Libre.fm support will be taking a break for the holidays from Dec 23-27th, so un
                             {else}
                             {if isset($subheader)}
 
-<div class="card text-center">
-  <div class="card-header">
-
                                 {include file="$subheader"}
 
                         
