@@ -51,7 +51,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <ol class="list-group">
     {section name=i loop=$topartists}
     {if ($topartists[i].freq > 1)}
-    <li class="list-group-item"><a href="{$topartists[i].artisturl}">{$topartists[i].artist}</a>
+    <li class="list-group-item d-flex justify-content-between align-items-center"><a href="{$topartists[i].artisturl}">{$topartists[i].artist}</a>
     <span class="badge text-bg-primary rounded-pill">{$topartists[i].freq} <span class="visually-hidden">plays</span></span></li>
     {/if}
     {/section}
