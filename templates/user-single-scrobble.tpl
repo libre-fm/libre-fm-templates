@@ -45,9 +45,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <!-- <p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album->name|escape:'url'}&artist={$track->artist_name|escape:'url'}" alt="" loading="lazy" /></p> -->
 {/if}
 
-
-    {/if}
-
     <p><time datetime="{$stamp}">{$stomp}</time></p>
 
 </div>
