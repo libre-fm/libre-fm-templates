@@ -22,6 +22,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 *}
 
 {include file='header.tpl' subheader='album-header.tpl'}
+</div>
+  <div class="card-body">
 
 <ul>
     {if !empty($album->duration)}<li property="mo:durationXSD" datatype="xsd:duration" content="PT{$album->duration}S">Duration: {$duration}</li>{/if}
@@ -40,5 +42,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/if} -->
 
 <p>{if $album->mbid}<a href="https://musicbrainz.org/release-group/{$album->mbid}" class="btn btn-success" target="_blank">Show on MusicBrainz</a>{/if}</p>
+
+  </div>
+</div>
 
 {include file='footer.tpl' sideplayer=true station=$album_station}
