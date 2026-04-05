@@ -87,7 +87,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {foreach $sortdays as $day}
 <li class="list-group-item d-flex justify-content-between align-items-center">
 <time datetime="{$day['date']}">
-    {$day['date']|date_format:"%B %e, %Y"}
+    {$day['date']|date_format:"%B %e, %Y"}</time>
     <span class="badge text-bg-primary rounded-pill">{$day['count']}</span>
 </li>
 {/foreach}
@@ -99,7 +99,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {foreach $sortdays as $day}
 <li class="list-group-item d-flex justify-content-between align-items-center">
 <time datetime="{$day['date']}">
-    {$day['date']|date_format:"%B %e, %Y"}
+    {$day['date']|date_format:"%B %e, %Y"}</time>
     <span class="badge text-bg-primary rounded-pill">{$day['count']}</span>
 </li>
 {/foreach}
