@@ -23,7 +23,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl' subheader='user-header.tpl'}
 
-<p>Sorry this page looks kind of empty and ugly right now. I am working on it. 17 year old JavaScript was very broken.</p>
+<p><mark>Sorry this page looks kind of empty and ugly right now. I am working on it. 17 year old JavaScript was very broken.</mark></p>
 
 <ul>
 <li><a href="#stats_by_artist">Top artists</a></li>
