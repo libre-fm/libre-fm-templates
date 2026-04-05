@@ -53,9 +53,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <h3>Top tracks</h3>
 
     <ul>
-        {section name=i loop=$toptracks max=100}
+        {foreach from=$artist->getTopListeners() item=i}
         <li>{$i|@print_r}</li>
-        {/section}
+        {/foreach}
     </ul>
 
     {if $artist->getListenerCount()}
