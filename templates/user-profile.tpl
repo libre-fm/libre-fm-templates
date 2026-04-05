@@ -57,11 +57,19 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <div class="card" style="width: 18rem;">
   <!-- <img src="..." class="card-img-top" alt="..."> -->
   <div class="card-body">
-    <h5 class="card-title">{$topartists[0].artist}</h5>
+{foreach $topartists as $i}
+  {if $i@first}
+<h5 class="card-title">{$topartists[0].artist}</h5>
     <p class="card-text"></p>
+  <ul class="list-group list-group-flush">
+  {/if}
+<li class="list-group-item"><a href='{$artist.url}'>{$artist.artist}</a></li>
+
+{/foreach}
+    
   </div>
   <ul class="list-group list-group-flush">
-{foreach from=$topartists item=artist}
+{foreach from= item=artist}
 			<li class="list-group-item"><a href='{$artist.url}'>{$artist.artist}</a></li>
 {/foreach}
   </ul>
