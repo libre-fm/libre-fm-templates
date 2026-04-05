@@ -107,9 +107,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h3>Previous year recaps</h3>
 
-<ul>
+<ul class="list-group">
     {for $var=2024 to $user_first_year step -1}
-    <li><a href="/user/{t name=$me->name}%1{/t}/recap/{$var}">{$var} recap</a></li>
+    <li class="list-group-item"><a href="/user/{t name=$me->name}%1{/t}/recap/{$var}">{$var} recap</a></li>
     {/for}
 </ul>
 {/if}
