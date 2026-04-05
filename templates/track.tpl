@@ -33,20 +33,21 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {if $isloved}
 <form action='' method='post'>
     <button class="btn btn-danger btn-sm" type='submit' name='unlove' id='unlove' value='{t}Unlove this track{/t}'>
+        <i class="bi bi-heartbreak-fill"></i>
         {t}Unlove this track{/t}
     </button>
 </form>
 {else}
 <form action='' method='post'>
     <button class="btn btn-primary btn-sm" type='submit' name='love' id='love' value='{t}Love this track{/t}'>
-        <span class="glyphicon glyphicon-heart"></span>
+        <i class="bi bi-heart-fill"></i>
         {t}Love this track{/t}
     </button>
 </form>
 {/if}
 {/if}
 
-
+<hr/>
 
 {if !empty($tagcloud)}
 <h3 class="text-center">{t}Tags used to describe this track{/t}</h3>
