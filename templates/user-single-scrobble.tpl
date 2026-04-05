@@ -47,11 +47,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 </div>
 
+{if $album->mbid}
 <ul class="list-inline">
     {section name=i loop=$extra_head_links}
     <li class="list-inline-item"><a rel="{$extra_head_links[i].rel|escape:'html':'UTF-8'}" href="{$extra_head_links[i].href|escape:'UTF-8'}" type="{$extra_head_links[i].type|escape:'html':'UTF-8'}">{$extra_head_links[i].title|escape:'html':'UTF-8'}</a></li>
     {/section}
 </ul>
+{/if}
 
 {if ($logged_in)}
 {if $isme}
