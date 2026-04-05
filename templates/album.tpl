@@ -23,7 +23,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl' subheader='album-header.tpl'}
 </div>
-  <div class="card-body">
 
 <ul>
     {if !empty($album->duration)}<li property="mo:durationXSD" datatype="xsd:duration" content="PT{$album->duration}S">Duration: {$duration}</li>{/if}
