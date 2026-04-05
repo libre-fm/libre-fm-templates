@@ -54,6 +54,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file="tracklist.tpl" class=#table# items=$scrobbles fimage=true fstream=true fartist=true flove=true ftime=true}
 
+{$topartists|@print_r}
+
+
 <h3>{$this_user->name}'s top artists</h3>
 
 <div class="card" style="width: 18rem;">
