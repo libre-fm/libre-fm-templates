@@ -6,6 +6,12 @@ td a { text-decoration: none;}
 
 html, #how > div > div > section { scroll-behavior: smooth !important; } 
 
+.navbar-collapse {
+background: #d40000;
+}
+
+.navbar-collapse  .navbar-nav .nav-item a {color: white !important;}
+
 td:hover a { text-decoration: underline;}
 
 .table > :not(caption) > * > * { padding: .4rem .4rem }
