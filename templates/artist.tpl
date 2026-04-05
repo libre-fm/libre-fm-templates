@@ -50,6 +50,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {/section}
     </ul>
 
+    <h3>Top tracks</h3>
+
+    <ul>
+        {section name=i loop=$toptracks max=100}
+        <li>{$i|@print_r}</li>
+        {/section}
+    </ul>
+
     {if $artist->getListenerCount()}
     <section class="h-feed" id="tops">
         <h3 id="listeners">Top listeners</h3>
