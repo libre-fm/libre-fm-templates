@@ -47,7 +47,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div>
 {/if}
 
-<h2>Recent plays</h2>
+<h3>Recent plays</h3>
 
 {include file="tracklist.tpl" class=#table# items=$scrobbles fimage=true fstream=true fartist=true flove=true ftime=true}
 
