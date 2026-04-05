@@ -61,11 +61,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   <div class="card-body">
 {foreach $topartists as $i}
   {if $i@first}
-<h4 class="card-title"><a href='{$i.url}'>{$topartists[0].artist}</a></h4>
+<h4 class="card-title"><a title="Artist info for {$i.artist}" href="{$i.artisturl}">{$topartists[0].artist}</a></h4>
     <p class="card-text"></p>
   <ul class="list-group list-group-flush">
   {else}
-<li class="list-group-item"><a href='{$i.artisturl}'>{$i.artist}</a></li>
+<li class="list-group-item"><a title="Artist info for {$i.artist}" href="{$i.artisturl}">{$i.artist}</a></li>
 {/if}
 {/foreach}
    <div class="card-body">
