@@ -54,6 +54,27 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file="tracklist.tpl" class=#table# items=$scrobbles fimage=true fstream=true fartist=true flove=true ftime=true}
 
+<div class="card" style="width: 18rem;">
+  <!- <img src="..." class="card-img-top" alt="..."> -->
+  <div class="card-body">
+    <h5 class="card-title">{$topartists[0].artist}</h5>
+    <p class="card-text"></p>
+  </div>
+  <ul class="list-group list-group-flush">
+{$count = 0}
+{foreach from=$topartists item=artist}
+{if $count > 1}
+			<li><a href='{$artist.url}'>{$artist.artist}</a></li>
+{/if}
+{$count++}
+		{/foreach}
+    <li class="list-group-item">An item</li>
+  </ul>
+  <div class="card-body">
+    <a href="/user/{$this_user->name/stats" class="card-link">More stats...</a>
+  </div>
+</div>
+
 <!--
 {if !empty($lovedArtists)}
 	<h4>{t name=$me->name}Libre artists that %1 loves{/t}</h4>
