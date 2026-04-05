@@ -50,9 +50,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {/section}
     </ul>
 
-    <h3>Top tracks</h3>
+    <h3 class="mb-4 mt-4">Top tracks</h3>
 
-<ul class="list-group">
+<ul class="list-group h-feed">
 {foreach from=$toptracks item=i}
   <li class="list-group-item d-flex justify-content-between align-items-center">
     <a href="{$i.trackurl}">{$i.track}</a>
@@ -64,7 +64,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     {if $artist->getListenerCount()}
     <section class="h-feed" id="tops">
-        <h3 id="listeners">Top listeners</h3>
+        <h3  class="mb-4 mt-4" id="listeners">Top listeners</h3>
         <ul class="list-group list-group-flush">
             {foreach from=$artist->getTopListeners() item=i}
             <li class="list-group-item h-entry">
@@ -76,7 +76,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/if}
 
 
-    <div class="credits-box">
+    <div class="alert alert-info">
         {if $mblinks}
         <p><a href="https://musicbrainz.org/artist/{$artist->mbid}">{$artist->name} on MusicBrainz</a> (<a href="https://musicbrainz.org/artist/{$artist->mbid}/edit#external-links-editor-container">Add/edit links on MusicBrainz</a>)</p>
         {/if}
