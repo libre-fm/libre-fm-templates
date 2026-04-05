@@ -32,13 +32,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {if $logged_in}
 {if $isloved}
 <form action='' method='post'>
-    <button class="btn btn-danger btn-xs" type='submit' name='unlove' id='unlove' value='{t}Unlove this track{/t}'>
+    <button class="btn btn-danger btn-sm" type='submit' name='unlove' id='unlove' value='{t}Unlove this track{/t}'>
         {t}Unlove this track{/t}
     </button>
 </form>
 {else}
 <form action='' method='post'>
-    <button class="btn btn-danger btn-xs" type='submit' name='love' id='love' value='{t}Love this track{/t}'>
+    <button class="btn btn-primary btn-sm" type='submit' name='love' id='love' value='{t}Love this track{/t}'>
         <span class="glyphicon glyphicon-heart"></span>
         {t}Love this track{/t}
     </button>
