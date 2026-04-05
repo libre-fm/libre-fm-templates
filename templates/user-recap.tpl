@@ -62,7 +62,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div>
 {/if}
 
-<h2>By month</h2>
+<h2 class="mt-3 mb-3">By month</h2>
 <div class="alert alert-secondary">
     {for $var=1 to 12}
 
@@ -73,6 +73,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {if !empty($topmonthlycount)}
     <details>
         <summary>{$months[$var]} {$year} ({$topmonthlycount} scrobbles)</summary>
+
+        <h3 class="mt-3 mb-3">{$months[$var]}</h3>
 
         {if !empty($toptrack)}
         <div class="alert alert-secondary">
