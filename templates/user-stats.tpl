@@ -23,7 +23,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl' subheader='user-header.tpl'}
 
-<h3>Total tracks: {$totaltracks}</h3>
+<h3 class="mb-5 mt-5">Total tracks: {$totaltracks}</h3>
 
 <p><mark>Sorry this page looks kind of empty and ugly right now. I am working on it. 17 year old JavaScript was very broken.</mark></p>
 
@@ -34,7 +34,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <li><a href="#stats_by_day">Scrobbles by day</a></li>
 </ul>
 
-<h4 id="stats_by_artist">Last 6 months: {t name=$me->name|escape:'html':'UTF-8'}%1's most played artists{/t} {$timeperiod}</h4>
+<h4 class="mb-5 mt-5" id="stats_by_artist">Last 6 months: {t name=$me->name|escape:'html':'UTF-8'}%1's most played artists{/t} {$timeperiod}</h4>
 
 <ul class="list-group">
 {foreach $topartists as $topartist}
@@ -45,7 +45,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/foreach}
 </ul>
 
-<h4 id="stats_by_track">Last 6 months: {t name=$me->name|escape:'html':'UTF-8'}%1's top tracks{/t}</h4>
+<h4 class="mb-5 mt-5" id="stats_by_track">Last 6 months: {t name=$me->name|escape:'html':'UTF-8'}%1's top tracks{/t}</h4>
 
 <table class="endtimes-table table table-condensed table-sortable table-striped table-hover library tracklist">
     <thead>
@@ -81,7 +81,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </tbody>
 </table>
 
-<h4 id="top-scrobble-days">Last 6 months: Top scrobble days</h4>
+<h4 class="mb-5 mt-5" id="top-scrobble-days">Last 6 months: Top scrobble days</h4>
 
 <ul class="list-group">
         {foreach $sortdays as $day}
@@ -93,7 +93,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/foreach}
 </ul>
 
-<h4 id="stats_by_day">Last 6 months: {t name=$me->name|escape:'html':'UTF-8'}%1's scrobbles by day{/t}</h4>
+<h4 class="mb-5 mt-5" id="stats_by_day">Last 6 months: {t name=$me->name|escape:'html':'UTF-8'}%1's scrobbles by day{/t}</h4>
 
 <ul class="list-group">
         {foreach $sortdays as $day}
