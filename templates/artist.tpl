@@ -52,9 +52,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {if $artist->getListenerCount()}
     <section class="h-feed" id="tops">
         <h3 id="listeners">Top listeners</h3>
-        <ul>
+        <ul class="list-group list-group-flush">
             {foreach from=$artist->getTopListeners() item=i}
-            <li class="h-entry">
+            <li class="list-group-item h-entry">
                 <a class="u-url" href="{$i.userurl}">{$i.username}</a>
             </li>
             {/foreach}
