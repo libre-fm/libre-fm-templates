@@ -61,13 +61,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <p class="card-text"></p>
   </div>
   <ul class="list-group list-group-flush">
-{$count = 0}
 {foreach from=$topartists item=artist}
-{if $count > 1}
 			<li><a href='{$artist.url}'>{$artist.artist}</a></li>
-{/if}
-{$count++}
-		{/foreach}
+{/foreach}
     <li class="list-group-item">An item</li>
   </ul>
   <div class="card-body">
