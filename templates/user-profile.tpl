@@ -22,8 +22,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 *}
 
 {include file='header.tpl' subheader='user-header.tpl' showbio=true}
-</div>
-  <div class="card-body">
+
 
 {if $nowplaying}
 <div class="alert alert-secondary">
@@ -48,6 +47,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 </div>
 {/if}
+
+</div>
+  <div class="card-body">
 
 <h3>Recent plays</h3>
 
