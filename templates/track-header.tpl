@@ -23,6 +23,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {if $album}
 
+<div class="alert alert-info">
+
 {if $album->mbid}
 <img class="img-responsive" src="https://coverartarchive.org/release-group/{$album->mbid}/front-250" alt="" height="250" loading="lazy" />
 {else}
@@ -34,14 +36,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h2>
     {$track->name}
 </h2>
-<h3>from <a href="{$album->getURL()}">{$album->name}</a></h3>
-<h4>by <a href="{$artist->getURL()}">{$artist->name}</a></h4>
+<p>from <a href="{$album->getURL()}">{$album->name}</a></p>
+<p>by <a href="{$artist->getURL()}">{$artist->name}</a></p>
 {else}
 <h2>
     {$track->name}
 </h2>
-<h3><a href="{$artist->getURL()}">{$artist->name}</a></h3>
+<p><a href="{$artist->getURL()}">{$artist->name}</a></p>
 {/if}
+
+</div>
 
 
 {include file='submenu.tpl'}
