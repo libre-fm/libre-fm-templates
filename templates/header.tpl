@@ -160,11 +160,13 @@ Libre.fm support will be taking a break for the holidays from Dec 23-27th, so un
                             <!-- nosb -->
                             {else}
                             {if isset($subheader)}
-                            <header>
+
+<div class="card text-center">
+  <div class="card-header">
 
                                 {include file="$subheader"}
 
-                            </header>
+                        
                             {/if}
                             <section>
                                 {/if}
