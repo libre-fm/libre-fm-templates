@@ -4,6 +4,8 @@
 
 td a { text-decoration: none;}
 
+#how > .container { scroll-behavior: smooth; } 
+
 td:hover a { text-decoration: underline;}
 
 .table > :not(caption) > * > * { padding: .4rem .4rem }
