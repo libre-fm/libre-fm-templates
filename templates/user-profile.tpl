@@ -71,7 +71,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <li class="list-group-item">An item</li>
   </ul>
   <div class="card-body">
-    <a href="/user/{$this_user->name/stats" class="card-link">More stats...</a>
+    <a href="/user/{$this_user->name}/stats" class="card-link">More stats...</a>
   </div>
 </div>
 
