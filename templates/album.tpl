@@ -26,7 +26,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <ul>
     {if !empty($album->duration)}<li property="mo:durationXSD" datatype="xsd:duration" content="PT{$album->duration}S">Duration: {$duration}</li>{/if}
     <li property="rdfs:comment">{t}Playcount {/t} <span class="badge">{$album->getPlayCount()}</span></li>
-    <li property="rdfs:comment">{t}Listeners {/t} <span class="badge">{$album->getListenerCount()}</span></li>
 </ul>
 
 <!-- <h4>Tracks</h4>
