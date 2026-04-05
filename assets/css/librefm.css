@@ -4,7 +4,7 @@
 
 td a { text-decoration: none;}
 
-#how > div > div > section { scroll-behavior: smooth; } 
+html, #how > div > div > section { scroll-behavior: smooth !important; } 
 
 td:hover a { text-decoration: underline;}
 
