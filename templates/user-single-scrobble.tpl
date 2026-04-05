@@ -38,11 +38,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {if $image}
     <p class="text-center"><img height="250" style="outline: 1px solid white;" src="{$image}" alt="" /></p>
     {/if}
-{$track}
-{$artist}
-{$album}
+    <p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album|escape:'url'}&artist={$artist|escape:'url'}" alt="" loading="lazy" /></p>
+    <p class="lead">Listened to <span class="p-music-track">{$track|escape:'html':'UTF-8'}</span> {if $artist}by <span class="p-music-artist">{$artist|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album|escape:'html':'UTF-8'}</span>{/if}</a></p>
     <!-- <p class="text-center">Listened to <span class="p-music-track">{$track->name|escape:'html':'UTF-8'}</span> {if $track->artist_name}by <span class="p-music-artist"><a href="/artist/{$artist|escape:'html':'UTF-8'}">{$track->artist_name|escape:'html':'UTF-8'}</a></span>{/if}</p> -->
-<!-- <p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album->name|escape:'url'}&artist={$track->artist_name|escape:'url'}" alt="" loading="lazy" /></p> -->
 {/if}
 
     <p><time datetime="{$stamp}">{$stomp}</time></p>
