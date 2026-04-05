@@ -30,7 +30,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </ul>
 
 {if $logged_in}
-<h3>Love this track?</h3>
 {if $isloved}
 <form action='' method='post'>
     <button class="btn btn-danger btn-xs" type='submit' name='unlove' id='unlove' value='{t}Unlove this track{/t}'>
@@ -59,7 +58,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/if}
 
 
-<p>{if $album->mbid}<a href="https://musicbrainz.org/release-group/{$album->mbid}">{$album->name} on MusicBrainz</a> &middot;{/if}</p>
+{if $album->mbid}<a href="https://musicbrainz.org/release-group/{$album->mbid}" class="btn btn-success" target="_blank">{$album->name} on MusicBrainz</a> &middot;{/if}
 
 
 
