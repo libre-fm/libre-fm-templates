@@ -48,7 +48,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div>
 {/if}
 
-</div>
   <div class="card-body">
 
 <h3>Recent plays</h3>
