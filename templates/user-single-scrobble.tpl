@@ -39,6 +39,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {else}
     <p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album->name|escape:'url'}&artist={$track->artist_name|escape:'url'}" alt="" loading="lazy" /></p>
 {/if}
+{/if}
 {if $nomb}
     <p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album-only|escape:'url'}&artist={$artist-only|escape:'url'}" alt="" loading="lazy" /></p>
     <p class="lead">Listened to <span class="p-music-track">{$track-only|escape:'html':'UTF-8'}</span> {if $artist-only}by <span class="p-music-artist">{$artist-only|escape:'html':'UTF-8'}</span>{/if}{if $album-only} on <span class="p-music-album">{$album-only|escape:'html':'UTF-8'}</span>{/if}</p>
