@@ -22,6 +22,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 *}
 
 {include file='header.tpl' subheader='artist-header.tpl'}
+</div>
+  <div class="card-body">
 
 <div about="{$id}" typeof="mo:MusicArtist">
 
@@ -75,6 +77,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {/if}
     </div>
 
+</div>
+</div>
 </div>
 
 {include file='footer.tpl' sideplayer=true}
