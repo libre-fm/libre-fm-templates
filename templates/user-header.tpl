@@ -62,7 +62,5 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 </div>
 
-<div class="card text-center">
-  <div class="card-header">
 
 {include file='submenu.tpl'}
