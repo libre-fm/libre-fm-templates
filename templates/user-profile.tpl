@@ -56,9 +56,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h3>{$this_user->name}'s top artists</h3>
 
-{$topartists|@print_r}
-
-
 <div class="card" style="width: 18rem;">
   <!-- <img src="..." class="card-img-top" alt="..."> -->
   <div class="card-body">
@@ -68,7 +65,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <p class="card-text"></p>
   <ul class="list-group list-group-flush">
   {else}
-<li class="list-group-item"><a href='{$i.url}'>{$i.artist}</a></li>
+<li class="list-group-item"><a href='{$i.artisturl}'>{$i.artist}</a></li>
 {/if}
 {/foreach}
    <div class="card-body">
