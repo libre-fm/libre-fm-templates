@@ -46,7 +46,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div>
 {/if}
 
-<h3>Top artists for {$year}</h3>
+<h3 class="mb-3 mt-3">Top artists for {$year}</h3>
 {if !empty($topartists)}
 <ol class="list-group">
     {section name=i loop=$topartists}
@@ -87,7 +87,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <ol class="list-group">
             {section name=i loop=$topartists}
             {if ($topartists[i].freq > 1)}
-            <li class="list-group-item"><a href="{$topartists[i].artisturl}">{$topartists[i].artist}</a> ({$topartists[i].freq} plays)</li>
+            <li class="list-group-item d-flex justify-content-between align-items-center"><a href="{$topartists[i].artisturl}">{$topartists[i].artist}</a> <span class="badge text-bg-primary rounded-pill">{$topartists[i].freq} <span class="visually-hidden">plays</span></span></li>
             {/if}
             {/section}
         </ol>
