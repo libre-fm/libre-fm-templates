@@ -39,6 +39,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {$album_station = "librefm://artist/{$album->artist_name}/album/{$album->name}"}
 {/if} -->
 
-<p>{if $album->mbid}<a href="https://musicbrainz.org/release-group/{$album->mbid}">{$album->name} on MusicBrainz</a>{/if}</p>
+<p>{if $album->mbid}<a href="https://musicbrainz.org/release-group/{$album->mbid}" class="btn btn-success" target="_blank">Show on MusicBrainz</a>{/if}</p>
 
 {include file='footer.tpl' sideplayer=true station=$album_station}
