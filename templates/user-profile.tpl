@@ -71,7 +71,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </li>
 {/if}
 {/foreach}
-   <div class="card-body">
+   <div class="card-body d-grid gap-2 col-6 mx-auto">
     <a href="/user/{$this_user->name}/stats" class="btn btn-primary">More stats...</a>   
   </div>
 </div>
