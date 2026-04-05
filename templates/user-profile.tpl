@@ -62,12 +62,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   <div class="card-body">
 {foreach $topartists as $i}
   {if $i@first}
-<h4 class="card-title"><a title="Artist info for {$i.artist}" href="{$i.artisturl}">{$topartists[0].artist}</a></h4>
+<h4 class="card-title d-flex justify-content-between align-items-center"><a title="Artist info for {$i.artist}" href="{$i.artisturl}">{$topartists[0].artist}</a>     <span class="badge text-bg-primary rounded-pill">{$topartists[0].freq}</span></h4>
     <p class="card-text"></p>
   <ul class="list-group list-group-flush">
   {else}
 <li class="list-group-item d-flex justify-content-between align-items-center"><a title="Artist info for {$i.artist}" href="{$i.artisturl}">{$i.artist}</a>
-    <span class="badge text-bg-primary rounded-pill">{$i.freq} listens</span>
+    <span class="badge text-bg-primary rounded-pill">{$i.freq}</span>
 </li>
 {/if}
 {/foreach}
