@@ -21,6 +21,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 *}
 
+<div class="alert alert-info">
+
 {if $album->mbid}
 {$album->mbid|coverartexists:250:"":""}
 {else}
@@ -35,5 +37,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {if $album->releasedate}
 <p>Released on {$album->releasedate|date_format:"%Y-%m-%d"}</p>
 {/if}
+
+</div>
 
 {include file='submenu.tpl'}
