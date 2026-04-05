@@ -56,6 +56,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h3>{$this_user->name}'s top artists</h3>
 
+{$topartists|@print_r}
+
+
 <div class="card" style="width: 18rem;">
   <!-- <img src="..." class="card-img-top" alt="..."> -->
   <div class="card-body">
