@@ -23,7 +23,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl' subheader='user-header.tpl' showbio=true}
 
-<h2>Libre.fm recap for {$year}</h2>
+<h2 class="mt-3 mb-4">Libre.fm recap for {$year}</h2>
 
 {if !empty($scrobblecount)}
 <div class="alert alert-info">
@@ -51,7 +51,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <ol class="list-group">
     {section name=i loop=$topartists}
     {if ($topartists[i].freq > 1)}
-    <li class="list-group-item"><a href="{$topartists[i].artisturl}">{$topartists[i].artist}</a> ({$topartists[i].freq} plays)</li>
+    <li class="list-group-item"><a href="{$topartists[i].artisturl}">{$topartists[i].artist}</a>
+    <span class="badge text-bg-primary rounded-pill">{$topartists[i].freq} <span class="visually-hidden">plays</span></span></li>
     {/if}
     {/section}
 </ol>
