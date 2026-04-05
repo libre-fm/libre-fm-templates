@@ -55,7 +55,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {include file="tracklist.tpl" class=#table# items=$scrobbles fimage=true fstream=true fartist=true flove=true ftime=true}
 
 <div class="card" style="width: 18rem;">
-  <!- <img src="..." class="card-img-top" alt="..."> -->
+  <!-- <img src="..." class="card-img-top" alt="..."> -->
   <div class="card-body">
     <h5 class="card-title">{$topartists[0].artist}</h5>
     <p class="card-text"></p>
