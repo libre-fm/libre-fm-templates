@@ -86,6 +86,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
      {/section} 
      {/if} 
 
+<style>
+#header {height: 74px;  background: #d40000;}
+</style>
+
 </head>
 
 <body>
