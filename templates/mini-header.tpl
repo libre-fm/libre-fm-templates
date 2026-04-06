@@ -88,12 +88,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </header>
     <!-- ======== header end ======== -->
 
-    <!-- ======== hero-section start ======== -->
-    <section id="home" class="hero-section hero-section-app" style="padding: 0px 0 50px">
-        &nbsp;
-    </section>
-    <!-- ======== hero-section end ======== -->
-
     <!-- ======== feature-section start ======== -->
     <section id="how" class="feature-section pt-40">
         <div class="container-lg">
