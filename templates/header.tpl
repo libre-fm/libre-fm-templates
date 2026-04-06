@@ -93,7 +93,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <a href="#home" class="a11y-helper" tabindex="0">Skip to main content</a>
 
     <!-- ======== header start ======== -->
-    <header class="header">
+    <header class="header" id="header">
         <div class="navbar-area">
             <div class="container">
                 <div class="row align-items-center">
@@ -125,12 +125,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <!-- navbar area -->
     </header>
     <!-- ======== header end ======== -->
-
-    <!-- ======== hero-section start ======== -->
-    <section id="home" class="hero-section hero-section-app" style="padding: 0px 0 50px">
-        &nbsp;
-    </section>
-    <!-- ======== hero-section end ======== -->
 
     <!-- ======== feature-section start ======== -->
     <section id="how" class="feature-section">
