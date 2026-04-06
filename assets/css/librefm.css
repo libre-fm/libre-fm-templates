@@ -6,9 +6,11 @@ td a { text-decoration: none;}
 
 html, #how > div > div > section { scroll-behavior: smooth !important; } 
 
-.navbar-collapse {
+.navbar-collapse, #header {
 background: #d40000;
 }
+
+#header {height: 74px;}
 
 .navbar-collapse  .navbar-nav .nav-item a {color: white !important;}
 
