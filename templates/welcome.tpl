@@ -189,7 +189,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                         <div class="content">
                             <h3>Open Source</h3>
                             <p>
-                                The music player app reports what you're listening to to Libre.fm and we show it on your profile and on the community page.<br><br>
+                                The music player app reports what you're listening to to Libre.fm and we show it on <a href="https://libre.fm/user/mattl>your profile</a> and on the community page.<br><br>
                                 Want to do this in private? Libre.fm is 100% open source so you can run your own server instead.
                             </p>
                         </div>
@@ -203,7 +203,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                         <div class="content">
                             <h3>Track your listening habits</h3>
                             <p>
-                                See what you've listened to weeks or even years ago and via the community page you can see what other people are listening to.
+                                See what you've listened to weeks or even years ago and via the community page you can see what other people are listening to. Plus an easy to see recap of the last six months and annual yearly recaps track your habits over time.
                             </p>
                         </div>
                     </div>
