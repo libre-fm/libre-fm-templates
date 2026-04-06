@@ -24,10 +24,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <div class="alert alert-info">
 
     <h3 style="color: black">Can I import my listening habits from Last.fm, etc?</h3>
-    <p>Yes... soon. A version of this is now working for both new scrobbles and also historical ones. This is something we hope to start to offer to more people in the first few months of 2026.</p>
-    <p>But, if you've been a user of Libre.fm for a few years, have more than a few thousand scrobbles on here and have a Last.fm account and would like to scrobble there and have those scrobbles appear on Libre.fm, please email <a href="mailto:support@libre.fm">support@libre.fm</a>. Especially if you're on IRC as it'll be helpful to chat to you while debugging things..</p>
-    <p>New users: hold tight, I want to make sure this works well first but it is very much coming. It will be offered to everyone in due course.</p>
-
+    <p>Yes... soon. A version of this is now working for both new scrobbles and also historical ones.</p>
+    <p>If you'd like to enable this on your account (brand new accounts welcome too!), please email <a href="mailto:support@libre.fm">support@libre.fm</a>.</p>
 </div>
 
 <div class="alert alert-secondary">
