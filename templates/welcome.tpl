@@ -79,7 +79,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <a href="#home" class="a11y-helper" tabindex="0">Skip to main content</a>
 
     <!-- ======== header start ======== -->
-    <header class="header">
+    <header class="header" id="homepage-only">
         <div class="navbar-area">
             <div class="container">
                 <div class="row align-items-center">

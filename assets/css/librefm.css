@@ -4,9 +4,9 @@
 
 td a { text-decoration: none;}
 
-html, #how > div > div > section { scroll-behavior: smooth !important; } 
+html, #how > div > div > section { scroll-behavior: smooth !important; }
 
-.navbar-collapse, #header {
+#header .navbar-collapse, #header {
 background: #d40000;
 }
 
@@ -39,7 +39,7 @@ background-image: none !important;
 background: #d40000;
 }
 
-.list-group-item:hover{background: #383f47} 
+.list-group-item:hover{background: #383f47}
 .album-list li {display: inline-table; padding-right: 8px; padding-bottom: 8px; background: transparent; }
 
 .album-list-album {
@@ -51,7 +51,7 @@ background: #d40000;
 width: 97px;
 text-align: center;
 background: black;
-	overflow: hidden; 
+	overflow: hidden;
 }
 
 .album-list-album span {padding: 5px;}
