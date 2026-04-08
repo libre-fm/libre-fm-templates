@@ -21,7 +21,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 *}
 
-<nav aria-label="Page navigation example">
+<hr />
+
+<nav class="mt-2 mb-2" aria-label="Page navigation">
   <ul class="pagination justify-content-center">
     <li class="page-item {if $page->page_number <= 1}disabled{/if}">
       <a class="page-link" href="{$page->urls.page_prev}">Previous</a>
