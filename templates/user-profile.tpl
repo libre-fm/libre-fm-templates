@@ -53,27 +53,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {include file="tracklist.tpl" class=#table# items=$scrobbles fimage=true fstream=true fartist=true flove=true ftime=true}
 
 
-<h3>{t name=$me->name}%1{/t}'s top artists</h3>
+<h3>{t name=$me->name}%1{/t}'s top 5 artists</h3>
 
-<div class="card" style="width: 18rem;">
-  <!-- <img src="..." class="card-img-top" alt="..."> -->
-  <div class="card-body">
-{foreach $topartists as $i}
-  {if $i@first}
-<!-- <h4 class="card-title d-flex justify-content-between align-items-center"><a title="Artist info for {$i.artist}" href="{$i.artisturl}">{$topartists[0].artist}</a>     <span class="badge text-bg-primary rounded-pill">{$topartists[0].freq}</span></h4>
-    <p class="card-text"></p>  -->
-  <ul class="list-group list-group-flush">
-<li class="list-group-item d-flex justify-content-between align-items-center"><a title="Artist info for {$i.artist}" href="{$i.artisturl}">{$i.artist}</a>
-    <span class="badge text-bg-primary rounded-pill">{$i.freq}</span>
+<ul class="list-group">
+{foreach $topartists as $topartist}
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    <a href="{$topartist['artisturl']}">{$topartist['artist']}</a>
+    <span class="badge text-bg-primary rounded-pill">{$topartist['freq']}</span>
 </li>
-  {else}
-<li class="list-group-item d-flex justify-content-between align-items-center"><a title="Artist info for {$i.artist}" href="{$i.artisturl}">{$i.artist}</a>
-    <span class="badge text-bg-primary rounded-pill">{$i.freq}</span>
-</li>
-{/if}
 {/foreach}
-</div>
-</div>
+</ul>
 
 <h3 class="mt-3 mb-3">Plays over the last 7 days</h3>
 
