@@ -77,6 +77,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   </div>
 </div>
 
+<details>
+{$topplays|var_dump}
+</details>
+
 <!--
 {if !empty($lovedArtists)}
 	<h4>{t name=$me->name}Libre artists that %1 loves{/t}</h4>
