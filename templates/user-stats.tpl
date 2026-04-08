@@ -96,7 +96,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h4 class="mb-5 mt-5" id="stats_by_day">Last 6 months: {t name=$me->name|escape:'html':'UTF-8'}%1's scrobbles by day{/t}</h4>
 
 <ul class="list-group">
-        {foreach $sortdays as $day}
+        {foreach $topplaybyday as $day}
 <li class="list-group-item d-flex justify-content-between align-items-center">
 <time datetime="{$day['date']}">
     {$day['date']|date_format:"%B %e, %Y"}</time>
