@@ -75,7 +75,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div>
 </div>
 
-<h3 class="mt-3 mb-3">Top plays over the last 7 days</h3>
+<h3 class="mt-3 mb-3">Plays over the last 7 days</h3>
 
 <ul class="list-group">
         {foreach $topplaybydays as $day}
