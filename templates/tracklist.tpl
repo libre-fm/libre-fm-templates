@@ -53,7 +53,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {foreach from=$items item=i}
         <tr>
             <td class="name">
-                {if $me->uniqueid}
+                {if $linktoscrobbles}
                 <a href="/user/{$me->name}/scrobble/{$i.time}">{$i.track|unescape:'html'}</a>
                 {else}
                 {if $i.tracklibraryurl}
@@ -71,19 +71,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                 <a href="{$i.artisturl|escape:'html'}">{$i.artist|unescape:'html'}</a>
                 {/if}
                 {/if}
-                {if $me->uniqueid}
-                <!-- <span class="shareable">
-                    &nbsp; <small><a aria-label="Share listening to {$i.track} by {$i.artist}, {$i.timehuman}" title="Share {$i.track} by {$i.artist}" href="/user/{$me->name}/scrobble/{$i.time}">Share</a></small>
-                  </span> -->
-                {/if}
             </td>
 
             <td class="time">
-                {if $me->uniqueid}
-                <a href="/user/{$me->name}/scrobble/{$i.time}">{$i.timehuman}</a>
-                {else}
-                {$i.timehuman}
+                {if $linktoscrobbles}
+                <a href="/user/{$me->name}/scrobble/{$i.time}">
                 {/if}
+                <time datetime="{$i.time|date_format:"%c"}">{$i.timehuman}</time
+				{if $linktoscrobbles}</a>{/if}
             </td>
         </tr>
         {/foreach}
