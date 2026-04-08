@@ -78,6 +78,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     <a href="#home" class="a11y-helper" tabindex="0">Skip to main content</a>
 
+    <a class="a11y-helper" href="http://turtle.libre.fm/no-js.html">We support browsers without JavaScript and HTTPS</a>.
+
     <!-- ======== header start ======== -->
     <header class="header" id="homepage-only">
         <div class="navbar-area">
