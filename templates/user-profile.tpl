@@ -48,9 +48,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div>
 {/if}
 
-<h3>Recent plays</h3>
+<h3 class="mt-3 mb-3">Recent plays</h3>
 
 {include file="tracklist.tpl" class=#table# items=$scrobbles fimage=true fstream=true fartist=true flove=true ftime=true}
+
+<p><a href="/user/{$me->name}/recent-tracks" class="btn btn-primary">More recent plays...</a></p>
 
 
 <h3>{t name=$me->name}%1{/t}'s top 5 artists</h3>
