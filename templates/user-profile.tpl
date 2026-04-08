@@ -72,14 +72,22 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </li>
 {/if}
 {/foreach}
-   <div class="card-body">
-    <a href="/user/{$me->name}/stats" class="btn btn-primary">More stats...</a>   
-  </div>
+</div>
 </div>
 
-<details>
-{$topplays|var_dump}
-</details>
+<h3>Top plays over the last 7 days</h3>
+
+<ul class="list-group">
+        {foreach $topplaybyday as $day}
+<li class="list-group-item d-flex justify-content-between align-items-center">
+<time datetime="{$day['date']}">
+    {$day['date']|date_format:"%B %e, %Y"}</time>
+    <span class="badge text-bg-primary rounded-pill">{$day['count']}</span>
+</li>
+{/foreach}
+</ul>
+
+<p><a href="/user/{$me->name}/stats" class="btn btn-primary">More stats...</a></p>
 
 <!--
 {if !empty($lovedArtists)}
