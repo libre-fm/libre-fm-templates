@@ -37,9 +37,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 	@param boot   ftime           Show timestamp field, used by $i.time)
 	@param string type            Type of list, 'tagged' (used to show correct button)
 *}
-<ul class="{$class} artistlist">
+
+<ul class="list-group {$class} artistlist">
     {foreach from=$items item=i}
-    <li>
+    <li class="list-group-item d-flex justify-content-between align-items-center">
         {if $fstream}
         {if $i.streamable}
         <!-- <td class="icon" title="Artist has streamable tracks">
@@ -54,12 +55,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <a href="{$i.artisturl}">{$i.artist}</a>
         {/if}
         {if $fcount}
-        &mdash;
-        <progress style="-webkit-appearance: none;" value="{$i.freq}" max="{$totaltracks}"></progress> &mdash; <span>{$i.freq}</span>
+        <span class="badge text-bg-primary rounded-pill">{$i['freq']}</span>
         {/if}
-        {if $ftime}
+        <!-- {if $ftime}
         {$i.time}
-        {/if}
+        {/if} -->
     </li>
     {/foreach}
 </ul>
