@@ -75,10 +75,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div>
 </div>
 
-<h3>Top plays over the last 7 days</h3>
+<h3 class="mt-3 mb-3">Top plays over the last 7 days</h3>
 
 <ul class="list-group">
-        {foreach $topplaybyday as $day}
+        {foreach $topplaybydays as $day}
 <li class="list-group-item d-flex justify-content-between align-items-center">
 <time datetime="{$day['date']}">
     {$day['date']|date_format:"%B %e, %Y"}</time>
