@@ -77,7 +77,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h3 class="mt-3 mb-3">Plays over the last 7 days</h3>
 
-<ul class="list-group">
+<ul class="list-group mb-3">
         {foreach $topplaybydays as $day}
 <li class="list-group-item d-flex justify-content-between align-items-center">
 <time datetime="{$day['date']}">
