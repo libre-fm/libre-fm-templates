@@ -27,4 +27,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h3>Recent plays</h3>
 {include file="tracklist.tpl" class=#table# items=$userscrobbles fimage=true fstream=true fartist=true flove=true ftime=true}
 
+<p><a href="/user/{$me->name}/library/scrobbles" class="btn btn-primary">Full listening history...</a></p>
+
+
 {include file='footer.tpl'}
