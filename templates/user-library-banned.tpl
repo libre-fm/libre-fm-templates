@@ -29,7 +29,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {include file='tracklist.tpl' class=#librarytable# items=$page->banned_tracks thead=true flove=true fartist=true ftime=true fbutton=true type='banned'}
 {/if}
 
-{include file='paginate.tpl'}                                                                                                                       
 
 
 {include file='footer.tpl'}
