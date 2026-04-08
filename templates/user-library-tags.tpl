@@ -66,6 +66,5 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/if}
 {/if}
 
-{include file='paginate.tpl'}                                                                                                                       
 
 {include file='footer.tpl'}
