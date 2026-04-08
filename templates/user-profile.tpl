@@ -76,6 +76,42 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/foreach}
 </ul>
 
+<h3 class="mt-3 mb-3">Top tracks over the last 7 days</h3>
+
+<table class="endtimes-table table table-condensed table-sortable table-striped table-hover library tracklist">
+    <thead>
+        <tr>
+            <th class="title w-50" scope="col">Track</th>
+            <th class="artist w-25" scope="col">Artist</th>
+            <th class="time w-25" scope="col">Count</th>
+        </tr>
+    </thead>
+    <tbody>
+        {foreach $toptracksdata as $i}
+        <tr>
+            <td class="name">
+                {if $i.tracklibraryurl}
+                <a href="{$i.tracklibraryurl|escape:'html'}">{$i.track|unescape:'html'}</a>
+                {else}
+                <a href="{$i.trackurl|escape:'html'}">{$i.track|unescape:'html'}</a>
+                {/if}
+            </td>
+            <td>
+                {if $i.artistlibraryurl}
+                <a href="{$i.artistlibraryurl|escape:'html'}">{$i.artist|unescape:'html'}</a>
+                {else}
+                <a href="{$i.artisturl|escape:'html'}">{$i.artist|unescape:'html'}</a>
+                {/if}
+            </td>
+
+            <td class="count">
+                {$i.freq}
+            </td>
+        </tr>
+        {/foreach}
+    </tbody>
+</table>
+
 <p><a href="/user/{$me->name}/stats" class="btn btn-primary">More stats...</a></p>
 
 <!--
