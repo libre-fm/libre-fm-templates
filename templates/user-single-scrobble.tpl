@@ -47,7 +47,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p class="lead">Listened to <a href="{$track->getURL()}"><span class="p-music-track">{$track->name|escape:'html':'UTF-8'}</span> {if $track->artist_name}by <span class="p-music-artist">{$track->artist_name|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album->name|escape:'html':'UTF-8'}</span>{/if}</a></p>
 {/if}
 
-    <p><time datetime="{$stamp}">{$stomp}</time></p>
+    <p><time datetime="{$stamp}">{$stamp}</time></p>
 
 </div>
 
