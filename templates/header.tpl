@@ -135,7 +135,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                     {if (!$logged_in)}
                     <div class="alert alert-success text-center text-wrap">
                         Please consider <a href="/donate.php">making a donation</a> to help keep the lights on.
-                        {else}
+                    {else}
                         {if ($thisusertotaltracks < 3)}
                             <div class="alert alert-info text-center text-wrap">
                                 {include file='getting-started-help.tpl'}
@@ -158,4 +158,3 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                         
                             {/if}
                             <section>
-                                {/if}
