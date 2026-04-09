@@ -53,18 +53,17 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {if $album->mbid}
 <p><small>Image provided by Cover Art Archive</small></p>
+{/if}
+
+<div class="alert alert-info">
+    This is a new feature that gives you a unique URL for each song you've ever listened to. You can share it elsewhere and it can also be embedded on another website.
+</div>
+
 <ul class="list-group">
     {section name=i loop=$extra_head_links}
     <li class="list-item"><a rel="{$extra_head_links[i].rel|escape:'html':'UTF-8'}" href="{$extra_head_links[i].href|escape:'UTF-8'}" type="{$extra_head_links[i].type|escape:'html':'UTF-8'}">{$extra_head_links[i].title|escape:'html':'UTF-8'}</a></li>
     {/section}
 </ul>
-{/if}
-
-{if ($logged_in)}
-{if $isme}
-<div class="alert alert-warning">
-    This is a new feature that gives you a unique URL for each song you've ever listened to. You can share it elsewhere and it can also be embedded on another website.
-</div>
 
 
 
