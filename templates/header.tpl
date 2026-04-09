@@ -1,6 +1,4 @@
-{*
-
-'Header' Template for GNU FM
+{* 'Header' Template for GNU FM
 Copyright (c) 2009-2026 Free Software Foundation, Inc
 
 'Header' Template for Libre.fm
