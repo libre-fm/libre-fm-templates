@@ -32,9 +32,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {else}
     <title>{$pagetitle|escape:'html':'UTF-8'} &middot; {$site_name} &mdash; the open source music community</title>
     {/if}
-    <meta name="description" content="Libre.fm lets you keep track of your music listening habits." />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="author" content="FooCorp catalogue number FOO200 and contributors" />
+    <meta name="description" content="Libre.fm lets you keep track of your music listening habits.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="FooCorp catalogue number FOO200 and contributors">
     <link rel="alternate" type="application/rss+xml" title="RSS Feed" href="https://libre.fm/feed.xml">
 
      {if isset($extra_head_stuff)} 
@@ -77,12 +77,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/lineicons.css" />
-    <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/main.css" />
-    <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/librefm.css" />
+    <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/lineicons.css">
+    <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/main.css">
+    <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/librefm.css">
     {if isset($extra_head_links)} 
      {section name=i loop=$extra_head_links} 
-    <link rel="{$extra_head_links[i].rel|escape:'html':'UTF-8'}" href="{$extra_head_links[i].href|escape:'UTF-8'}" type="{$extra_head_links[i].type|escape:'html':'UTF-8'}" title="{$extra_head_links[i].title|escape:'html':'UTF-8'}" /> 
+        <link rel="{$extra_head_links[i].rel|escape:'html':'UTF-8'}" href="{$extra_head_links[i].href|escape:'UTF-8'}" type="{$extra_head_links[i].type|escape:'html':'UTF-8'}" title="{$extra_head_links[i].title|escape:'html':'UTF-8'}"> 
      {/section} 
      {/if} 
 
