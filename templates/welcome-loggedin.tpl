@@ -25,9 +25,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h2 class="text-center mt-3 mb-3">Welcome back, <a href="/user/{t name=$this_user->name}%1{/t}">{t name=$this_user->name}%1{/t}</a>!</h2>
 
-foo
-
-{if $topplaybydays}
+{if ($topplaybydays)}
 
 <div class="card-group">
 
@@ -53,7 +51,7 @@ foo
 <ul class="list-group mb-3">
         {foreach $toptracksdata as $i}
 <li class="list-group-item d-flex justify-content-between align-items-center">
-{if $i.tracklibraryurl}
+{if ($i.tracklibraryurl)}
                 <a href="{$i.tracklibraryurl|escape:'html'}">{$i.track|unescape:'html'}</a>
                 {else}
                 <a href="{$i.trackurl|escape:'html'}">{$i.track|unescape:'html'}</a>
@@ -69,6 +67,8 @@ foo
 {else}
 <hr>
 {/if}
+
+wolf
 
 <!-- <div class="alert alert-dark">
     <h3>What's new?</h3>
