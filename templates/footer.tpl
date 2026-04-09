@@ -24,7 +24,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {if $nosidebar != true}
 {include file="sidebar.tpl" player=$sideplayer}
 {/if}
-</main>
+</section>
 </div>
 </div>
 </section>
