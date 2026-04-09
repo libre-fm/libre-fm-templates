@@ -28,19 +28,23 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h2 class="p-name"><a href="/user/{$me->name}">{$me->name}</a></h2>
 <p><a href="/user/{$me->name}"><img loading="lazy" class="u-photo" width="48" height="48" src="{$me->getAvatar(48)}" alt="{$me->name}'s profile"></a></p>
 
-{if $album->mbid}
-    <p><a href="{$url}"><img class="img-responsive" src="https://coverartarchive.org/release-group/{$album->mbid}/front-250" alt="" height="250" loading="lazy"></a></p>
-    <p class="lead">Listened to <span class="p-music-track">{$track|escape:'html':'UTF-8'}</span> {if $artist}by <span class="p-music-artist">{$artist|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album|escape:'html':'UTF-8'}</span>{/if}</p>
+{if $scrobbledata->mbid}
+    <p><a href="{$url}"><img class="img-responsive" src="https://coverartarchive.org/release-group/{$scrobbledata->mbid}/front-250" alt="" height="250" loading="lazy"></a></p>
 {else}
     <p><img style="background: #666; border: 1px solid red;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album|escape:'url'}&artist={$artist|escape:'url'}" alt="" loading="lazy"></p>
+{/if}
+
+{if $track->getURL()}
     <p class="lead">Listened to <a href="{$track->getURL()}"><span class="p-music-track">{$track->name|escape:'html':'UTF-8'}</span> {if $track->artist_name}by <span class="p-music-artist">{$track->artist_name|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album->name|escape:'html':'UTF-8'}</span>{/if}</a></p>
+{else}
+    <p class="lead">Listened to <span class="p-music-track">{$track|escape:'html':'UTF-8'}</span> {if $artist}by <span class="p-music-artist">{$artist|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album|escape:'html':'UTF-8'}</span>{/if}</p>
 {/if}
 
     <p><time datetime="{$stamp}">{$stamp}</time></p>
 
 </div>
 
-{if $album->mbid}
+{if $scrobbledata->mbid}
     <p><small>Image provided by Cover Art Archive</small></p>
 {/if}
 
