@@ -53,9 +53,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {if $album->mbid}
 <p><small>Image provided by Cover Art Archive</small></p>
-<ul class="list-inline">
+<ul class="list-group">
     {section name=i loop=$extra_head_links}
-    <li class="list-inline-item"><a rel="{$extra_head_links[i].rel|escape:'html':'UTF-8'}" href="{$extra_head_links[i].href|escape:'UTF-8'}" type="{$extra_head_links[i].type|escape:'html':'UTF-8'}">{$extra_head_links[i].title|escape:'html':'UTF-8'}</a></li>
+    <li class="list-item"><a rel="{$extra_head_links[i].rel|escape:'html':'UTF-8'}" href="{$extra_head_links[i].href|escape:'UTF-8'}" type="{$extra_head_links[i].type|escape:'html':'UTF-8'}">{$extra_head_links[i].title|escape:'html':'UTF-8'}</a></li>
     {/section}
 </ul>
 {/if}
@@ -66,37 +66,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     This is a new feature that gives you a unique URL for each song you've ever listened to. You can share it elsewhere and it can also be embedded on another website.
 </div>
 
-<h3>Embed this anywhere</h3>
 
-<p class="lead">Embed this scrobble as an image on another website.</p>
-
-<h4>HTML</h4>
-
-<div class="mb-3">
-    <textarea class="form-control" rows="6">
-{if $nomb}
-<a href="{$bob}"><img loading="lazy" src="{$bob}/image" width="480" height="90" alt="{$me->name} listened to {$track-only|escape:'html':'UTF-8'} by {$artist-only|escape:'html':'UTF-8'} ({$album-only|escape:'html':'UTF-8'})"></a>
-{else}
-<a href="{$bob}"><img loading="lazy" src="{$bob}/image" width="480" height="90" alt="{$me->name} listened to {$track->name|escape:'html':'UTF-8'} by {$artist->name|escape:'html':'UTF-8'} ({$album-name|escape:'html':'UTF-8'})"></a>
-{/if}
-</textarea>
-</div>
-
-<h4>BBCode</h4>
-
-<div class="mb-3">
-    <textarea class="form-control" rows="6">
-{if $nomb}
-[url={$bob}][img width="480" height="90" alt="{$me->name} listened to {$track-only|escape:'html':'UTF-8'} by {$artist-only|escape:'html':'UTF-8'} ({$album-only|escape:'html':'UTF-8'})"]{$bob}/image[/img][/url]
-{else}
-[url={$bob}][img width="480" height="90" alt="{$me->name} listened to {$track->name|escape:'html':'UTF-8'} by {$artist->name|escape:'html':'UTF-8'} ({$album->name|escape:'html':'UTF-8'})"]{$bob}/image[/img][/url]
-{/if}
-</textarea>
-</div>
-{/if}
-{/if}
-
-{/if}
 
 {if ($logged_in)}
 {if $isme}
