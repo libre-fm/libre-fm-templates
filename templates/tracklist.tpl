@@ -77,7 +77,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                 {if $linktoscrobbles}
                 <a href="/user/{$me->name}/scrobble/{$i.time}">
                 {/if}
-                <time datetime="{$i.time|date_format:"%Y-%m-%d %H:%i:%s"}" title="{$i.time|date_format:"%c"}">{$i.timehuman}</time
+                <time datetime="{$i.time|date_format:"%Y-%m-%d %H:%M:%S"}" title="{$i.time|date_format:"%c"}">{$i.timehuman}</time
 				{if $linktoscrobbles}</a>{/if}
             </td>
         </tr>
