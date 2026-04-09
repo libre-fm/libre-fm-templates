@@ -21,7 +21,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 *}
 
-<hr />
+<hr>
 
 <nav class="mt-2 mb-2" aria-label="Page navigation">
   <ul class="pagination justify-content-center">
