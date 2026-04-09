@@ -47,7 +47,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="card">
 <div class="card-body">
-<h5 class="mt-3 mb-3">Top tracks over the last 7 days</h5>
+<h5 class="card-title">Top tracks over the last 7 days</h5>
 <ul class="list-group mb-3">
         {foreach $toptracksdata as $i}
 <li class="list-group-item d-flex justify-content-between align-items-center">
