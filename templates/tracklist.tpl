@@ -54,31 +54,27 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <tr>
             <td class="name">
                 {if $linktoscrobbles}
-                <a href="/user/{$me->name}/scrobble/{$i.time}">{$i.track|unescape:'html'}</a>
+                	<a href="/user/{$me->name}/scrobble/{$i.time}" rel="prefetch bookmark">{$i.track|unescape:'html'}</a>
                 {else}
-                {if $i.tracklibraryurl}
-                <a href="{$i.tracklibraryurl|escape:'html'}">{$i.track|unescape:'html'}</a>
-                {else}
-                <a href="{$i.trackurl|escape:'html'}">{$i.track|unescape:'html'}</a>
-                {/if}
+                	{if $i.tracklibraryurl}
+                		<a href="{$i.tracklibraryurl|escape:'html'}">{$i.track|unescape:'html'}</a>
+               		{else}
+                		<a href="{$i.trackurl|escape:'html'}">{$i.track|unescape:'html'}</a>
+                	{/if}
                 {/if}
             </td>
             <td>
                 {if $fartist}
-                {if $i.artistlibraryurl}
-                <a href="{$i.artistlibraryurl|escape:'html'}">{$i.artist|unescape:'html'}</a>
-                {else}
-                <a href="{$i.artisturl|escape:'html'}">{$i.artist|unescape:'html'}</a>
-                {/if}
+	                {if $i.artistlibraryurl}
+	                	<a href="{$i.artistlibraryurl|escape:'html'}">{$i.artist|unescape:'html'}</a>
+				{else}
+	                	<a href="{$i.artisturl|escape:'html'}">{$i.artist|unescape:'html'}</a>
+	                {/if}
                 {/if}
             </td>
 
             <td class="time">
-                {if $linktoscrobbles}
-                <a href="/user/{$me->name}/scrobble/{$i.time}">
-                {/if}
                 <time datetime="{$i.time|date_format:"%Y-%m-%d %H:%M:%S"}" title="{$i.time|date_format:"%c"}">{$i.timehuman}</time>
-				{if $linktoscrobbles}</a>{/if}
             </td>
         </tr>
         {/foreach}
