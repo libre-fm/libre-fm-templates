@@ -24,7 +24,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {if $scrobbledata}
 ## {$me->name} <https: //libre.fm/user/{$me->name}>
 
-    Listened to {$scrobbledata['track']} {if $scrobbledata['artist']}by {$scrobbledata['artist']}{/if}{if $scrobbledata['album']} on {$scrobbledata['album']}{/if}
+    Listened to '{$scrobbledata['track']}' {if $scrobbledata['artist']}by '{$scrobbledata['artist']}{/if}{if $scrobbledata['album']}' on '{$scrobbledata['album']}'{/if}
 
     {$stomp}
     {/if}
