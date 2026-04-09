@@ -52,6 +52,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file="tracklist.tpl" class=#table# items=$scrobbles fimage=true fstream=true fartist=true flove=true ftime=true}
 
+{if $topartists}
+
 <p><a href="/user/{$me->name}/recent-tracks" class="btn btn-primary">More recent plays...</a></p>
 
 
@@ -115,6 +117,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </table>
 
 <p><a href="/user/{$me->name}/stats" class="btn btn-primary">More stats...</a></p>
+
+{/if}
 
 <!--
 {if !empty($lovedArtists)}
