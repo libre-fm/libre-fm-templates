@@ -22,14 +22,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 *}
 
 {if $nosidebar != true}
-<aside>
-    {include file="sidebar.tpl" player=$sideplayer}
-</aside>
+{include file="sidebar.tpl" player=$sideplayer}
 {/if}
 </main>
 </div>
 </div>
-</section>
 </section>
 <!-- ======== feature-section end ======== -->
 
