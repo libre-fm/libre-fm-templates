@@ -121,7 +121,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <!-- ======== header end ======== -->
 
     <!-- ======== feature-section start ======== -->
-    <section id="home" class="feature-section">
+    <main id="home" class="feature-section">
         <div class="container">
             <div class="row justify-content-center">
                 <div class="col-12 mt-20">
