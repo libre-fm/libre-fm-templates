@@ -19,14 +19,10 @@ GNU Affero General Public License for more details.
 You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-*}
-
-{config_load file='theme.conf' scope='global'}
-<!DOCTYPE html>
+*}{config_load file='theme.conf' scope='global'}<!DOCTYPE html>
 <html lang="en" data-bs-theme="dark">
-
 <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     {if !($pagetitle)}
     <title>{$site_name} &mdash; the open source music community for keeping track of your music listening habits</title>
     {else}
