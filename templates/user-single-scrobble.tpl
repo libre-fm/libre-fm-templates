@@ -26,8 +26,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <div class="h-entry alert alert-dark">
 
 {$scrobbledata|var_dump}
+<hr>
 {$track|var_dump}
+<hr>
 {$artist|var_dump}
+<hr>
 {$album|var_dump}
 
 <h2 class="p-name"><a href="/user/{$me->name}">{$me->name}</a></h2>
