@@ -25,6 +25,48 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h2 class="text-center mt-3 mb-3">Welcome back, <a href="/user/{t name=$this_user->name}%1{/t}">{t name=$this_user->name}%1{/t}</a>!</h2>
 
+{if $topartists}
+
+<div class="card-group">
+
+<div class="card">
+<div class="card-body">
+<h5 class="card-title">Plays over the last 7 days</h5>
+
+<ul class="list-group mb-3">
+        {foreach $topplaybydays as $day}
+<li class="list-group-item d-flex justify-content-between align-items-center">
+<time datetime="{$day['date']}">
+    {$day['date']|date_format:"%B %e, %Y"}</time>
+    <span class="badge text-bg-primary rounded-pill">{$day['count']}</span>
+</li>
+{/foreach}
+</ul>
+</div>
+</div>
+
+<div class="card">
+<div class="card-body">
+<h5 class="mt-3 mb-3">Top tracks over the last 7 days</h5>
+<ul class="list-group mb-3">
+        {foreach $toptracksdata as $i}
+<li class="list-group-item d-flex justify-content-between align-items-center">
+{if $i.tracklibraryurl}
+                <a href="{$i.tracklibraryurl|escape:'html'}">{$i.track|unescape:'html'}</a>
+                {else}
+                <a href="{$i.trackurl|escape:'html'}">{$i.track|unescape:'html'}</a>
+                {/if}
+    <span class="badge text-bg-primary rounded-pill">{$i.freq}</span>
+</li>
+
+        {/foreach}
+    </ul>
+</div>
+</div>
+</div>
+
+{/if}
+
 <!-- <div class="alert alert-dark">
     <h3>What's new?</h3>
 
