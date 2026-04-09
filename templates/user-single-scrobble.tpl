@@ -74,7 +74,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="mb-3">
     <textarea class="form-control" rows="6">
-<a href="{$bob}"><img loading="lazy" src="{$bob}/image" width="480" height="90" alt="{$me->name} listened to {$track|escape:'html':'UTF-8'} by {$artist|escape:'html':'UTF-8'} ({$album|escape:'html':'UTF-8'})"></a>
+{if $nomb}
+<a href="{$bob}"><img loading="lazy" src="{$bob}/image" width="480" height="90" alt="{$me->name} listened to {$track-only|escape:'html':'UTF-8'} by {$artist-only|escape:'html':'UTF-8'} ({$album-only|escape:'html':'UTF-8'})"></a>
+{else}
+<a href="{$bob}"><img loading="lazy" src="{$bob}/image" width="480" height="90" alt="{$me->name} listened to {$track->name|escape:'html':'UTF-8'} by {$artist->name|escape:'html':'UTF-8'} ({$album-name|escape:'html':'UTF-8'})"></a>
+{/if}
 </textarea>
 </div>
 
@@ -82,7 +86,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="mb-3">
     <textarea class="form-control" rows="6">
-[url={$bob}][img width="480" height="90" alt="{$me->name} listened to {$track|escape:'html':'UTF-8'} by {$artist|escape:'html':'UTF-8'} ({$album|escape:'html':'UTF-8'})"]{$bob}/image[/img][/url]
+{if $nomb}
+[url={$bob}][img width="480" height="90" alt="{$me->name} listened to {$track-only|escape:'html':'UTF-8'} by {$artist-only|escape:'html':'UTF-8'} ({$album-only|escape:'html':'UTF-8'})"]{$bob}/image[/img][/url]
+{else}
+[url={$bob}][img width="480" height="90" alt="{$me->name} listened to {$track->name|escape:'html':'UTF-8'} by {$artist->name|escape:'html':'UTF-8'} ({$album->name|escape:'html':'UTF-8'})"]{$bob}/image[/img][/url]
+{/if}
 </textarea>
 </div>
 {/if}
