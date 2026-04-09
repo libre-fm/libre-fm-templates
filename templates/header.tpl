@@ -145,9 +145,11 @@ Libre.fm support will be taking a break for the holidays from Dec 23-27th, so un
                                 {include file='getting-started-help.tpl'}
                                 <hr>
                                 <p>Once you've successfully scrobbled a few songs, this help box will move to <a href="/about/">the help page</a></p>
-                                {/if}
-                                {/if}
                             </div>
+                        {/if}
+                    </div>
+                    {/if}
+                            
 
 
                             {if $nosidebar}
