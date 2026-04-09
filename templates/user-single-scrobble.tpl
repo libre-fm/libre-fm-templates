@@ -23,28 +23,27 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl'}
 
-{if $track}
-
 <div class="h-entry alert alert-dark">
 
-    <h2 class="p-name"><a href="/user/{$me->name}">{$me->name}</a></h2>
+<h2 class="p-name"><a href="/user/{$me->name}">{$me->name}</a></h2>
 
-    <p><a href="/user/{$me->name}"><img loading="lazy" class="u-photo" width="48" height="48" src="{$me->getAvatar(48)}" alt="{$me->name}'s profile"></a></p>
+<p><a href="/user/{$me->name}"><img loading="lazy" class="u-photo" width="48" height="48" src="{$me->getAvatar(48)}" alt="{$me->name}'s profile"></a></p>
 
 {if $album->mbid}
-<p><a href="{$url}"><img class="img-responsive" src="https://coverartarchive.org/release-group/{$album->mbid}/front-250" alt="" height="250" loading="lazy"></a></p>
+    <p><a href="{$url}"><img class="img-responsive" src="https://coverartarchive.org/release-group/{$album->mbid}/front-250" alt="" height="250" loading="lazy"></a></p>
 {else}
-{if $nomb}
-    <p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album-only|escape:'url'}&artist={$artist-only|escape:'url'}" alt="" loading="lazy"></p>
-{else}
-    <p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album->name|escape:'url'}&artist={$track->artist_name|escape:'url'}" alt="" loading="lazy"></p>
+    {if $nomb}
+        <p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album-only|escape:'url'}&artist={$artist-only|escape:'url'}" alt="" loading="lazy"></p>
+    {else}
+        <p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album->name|escape:'url'}&artist={$track->artist_name|escape:'url'}" alt="" loading="lazy"></p>
+    {/if}
 {/if}
-{/if}
+
 {if $nomb}
     <p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album-only|escape:'url'}&artist={$artist-only|escape:'url'}" alt="" loading="lazy" /></p>
     <p class="lead">Listened to <span class="p-music-track">{$track-only|escape:'html':'UTF-8'}</span> {if $artist-only}by <span class="p-music-artist">{$artist-only|escape:'html':'UTF-8'}</span>{/if}{if $album-only} on <span class="p-music-album">{$album-only|escape:'html':'UTF-8'}</span>{/if}</p>
 {else}
-<p class="lead">Listened to <a href="{$track->getURL()}"><span class="p-music-track">{$track->name|escape:'html':'UTF-8'}</span> {if $track->artist_name}by <span class="p-music-artist">{$track->artist_name|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album->name|escape:'html':'UTF-8'}</span>{/if}</a></p>
+    <p class="lead">Listened to <a href="{$track->getURL()}"><span class="p-music-track">{$track->name|escape:'html':'UTF-8'}</span> {if $track->artist_name}by <span class="p-music-artist">{$track->artist_name|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album->name|escape:'html':'UTF-8'}</span>{/if}</a></p>
 {/if}
 
     <p><time datetime="{$stamp}">{$stamp}</time></p>
@@ -52,7 +51,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div>
 
 {if $album->mbid}
-<p><small>Image provided by Cover Art Archive</small></p>
+    <p><small>Image provided by Cover Art Archive</small></p>
 {/if}
 
 <div class="alert alert-info">
