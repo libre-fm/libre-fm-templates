@@ -27,7 +27,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {if ($topplaybydays)}
 
-<div class="card-group">
+<div class="card-group mb-3">
 
 <div class="card">
 <div class="card-body">
