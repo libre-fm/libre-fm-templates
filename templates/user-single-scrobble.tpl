@@ -28,7 +28,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h2 class="p-name"><a href="/user/{$me->name}">{$me->name}</a></h2>
 <p><a href="/user/{$me->name}"><img loading="lazy" class="u-photo" width="48" height="48" src="{$me->getAvatar(48)}" alt="{$me->name}'s profile"></a></p>
 
-    <p><img style="background: #666; border: 1px solid red;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$scrobbledata['album']|escape:'url'}&artist={$scrobbledata['artist']|escape:'url'}" alt="" loading="lazy"></p>
+    <p><img style="border: 1px solid red; background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$scrobbledata['album']|escape:'url'}&artist={$scrobbledata['artist']|escape:'url'}" alt="" loading="lazy"></p>
 
 {if $track->artist_name}
     <p class="lead">Listened to <a href="{$track->getURL()}"><span class="p-music-track">{$track->name|escape:'html':'UTF-8'}</span> {if $track->artist_name}by <span class="p-music-artist">{$track->artist_name|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album->name|escape:'html':'UTF-8'}</span>{/if}</a></p>
