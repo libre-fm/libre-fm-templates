@@ -25,6 +25,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="h-entry alert alert-dark">
 
+{$scrobbledata|var_dump}
+{$track|var_dump}
+{$artist|var_dump}
+{$album|var_dump}
+
 <h2 class="p-name"><a href="/user/{$me->name}">{$me->name}</a></h2>
 <p><a href="/user/{$me->name}"><img loading="lazy" class="u-photo" width="48" height="48" src="{$me->getAvatar(48)}" alt="{$me->name}'s profile"></a></p>
 
