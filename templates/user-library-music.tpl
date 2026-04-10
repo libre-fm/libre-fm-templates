@@ -27,6 +27,18 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h3>Top Artists</h3>
 
+{if !$artist->name}
+{if $page->urls.sort_name}
+<a href="{$page->urls.sort_name}" class="btn btn-success">Sort by artist name</a>
+{/if}
+{/if}
+
+{if !$artist->name}
+{if $page->urls.sort_count}
+<a href="{$page->urls.sort_count}" class="btn btn-success">Sort by play count</a>
+{/if}
+{/if}
+
 {if $page->artists}
 {include file='artistlist.tpl' class=#librarytable# items=$page->artists thead=true fstream=true fimage=true fcount=true}
 {/if}
