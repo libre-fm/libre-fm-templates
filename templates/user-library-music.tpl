@@ -43,6 +43,24 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {include file='artistlist.tpl' class=#librarytable# items=$page->artists thead=true fstream=true fimage=true fcount=true}
 {/if}
 
+<h3>Top tracks</h3>
+
+{if $page->tracks}
+{include file='artistlist.tpl' class=#librarytable# items=$page->tracks thead=true fstream=true fimage=true fcount=true}
+{/if}
+
+{if !$artist->name}
+{if $page->urls.sort_name}
+<a href="{$page->urls.sort_name}" class="btn btn-success">Sort by artist name</a>
+{/if}
+{/if}
+
+{if !$artist->name}
+{if $page->urls.sort_count}
+<a href="{$page->urls.sort_count}" class="btn btn-success">Sort by play count</a>
+{/if}
+{/if}
+
 {include file='paginate.tpl'}                                                                                                                       
 
 {include file='footer.tpl'}
