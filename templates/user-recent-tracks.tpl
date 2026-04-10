@@ -25,7 +25,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {userscrobbles userid=$me->uniqueid}
 <h3>Recent plays</h3>
-{include file="tracklist.tpl" class=#table# items=$userscrobbles fimage=true fstream=true fartist=true flove=true ftime=true}
+{include file="tracklist.tpl" class=#table# items=$scrobbles fimage=true fstream=true fartist=true flove=true ftime=true}
 
 <p><a href="/user/{$me->name}/library/scrobbles" class="btn btn-primary">Full listening history...</a></p>
 
