@@ -23,12 +23,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <hr>
 
+{if !$artist->name}
 {if $page->urls.sort_name}
-<a href="{$page->urls.sort_name}" class="btn btn-success">Sort by name</a>
+<a href="{$page->urls.sort_name}" class="btn btn-success">Sort by artist name</a>
+{/if}
 {/if}
 
+{if !$artist->name}
 {if $page->urls.sort_count}
 <a href="{$page->urls.sort_count}" class="btn btn-success">Sort by play count</a>
+{/if}
 {/if}
 
 <nav class="mt-2 mb-2" aria-label="Page navigation">
