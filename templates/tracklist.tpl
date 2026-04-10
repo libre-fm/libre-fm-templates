@@ -54,7 +54,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <tr>
             <td class="name">
                 {if $linktoscrobbles}
-                	<a href="/user/{$me->name}/scrobble/{$i.time}" rel="prefetch bookmark">{$i.track|unescape:'html'}</a>
+                	<a href="/user/{$me->name}/scrobble/{$i.time}" title="{$i.album|unescape:'html'}" rel="prefetch bookmark">{$i.track|unescape:'html'}</a>
                 {else}
                 	{if $i.tracklibraryurl}
                 		<a href="{$i.tracklibraryurl|escape:'html'}">{$i.track|unescape:'html'}</a>
