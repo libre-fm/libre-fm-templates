@@ -25,8 +25,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h2>Library</h2> {include file='submenu.tpl' submenu=$page->menu}
 
-<h3>Top Artists by playcount</h3>
-<p>This page is <a href="/donate.php">cached for 24 hours</a>.</p>
+<h3>Top Artists</h3>
 
 {if $page->artists}
 {include file='artistlist.tpl' class=#librarytable# items=$page->artists thead=true fstream=true fimage=true fcount=true}
