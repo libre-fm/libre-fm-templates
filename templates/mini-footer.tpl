@@ -21,6 +21,19 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 *}
 
+<div class="alert alert-secondary">
+
+    <h3 style="color: black" class="pt-20">General tips</h3>
+
+    <ul>
+        <li>Have you tried <a href="https://webscrobbler.com" target="_blank">Web Scrobbler</a>? It helps you scrobble from streaming services like Spotify and Apple Music</li>
+        <li>See <a href="https://wiki.libre.fm">the wiki for a list of known clients</a> and please add to it.</li>
+        <li>Please consider using email privacy/relay services where possible. The less we know about you the better (said in the nicest of ways)</li>
+        <li>Please consider using an ad-blocker on every browser and device you use. We don't show ads but others do.</li>
+        <li>Using Last.fm? We can import your recent and future scrobbles right now. Just email your Libre.fm and Last.fm usernames to <a href="mailto:support@libre.fm">support@libre.fm</a></li>
+    </ul>
+</div>
+
 {if $nosidebar != true}
 <aside>
     {include file="sidebar.tpl" player=$sideplayer}
