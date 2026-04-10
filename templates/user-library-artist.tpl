@@ -34,12 +34,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <h3>{$page->artist->name}</h3>
         {if $page->artist->homepage}
         <p>
-                <a class="btn btn-primary" href="{$page->artist->homepage}">
+                <a class="btn btn-primary" href="{$page->artist->homepage|escape:'html'}">
                     {$page->artist->homepage}
                 </a>
         </p>
         {/if}
-        <p><a class="btn btn-success" href="{$page->artist_url|escape:'url'}">Go to artist page</a></p>
+        <p><a class="btn btn-success" href="{$page->artist_url|escape:'html'}">Go to artist page</a></p>
     </div>
 </div>
 
