@@ -41,11 +41,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {if $album->name}
 <p>from <a href="{$album->getURL()}">{$album->name}</a></p>
 <p>by <a href="{$artist->getURL()}">{$artist->name}</a></p>
+{elseif $track->album_name}
+<p>from {$track->album_name}</p>
+<p>by <a href="{$artist->getURL()}">{$artist->name}</a></p>
 {else}
-<h2>
-    {$track->name}
-</h2>
-<p><a href="{$artist->getURL()}">{$artist->name}</a></p>
+<p>by <a href="{$artist->getURL()}">{$artist->name}</a></p>
 {/if}
 
 </div>
