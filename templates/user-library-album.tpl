@@ -26,11 +26,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h2>Library</h2> {include file='submenu.tpl' submenu=$page->menu}
 
 <div class="row">
-    <div class="col-sm-2">
+    <div class="col-sm-4">
         <img class="img-responsive margin-top" src="{$page->album_image}" alt loading="lazy" width="250" height="250" />
 
     </div>
-    <div class="col-sm-10">
+    <div class="col-sm-8">
         <h3>{$page->album->name}</h3>
         <p>
             by
