@@ -46,7 +46,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/if}
 
 <details>
-{$page|var_dump
+{$page|var_dump}
 </details>
 
 {include file='paginate.tpl'}                                                                                                                       
