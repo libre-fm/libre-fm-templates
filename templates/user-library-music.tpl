@@ -46,7 +46,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h3>Top tracks</h3>
 
 {if $page->tracks}
-{include file='artistlist.tpl' class=#librarytable# items=$page->tracks thead=true fstream=true fimage=true fcount=true}
+{include file='tracklist.tpl' class=#librarytable# items=$page->tracks thead=true fstream=true fimage=true fcount=true}
 {/if}
 
 {if !$artist->name}
