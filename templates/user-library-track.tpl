@@ -26,10 +26,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h2>Library</h2> {include file='submenu.tpl' submenu=$page->menu}
 
 <div class="row">
-    <div class="col-sm-4">
-        <img class="img-responsive img-thumbnail margin-top" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat;" src="{$page->artist_image}" alt loading="lazy" width="250" height="250"  />
+    <div class="col-sm-3">
+        <img class="img-responsive img-thumbnail margin-top img-lazy" src="{$page->artist_image}" alt loading="lazy" width="250" height="250"  />
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-9">
 
         <h3>{$page->track->name}</h3>
 
@@ -37,7 +37,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             by <a href="{$page->artist_library_url|escape:'html'}">{$page->artist->name}</a>
         </p>
 
-        <a href="{$page->track_url|escape: 'html'}">Go to track page</a>
+        <a class="btn btn-success" href="{$page->track_url|escape: 'html'}">Go to track page</a>
     </div>
 </div>
 
