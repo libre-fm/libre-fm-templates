@@ -26,11 +26,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h2>Library</h2> {include file='submenu.tpl' submenu=$page->menu}
 
 <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-3">
         <img class="img-responsive img-thumbnail margin-top img-lazy" src="{$page->album_image}" alt loading="lazy" width="250" height="250" />
 
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-9">
         <h3>{$page->album->name}</h3>
         <p>
             by
@@ -38,7 +38,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                 {$page->artist->name}</a>
         </p>
         <p>
-            <a class="btn btn-succes" href="{$page->album_url|escape:'html'}">Go to album page</a>
+            <a class="btn btn-success" href="{$page->album_url|escape:'html'}">Go to album page</a>
         </p>
     </div>
 </div>
