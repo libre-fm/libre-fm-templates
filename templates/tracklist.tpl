@@ -57,7 +57,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 				<a href="/user/{$me->name}/scrobble/{$i.time}">
 				<img class="img-thumbnail" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat;" src="https://turtle.libre.fm/cover.php?album="{$i.album|unescape:'html'}&artist={$i.artist|unescape:'html'}" height="25" width="25" loading="lazy" alt>
 				</a>
-	            {/if}
+	            {else}
+				{if $i.tracklibraryurl}
+                		<a href="{$i.tracklibraryurl|escape:'html'}"><img class="img-thumbnail" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat;" src="https://turtle.libre.fm/cover.php?album="{$i.album|unescape:'html'}&artist={$i.artist|unescape:'html'}" height="25" width="25" loading="lazy" alt></a>
+               		{else}
+                		<a href="{$i.trackurl|escape:'html'}"><img class="img-thumbnail" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat;" src="https://turtle.libre.fm/cover.php?album="{$i.album|unescape:'html'}&artist={$i.artist|unescape:'html'}" height="25" width="25" loading="lazy" alt></a>
+                	{/if}
+				{/if}
                 {if $linktoscrobbles}
                 	<a href="/user/{$me->name}/scrobble/{$i.time}" title="{$i.album|unescape:'html'}" rel="prefetch bookmark">
 					{$i.track|unescape:'html'}
