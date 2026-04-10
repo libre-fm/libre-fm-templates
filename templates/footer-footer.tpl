@@ -34,7 +34,15 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                             </a>
                         </div>
                         <p class="desc mb-30 text-white">
-                            Since 2009. <a href="https://hireme.fyi">Made with love in New England</a> but <a href="https://bored.city">we are bored in the city</a>. Libre.fm is supported by <a target="_blank" href="https://www.bytemark.co.uk/company/sponsorships/">Bytemark</a>, <a target="_blank" href="https://corehost.us/">Corehost</a> and <a target="_blank" href="https://archive.org/">The Internet Archive</a>. With thanks to <a target="_blank" href="https://musicbrainz.org/">MusicBrainz</a>, <a target="_blank" href="https://themewagon.com">ThemeWagon</a>, <a target="_blank" href="https://crowdsec.net">Crowdsec</a>, <a target="_blank" href="https://coverartarchive.org/">Cover Art Archive</a> and our <a href="/donate.php">donors</a>.
+                            Since 2009. <a href="https://hireme.fyi">Made with love in New England</a> but <a href="https://bored.city">we are bored in the city</a>. Libre.fm is supported by <a target="_blank" href="https://www.bytemark.co.uk/company/sponsorships/">Bytemark</a>, <a target="_blank" href="https://corehost.us/">Corehost</a> and <a target="_blank" href="https://archive.org/">The Internet Archive</a>. With thanks to <a target="_blank" href="https://themewagon.com">ThemeWagon</a>, <a target="_blank" href="https://crowdsec.net">Crowdsec</a>, and our <a href="/donate.php">donors</a>.
+                        </p>
+
+                        <p class="desc mb-30 text-white">
+                            All album art courtesy of <a target="_blank" href="https://coverartarchive.org/">Cover Art Archive</a>.
+                        </p>
+
+                        <p class="desc mb-30 text-white">
+                            Artist information sourced from <a target="_blank" href="https://musicbrainz.org/">MusicBrainz</a>.
                         </p>
 
                         <p class="mb-30 text-white">This page generated in {$page_time} seconds by <a rel="me" href="https://mat.tl">mattl</a>. All your base are belong to us. We're u/libre-fm on reddit now.</p>
