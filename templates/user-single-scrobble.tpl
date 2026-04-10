@@ -23,30 +23,43 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl'}
 
-<div class="h-entry alert alert-dark">
-
-<h2 class="p-name"><a href="/user/{$me->name}">{$me->name}</a></h2>
-<p><a href="/user/{$me->name}"><img loading="lazy" class="u-photo" width="48" height="48" src="{$me->getAvatar(48)}" alt="{$me->name}'s profile"></a></p>
-
-    <p><img style="border: 1px solid white; background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat;" width="250" height="250" src="https://turtle.libre.fm/cover.php?mbid={$scrobbledata['mbid']}&album={$scrobbledata['album']|escape:'url'}&artist={$scrobbledata['artist']|escape:'url'}" alt="" loading="lazy"></p>
-
-{if $track->artist_name}
-    <p class="lead">Listened to <a href="{$track->getURL()}"><span class="p-music-track">{$track->name|escape:'html':'UTF-8'}</span> {if $track->artist_name}by <span class="p-music-artist">{$track->artist_name|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album->name|escape:'html':'UTF-8'}</span>{/if}</a></p>
-{else}
-    <p class="lead">Listened to <span class="p-music-track">{$scrobbledata['track']|escape:'html':'UTF-8'}</span> {if $scrobbledata['artist']}by <span class="p-music-artist">{$scrobbledata['artist']|escape:'html':'UTF-8'}</span>{/if}{if $scrobbledata['album']} on <span class="p-music-album">{$scrobbledata['album']|escape:'html':'UTF-8'}</span>{/if}</p>
-{/if}
-
-    <p><time datetime="{$stamp}">{$stomp}</time></p>
-
+<div class="card mb-3 h-entry" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-6 p-4">
+      <img src="https://turtle.libre.fm/cover.php?mbid={$scrobbledata['mbid']}&album={$scrobbledata['album']|escape:'url'}&artist={$scrobbledata['artist']|escape:'url'}" alt="" loading="lazy"  class="img-thumbnail img-lazy img-fluid rounded-start" alt>
+    </div>
+    <div class="col-md-6">
+      <div class="card-body">
+        <div class="d-flex flex-row">
+            <div class="p-2"><a href="/user/{$me->name}"><img loading="lazy" class="u-photo" width="48" height="48" src="{$me->getAvatar(48)}" alt="{$me->name}'s profile"></a></div>
+            <div class="p-2">
+              <h2 class="mb-0 p-name" style="font-size: 1.5rem">{if $me->fullname}{$me->fullname}{else}{$me->name}{/if}</h2>
+              <p>
+                <small><a href="/user/{$me->name}">{$me->name}</a></small>
+              </p>
+            </div>
+          </div>
+          {if $track->artist_name}
+          <h3 class="card-title" style="font-size: 1.25rem"><a href="{$track->getURL()}"><span class="p-music-track">{$track->name|escape:'html':'UTF-8'}</span></h3>
+              <p class="card-text">{if $track->artist_name}by <span class="p-music-artist">{$track->artist_name|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album->name|escape:'html':'UTF-8'}</span>{/if}</a></p>
+          {else}
+              <h3 class="card-title" style="font-size: 1.25rem"><span class="p-music-track">{$scrobbledata['track']|escape:'html':'UTF-8'}</span></h3>
+              <p class="card-text">{if $scrobbledata['artist']}by <span class="p-music-artist">{$scrobbledata['artist']|escape:'html':'UTF-8'}</span>{/if}{if $scrobbledata['album']} on <span class="p-music-album">{$scrobbledata['album']|escape:'html':'UTF-8'}</span>{/if}</p>
+          {/if}
+          
+          <p class="card-text"><small class="text-muted"><time datetime="{$stamp}">{$stomp}</time></small></p>
+        </div>
+      </div>
+    </div>
 </div>
 
-{if $scrobbledata->mbid}
-    <p><small>Image provided by Cover Art Archive</small></p>
-{/if}
+<p><small>Image provided by Cover Art Archive</small></p>
 
+{if $isme}
 <div class="alert alert-info">
     This is a new feature that gives you a unique URL for each song you've ever listened to. You can share it elsewhere and it can also be embedded on another website.
 </div>
+{/if}
 
 <ul class="list-group">
     {section name=i loop=$extra_head_links}
