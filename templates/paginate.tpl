@@ -38,7 +38,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </nav>
 
 <details>
-{$page->urls|var_dump
+{$page->urls|var_dump}
 </details>
 
 	<!-- <ul class="pager">
