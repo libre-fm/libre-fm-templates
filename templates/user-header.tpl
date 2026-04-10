@@ -48,12 +48,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         &middot; <span class="h-geo">{if $me->location}{$me->location}{else}Cyberspace{/if}</span>
         &middot; Joined {$me->created|date_format:"%B %e, %Y"}
     </p>
-    <div class="alert alert-light">
-    {$me->bio}
-    </div>
     {/if}
     {if $totaltracks > 10}
     {if $me->homepage}
+    <div class="alert alert-light">
+    {$me->bio}
+    </div>
     <ul class="list-inline">
         <li class="list-inline-item"><a class="u-url card-link btn-success badge rounded-pill bg-primary" rel="me nofollow" title="Link to {$me->homepage}" style="text-decoration: none !important" href="{$me->homepage}" target="_blank">Personal website</a></li>
         {if $me->laconica_profile}
