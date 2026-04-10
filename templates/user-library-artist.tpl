@@ -39,7 +39,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                 </a>
         </p>
         {/if}
-        <p><a class="btn btn-success" href="{$page->artist_url}">Go to artist page</a></p>
+        <p><a class="btn btn-success" href="{$page->artist_url|escape:'url'}">Go to artist page</a></p>
     </div>
 </div>
 
