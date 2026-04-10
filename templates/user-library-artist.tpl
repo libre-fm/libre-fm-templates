@@ -26,29 +26,26 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h2>Library</h2> {include file='submenu.tpl' submenu=$page->menu}
 
 <div class="row">
-    <div class="col-sm-4">
+    <div class="col-sm-3">
         <img class="img-responsive img-thumbnail margin-top" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat;" src="{$page->artist_image}" alt loading="lazy" width="250" height="250" />
     </div>
-    <div class="col-sm-8">
+    <div class="col-sm-9">
 
         <h3>{$page->artist->name}</h3>
         {if $page->artist->homepage}
         <p>
-            <small>
-                <a href="{$page->artist->homepage}">
+                <a class="btn btn-primary" href="{$page->artist->homepage}">
                     {$page->artist->homepage}
                 </a>
-            </small>
         </p>
         {/if}
-        <p><a href="{$page->artist_url}">Go to artist page</a></p>
+        <p><a class="btn btn-success" href="{$page->artist_url}">Go to artist page</a></p>
     </div>
 </div>
 
 <p class="margin-top">
     <a href="{$page->section_url|escape:'html'}">
-        <span class="glyphicon glyphicon-chevron-left">
-        </span>
+        <i class="bi bi-chevron-left"></i>
         Show all Artists
     </a>
 </p>
