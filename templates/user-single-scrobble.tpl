@@ -23,7 +23,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl'}
 
-<div class="card mb-3 h-entry" style="max-width: 540px;">
+<div class="card mb-3 h-entry" style="max-width: 700px;">
   <div class="row g-0">
     <div class="col-md-6 p-4">
       <img src="https://turtle.libre.fm/cover.php?mbid={$scrobbledata['mbid']}&album={$scrobbledata['album']|escape:'url'}&artist={$scrobbledata['artist']|escape:'url'}" alt="" loading="lazy"  class="img-thumbnail img-lazy img-fluid rounded-start" alt>
