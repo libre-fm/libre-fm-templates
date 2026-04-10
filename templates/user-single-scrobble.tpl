@@ -26,7 +26,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <div class="card mb-3 h-entry" style="max-width: 700px;">
   <div class="row g-0">
     <div class="col-md-6 p-4">
-      <img src="https://turtle.libre.fm/cover.php?mbid={$scrobbledata['mbid']}&album={$scrobbledata['album']|escape:'url'}&artist={$scrobbledata['artist']|escape:'url'}" alt="" loading="lazy"  class="img-thumbnail img-lazy img-fluid rounded-start" alt>
+      <img src="https://turtle.libre.fm/cover.php?mbid={$scrobbledata['mbid']}&album={$scrobbledata['album']|escape:'url'}&artist={$scrobbledata['artist']|escape:'url'}" alt="" loading="lazy" width="250" height="250" class="img-thumbnail img-lazy img-fluid rounded-start" alt>
     </div>
     <div class="col-md-6">
       <div class="card-body">
@@ -41,7 +41,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
           </div>
           {if $track->artist_name}
           <h3 class="card-title" style="font-size: 1.25rem"><a href="{$track->getURL()}"><span class="p-music-track">{$track->name|escape:'html':'UTF-8'}</span></a></h3>
-              <p class="card-text">{if $track->artist_name}by <span class="p-music-artist">{$track->artist_name|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album->name|escape:'html':'UTF-8'}</span>{/if}</p>
+              <p class="card-text">{if $track->artist_name}by <span class="p-music-artist"><a href="{$track-getURL()}">{$track->artist_name|escape:'html':'UTF-8'}</a></span>{/if}{if $album} on <span class="p-music-album"><a href="{$album->getURL()}">{$album->name|escape:'html':'UTF-8'}</a></span>{/if}</p>
           {else}
               <h3 class="card-title" style="font-size: 1.25rem"><span class="p-music-track">{$scrobbledata['track']|escape:'html':'UTF-8'}</span></h3>
               <p class="card-text">{if $scrobbledata['artist']}by <span class="p-music-artist">{$scrobbledata['artist']|escape:'html':'UTF-8'}</span>{/if}{if $scrobbledata['album']} on <span class="p-music-album">{$scrobbledata['album']|escape:'html':'UTF-8'}</span>{/if}</p>
