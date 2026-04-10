@@ -28,8 +28,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <div class="col-md-6 p-4">
       <img src="https://turtle.libre.fm/cover.php?mbid={$scrobbledata['mbid']}&album={$scrobbledata['album']|escape:'url'}&artist={$scrobbledata['artist']|escape:'url'}" alt="" loading="lazy" width="250" height="250" class="img-thumbnail img-lazy img-fluid rounded-start" alt>
 
-      <p><small>Image provided by Cover Art Archive</small></p>
-
     </div>
     <div class="col-md-6">
       <div class="card-body">
