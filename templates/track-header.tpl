@@ -25,6 +25,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="alert alert-info">
 
+{if $track->getURL()}
+{$track->getURL()}
+{/if}
+
 {if $album->name}
 {if $album->mbid}
 <img class="img-responsive" src="https://coverartarchive.org/release-group/{$album->mbid}/front-250" alt="" height="250" loading="lazy" />
