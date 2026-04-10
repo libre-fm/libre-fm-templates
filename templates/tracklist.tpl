@@ -55,7 +55,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             <td class="name">
 				{if $linktoscrobbles}
 				<a href="/user/{$me->name}/scrobble/{$i.time}">
-				<img class="img-thumbnail" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat;" src="https://turtle.libre.fm/cover.php?album={$i.album|unescape:'html'}&artist={$i.artist|unescape:'html'}" height="25" width="25" loading="lazy" alt>
+				<img style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat;" src="https://turtle.libre.fm/cover.php?album={$i.album|escape:'html'}&artist={$i.artist|escape:'html'}" height="25" width="25" loading="lazy" alt>
 				</a>
 	            {/if}
                 {if $linktoscrobbles}
