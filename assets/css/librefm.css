@@ -10,6 +10,12 @@ html, #how > div > div > section { scroll-behavior: smooth !important; }
 background: #d40000;
 }
 
+.img-lazy {
+	background: whitesmoke url(https://turtle.libre.fm/spinner.gif); 
+	background-position: center center; 
+	background-repeat: no-repeat;
+}
+
 #header {height: 74px;}
 
 .navbar-collapse  .navbar-nav .nav-item a {color: white !important;}
