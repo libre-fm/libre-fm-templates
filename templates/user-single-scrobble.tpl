@@ -23,7 +23,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl'}
 
-<div class="card mb-3 h-entry" style="max-width: 700px;">
+<div class="card mb-3 h-entry" style="width: 100%; max-width: 700px; margin: 1em auto;">
   <div class="row g-0">
     <div class="col-md-6 p-4">
       <img src="https://turtle.libre.fm/cover.php?mbid={$scrobbledata['mbid']}&album={$scrobbledata['album']|escape:'url'}&artist={$scrobbledata['artist']|escape:'url'}" alt="" loading="lazy" width="250" height="250" class="img-thumbnail img-lazy img-fluid rounded-start" alt>
@@ -31,7 +31,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <div class="col-md-6">
       <div class="card-body">
         <div class="d-flex flex-row">
-            <div class="p-2"><a href="/user/{$me->name}"><img loading="lazy" class="u-photo" width="48" height="48" src="{$me->getAvatar(48)}" alt="{$me->name}'s profile"></a></div>
+            <div class="p-2"><a href="/user/{$me->name}"><img loading="lazy" class="u-photo img-lazy" width="48" height="48" src="{$me->getAvatar(48)}" alt="{$me->name}'s profile"></a></div>
             <div class="p-2">
               <h2 class="mb-0 p-name" style="font-size: 1.5rem">{if $me->fullname}{$me->fullname}{else}{$me->name}{/if}</h2>
               <p>
