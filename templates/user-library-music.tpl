@@ -45,6 +45,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {include file='tracklist.tpl' class=#librarytable# items=$page->tracks thead=true fstream=true fimage=true fcount=true}
 {/if}
 
+<details>
+{$page|var_dump
+</details>
 
 {include file='paginate.tpl'}                                                                                                                       
 
