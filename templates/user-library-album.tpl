@@ -38,7 +38,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                 {$page->artist->name}</a>
         </p>
         <p>
-            <a href="{$page->album_url|escape:'html'}">Go to album page</a>
+            <a class="btn btn-succes" href="{$page->album_url|escape:'html'}">Go to album page</a>
         </p>
     </div>
 </div>
