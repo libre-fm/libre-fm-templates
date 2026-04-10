@@ -27,7 +27,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="row">
     <div class="col-sm-2">
-        <img class="img-responsive margin-top" src="{$page->artist_image}" alt="[ Artist Photo  ]" />
+        <img class="img-responsive margin-top" src="{$page->artist_image}" alt loading="lazy" width="250" height="250" />
     </div>
     <div class="col-sm-10">
 
