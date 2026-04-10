@@ -21,8 +21,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 *}
 
-{if $album}
-
 <div class="alert alert-info">
 
 {if $album->mbid}
