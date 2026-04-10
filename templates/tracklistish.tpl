@@ -45,7 +45,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {foreach from=$items item=i}
     <li class="list-group-item">
         {if $me->uniqueid}
-        <a aria-label="Share listening to {$i.track} by {$i.artist}, {$i.timehuman}" title="Share {$i.track} by {$i.artist}" href="/user/{$me->name}/scrobble/{$i.time}">{$i.track}{if $fartist} by {$i.artist}{/if}</a>
+        <a aria-label="Share listening to {$i.track} by {$i.artist} ($i.album), {$i.timehuman}" title="Share {$i.track} by {$i.artist}" href="/user/{$me->name}/scrobble/{$i.time}">{$i.track}{if $fartist} by {$i.artist}{/if}</a>
         {else}
         {if $i.tracklibraryurl}
         <a href="{$i.tracklibraryurl|escape:'html'}">{$i.track}</a>
