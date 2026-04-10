@@ -39,9 +39,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h2>
     {$track->name}
 </h2>
+
 {if $album->name}
 <p>from <a href="{$album->getURL()}">{$album->name}</a></p>
-{/if}
 <p>by <a href="{$artist->getURL()}">{$artist->name}</a></p>
 {else}
 <h2>
