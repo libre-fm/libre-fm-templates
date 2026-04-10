@@ -36,7 +36,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <p class="lead">Listened to <span class="p-music-track">{$scrobbledata['track']|escape:'html':'UTF-8'}</span> {if $scrobbledata['artist']}by <span class="p-music-artist">{$scrobbledata['artist']|escape:'html':'UTF-8'}</span>{/if}{if $scrobbledata['album']} on <span class="p-music-album">{$scrobbledata['album']|escape:'html':'UTF-8'}</span>{/if}</p>
 {/if}
 
-    <p><time datetime="{$stamp}">{$stamp}</time></p>
+    <p><time datetime="{$stamp}">{$stomp}</time></p>
 
 </div>
 
