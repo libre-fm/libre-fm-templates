@@ -27,7 +27,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="row">
     <div class="col-sm-4">
-        <img class="img-responsive img-thumbnail margin-top" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat;"  src="{$page->album_image}" alt loading="lazy" width="250" height="250" />
+        <img class="img-responsive img-thumbnail margin-top img-lazy" src="{$page->album_image}" alt loading="lazy" width="250" height="250" />
 
     </div>
     <div class="col-sm-8">
