@@ -48,7 +48,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         &middot; <span class="h-geo">{if $me->location}{$me->location}{else}Cyberspace{/if}</span>
         &middot; Joined {$me->created|date_format:"%B %e, %Y"}
     </p>
-    <blockquote class="blockquote"><p><em>{$me->bio}</em></p></blockquote>
+    <div class="alert alert-light">
+    {$me->bio}
+    </div>
     {/if}
     {if $totaltracks > 10}
     {if $me->homepage}
