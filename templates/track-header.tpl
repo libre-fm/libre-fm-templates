@@ -29,8 +29,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {$track->getURL()}
 {/if}
 
-{if $track->album}
-{$track->album}
+{if $track->album_name}
+{$track->album_name}
 {/if}
 
 {if $album->name}
