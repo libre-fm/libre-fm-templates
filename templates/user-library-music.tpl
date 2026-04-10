@@ -39,16 +39,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {include file='artistlist.tpl' class=#librarytable# items=$page->artists thead=true fstream=true fimage=true fcount=true}
 {/if}
 
-<h3>Top tracks</h3>
-
-{if $page->tracks}
-{include file='tracklist.tpl' class=#librarytable# items=$page->tracks thead=true fstream=true fimage=true fcount=true}
-{/if}
-
-<details>
-{$page|var_dump}
-</details>
-
 {include file='paginate.tpl'}                                                                                                                       
 
 {include file='footer.tpl'}
