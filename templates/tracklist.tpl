@@ -52,9 +52,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <tbody>
         {foreach from=$items item=i}
         <tr>
-            <td class="name">
+            <td class="name">                
+				<img class="img-thumbnail" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat;" src="https://turtle.libre.fm/cover.php?album="{$i.album|escape:'html'}&artist={$i.artist|escape:'html'}" height="25" width="25" loading="lazy" alt>
                 {if $linktoscrobbles}
-                	<a href="/user/{$me->name}/scrobble/{$i.time}" title="{$i.album|unescape:'html'}" rel="prefetch bookmark">{$i.track|unescape:'html'}</a>
+                	<a href="/user/{$me->name}/scrobble/{$i.time}" title="{$i.album|unescape:'html'}" rel="prefetch bookmark">
+					{$i.track|unescape:'html'}
+					</a>
                 {else}
                 	{if $i.tracklibraryurl}
                 		<a href="{$i.tracklibraryurl|escape:'html'}">{$i.track|unescape:'html'}</a>
