@@ -34,11 +34,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <h3>{$page->album->name}</h3>
         <p>
             by
-            <a href="{$page->artist_library_url|escape:'html'}">
+            <a href="{$page->artist_library_url|escape:'url'}">
                 {$page->artist->name}</a>
         </p>
         <p>
-            <a class="btn btn-success" href="{$page->album_url|escape:'html'}">Go to album page</a>
+            <a class="btn btn-success" href="{$page->album_url|escape:'url'}">Go to album page</a>
         </p>
     </div>
 </div>
