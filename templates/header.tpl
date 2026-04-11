@@ -129,6 +129,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                     {if (!$logged_in)}
                     <div class="alert alert-success text-center text-wrap">
                         Please consider <a href="/donate.php">making a donation</a> to help keep the lights on.
+                    </div>
                     {else}
                         {if ($thisusertotaltracks < 3)}
                             <div class="alert alert-info text-center text-wrap">
@@ -137,12 +138,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                                 <p>Once you've successfully scrobbled a few songs, this help box will move to <a href="/about/">the help page</a></p>
                             </div>
                         {/if}
-                    </div>
                     {/if}
-                            
 
-
-                            {if $nosidebar}
+{if $nosidebar}
                             <!-- nosb -->
                             {else}
                             {if isset($subheader)}
