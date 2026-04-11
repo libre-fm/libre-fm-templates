@@ -31,7 +31,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="card">
 <div class="card-body">
-<h3 class="card-title mb-3 text-center">Your play history over the last 7 days</h3>
+<h3 style="font-size: 1.25em" class="card-title mb-3 text-center">Your play history over the last 7 days</h3>
 
 <ul class="list-group mb-3">
         {foreach $topplaybydays as $day}
@@ -47,7 +47,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="card">
 <div class="card-body">
-<h3 class="card-title mb-3 text-center">Your top tracks over the last 7 days</h3>
+<h3 style="font-size: 1.25em" class="card-title mb-3 text-center">Your top tracks over the last 7 days</h3>
 <ul class="list-group mb-3">
         {foreach $toptracksdata as $i}
 <li class="list-group-item d-flex justify-content-between align-items-center">
