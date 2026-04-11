@@ -6,6 +6,12 @@ td a { text-decoration: none;}
 
 html, #how > div > div > section { scroll-behavior: smooth !important; }
 
+@media only screen and (min-width: 768px) and (max-width: 991px), (max-width: 767px) {
+.navbar-nav {
+background: #d40000;
+}
+}
+
 #header .navbar-collapse, #header {
 background: #d40000;
 }
