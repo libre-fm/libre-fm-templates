@@ -71,10 +71,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                 {/if}
             </td>
             <td>
-                {if $fartist}
+                {if $i.artist}
 	                {if $i.artistlibraryurl}
 	                	<a href="{$i.artistlibraryurl|escape:'html'}">{$i.artist|unescape:'html'}</a>
-				{else}
+					{else}
 	                	<a href="{$i.artisturl|escape:'html'}">{$i.artist|unescape:'html'}</a>
 	                {/if}
                 {/if}
