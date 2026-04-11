@@ -51,9 +51,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/if}
     {if $totaltracks > 10}
     {if $me->homepage}
+    {if $me->bio}
     <div class="alert alert-light">
     {$me->bio}
     </div>
+    {/if}
     <ul class="list-inline">
         <li class="list-inline-item"><a class="u-url card-link btn-success badge rounded-pill bg-primary" rel="me nofollow" title="Link to {$me->homepage}" style="text-decoration: none !important" href="{$me->homepage}" target="_blank">Personal website</a></li>
         {if $me->laconica_profile}
