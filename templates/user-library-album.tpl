@@ -48,10 +48,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {include file='tracklist.tpl' class=#librarytable# items=$page->tracks thead=true fstream=true flove=true ftag=true fcount=true}
 {/if}
 
-<details>
-{$page->tracks|var_dump}
-</details>
-
 {include file='paginate.tpl'}                                                                                                                       
 
 
