@@ -37,10 +37,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   </ul>
 </nav>
 
-<details>
-{$page->urls|var_dump}
-</details>
-
 	<!-- <ul class="pager">
 	    <li class="previous {if $page->page_number <= 1}disabled{/if}">
 	        <a href="{$page->urls.page_prev}">
