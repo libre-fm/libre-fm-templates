@@ -49,13 +49,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {foreach $page->tracks as $topartist}
 <li class="list-group-item d-flex justify-content-between align-items-center">
     <a href="{$topartist['tracklibraryurl']}">{$topartist['track']}</a>
-    <span class="badge text-bg-primary rounded-pill">{$topartist['freq']}</span>
+    <span class="badge text-bg-primary rounded-pill">{$topartist['freq']} listens</span>
 </li>
 {/foreach}
 </ul>
 {/if}
 
-{include file='paginate.tpl'}                                                                                                                       
 
 
 {include file='footer.tpl'}
