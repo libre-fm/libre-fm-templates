@@ -37,7 +37,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </div>
 
     <h3>{t}Albums{/t}</h3>
-    <ul  class="album-list">
+
+    <ul class="list-group list-group-flush">
+<!--    <ul  class="album-list">
         {section name=i loop=$albums max=100}
         {if $albums[i]->name}
         <li about="{$albums[i]->id}" property="dc:title" content="{$albums[i]->name|escape:'html':'UTF-8'}" typeof="mo:Record" class="haudio">
@@ -47,8 +49,20 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             {"404"|coverartexists:100:"{$albums[i]->name|escape:'html':'UTF-8'}":{$albums[i]->getURL()}}
             {/if}
         </li>{/if}
-        {/section}
+        {/section} -->
+
+{section name=i loop=$albums max=100}
+
+    <li class="list-group-item">
+    {if $albums[i]->getURL()}<a href="{$albums[i]->getURL()">{/if}
+        {$albums[i]->name|escape:'html':'UTF-8'}
+    {if $albums[i]->getURL()}</a>{/if}
+    <details>{$albums[i]|var_dump}</details>
+    </li>
+{/section} 
     </ul>
+
+
 
     <h3 class="mb-4 mt-4">Top tracks</h3>
 
