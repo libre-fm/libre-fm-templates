@@ -27,7 +27,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="row">
     <div class="col-sm-3">
-        <a href="{$page->album_url|escape:'html'}"><img class="img-responsive img-thumbnail margin-top img-lazy" src="https://turtle.libre.fm/cover.php?mbid={$i.mbid|escape:'url'}&artist={$i.artist|escape:'url'}&album={$i.album|escape:'url'}" alt loading="lazy" width="250" height="250"></a>
+        <a href="{$page->album_url|escape:'html'}"><img class="img-responsive img-thumbnail margin-top img-lazy" src="https://turtle.libre.fm/cover.php?mbid={$page->mbid|escape:'url'}&artist={$page->artist|escape:'url'}&album={$page->album|escape:'url'}" alt loading="lazy" width="250" height="250"></a>
     </div>
     <div class="col-sm-9">
         <h3>{$page->album->name}</h3>
