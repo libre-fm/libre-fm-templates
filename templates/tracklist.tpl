@@ -81,6 +81,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             </td>
 
             <td class="time">
+                <details>{$i|var_dump}</details>
                 <time datetime="{$i.time|date_format:"%Y-%m-%d %H:%M:%S"}" title="{$i.time|date_format:"%c"}">{$i.timehuman}</time>
             </td>
         </tr>
