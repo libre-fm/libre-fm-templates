@@ -54,7 +54,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {section name=i loop=$albums max=100}
 
     <li class="list-group-item">
-    {if $albums[i]->getURL()}<a href="{$albums[i]->getURL()">{/if}
+    {if $albums[i]->getURL()}<a href="{$albums[i]->getURL()}">{/if}
         {$albums[i]->name|escape:'html':'UTF-8'}
     {if $albums[i]->getURL()}</a>{/if}
     <details>{$albums[i]|var_dump}</details>
