@@ -27,6 +27,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </section>
 </div>
 </div>
+</div>
 </main>
 <!-- ======== feature-section end ======== -->
 
