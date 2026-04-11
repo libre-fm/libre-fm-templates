@@ -43,7 +43,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div>
 
 {if $page->tracks}
-<h4>Tracks on this album</h4>
+<h4 class="mb-3 mt-3">Tracks on this album</h4>
 <ul class="list-group">
 {foreach $page->tracks as $topartist}
 <li class="list-group-item d-flex justify-content-between align-items-center">
