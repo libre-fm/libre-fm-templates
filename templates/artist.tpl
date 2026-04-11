@@ -53,11 +53,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {section name=i loop=$albums}
 
-    {if $albums[i]->mbid}<li class="list-group-item">
+    <li class="list-group-item">
     {if $albums[i]->getURL()}<a href="{$albums[i]->getURL()}">{/if}
         {$albums[i]->name|unescape:'html':'UTF-8'}
     {if $albums[i]->getURL()}</a>{/if}
-    </li>{/if}
+    </li>
 {/section} 
     </ul>
 
