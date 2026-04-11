@@ -45,7 +45,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {if $page->tracks}
 <h4>Tracks on this album</h4>
-{include file='tracklist.tpl' class=#librarytable# items=$page->tracks thead=true fstream=true flove=true ftag=true fcount=true}
+<ul class="list-group">
+{foreach $page->tracks as $topartist}
+<li class="list-group-item d-flex justify-content-between align-items-center">
+    <a href="{$topartist['tracklibraryurl']}">{$topartist['track']}</a>
+    <span class="badge text-bg-primary rounded-pill">{$topartist['freq']}</span>
+</li>
+{/foreach}
+</ul>
 {/if}
 
 {include file='paginate.tpl'}                                                                                                                       
