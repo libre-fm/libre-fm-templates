@@ -25,7 +25,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h2>Library</h2> {include file='submenu.tpl' submenu=$page->menu}
 
-<div class="btn-group">
+<div class="btn-group mt-3 mb-3">
 {if $page->urls.sort_name}
 <a href="{$page->urls.sort_name}" class="btn btn-success">Sort by artist name</a>
 {/if}
