@@ -51,7 +51,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         </li>{/if}
         {/section} -->
 
-{section name=i loop=$albums max=100}
+{section name=i loop=$albums}
 
     <li class="list-group-item">
     {if $albums[i]->getURL()}<a href="{$albums[i]->getURL()}">{/if}
