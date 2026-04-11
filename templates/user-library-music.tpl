@@ -25,6 +25,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h2>Library</h2> {include file='submenu.tpl' submenu=$page->menu}
 
+<div class="flex-row">
+{if $page->urls.sort_name}
+<a href="{$page->urls.sort_name}" class="btn btn-success">Sort by artist name</a>
+{/if}
+
+{if $page->urls.sort_count}
+<a href="{$page->urls.sort_count}" class="btn btn-success">Sort by play count</a>
+{/if}
+</div>
+
 {if $page->artists}
 <h3>Top Artists</h3>
 {include file='artistlist.tpl' class=#librarytable# items=$page->artists thead=true fstream=true fimage=true fcount=true}
@@ -35,13 +45,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {include file='tracklist.tpl' class=#librarytable# items=$page->tracks thead=true fstream=true fimage=true fcount=true}
 {/if}
 
-{if $page->urls.sort_name}
-<a href="{$page->urls.sort_name}" class="btn btn-success">Sort by artist name</a>
-{/if}
 
-{if $page->urls.sort_count}
-<a href="{$page->urls.sort_count}" class="btn btn-success">Sort by play count</a>
-{/if}
 
 
 
