@@ -31,13 +31,15 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/if}
 {/if}
 
+
 <div class="h-card alert alert-dark">
-    {if ($isme)}<a style="float: right" style="max-width: 25%" class="edit-profile-link btn btn-success btn-lg" href="/user-edit.php">Edit your profile</a>{/if}
-    <h2 class="p-name">{$me->name}</h2>    
-    
+<div class="card-group mb-3">
+<div class="card">
+<div class="card-body">
+<h2 class="p-name">{$me->name}</h2>
     <p><img class="u-photo" loading="lazy" height="170" width="170" src="{$me->getAvatar(170)}" alt></p>
 
-    {if $me->fullname}
+{if $me->fullname}
     <p class="mb-2 text-body-secondary">
     <strong><span class="p-name card-title">{$me->fullname}</span></strong>
     </p>
@@ -64,6 +66,18 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </ul>
     {/if}
     {/if} 
+
+</div>
+</div>
+
+{if ($isme)}
+<div class="card">
+<div class="card-body">
+<h2>Update your profile</h2>
+<a class="edit-profile-link btn btn-success btn-lg" href="/user-edit.php">Edit your profile</a>
+</div>
+</div>
+{/if}
 
 </div><!-- closing div -->
 
