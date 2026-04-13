@@ -68,19 +68,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/if} 
 
 </div>
-</div>
-
 {if ($isme)}
-<div class="card">
-<div class="card-body text-center text-wrap">
-<h2>Update your profile</h2>
+<div class="card-footer text-body-secondary">
+<h3>Update your profile</h3>
 <p><a class="edit-profile-link btn btn-success btn-lg" href="/user-edit.php">Edit your profile</a></p>
 
 <p>You can also change your password, connect to other services, add a link to your personal website and social web profiles and more...</p>
-
-</div>
+  </div>
 </div>
 {/if}
+</div>
 
 </div><!-- closing div -->
 
