@@ -24,6 +24,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {include file='header.tpl'}
 
 <h2 class="mt-5 mb-5">Leaving Libre.fm: {t}Connections to other services{/t}</h2>
+
 <div class="alert alert-info">
 {if isset($errors)}
 <div id="errors">
@@ -79,9 +80,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {if empty($lastfmimportusername)}
     <div class="alert alert-info">
     <h3>How about importing from Last.fm?</h3>
-    <p>This does <strong>not</strong> import your history from Last.fm.</p>
     <p>If you wish to use this please email <a href="mailto:support@libre.fm">support@libre.fm</a> and let us know your Libre.fm and Last.fm usernames.</p>
-    <p>Recent scrobbles will be imported and future scrobbles too. Your historical scrobbles to Last.fm will be imported later.</p>
+    <p>Recent scrobbles and future scrobbles will be imported to your Libre.fm account. Your historical scrobbles to Last.fm will be imported later.</p>
     </div>
     {else}
     <div class="alert {if ($lastfmimport > 0)}alert-success{else}alert-info{/if}">
