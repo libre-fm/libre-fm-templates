@@ -40,6 +40,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <li><a target="_blank" href="https://github.com/mattl/hacienda/wiki/ZOMG">ZOMG</a> is a command-line client from early-Libre.fm developer, <a href="https://libre.fm/user/clint">Clint</a></li>
 </ul>
 
+<h3>Do you use Last.fm?</h3>
+
+<p>If you use Last.fm, we can import your most recent and future scrobbles. Just email <a href="mailto:support@libre.fm">support@libre.fm</a> and let us know your Last.fm and Libre.fm usernames.</p>
+
 <h3>I am making a channel of videos on using Libre.fm with various scrobbler clients.</h3>
 
 <p><a href="https://youtube.com/@libre-fm" title="Visit the Libre.fm YouTube channel"><img src="https://libre.fm/themes/2024-end-times/librefm-video-thumbnail.png" alt="" loading="lazy"></a></p>
