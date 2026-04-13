@@ -26,7 +26,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {include file='mini-header.tpl'}
 <h2 class="mb-3">Your account has been activated! Check your email...</h2>
 
-<p>You will receive an email in a minute to let you pick a username.</p>
+<p>You will receive an email in 1-2 minutes to let you pick a username.</p>
+
+<p>Accounts without a username are automatically removed after 48 hours.</p>
 
 {include file='kofi-tip.tpl'}
 
@@ -39,6 +41,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h2 class="mb-3">{t}Check your email now{/t}</h2>
 <p>An email was just sent to: <mark>{$emailaddress}</mark></p>
 <p>{t}Please follow the link in your email to activate your account!{/t}</p>
+
+<p>If you don't get an email please double check your email address and email <a href="mailto:support@libre.fm">support@libre.fm</a>.</p>
 
 {include file='kofi-tip.tpl'}
 
