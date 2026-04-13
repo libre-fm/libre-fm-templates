@@ -25,6 +25,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h2 class="text-center mt-3 mb-3">Welcome back, <a href="/user/{t name=$this_user->name}%1{/t}">{t name=$this_user->name}%1{/t}</a>!</h2>
 
+                        {if ($thisusertotaltracks < 3)}
+                            <div class="alert alert-success text-wrap">
+                                {include file='getting-started-help.tpl'}
+                                <hr>
+                                <p>Once you've successfully scrobbled a few songs, this help box will move to <a href="/about/">the help page</a></p>
+                            </div>
+                        {/if}
+
 {if ($topplaybydays)}
 
 <div class="card-group mb-3">
