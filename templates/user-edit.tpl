@@ -23,10 +23,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl'}
 
-<div class="alert alert-primary text-center" role="alert">
-    Got Last.fm? <a href='{$base_url}/user-connections.php'>Connect your account</a>
-</div>
-
 <h2>Edit your profile</h2>
 
 {if $me->homepage}
@@ -48,6 +44,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p>{$errors[error]}</p>
 {/section}
 {/if}
+
+<div class="alert alert-primary text-center" role="alert">
+    Got Last.fm? <a href='{$base_url}/user-connections.php'>Connect your account</a>
+</div>
 
 <form class="form-signin" action='{$base_url}/user-edit.php' method='post'>
 
