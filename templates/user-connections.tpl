@@ -122,7 +122,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                 <label for="remote_gnufm_url">
                     Connect to a remote GNU FM account
                 </label>
-                <input class="form-control" id="remote_gnufm_url" name="remote_gnufm_url" type="text" placeholder="http://mygnufmserver.tld" />
+                <input class="form-control" id="remote_gnufm_url" name="remote_gnufm_url" type="text" placeholder="http://gnufm.example.com">
             </div>
             <button class="btn btn-primary" type="submit">Connect</button>
         </form>
