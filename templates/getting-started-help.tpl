@@ -21,6 +21,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 *}
 
+<div style='text-align: left'>
+
 <h2>How to get started with scrobbling</h2>
 <p>Libre.fm helps you keep track of your music listening habits. How? The specifics depend on how you listen to music, but fundamentally it works like this:</p>
 <ol style="text-align: left;">
@@ -57,3 +59,5 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p>More clients can be found on <a href="https://github.com/mattl/hacienda/wiki" target="_blank">the wiki</a> which also has instructions on contributing to the wiki if you know of other clients (or email them to support!).</p>
 <p>Finally, we have <a href="https://developer.libre.fm" target="_blank">information for developers who want to add Libre.fm support</a> to their existing clients or create new ones</p>
 <p>If none of these solutions work for you, please contact <a href="mailto:support@libre.fm">support@libre.fm</a> and we can try and help you find something.</p>
+
+</div>
