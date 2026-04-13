@@ -130,14 +130,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                     <div class="alert alert-success text-center text-wrap">
                         Please consider <a href="/donate.php">making a donation</a> to help keep the lights on.
                     </div>
-                    {else}
-                        {if ($thisusertotaltracks < 3)}
-                            <div class="alert alert-success text-wrap">
-                                {include file='getting-started-help.tpl'}
-                                <hr>
-                                <p>Once you've successfully scrobbled a few songs, this help box will move to <a href="/about/">the help page</a></p>
-                            </div>
-                        {/if}
                     {/if}
 
 {if $nosidebar}
