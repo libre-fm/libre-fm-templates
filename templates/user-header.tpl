@@ -67,12 +67,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/if}
     {/if} 
 
+{if ($isme)}
+<p><a class="edit-profile-link btn btn-success btn-lg" href="/user-edit.php">Edit your profile</a></p>
+{/if}
+
 </div>
 {if ($isme)}
-<div class="card-footer text-body-secondary text-center">
-<p><a class="edit-profile-link btn btn-success btn-sm" href="/user-edit.php">Edit your profile</a></p>
-
-<p><small>You can also change your password, connect to other services, add a link to your personal website and social web profiles and more...</small></p>
+<div class="card-footer text-body-secondary">
+<p><small>As well as editing your profile you can also change your password, connect to other services, plus add links to your personal website and social web profiles and more...</small></p>
   </div>
 </div>
 {/if}
