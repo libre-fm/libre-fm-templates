@@ -57,7 +57,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <a class="btn btn-sm btn-success" href="https://libravatar.org/accounts/profile/" target="_blank">Update at Libravatar.org</a>
         <a class="btn btn-sm btn-success" href="https://gravatar.com/profile/avatars target="_blank">Update at Gravatar</a>
         </p>
-       <div class="form-text">Make sure you register with the same email address &mdash; <mark>{$email|lower}</mark></div>
+       <div class="form-text">Tired of the default monster icon? Make sure you register at Libravatar or Gravatar with the same email address &mdash; <mark>{$email|lower}</mark></div>
     </div>
 
     <div class="form-group mb-3">
