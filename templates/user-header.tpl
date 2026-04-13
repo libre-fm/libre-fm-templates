@@ -40,7 +40,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {if ($isme)}
 <a href="/user-edit.php">
 {/if}
-    <p><img class="u-photo" loading="lazy" height="170" width="170" src="{$me->getAvatar(170)}" alt></p>
+<img class="u-photo" loading="lazy" height="170" width="170" src="{$me->getAvatar(170)}" alt>
 {if ($isme)}
 </a>
 {/if}
