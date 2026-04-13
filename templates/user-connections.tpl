@@ -25,7 +25,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="alert alert-info">
 
-<h2 class="mt-5 mb-2">Leaving Libre.fm: {t}Connections to other services{/t}</h2>
+<h2 class="mt-2 mb-2">Leaving Libre.fm: {t}Connections to other services{/t}</h2>
 
 <p>Use this to send your Libre.fm scrobbles to another website</p>
 
@@ -80,7 +80,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     <div class="alert alert-primary">
 
-<h2 class="mt-5 mb-2">Entering Libre.fm: importing from other places</h2>
+<h2 class="mt-2 mb-2">Entering Libre.fm: importing from other places</h2>
 
 <p>Use this to import your Last.fm scrobbles to Libre.fm</p>
 
@@ -109,7 +109,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="alert alert-secondary">
 
-<h2 class="mt-5 mb-5">Advanced: connection to another GNU FM server</h2>
+<h2 class="mt-2 mb-2">Advanced: connection to another GNU FM server</h2>
+
+<p>If you have your own installation of GNU FM and want to connect it your Libre.fm profile</p>
 
 
     {if isset($gnufm_key)}
