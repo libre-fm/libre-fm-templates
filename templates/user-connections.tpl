@@ -23,11 +23,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl'}
 
-<h2 class="mt-5 mb-5">Leaving Libre.fm: {t}Connections to other services{/t}</h2>
+<div class="alert alert-info">
+
+<h2 class="mt-5 mb-2">Leaving Libre.fm: {t}Connections to other services{/t}</h2>
 
 <p>Use this to send your Libre.fm scrobbles to another website</p>
 
-<div class="alert alert-info">
 {if isset($errors)}
 <div id="errors">
     {section loop=$errors name=error}
@@ -77,12 +78,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div>
 </div>
 
-<h2 class="mt-5 mb-5">Entering Libre.fm: importing from other places</h2>
+    <div class="alert alert-info">
+
+<h2 class="mt-5 mb-2">Entering Libre.fm: importing from other places</h2>
 
 <p>Use this to import your Last.fm scrobbles to Libre.fm</p>
 
     {if empty($lastfmimportusername)}
-    <div class="alert alert-info">
     <h3>How about importing from Last.fm?</h3>
     <p>If you wish to use this please email <a href="mailto:support@libre.fm">support@libre.fm</a> and let us know your Libre.fm and Last.fm usernames.</p>
     <p>Recent scrobbles and future scrobbles will be imported to your Libre.fm account. Your historical scrobbles to Last.fm will be imported later.</p>
@@ -103,9 +105,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     {/if}
 
+<div class="alert alert-secondary">
+
 <h2 class="mt-5 mb-5">Advanced: connection to another GNU FM server</h2>
 
-<div class="alert alert-info">
 
     {if isset($gnufm_key)}
     <details>
