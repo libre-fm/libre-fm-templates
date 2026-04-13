@@ -61,6 +61,12 @@ float-lg-end m-1 p-1" style="width: 500px" alt loading="lazy" decoding="async"><
     profile. I occasionally think about additional social media features but I'm
     not sure what else would be useful.</p>
 
+<h3>How do I use Libre.fm with various scrobbler clients?</h3>
+
+<p><a href="https://youtube.com/@libre-fm" title="Visit the Libre.fm YouTube channel"><img src="https://libre.fm/themes/2024-end-times/librefm-video-thumbnail.png" alt="" loading="lazy"></a></p>
+
+<p><mark>What videos would you like to see next?</mark> Let me know in the YouTube comments or <a href="mailto:support@libre.fm">support@libre.fm</a></p>
+
 <h3>I accidentally scrobbled something I want to get rid of...</h3>
 
 <p>Any <a href="https://libre.fm/user/mattl/scrobble/1733371909" target="_blank">individual scrobble</a> has a delete option at the bottom (if
