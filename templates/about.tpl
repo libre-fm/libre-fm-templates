@@ -45,11 +45,7 @@ float-lg-end m-1 p-1" style="width: 500px" alt loading="lazy" decoding="async"><
 
 <h3>Can I import my listening habits from Last.fm, etc?</h3>
 
-<p>Yes... soon. This is something we hope to start to offer to more people in the first few months of 2026.</p>
-
-<p>But, if you've been a user of Libre.fm for a few years, have more than a few thousand scrobbles on here and have a Last.fm account and would like to scrobble there and have those scrobbles appear on Libre.fm, please email support. Especially if you're on IRC.</p>
-
-<p>New users: hold tight, we want to make sure this works well first but it is very much coming. It will be offered to everyone in due course.</p>
+<p>Yes... just email your Libre.fm and Last.fm usernames to <a href="mailto:support@libre.fm">support@libre.fm</a>.</p>
 
 <h3>Can I export my data?</h3>
 
