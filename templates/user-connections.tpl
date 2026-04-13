@@ -101,7 +101,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </ul>
     </div>
 
-    <p>Self service coming soon, but please email <a href="mailto:support@libre.fm">support@libre.fm</a> if you want to change this for now</p>
+    <p>Self service coming soon, but please email <a href="mailto:support@libre.fm">support@libre.fm</a> if you want to change this for now. Send both your Libre.fm and Last.fm usernames if you want to enable this on your account.</p>
 
     {/if}
 
