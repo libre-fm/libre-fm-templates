@@ -74,7 +74,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div>
 {if ($isme)}
 <div class="card-footer text-body-secondary">
-<p><small>As well as editing your profile you can also change your password, connect to other services, plus add links to your personal website and social web profiles and more...</small></p>
+As well as editing your profile you can also change your password, connect to other services, plus add links to your personal website and social web profiles and more...
   </div>
 </div>
 {/if}
