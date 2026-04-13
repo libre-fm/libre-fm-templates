@@ -46,15 +46,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <p>If you use Last.fm, we can import your most recent and future scrobbles. Just email <a href="mailto:support@libre.fm">support@libre.fm</a> and let us know your Last.fm and Libre.fm usernames. This allows you to scrobble to Libre.fm using any app that can scrobble to Last.fm.</p>
 
-<h3>I am making a channel of videos on using Libre.fm with various scrobbler clients.</h3>
-
-<p><a href="https://youtube.com/@libre-fm" title="Visit the Libre.fm YouTube channel"><img src="https://libre.fm/themes/2024-end-times/librefm-video-thumbnail.png" alt="" loading="lazy"></a></p>
-
-<ul style="text-align: left;">
-    <li><a href="https://www.youtube.com/playlist?list=PLmhBwG0qxS8V28PEPCcqbDdtGj0VXIKF1" target="_blank">WebScrobbler</a></li>
-</ul>
-
-<p><mark>What videos would you like to see next?</mark> Let me know in the YouTube comments or <a href="mailto:support@libre.fm">support@libre.fm</a></p>
+<h3>More options</h3>
 
 <p>More clients can be found on <a href="https://github.com/mattl/hacienda/wiki" target="_blank">the wiki</a> which also has instructions on contributing to the wiki if you know of other clients (or email them to support!).</p>
 <p>Finally, we have <a href="https://developer.libre.fm" target="_blank">information for developers who want to add Libre.fm support</a> to their existing clients or create new ones</p>
