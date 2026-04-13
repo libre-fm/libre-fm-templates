@@ -132,7 +132,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                     </div>
                     {else}
                         {if ($thisusertotaltracks < 3)}
-                            <div class="alert alert-info text-center text-wrap">
+                            <div class="alert alert-success text-wrap">
                                 {include file='getting-started-help.tpl'}
                                 <hr>
                                 <p>Once you've successfully scrobbled a few songs, this help box will move to <a href="/about/">the help page</a></p>
