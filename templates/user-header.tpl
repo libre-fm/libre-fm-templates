@@ -37,7 +37,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <div class="card">
 <div class="card-body">
 <h2 class="p-name">{$me->name}</h2>
+{if ($isme)}
+<a href="/user-edit.php">
+{/if}
     <p><img class="u-photo" loading="lazy" height="170" width="170" src="{$me->getAvatar(170)}" alt></p>
+{if ($isme)}
+</a>
+{/if}
 
 {if $me->fullname}
     <p class="mb-2 text-body-secondary">
