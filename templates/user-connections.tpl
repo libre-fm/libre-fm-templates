@@ -25,6 +25,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h2 class="mt-5 mb-5">Leaving Libre.fm: {t}Connections to other services{/t}</h2>
 
+<p>Use this to send your Libre.fm scrobbles to another website</p>
+
 <div class="alert alert-info">
 {if isset($errors)}
 <div id="errors">
@@ -76,6 +78,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div>
 
 <h2 class="mt-5 mb-5">Entering Libre.fm: importing from other places</h2>
+
+<p>Use this to import your Last.fm scrobbles to Libre.fm</p>
 
     {if empty($lastfmimportusername)}
     <div class="alert alert-info">
