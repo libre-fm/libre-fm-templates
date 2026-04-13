@@ -44,7 +44,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h3>Do you use Last.fm?</h3>
 
-<p>If you use Last.fm, we can import your most recent and future scrobbles. Just email <a href="mailto:support@libre.fm">support@libre.fm</a> and let us know your Last.fm and Libre.fm usernames.</p>
+<p>If you use Last.fm, we can import your most recent and future scrobbles. Just email <a href="mailto:support@libre.fm">support@libre.fm</a> and let us know your Last.fm and Libre.fm usernames. This allows you to scrobble to Libre.fm using any app that can scrobble to Last.fm.</p>
 
 <h3>I am making a channel of videos on using Libre.fm with various scrobbler clients.</h3>
 
