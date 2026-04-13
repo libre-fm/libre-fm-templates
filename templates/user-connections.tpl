@@ -78,7 +78,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div>
 </div>
 
-    <div class="alert alert-info">
+    <div class="alert alert-primary">
 
 <h2 class="mt-5 mb-2">Entering Libre.fm: importing from other places</h2>
 
@@ -104,6 +104,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <p>Self service coming soon, but please email <a href="mailto:support@libre.fm">support@libre.fm</a> if you want to change this for now</p>
 
     {/if}
+
+</div>
 
 <div class="alert alert-secondary">
 
