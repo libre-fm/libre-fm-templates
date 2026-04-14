@@ -61,8 +61,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </div>
 
     <div class="form-group mb-3">
-        <label class="form-label" for='fullname' placeholder="Emile Berliner">{t}Your name:{/t}</label>
-        <input size="40" maxlength="40" type="text" class="form-control form-control-lg" name='fullname' id='fullname' value='{$fullname|escape:'html':'UTF-8'}'>
+        <label class="form-label" for='fullname'>{t}Your name:{/t}</label>
+        <input size="40" maxlength="40" type="text" class="form-control form-control-lg" placeholder="Emile Berliner" name='fullname' id='fullname' value='{$fullname|escape:'html':'UTF-8'}'>
         <div class="form-text">{t}Enter a name here, if you want to. It'll appear on your profile.{/t}</div>
     </div>
 
