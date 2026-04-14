@@ -107,14 +107,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 </div>
 
+{if isset($gnufm_key)}
 <div class="alert alert-secondary">
 
 <h2 class="mt-2 mb-2">Advanced: connection to another GNU FM server</h2>
 
 <p>If you have your own installation of GNU FM and want to connect it your Libre.fm profile</p>
 
-
-    {if isset($gnufm_key)}
     <details>
         <summary>Connect to another GNU FM server</summary>
         <form method="post" class="well">
@@ -127,7 +126,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             <button class="btn btn-primary" type="submit">Connect</button>
         </form>
     </details>
-    {/if}
+    
 </div>
+{/if}
 
 {include file='footer.tpl'}
