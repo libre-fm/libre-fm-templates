@@ -23,7 +23,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl'}
 
-<h2 class="text-center mt-3 mb-3">Welcome back, <a href="/user/{t name=$this_user->name}%1{/t}">{t name=$this_user->name}%1{/t}</a>!</h2>
+<h2 class="text-center mt-3 mb-3 text-balance">Welcome back, <a href="/user/{t name=$this_user->name}%1{/t}">{t name=$this_user->name}%1{/t}</a>!</h2>
 
                         {if ($thisusertotaltracks < 3)}
                             <div class="alert alert-success text-wrap">
@@ -39,7 +39,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="card">
 <div class="card-body">
-<h3 style="font-size: 1.25em" class="card-title mb-3 text-center">Your play history over the last 7 days</h3>
+<h3 style="font-size: 1.25em" class="card-title mb-3 text-center text-balance">Your play history over the last 7 days</h3>
 
 <ul class="list-group mb-3">
         {foreach $topplaybydays as $day}
@@ -55,7 +55,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div class="card">
 <div class="card-body">
-<h3 style="font-size: 1.25em" class="card-title mb-3 text-center">Your top tracks over the last 7 days</h3>
+<h3 style="font-size: 1.25em" class="card-title mb-3 text-center text-balance">Your top tracks over the last 7 days</h3>
 <ul class="list-group mb-3">
         {foreach $toptracksdata as $i}
 <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -89,13 +89,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div> -->
 
 {if ($totals)}
-<div class="alert alert-info text-center">
+<div class="alert alert-info text-center text-balance">
     {$totals}
 </div>
 {/if}
 
 {if ($recents)}
-<h3 class="text-center">Songs listened to by the Libre.fm community in the last 5 minutes</h3>
+<h3 class="text-center text-balance">Songs listened to by the Libre.fm community in the last 5 minutes</h3>
 {$recents}
 {/if}
 
