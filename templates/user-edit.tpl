@@ -68,7 +68,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     <div class="form-group mb-3">
         <p><label class="form-label" for='bio'>{t}Mini Biography:{/t}</label></p>
-        <textarea cols="40" rows="5" class="form-control form-control-lg" name='bio' placeholder="Jazz lover"id='bio'>{$bio|escape:'html':'UTF-8'}</textarea>
+        <textarea cols="40" rows="5" class="form-control form-control-lg" name='bio' placeholder="Jazz lover and fan of the open web"id='bio'>{$bio|escape:'html':'UTF-8'}</textarea>
         <div class="form-text">Shows up on your profile once you start listening to music</div>
     </div>
 
