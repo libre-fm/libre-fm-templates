@@ -16,6 +16,8 @@ background: #d40000;
 background: #d40000;
 }
 
+.text-balance {text-wrap: balance;}
+
 .img-lazy {
 	background: whitesmoke url(https://turtle.libre.fm/spinner.gif); 
 	background-position: center center; 
