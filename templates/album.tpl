@@ -29,16 +29,36 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <li property="rdfs:comment">{t}Playcount {/t} <span class="badge">{$album->getPlayCount()}</span></li>
 </ul>
 
-<!-- <h4>Tracks</h4>
+<h4>Tracks</h4>
 {artisttracks artist=$album->artist_name album=$album->name}
-{include file='tracklistish.tpl' class=#table# items=$artisttracks fstream=true}
-{if $add_track_link}<a href='{$add_track_link}'><strong>{t}Add new track{/t}</strong></a>{/if}
+{include file='tracklistish.tpl' class=#table# items=$artisttracks fstream=true} 
+
+
+<!-- {if $add_track_link}<a href='{$add_track_link}'><strong>{t}Add new track{/t}</strong></a>{/if}
 
 {* Hack to get an album player for now, $album->isStreamable() would be better *}
 {if $artisttracks[0].streamable}
 {$streamable = true}
 {$album_station = "librefm://artist/{$album->artist_name}/album/{$album->name}"}
 {/if} -->
+
+{if $logged_in}
+{if $isloved}
+<form method='post'>
+    <button class="btn btn-danger btn-sm" type='submit' name='unlove' id='unlove' value='{t}Unlove this album{/t}'>
+        <i class="bi bi-heartbreak-fill"></i>
+        {t}Unlove this album{/t}
+    </button>
+</form>
+{else}
+<form action='' method='post'>
+    <button class="btn btn-primary btn-sm" type='submit' name='love' id='love' value='{t}Love this album{/t}'>
+        <i class="bi bi-heart-fill"></i>
+        {t}Love this album{/t}
+    </button>
+</form>
+{/if}
+{/if}
 
 <p>{if $album->mbid}<a href="https://musicbrainz.org/release-group/{$album->mbid}" class="btn btn-success" target="_blank">Show on MusicBrainz</a>{/if}</p>
 
