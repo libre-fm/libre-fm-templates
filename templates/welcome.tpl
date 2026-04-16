@@ -232,6 +232,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                                 {$daily}
                             </p>
                             {/if}
+                            <!--
+                           <p>"Why something else over Libre.fm?" "I'm trying to toast a sandwich" -- scatterkeir.</p> -->
                         </div>
                     </div>
                 </div>
