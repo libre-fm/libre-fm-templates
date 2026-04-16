@@ -36,6 +36,25 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {/if}
     </div>
 
+{if $logged_in}
+<p>Most loved artists appear on the <a href="/popular">popular</a> page.</p>
+{if $isloved}
+<form method='post'>
+    <button class="btn btn-danger btn-sm" type='submit' name='unlove' id='unlove' value='{t}Unlove this artist{/t}'>
+        <i class="bi bi-heartbreak-fill"></i>
+        {t}Unlove this artist{/t}
+    </button>
+</form>
+{else}
+<form action='' method='post'>
+    <button class="btn btn-primary btn-sm" type='submit' name='love' id='love' value='{t}Love this artist{/t}'>
+        <i class="bi bi-heart-fill"></i>
+        {t}Love this artist{/t}
+    </button>
+</form>
+{/if}
+{/if}
+
     <h3>{t}Albums{/t}</h3>
 
     <ul class="list-group list-group-flush">
