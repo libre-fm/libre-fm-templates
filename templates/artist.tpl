@@ -38,7 +38,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
 
-
+<div class="alert alert-info">
+<p>Artist pages have been temporarily minimized for performance reasons. I'm actively working on improving the performance and adding more indexes to the database.</p>
+</div>
 
 
    
