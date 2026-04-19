@@ -40,7 +40,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h3>{t}Albums{/t}</h3>
     <ol class="list-group list-group-flush">
-   <ul  class="album-list">
+ <!--  <ul  class="album-list">
         {section name=i loop=$albums max=100}
         {if $albums[i]->name}
         <li about="{$albums[i]->id}" property="dc:title" content="{$albums[i]->name|escape:'html':'UTF-8'}" typeof="mo:Record" class="haudio">
