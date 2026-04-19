@@ -37,7 +37,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </div>
 
 
-    <h3>{t}Albums{/t}</h3>
+   <!--  <h3>{t}Albums{/t}</h3> -- >
 
     <ul class="list-group list-group-flush">
 <!--    <ul  class="album-list">
@@ -52,7 +52,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         </li>{/if}
         {/section} -->
 
-{section name=i loop=$albums}
+<!-- {section name=i loop=$albums}
 
     <li class="list-group-item">
     {if $albums[i]->getURL()}<a href="{$albums[i]->getURL()}">{/if}
@@ -60,7 +60,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {if $albums[i]->getURL()}</a>{/if}
     </li>
 {/section} 
-    </ul>
+    </ul> -->
+
+<h2>Albums are being worked on</h2>
 
 
 
