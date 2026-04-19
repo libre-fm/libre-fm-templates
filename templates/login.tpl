@@ -29,7 +29,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     {if isset($errors)}
     <div class="alert alert-danger alert-dismissable">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
         <p id='errors'>{$errors}</p>
     </div>
     {/if}
