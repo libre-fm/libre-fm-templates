@@ -27,7 +27,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <div id="errors">
     {section loop=$errors name=error}
     <div class="alert alert-danger">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
         <p>{$errors[error]}</p>
     </div>
     {/section}
