@@ -60,7 +60,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {/if}
         {/if}
         {/if}
-     <details>{$i|var_dump}</details>
     </li>
     {/foreach}
 </ul>
