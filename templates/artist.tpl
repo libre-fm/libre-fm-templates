@@ -38,7 +38,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
 
-<!--    <h3>{t}Albums{/t}</h3>
+<h3>{t}Albums{/t}</h3>
     <ol class="list-group list-group-flush">
    <ul  class="album-list">
         {section name=i loop=$albums max=100}
@@ -53,7 +53,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {/section} -->
 
 
-
+{section name=i loop=$albums}
+		{if $albums[i]->name}
+		<li about="{$albums[i]->id}" property="dc:title" content="{$albums[i]->name|escape:'html':'UTF-8'}" typeof="mo:Record" class="haudio">
+					<a rel="foaf:page" href="{$albums[i]->getURL()}">{$albums[i]->name|escape:'html':'UTF-8'}</a>
+		</li>{/if}
+		{/section}	
+		{if $add_album_link}<li><a href='{$add_album_link}'><strong>[{t}Add new album{/t}]</strong></a></li>{/if}
+</ol>
 
 
     <h3 class="mb-4 mt-4">Top tracks</h3>
