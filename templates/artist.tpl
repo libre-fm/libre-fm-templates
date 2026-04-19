@@ -38,29 +38,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
 
-<h3>{t}Albums{/t}</h3>
-    <ol class="list-group list-group-flush">
- <!--  <ul  class="album-list">
-        {section name=i loop=$albums max=100}
-        {if $albums[i]->name}
-        <li about="{$albums[i]->id}" property="dc:title" content="{$albums[i]->name|escape:'html':'UTF-8'}" typeof="mo:Record" class="haudio">
-            {if $albums[i]->mbid}
-            {$albums[i]->mbid|coverartexists:100:"{$artist->name} / {$albums[i]->name|escape:'html':'UTF-8'}":{$albums[i]->getURL()}}
-            {else}
-            {"404"|coverartexists:100:"{$albums[i]->name|escape:'html':'UTF-8'}":{$albums[i]->getURL()}}
-            {/if}
-        </li>{/if}
-        {/section} -->
 
-
-{section name=i loop=$albums}
-		{if $albums[i]->name}
-		<li about="{$albums[i]->id}" property="dc:title" content="{$albums[i]->name|escape:'html':'UTF-8'}" typeof="mo:Record" class="haudio">
-					<a rel="foaf:page" href="{$albums[i]->getURL()}">{$albums[i]->name|escape:'html':'UTF-8'}</a>
-		</li>{/if}
-		{/section}	
-		{if $add_album_link}<li><a href='{$add_album_link}'><strong>[{t}Add new album{/t}]</strong></a></li>{/if}
-</ol>
 
 
     <h3 class="mb-4 mt-4">Top tracks</h3>
@@ -76,16 +54,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   
 
     
-    <!-- <section class="h-feed" id="tops">
-        <h3  class="mb-4 mt-4" id="listeners">Top listeners</h3>
-        <ul class="list-group list-group-flush">
-            {foreach from=$artist->getTopListeners() item=i}
-            <li class="list-group-item h-entry">
-                <a class="u-url" href="{$i.userurl}">{$i.username}</a>
-            </li>
-            {/foreach}
-        </ul>
-    </section> -->
+    
    
 
 
