@@ -76,7 +76,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   
 
     
-    <section class="h-feed" id="tops">
+    <!-- <section class="h-feed" id="tops">
         <h3  class="mb-4 mt-4" id="listeners">Top listeners</h3>
         <ul class="list-group list-group-flush">
             {foreach from=$artist->getTopListeners() item=i}
@@ -85,7 +85,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             </li>
             {/foreach}
         </ul>
-    </section>
+    </section> -->
    
 
 
