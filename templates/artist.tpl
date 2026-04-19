@@ -68,7 +68,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
   
 
-    {if $artist->getListenerCount()}
+    
     <section class="h-feed" id="tops">
         <h3  class="mb-4 mt-4" id="listeners">Top listeners</h3>
         <ul class="list-group list-group-flush">
@@ -79,7 +79,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             {/foreach}
         </ul>
     </section>
-    {/if}
+   
 
 
     <div class="alert alert-info">
