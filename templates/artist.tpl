@@ -37,9 +37,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </div>
 
 
-   <!--  <h3>{t}Albums{/t}</h3> -- >
+   <h3>{t}Albums{/t}</h3>
 
-    <ul class="list-group list-group-flush">
+    <ol class="list-group list-group-flush">
 <!--    <ul  class="album-list">
         {section name=i loop=$albums max=100}
         {if $albums[i]->name}
@@ -52,17 +52,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         </li>{/if}
         {/section} -->
 
-<!-- {section name=i loop=$albums}
+{section name=i loop=$albums}
 
-    <li class="list-group-item">
+    {if $albums[i]->mbid}<li class="list-group-item">
     {if $albums[i]->getURL()}<a href="{$albums[i]->getURL()}">{/if}
         {$albums[i]->name|unescape:'html':'UTF-8'}
     {if $albums[i]->getURL()}</a>{/if}
-    </li>
+    </li>{/if}
 {/section} 
-    </ul> -->
+    </ul>
 
-<h2>Albums are being worked on</h2>
 
 
 
