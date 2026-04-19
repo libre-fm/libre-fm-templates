@@ -30,7 +30,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <li class="nav-item"><a href="/user-edit.php">Edit your profile</a>
     {/if}
     <li class="nav-item"><i class="bi bi-info-circle"></i> <a href="https://libre.fm/donate.php">Donate</a></li>
-    <li class="nav-item"><i class="bi bi-music-player"></i> <a href="/popular">Popular</a></li>
+    <!-- <li class="nav-item"><i class="bi bi-music-player"></i> <a href="/popular">Popular</a></li> -->
     <li class="nav-item"><i class="bi bi-info-circle"></i> <a href="/about">Help</a></li>
     <li class="nav-item"><i class="bi bi-envelope"></i> <a href="mailto:support@libre.fm">support@libre.fm</a></li>
     {else}
