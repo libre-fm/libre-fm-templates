@@ -64,7 +64,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
             <div class="form-group mb-3">
                 <label for='email'>{t}E-mail address{/t}</label>
-                <input class="form-control form-control-lg" id='email' name='email' type='text' placeholder="{t}Your e-mail address:{/t}" value='' autofocus />
+                <input class="form-control form-control-lg" id='email' name='email' type='email' placeholder="{t}Your e-mail address:{/t}" value='' autofocus />
             </div>
 
             <div class="mb-3">
