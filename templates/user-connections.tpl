@@ -42,7 +42,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <div id='connections'>
     {if $connection_added}
     <div class="alert alert-success">
-        <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
         <strong>{t}Your new connection has been successfully added!{/t}</strong>
     </div>
     {/if}
