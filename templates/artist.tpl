@@ -39,12 +39,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </div>
 
 
-
-<div class="alert alert-info">
-<p>Artist pages have been temporarily minimized for performance reasons. I'm actively working on improving the performance and adding more indexes to the database.</p>
-</div>
-
-    {if $artistpopular}
+    {if $artistpopular && $toptracks && $artisttoplisteners}
    
   <h3 class="mb-4 mt-4">Recent popular tracks</h3>
 
@@ -70,11 +65,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         </ul>
     </section>
     {/if}
-
-
-    
-    
-   
 
 
     <div class="alert alert-info">
