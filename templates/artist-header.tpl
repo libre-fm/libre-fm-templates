@@ -29,6 +29,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p><img class="img-thumbnail img-lazy wikipedia-profile-image" loading="lazy" src="{$image}" alt="" /></p>
 {/if}
 
+{if $cnt}
+<p><strong>$cnt</strong> historic plays</p>
+{/if}
+
 <p><small>MBID: {$artist->mbid} | LFMID: {$artist->plainid}</small></p>
 
 {if $artist->homepage}
