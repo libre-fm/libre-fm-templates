@@ -30,7 +30,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/if}
 
 {if $cnt}
-<p><strong>$cnt</strong> historic plays</p>
+<p><strong>{$cnt}</strong> historic plays</p>
 {/if}
 
 <p><small>MBID: {$artist->mbid} | LFMID: {$artist->plainid}</small></p>
