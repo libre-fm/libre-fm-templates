@@ -44,9 +44,32 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p>Artist pages have been temporarily minimized for performance reasons. I'm actively working on improving the performance and adding more indexes to the database.</p>
 </div>
 
-
+    {if $artistpopular}
    
-  
+  <h3 class="mb-4 mt-4">Top tracks</h3>
+
+<ul class="list-group h-feed">
+{foreach from=$toptracks item=i}
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    <a href="{$i.trackurl}">{$i.track}</a>
+    <span class="badge text-bg-primary rounded-pill">{$i.freq}</span>
+  </li>{/foreach}
+</ul>
+
+
+
+    <section class="h-feed" id="tops">
+        <h3  class="mb-4 mt-4" id="listeners">Top listeners</h3>
+        <ul class="list-group list-group-flush">
+            {foreach from=$artisttoplisteners item=i}
+            <li class="list-group-item h-entry">
+                <a class="u-url" href="{$i.userurl}">{$i.username}</a>
+            </li>
+            {/foreach}
+        </ul>
+    </section>
+    {/if}
+
 
     
     
