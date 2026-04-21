@@ -44,7 +44,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <ul class="list-group h-feed">
 {foreach from=$mbdata item=i}
   <li class="list-group-item d-flex justify-content-between align-items-center">
-    <a href="./album/{$i.title|replace:' ':'+'|escape:'html'}" rel="bookmark">{$i.title}</a> ({$i.date}) {$i.country}
+    <a href="./album/{$i.title|replace:' ':'+'|escape:'html'}" rel="bookmark">{$i.title}</a> {$i.disambiguation} {$i.country}
+    <span class="badge text-bg-primary rounded-pill">{if $i.date}({$i.date}){/if}</span>
   </li>{/foreach}
 </ul>
 
