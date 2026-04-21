@@ -24,10 +24,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <div class="alert alert-info">
 
 {if $album->mbid}
-{$album->mbid|coverartexists:250:"":""}
+<img class="img-lazy img-thumbnail" width="250" height="250" src="https://turtle.libre.fm/cover.php?mbid={$album->mbid}&album={$album->name|escape:'url'}&artist={$artist->name|escape:'url'}" alt="" loading="lazy">
 {else}
 <!-- <p>No MusicBrainz ID found for {$album->name}. Checking now.</p> -->
-<img style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album->name|escape:'url'}&artist={$artist->name|escape:'url'}" alt="" loading="lazy" />
+<img class="img-lazy img-thumbnail" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album->name|escape:'url'}&artist={$artist->name|escape:'url'}" alt="" loading="lazy">
 {/if}
 
 <h2>
