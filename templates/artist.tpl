@@ -24,6 +24,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {include file='header.tpl' subheader='artist-header.tpl'}
 </div>
 
+{if $artist->mbid}
+
 <div about="{$id}" typeof="mo:MusicArtist">
 
     <div class="vcard">
@@ -62,6 +64,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <p><small>Biography: <a href="https://last.fm/artist/{$artist->name}/+wiki">Last FM wiki</a> (CC BY-SA 3.0)</a></small></p>
         {/if}
     </div>
+
+
+{else}
+<p>No MusicBrainz ID found for this artist. Work is underway to improve the matching of artists, if you'd like to help with your favorite artist please email <a href="mailto:support@libre.fm">support@libre.fm</a></p>
+{/if}
 
 </div>
 </div>
