@@ -46,7 +46,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     {if $artistpopular}
    
-  <h3 class="mb-4 mt-4">Top tracks</h3>
+  <h3 class="mb-4 mt-4">Recent popular tracks</h3>
 
 <ul class="list-group h-feed">
 {foreach from=$toptracks item=i}
@@ -59,11 +59,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
     <section class="h-feed" id="tops">
-        <h3  class="mb-4 mt-4" id="listeners">Top listeners</h3>
+        <h3  class="mb-4 mt-4" id="listeners">Recent top listeners</h3>
         <ul class="list-group list-group-flush">
             {foreach from=$artisttoplisteners item=i}
-            <li class="list-group-item h-entry">
+            <li class="list-group-item h-entry d-flex justify-content-between align-items-center">
                 <a class="u-url" href="{$i.userurl}">{$i.username}</a>
+                <span class="badge text-bg-primary rounded-pill">{$i.freq}</span>
             </li>
             {/foreach}
         </ul>
