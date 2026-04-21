@@ -45,6 +45,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div>
 
 
+<ul class="list-group h-feed">
+{foreach from=$mbdata item=i}
+  <li class="list-group-item d-flex justify-content-between align-items-center">
+    {$i.title}
+  </li>{/foreach}
+</ul>
+
     {if $artistpopular && $toptracks && $artisttoplisteners}
 
 
