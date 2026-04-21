@@ -50,8 +50,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     {if $artistpopular && $toptracks && $artisttoplisteners}
 
-
-   
   <h3 class="mb-4 mt-4">Recent popular tracks</h3>
 
 <ul class="list-group h-feed">
