@@ -38,17 +38,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {/if}
     </div>
 
-<div class="alert alert-info">
-<details>
- {$mbdata|@print_r}
-</details>
-</div>
+
 
 
 <ul class="list-group h-feed">
 {foreach from=$mbdata item=i}
   <li class="list-group-item d-flex justify-content-between align-items-center">
-    {$i.title}
+    <a href="./album/{$i.title}">{$i.title}</a>
   </li>{/foreach}
 </ul>
 
