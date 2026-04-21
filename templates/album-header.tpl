@@ -33,6 +33,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h2>
     {$album->name}
 </h2>
+<p><small>MBID: {$artist->mbid} | LFMID: {$artist->plainid}</small></p>
 <p>by <a href="{$artist->getURL()}">{$artist->name}</a></p>
 {if $album->releasedate}
 <p>Released on {$album->releasedate|date_format:"%Y-%m-%d"}</p>
