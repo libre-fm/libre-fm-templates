@@ -38,12 +38,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {/if}
     </div>
 
-
-    {if $artistpopular && $toptracks && $artisttoplisteners}
-
+<div class="alert alert-info">
 <details>
  {$mbdata|@print_r}
 </details>
+</div>
+
+
+    {if $artistpopular && $toptracks && $artisttoplisteners}
+
+
    
   <h3 class="mb-4 mt-4">Recent popular tracks</h3>
 
