@@ -21,13 +21,13 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 *}
 
-<div class="alert alert-info">
-
-{if $image}
-<p><img style="width: 100%; max-width: 250px !important; background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat; " loading="lazy" class="wikipedia-profile-image" src="{$image}" alt="" /></p>
-{/if}
+<div class="card">
 
 <h2>{$artist->name}</h2>
+
+{if $image}
+<p><img class="img-thumbnail img-lazy wikipedia-profile-image" loading="lazy" src="{$image}" alt="" /></p>
+{/if}
 
 {if $artist->homepage}
 <p><a href="{$artist->homepage}">{$artist->homepage}</a></p>
