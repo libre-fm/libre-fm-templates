@@ -40,6 +40,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
     {if $artistpopular && $toptracks && $artisttoplisteners}
+
+<details>
+ {$mbdata|@print_r}
+</details>
    
   <h3 class="mb-4 mt-4">Recent popular tracks</h3>
 
