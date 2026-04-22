@@ -57,14 +57,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/section}
 </ul>
 
-{else}
+{/if}
 
 <h2>Search Libre.fm</h2>
 
 <form method="get">
 <div class="mb-3">
 <label for="search_term">Search the site:</label>
-<input type="search" id="search_term" name="search_term" maxlength="100">
+<input type="search" id="search_term" name="search_term" maxlength="100" autofocus placeholder="Evil Gazebo">
 </div>
 <div class="mb-3">
 <select name="search_type">
@@ -76,7 +76,5 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <input type="submit" value="Search">
 </div>
 </form>
-
-{/if}
 
 {include file='footer.tpl'}
