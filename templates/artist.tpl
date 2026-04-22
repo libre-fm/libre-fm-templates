@@ -43,7 +43,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <ul class="list-group h-feed mb-3">
 {foreach from=$mbdata item=i}
-{if !$i.secondary-types[0]}
+{if !$i.secondary-types}
   <li class="list-group-item d-flex justify-content-between align-items-center">
     <a href="./album/{$i.title|replace:' ':'+'|escape:'html'}" rel="bookmark">{$i.title} {if $i.country}({$i.country}){/if} {if $i.disambiguation}[{$i.disambiguation}]{/if}</a> {if $i.date}({$i.date}){/if}
   </li>
