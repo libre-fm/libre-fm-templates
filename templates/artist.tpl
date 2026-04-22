@@ -47,7 +47,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <ul class="list-group h-feed mb-3">
 {foreach from=$mbdata item=i}
   <li class="list-group-item d-flex justify-content-between align-items-center">
-    <a href="./album/{$i.title|replace:' ':'+'|escape:'html'}" title="Libre.fm album page for {$i.title}" rel="bookmark">{$i.title} {if $i.country}({$i.country}){/if} {if $i.disambiguation}[{$i.disambiguation}]{/if}</a> {if $i.date}({$i.date}){/if}
+    <a href="/artist/{$artist->name}/album/{$i.title|replace:' ':'+'|escape:'html'}" title="Libre.fm album page for {$i.title}" rel="bookmark">{$i.title} {if $i.country}({$i.country}){/if} {if $i.disambiguation}[{$i.disambiguation}]{/if}</a> {if $i.date}({$i.date}){/if}
   </li>
 {/foreach}
 </ul>
