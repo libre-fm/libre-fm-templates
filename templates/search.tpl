@@ -27,27 +27,28 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h2>Search results</h2>
 
-<ul class="list-unstyled">
+<ul class="list-group list-group-flush">
     {section name=i loop=$results}
     {if $search_type == 'artist'}
-    <li>
+    <li class="list-group-item">
         <p class="search-result-head">
             <a href='{$results[i].url}'>{$results[i].name|escape:'html':'UTF-8'}</a>
         </p>
-        <p class>{$results[i].bio_summary|escape:'html':'UTF-8'}</p>
+        <p><small>{$results[i].bio_summary|escape:'html':'UTF-8'}</small></p>
     </li>
     {elseif $search_type == 'user'}
-    <li>
+    <li class="list-group-item">
         <p class="search-result-head">
             <a href='{$results[i].url}'>{$results[i].username|escape:'html':'UTF-8'}</a>
             {if $results[i].fullname} &mdash; {$results[i].fullname|escape:'html':'UTF-8'}{/if}
         </p>
-        <p>
+        <p><small>
             {$results[i].bio|escape:'html':'UTF-8'}
+        </small>
         </p>
     </li>
     {elseif $search_type == 'tag'}
-    <li>
+    <li class="list-group-item">
         <p class="search-result-head">
             <a href='{$results[i].url}'>{$results[i].tag|escape:'html':'UTF-8'}</a>
         </p>
