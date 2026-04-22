@@ -41,7 +41,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
 
-<ul class="list-group h-feed">
+<ul class="list-group h-feed mb-3">
 {foreach from=$mbdata item=i}
   <li class="list-group-item d-flex justify-content-between align-items-center">
     <a href="./album/{$i.title|replace:' ':'+'|escape:'html'}" rel="bookmark">{$i.title} {if $i.country}({$i.country}){/if} {if $i.disambiguation}[{$i.disambiguation}]{/if}</a> {if $i.date}({$i.date}){/if}
@@ -52,7 +52,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
   <h3 class="mb-4 mt-4">Recent popular tracks</h3>
 
-<ul class="list-group h-feed">
+<ul class="list-group h-feed mb-3">
 {foreach from=$toptracks item=i}
   <li class="list-group-item d-flex justify-content-between align-items-center">
     <a href="{$i.trackurl}">{$i.track}</a>
