@@ -91,6 +91,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {else}
 <p>No MusicBrainz ID found for this artist. Work is underway to improve the matching of artists, if you'd like to help with your favorite artist please email <a href="mailto:support@libre.fm">support@libre.fm</a></p>
+
+<p><a href="https://musicbrainz.org/search?query={$artist->name|escape:html}&type=artist&method=indexed" class="btn btn-success" target="_blank">Search MusicBrainz for '{$artist->name}'</a></p>
+
+<p>If you find something you think matches, please send an email with the LFMID ({$artist->id}) and a link to the MusicBrainz artist page. An example, here is <a href="https://musicbrainz.org/artist/b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d" target="_blank">the MusicBrainz artist page for The Beatles</a>.</p>
+
 {/if}
 
 </div>
