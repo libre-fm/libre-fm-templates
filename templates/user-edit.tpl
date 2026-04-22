@@ -93,7 +93,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <div class="form-group mb-3">
         <label class="form-label" for='laconica_profile'>{t}Fediverse/social web (ie. Mastodon, GNU social, etc.) profile:{/t}</label>
         <input class="form-control form-control-lg" size="40" maxlength="255" type="url" placeholder="https://example.com/@{$me->name}" name='laconica_profile' id='laconica_profile' value='{$laconica_profile|escape:'html':'UTF-8'}'>
-        <div class="form-text">Need an account <a href="https://home.omg.lol/referred-by/mattl" target="_blank">join omg.lol</a> and get access to social.lol</div>
+        <div class="form-text">Need an account? <a href="https://home.omg.lol/referred-by/mattl" target="_blank">join omg.lol</a> and get access to social.lol</div>
     </div>
 
 <div class="form-group mb-3">
