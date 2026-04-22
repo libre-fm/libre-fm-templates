@@ -28,7 +28,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {$error_message|escape:'htmlall'}
 </div>
 
-<div class="alert">
+<div class="alert alert-secondary">
     <p>Need help? <a href="mailto:support@libre.fm">support@libre.fm</a></p>
 </div>
 

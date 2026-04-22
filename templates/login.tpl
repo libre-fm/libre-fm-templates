@@ -23,6 +23,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='mini-header.tpl'}
 
+<div class="alert alert-secondary">
+
 <h2 class="text-center">Welcome back!</h1>
 
     <p class="pt-20">Please note that we are required to have a <a href="/privacy">privacy policy</a> and <a href="/terms">terms and conditions</a> posted now. <strong>By logging in you agree to these terms.</strong></p>
@@ -36,6 +38,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <form method="post" class="form-signin" role='form'>
         {include file='login-form.tpl'}
     </form>
+
+</div>
 
     {include file='tips.tpl'}
 

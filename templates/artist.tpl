@@ -47,7 +47,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <ul class="list-group h-feed mb-3">
 {foreach from=$mbdata item=i}
   <li class="list-group-item d-flex justify-content-between align-items-center">
-    <a href="./album/{$i.title|replace:' ':'+'|escape:'html'}" rel="bookmark">{$i.title} {if $i.country}({$i.country}){/if} {if $i.disambiguation}[{$i.disambiguation}]{/if}</a> {if $i.date}({$i.date}){/if}
+    <a href="./album/{$i.title|replace:' ':'+'|escape:'html'}" title="Libre.fm album page for {$i.title}" rel="bookmark">{$i.title} {if $i.country}({$i.country}){/if} {if $i.disambiguation}[{$i.disambiguation}]{/if}</a> {if $i.date}({$i.date}){/if}
   </li>
 {/foreach}
 </ul>
@@ -61,7 +61,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <ul class="list-group h-feed mb-3">
 {foreach from=$toptracks item=i}
   <li class="list-group-item d-flex justify-content-between align-items-center">
-    <a href="{$i.trackurl}">{$i.track}</a>
+    <a href="{$i.trackurl}" rel="bookmark" title="Libre.fm track page for {$i.track}">{$i.track}</a>
     <span class="badge text-bg-primary rounded-pill">{$i.freq}</span>
   </li>{/foreach}
 </ul>
@@ -73,7 +73,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <ul class="list-group mb-3">
             {foreach from=$artisttoplisteners item=i}
             <li class="list-group-item h-entry d-flex justify-content-between align-items-center">
-                <a class="u-url" href="{$i.userurl}">{$i.username}</a>
+                <a class="u-url" href="{$i.userurl}" rel="bookmark" title="Libre.fm profile for {$i.username}">{$i.username}</a>
                 <span class="badge text-bg-primary rounded-pill">{$i.freq}</span>
             </li>
             {/foreach}
@@ -82,9 +82,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/if}
 
 
-    <div class="alert alert-info mb-3">
+    <div class="mb-3">
         {if $artist->mbid}
-        <p><a href="https://musicbrainz.org/artist/{$artist->mbid}">{$artist->name} on MusicBrainz</a> (<a href="https://musicbrainz.org/artist/{$artist->mbid}/edit#external-links-editor-container">Add/edit links on MusicBrainz</a>)</p>
+        <p><a class="btn btn-primary" href="https://musicbrainz.org/artist/{$artist->mbid}">{$artist->name} on MusicBrainz</a> (<a href="https://musicbrainz.org/artist/{$artist->mbid}/edit#external-links-editor-container">Add/edit links on MusicBrainz</a>)</p>
         {/if}
         {if $image}
         <p><small>Image credit: <a href="https://en.wikipedia.org/wiki/{$artist->name}">{$artist->name} at Wikipedia</a></small></p>
