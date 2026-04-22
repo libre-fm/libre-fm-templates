@@ -25,6 +25,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {if $results}
 
+<h2>Search results</h2>
+
 <ul class="list-unstyled">
     {section name=i loop=$results}
     {if $search_type == 'artist'}
@@ -55,6 +57,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </ul>
 
 {else}
+
+<h2>Search Libre.fm</h2>
 
 <form method="get">
 <div class="mb-3">
