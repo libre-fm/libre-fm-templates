@@ -33,7 +33,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {if $bio_summary}
         <div class="note" id="bio" property="bio:olb" datatype="" style='clear: left;'>
             <h4>{t}Biography{/t}</h4>
-            <p>{$bio_summary}</p>
+            <p class="lead">{$bio_summary}</p>
         </div>
         {/if}
     </div>
