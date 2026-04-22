@@ -23,6 +23,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {include file='header.tpl'}
 
+{if $results}
+
 <ul class="list-unstyled">
     {section name=i loop=$results}
     {if $search_type == 'artist'}
@@ -51,5 +53,25 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/if}
     {/section}
 </ul>
+
+{else}
+
+<form method="get">
+<div class="mb-3">
+<label for="search_term">Search the site:</label>
+<input type="search" id="search_term" name="search_term" maxlength="100">
+</div>
+<div class="mb-3">
+<select name="search_type">
+<option value="artist">Artist name</option>
+<option value="user">User name</option>
+</select>
+</div>
+<div class="mb-3">
+<input type="submit" value="Search">
+</div>
+</form>
+
+{/if}
 
 {include file='footer.tpl'}
