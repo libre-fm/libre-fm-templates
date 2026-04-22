@@ -40,6 +40,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
 
+{if $mbdata}
+
+<h2>Albums and compilations</h2>
 
 <ul class="list-group h-feed mb-3">
 {foreach from=$mbdata item=i}
@@ -48,6 +51,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
   </li>
 {/foreach}
 </ul>
+
+{/if}
 
     {if $artistpopular && $toptracks && $artisttoplisteners}
 
