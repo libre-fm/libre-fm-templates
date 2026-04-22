@@ -32,15 +32,15 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {if $search_type == 'artist'}
     <li class="list-group-item">
         <p class="search-result-head">
-            <a href='{$results[i].url}'>{$results[i].name|unescape:'html':'UTF-8'}</a>
+            <a href='{$results[i].url}'>{$results[i].name|unescape:'html':'UTF-8'|htmlentities}</a>
         </p>
-        <p><small>{$results[i].bio_summary|unescape:'html':'UTF-8'}</small></p>
+        <p><small>{$results[i].bio_summary|unescape:'html':'UTF-8'|htmlentities}</small></p>
     </li>
     {elseif $search_type == 'user'}
     <li class="list-group-item">
         <p class="search-result-head">
-            <a href='{$results[i].url}'>{$results[i].username|unescape:'html':'UTF-8'}</a>
-            {if $results[i].fullname} &mdash; {$results[i].fullname|unescape:'html':'UTF-8'}{/if}
+            <a href='{$results[i].url}'>{$results[i].username|unescape:'html':'UTF-8'|htmlentities}</a>
+            {if $results[i].fullname} &mdash; {$results[i].fullname|unescape:'html':'UTF-8'|htmlentities}{/if}
         </p>
         <p><small>
             {$results[i].bio|escape:'html':'UTF-8'}
@@ -50,7 +50,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {elseif $search_type == 'tag'}
     <li class="list-group-item">
         <p class="search-result-head">
-            <a href='{$results[i].url}'>{$results[i].tag|unescape:'html':'UTF-8'}</a>
+            <a href='{$results[i].url}'>{$results[i].tag|unescape:'html':'UTF-8'|htmlentities}</a>
         </p>
     </li>
     {/if}
