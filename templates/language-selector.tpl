@@ -1,7 +1,7 @@
 {*
 
-'Language Selector (not currently used)' Template for GNU FM
-Copyright (c) 2009-2026 Free Software Foundation, Inc
+Template based on 'Language Selector (not currently used)' Template for GNU FM
+Copyright (c) 2009 Free Software Foundation, Inc
 
 'Language Selector (not currently used)' Template for Libre.fm
 Copyright (c) 2026 Matt Lee <mattl@cnuk.org>

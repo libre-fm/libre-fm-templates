@@ -1,7 +1,7 @@
 {*
 
-'Track header' Template for GNU FM
-Copyright (c) 2009-2026 Free Software Foundation, Inc
+Template based on 'Track header' Template for GNU FM
+Copyright (c) 2009 Free Software Foundation, Inc
 
 'Track header' Template for Libre.fm
 Copyright (c) 2026 Matt Lee <mattl@cnuk.org>
@@ -21,7 +21,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 *}
 
-<div class="alert alert-info">
+<div class="card">
+<div class="card-body">
+
+
+<!--
+<details><summary>Debugging</summary><p class="text-center"><small><a target="_blank" href="https://github.com/libre-fm/libre-fm/issues/68">Album art feedback</a> or <a target="_blank"href="https://turtle.libre.fm/cover.php?album={$album->name|escape:'url'}&artist={$artist->name|escape:'url'}&stop=1">debug</a></small></p></details> -->
+
+<h2>
+    {$track->name}
+</h2>
 
 {if $album->mbid}
 <img class="img-responsive" src="https://coverartarchive.org/release-group/{$album->mbid}/front-250" alt="" height="250" loading="lazy" />
@@ -31,12 +40,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p><img style="background: #666; border: 1px solid white;" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album->name|escape:'url'}&artist={$artist->name|escape:'url'}" alt="" loading="lazy" /></p>
 {/if}
 
-<!--
-<details><summary>Debugging</summary><p class="text-center"><small><a target="_blank" href="https://github.com/libre-fm/libre-fm/issues/68">Album art feedback</a> or <a target="_blank"href="https://turtle.libre.fm/cover.php?album={$album->name|escape:'url'}&artist={$artist->name|escape:'url'}&stop=1">debug</a></small></p></details> -->
-
-<h2>
-    {$track->name}
-</h2>
 
 {if $album->name}
 <p>from <a href="{$album->getURL()}">{$album->name}</a></p>
@@ -48,6 +51,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p>by <a href="{$artist->getURL()}">{$artist->name}</a></p>
 {/if}
 
+</div>
 </div>
 
 

@@ -1,7 +1,7 @@
 {*
 
-'Album Header' Template for GNU FM
-Copyright (c) 2009-2026 Free Software Foundation, Inc
+Template based on 'Album Header' Template for GNU FM
+Copyright (c) 2009 Free Software Foundation, Inc
 
 'Album Header' Template for Libre.fm
 Copyright (c) 2026 Matt Lee <mattl@cnuk.org>
@@ -21,7 +21,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 *}
 
-<div class="alert alert-info">
+<div class="card">
+<div class="card-body">
+<h2 class="card-header">
+    {$album->name}
+</h2>
 
 {if $album->mbid}
 <img class="img-lazy img-thumbnail" width="250" height="250" src="https://turtle.libre.fm/cover.php?mbid={$album->mbid}&album={$album->name|escape:'url'}&artist={$artist->name|escape:'url'}" alt="" loading="lazy">
@@ -30,15 +34,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <img class="img-lazy img-thumbnail" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$album->name|escape:'url'}&artist={$artist->name|escape:'url'}" alt="" loading="lazy">
 {/if}
 
-<h2>
-    {$album->name}
-</h2>
-<p><small>Artist MBID: {$artist->mbid} | LFMID: {$artist->plainid}</small></p>
 <p>by <a href="{$artist->getURL()}">{$artist->name}</a></p>
+</div>
+<div class="card-footer">
 {if $album->releasedate}
 <p>Released on {$album->releasedate|date_format:"%Y-%m-%d"}</p>
 {/if}
 
+<p><small>Artist MBID: {$artist->mbid} | LFMID: {$artist->plainid}</small></p>
+
+</div>
 </div>
 
 {include file='submenu.tpl'}

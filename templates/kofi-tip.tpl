@@ -1,7 +1,7 @@
 {*
 
-'Ko-Fi Tip' Template for GNU FM
-Copyright (c) 2009-2026 Free Software Foundation, Inc
+Template based on 'Ko-Fi Tip' Template for GNU FM
+Copyright (c) 2009 Free Software Foundation, Inc
 
 'Ko-Fi Tip' Template for Libre.fm
 Copyright (c) 2026 Matt Lee <mattl@cnuk.org>

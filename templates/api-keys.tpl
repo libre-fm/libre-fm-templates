@@ -1,6 +1,6 @@
 {*
 
-'Show API key' Template for GNU FM
+Template based on 'Show API key' Template for GNU FM
 Copyright (c) 2026 Free Software Foundation, Inc
 
 'Show API key' Template for Libre.fm

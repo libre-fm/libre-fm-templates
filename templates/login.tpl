@@ -1,7 +1,7 @@
 {*
 
-'Login page' Template for GNU FM
-Copyright (c) 2009-2026 Free Software Foundation, Inc
+Template based on 'Login page' Template for GNU FM
+Copyright (c) 2009 Free Software Foundation, Inc
 
 'Login page' Template for Libre.fm
 Copyright (c) 2026 Matt Lee <mattl@cnuk.org>

@@ -1,7 +1,7 @@
 {*
 
-'Tips (used on login, etc pages)' Template for GNU FM
-Copyright (c) 2009-2026 Free Software Foundation, Inc
+Template based on 'Tips (used on login, etc pages)' Template for GNU FM
+Copyright (c) 2009 Free Software Foundation, Inc
 
 'Tips (used on login, etc pages)' Template for Libre.fm
 Copyright (c) 2026 Matt Lee <mattl@cnuk.org>

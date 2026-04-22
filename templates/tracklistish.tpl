@@ -1,7 +1,7 @@
 {*
 
-'Tracklist-ish (things like a Tracklist but not)' Template for GNU FM
-Copyright (c) 2009-2026 Free Software Foundation, Inc
+Template based on 'Tracklist-ish (things like a Tracklist but not)' Template for GNU FM
+Copyright (c) 2009 Free Software Foundation, Inc
 
 'Tracklist-ish (things like a Tracklist but not)' Template for Libre.fm
 Copyright (c) 2026 Matt Lee <mattl@cnuk.org>

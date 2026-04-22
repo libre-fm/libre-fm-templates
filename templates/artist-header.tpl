@@ -1,7 +1,7 @@
 {*
 
-'Artist Header' Template for GNU FM
-Copyright (c) 2009-2026 Free Software Foundation, Inc
+Template based on 'Artist Header' Template for GNU FM
+Copyright (c) 2009 Free Software Foundation, Inc
 
 'Artist Header' Template for Libre.fm
 Copyright (c) 2026 Matt Lee <mattl@cnuk.org>
@@ -22,8 +22,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 *}
 
 <div class="card">
-
-<h2>{$artist->name}</h2>
+<div class="card-body">
+<h2 class="card-header">{$artist->name}</h2>
 
 {if $image}
 <p><img class="img-thumbnail img-lazy wikipedia-profile-image" loading="lazy" src="{$image}" alt="" /></p>
@@ -33,6 +33,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p><strong>{$cnt}</strong> tracks in database</p>
 {/if}
 
+</div>
+<div class="card-footer">
+
 <p><small>MBID: {$artist->mbid} | LFMID: {$artist->plainid}</small></p>
 
 {if $artist->homepage}
@@ -40,5 +43,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/if}
 
 </div>
+</div>
+
 
 {include file='submenu.tpl'}

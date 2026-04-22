@@ -1,7 +1,7 @@
 {*
 
-'More' Template for GNU FM
-Copyright (c) 2009-2026 Free Software Foundation, Inc
+Template based on 'More' Template for GNU FM
+Copyright (c) 2009 Free Software Foundation, Inc
 
 'More' Template for Libre.fm
 Copyright (c) 2026 Matt Lee <mattl@cnuk.org>
