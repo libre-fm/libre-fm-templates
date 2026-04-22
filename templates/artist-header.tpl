@@ -21,9 +21,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 *}
 
-<div class="card">
+<div class="card mb-3">
 <div class="card-body">
-<h2 class="card-header">{$artist->name}</h2>
+<h2>{$artist->name}</h2>
 
 {if $image}
 <p><img class="img-thumbnail img-lazy wikipedia-profile-image" loading="lazy" src="{$image}" alt="" /></p>

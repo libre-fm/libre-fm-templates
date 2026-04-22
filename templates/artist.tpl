@@ -42,7 +42,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {if $mbdata}
 
-<h2>Albums and compilations</h2>
+<h2 class="mb-3">Albums and compilations</h2>
 
 <ul class="list-group h-feed mb-3">
 {foreach from=$mbdata item=i}
@@ -56,7 +56,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     {if $artistpopular && $toptracks && $artisttoplisteners}
 
-  <h3 class="mb-4 mt-4">Recent popular tracks</h3>
+  <h3 class="mb-3 mt-3">Recent popular tracks</h3>
 
 <ul class="list-group h-feed mb-3">
 {foreach from=$toptracks item=i}
@@ -69,8 +69,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
     <section class="h-feed" id="tops">
-        <h3  class="mb-4 mt-4" id="listeners">Recent top listeners</h3>
-        <ul class="list-group list-group-flush">
+        <h3  class="mb-3 mt-3" id="listeners">Recent top listeners</h3>
+        <ul class="list-group list-group-flush mb-3">
             {foreach from=$artisttoplisteners item=i}
             <li class="list-group-item h-entry d-flex justify-content-between align-items-center">
                 <a class="u-url" href="{$i.userurl}">{$i.username}</a>

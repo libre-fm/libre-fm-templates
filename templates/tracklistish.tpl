@@ -41,11 +41,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 	@param string url_sort_count  URL string to toggle sort order by count
 	@param string type            Type of list, 'tagged' (used to show correct button)
 *}
-<ul class="list-group {$class}">
+<ul class="list-group {$class} mb-3">
     {foreach from=$items item=i}
     <li class="list-group-item">
         {if $me->uniqueid}
-        <a aria-label="Share listening to {$i.track} by {$i.artist} ($i.album), {$i.timehuman}" title="Share {$i.track} by {$i.artist}" href="/user/{$me->name}/scrobble/{$i.time}">{$i.track}{if $fartist} by {$i.artist}{/if}</a>
+        <a aria-label="Share listening to {$i.track} by {$i.artist} ($i.album), {$i.timehuman}" title="Share {$i.track} by {$i.artist}" href="/user/{$me->name}/scrobble/{$i.time}" rel="bookmark">{$i.track}{if $fartist} by {$i.artist}{/if}</a>
         {else}
         {if $i.tracklibraryurl}
         <a href="{$i.tracklibraryurl|escape:'html'}">{$i.track}</a>

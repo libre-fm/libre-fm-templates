@@ -21,9 +21,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 *}
 
-<div class="card">
+<div class="card mb-3">
 <div class="card-body">
-<h2 class="card-header">
+<h2>
     {$album->name}
 </h2>
 
