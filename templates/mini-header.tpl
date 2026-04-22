@@ -49,6 +49,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/lineicons.css" />
     <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/main.css" />
     <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/librefm.css" />
+    <link rel="stylesheet" href="https://libre.fm/themes/2024-end-times/assets/css/mini-librefm.css" />
+
+
 
 </head>
 
