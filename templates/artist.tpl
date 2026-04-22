@@ -70,7 +70,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     <section class="h-feed" id="tops">
         <h3  class="mb-3 mt-3" id="listeners">Recent top listeners</h3>
-        <ul class="list-group list-group-flush mb-3">
+        <ul class="list-group mb-3">
             {foreach from=$artisttoplisteners item=i}
             <li class="list-group-item h-entry d-flex justify-content-between align-items-center">
                 <a class="u-url" href="{$i.userurl}">{$i.username}</a>
@@ -82,7 +82,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     {/if}
 
 
-    <div class="alert alert-info">
+    <div class="alert alert-info mb-3">
         {if $artist->mbid}
         <p><a href="https://musicbrainz.org/artist/{$artist->mbid}">{$artist->name} on MusicBrainz</a> (<a href="https://musicbrainz.org/artist/{$artist->mbid}/edit#external-links-editor-container">Add/edit links on MusicBrainz</a>)</p>
         {/if}
