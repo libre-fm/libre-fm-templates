@@ -94,7 +94,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <p><a href="https://musicbrainz.org/search?query={$artist->name|escape:html}&type=artist&method=indexed" class="btn btn-success" target="_blank">Search MusicBrainz for '{$artist->name}'</a></p>
 
-<p>If you find something you think matches, please send an email with the LFMID ({$artist->plainid}) and a link to the MusicBrainz artist page. An example, here is <a href="https://musicbrainz.org/artist/b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d" target="_blank">the MusicBrainz artist page for The Beatles</a>.</p>
+<p>If you find something you think matches, please send an email with the LFMID ({$artist->plainid}) and a link to the MusicBrainz artist page.</p>
+
+<p>An example, here is <a href="https://musicbrainz.org/artist/b10bbbfc-cf9e-42e0-be17-e2c3e1d2600d" target="_blank">the MusicBrainz artist page for The Beatles</a>.</p>
 
 {/if}
 
