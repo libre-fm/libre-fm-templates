@@ -45,6 +45,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {foreach from=$mbdata item=i}
   <li class="list-group-item d-flex justify-content-between align-items-center">
     <a href="./album/{$i.title|replace:' ':'+'|escape:'html'}" rel="bookmark">{$i.title} {if $i.country}({$i.country}){/if} {if $i.disambiguation}[{$i.disambiguation}]{/if}</a> {if $i.date}({$i.date}){/if}
+<details>{foreach from=$i.secondary-types item=k}
+{$k}
+{/foreach}
+</details>
   </li>
 {/foreach}
 </ul>
