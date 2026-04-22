@@ -64,7 +64,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <form method="get">
 <div class="mb-3">
 <label for="search_term">Search the site:</label>
-<input type="search" id="search_term" name="search_term" maxlength="100" autofocus placeholder="Evil Gazebo">
+<input type="search" id="search_term" name="search_term" maxlength="100" autofocus placeholder="Evil Gazebo" value="{$smarty.get.search_term}">
 </div>
 <div class="mb-3">
 <select name="search_type">
