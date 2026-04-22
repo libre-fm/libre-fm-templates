@@ -1,6 +1,10 @@
 @media (prefers-color-scheme: dark) {
-    body, h1,h2,h3,h4,h5,h6, p, li {
-        background: --bs-white;
-        color: --bs-grey-900;
+    body {
+        background: whitesmoke;
     }
+
+    h1,h2,h3,h4,h5,h6, p, li{
+        color: #111;
+    }
+
 }
