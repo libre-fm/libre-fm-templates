@@ -63,6 +63,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                 		<a href="{$i.trackurl|escape:'html'}">{$i.track|unescape:'html'}</a>
                 	{/if}
 </h5>
+<p class="card-text">{if $i.album}
+	                {if $i.albumlibraryurl}
+	                	<a href="{$i.albumlibraryurl|escape:'html'}">{$i.album|unescape:'html'}</a>
+					{else}
+	                	<a href="{$i.albumurl|escape:'html'}">{$i.album|unescape:'html'}</a>
+	                {/if}
+                {/if}
+          </p>
         <p class="card-text">{if $i.artist}
 	                {if $i.artistlibraryurl}
 	                	<a href="{$i.artistlibraryurl|escape:'html'}">{$i.artist|unescape:'html'}</a>
