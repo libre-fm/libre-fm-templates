@@ -52,7 +52,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <tbody>
         {foreach from=$items item=i}
         <tr>
-            <td class="name">
+            <td class="name">{$i.index} 
 				{if $linktoscrobbles}
 				<a href="/user/{$me->name}/scrobble/{$i.time}">
 				<img style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat;" src="https://turtle.libre.fm/cover.php?album={$i.album|escape:'url'}&artist={$i.artist|escape:'url'}" height="25" width="25" loading="lazy" alt>
