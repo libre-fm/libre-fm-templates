@@ -76,6 +76,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     </div>
   </div>
 </div>
+{/if}
 
 {if ($i@iteration == 6)}
 
