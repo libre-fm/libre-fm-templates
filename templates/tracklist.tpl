@@ -41,6 +41,44 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 	@param string url_sort_count  URL string to toggle sort order by count
 	@param string type            Type of list, 'tagged' (used to show correct button)
 *}
+
+        {foreach from=$items item=i}
+{if ($i@iteration <=5)}
+
+<div class="card mb-3" style="width: 100%; max-width: 700px; margin: 1em auto;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      {if $linktoscrobbles}
+				<a href="/user/{$me->name}/scrobble/{$i.time}">
+				<img class="img-thumbnail img-lazy" src="https://turtle.libre.fm/cover.php?album={$i.album|escape:'url'}&artist={$i.artist|escape:'url'}" height="25" width="25" loading="lazy" alt>
+				</a>
+	            {/if}
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">
+{if $i.tracklibraryurl}
+                		<a href="{$i.tracklibraryurl|escape:'html'}">{$i.track|unescape:'html'}</a>
+               		{else}
+                		<a href="{$i.trackurl|escape:'html'}">{$i.track|unescape:'html'}</a>
+                	{/if}
+</h5>
+        <p class="card-text">{if $i.artist}
+	                {if $i.artistlibraryurl}
+	                	<a href="{$i.artistlibraryurl|escape:'html'}">{$i.artist|unescape:'html'}</a>
+					{else}
+	                	<a href="{$i.artisturl|escape:'html'}">{$i.artist|unescape:'html'}</a>
+	                {/if}
+                {/if}
+          </p>
+        <p class="card-text"><small class="text-body-secondary"><time datetime="{$i.time|date_format:"%Y-%m-%d %H:%M:%S"}" title="{$i.time|date_format:"%c"}">{$i.timehuman}</time></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+{if ($i@iteration == 6)}
+
 <table class="endtimes-table {$class} tracklist">
     <thead>
         <tr>
@@ -50,7 +88,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         </tr>
     </thead>
     <tbody>
-        {foreach from=$items item=i}
+{/if}
+
+{if ($i@iteration > 5)}
         <tr>
             <td class="name">[{$i@iteration}]
 				{if $linktoscrobbles}
@@ -59,7 +99,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 				</a>
 	            {/if}
                 {if $linktoscrobbles}
-                	<a href="/user/{$me->name}/scrobble/{$i.time}" title="{$i.album|unescape:'html'}" rel="prefetch bookmark">
+                	<a href="/user/{$me->name}/scrobble/{$i.time}" title="{$i.album|unescape:'html'}" rel="bookmark">
 					{$i.track|unescape:'html'}
 					</a>
                 {else}
