@@ -42,7 +42,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <li class="nav-item"><a href="{$base_url}/register.php">
             {t}Register{/t}
         </a></li>
-    {/if}{$this_user->plainid}
-{if $this_user->plainid == 3}<a href="#" id="bugbutton" class="btn btn-sm btn-info debug-style">Bug</a>{/if}
+    {/if}
+{if $this_user->uniqueid == 3}<a href="#" id="bugbutton" title="Report a bug" class="btn btn-sm btn-info debug-style">Feedback</a>{/if}
 
 </ul>
