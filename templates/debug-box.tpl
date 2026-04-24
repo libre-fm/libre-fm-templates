@@ -61,17 +61,19 @@
        const debugBox = document.createElement('div');
        debugBox.id = 'librefm-debug-box';
        debugBox.innerHTML = `<h2>Report a bug/feature request/improvement to Libre.fm</h2><h3 id="lfm-bug-click">Click on things on the page to reference them</h3>
+<p>Please do not use this form for support requests. Posts are submitted to a non-monitored location.</p>
           <form id='debug-form' target='_blank' action='https://turtle.libre.fm/debug-box.php' method='post'>
           <textarea style='visibility: hidden; height: 1px;' class='mb-3' name='lfm-el' id='librefm-debug-box-elements'></textarea>
           <label for='librefm-debug-box-bug'>
           <textarea rows='5' class='mb-3' name='lfm-bug' required id='librefm-debug-box-bug' placeholder='Describe your bug/feature request/suggestion here'></textarea>
           </label>
-          <p>Do not submit any generative or third-party content. This will result in your Libre.fm account being closed.</p>
+          <p>Please do not submit any generative or third-party content. This will result in your Libre.fm account being closed.</p>
 {/literal}
 <input type='hidden' name='lfm-user' value='{$this_user->uniqueid}'>
 <input type='hidden' name='lfm-url' value='{$smarty.server.REQUEST_URI}'>
 {literal}
-          <input class='btn btn-success btn-lg' type='submit' value='Submit bug (will open a new window/tab)'>
+          <input class='btn btn-success btn-lg' type='submit' value='Submit!'>
+          <p>(will open a new window/tab)</p>
           </form>
           <div class='warning'>&nbsp;</div>
         `;
