@@ -1,0 +1,46 @@
+  .debug-body .card:hover, .debug-body .alert:hover, .debug-body td:hover  { border: 1px solid red;}
+
+  .debug-style { box-shadow: 0px 0px 0px 3px lime; border: 3px solid lime}
+
+  td.debug-style {background: lime;}
+
+  #librefm-debug-box {
+    text-align: center;
+    background: black;
+    color: white;
+    width: 100%;
+    padding-top: 2em;
+    padding-left: 1em;
+    padding-right: 1em;
+  }
+
+  #librefm-debug-box * {
+    display: block;
+  }
+
+  #librefm-debug-box form {
+    background: black;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  #librefm-debug-box input {
+    margin: 0 auto;
+  }
+
+  #librefm-debug-box textarea {
+    width: 100%;
+  }
+
+  .warning {
+    background-image: repeating-linear-gradient(
+      -55deg,
+      #000,
+      #000 20px,
+      #e8f312 20px,
+      #e8f312 40px
+    );
+
+    min-height: 64px;
+    margin-top: 1em;
+  }
