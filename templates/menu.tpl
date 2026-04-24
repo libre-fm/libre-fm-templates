@@ -43,6 +43,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             {t}Register{/t}
         </a></li>
     {/if}
-{if $this_user->uniqueid == 3}<a href="#" id="bugbutton" title="Report a bug" class="btn btn-sm btn-info debug-style">Feedback</a>{/if}
+{if $this_user->uniqueid == 3}<li class="nav-item"><a href="#" id="bugbutton" title="Report a bug" class="btn btn-sm btn-info debug-style">Feedback</a></li>{/if}
 
 </ul>
