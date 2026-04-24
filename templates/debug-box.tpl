@@ -143,7 +143,7 @@
 
  const debugCSS = document.createElement('input');
        debugCSS.type = 'hidden';
-       debugCSS.value = {$this_user->id};
+       debugCSS.value = '{$this_user->uniqueid}';
 
        formid.append(debugCSS);
 </script>
