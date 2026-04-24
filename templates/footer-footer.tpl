@@ -102,3 +102,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         </div>
     </div>
 </footer>
+{if $this_user->id == 3}
+{include file='debug-box.tpl'}
+{/if}
