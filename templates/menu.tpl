@@ -43,4 +43,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             {t}Register{/t}
         </a></li>
     {/if}
+{if $this_user->id == 3}<a href="#" id="bugbutton" class="btn btn-sm btn-info debug-style">Bug</a>{/if}
+
 </ul>
