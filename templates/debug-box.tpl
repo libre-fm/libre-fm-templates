@@ -66,6 +66,9 @@
           <textarea rows='5' class='mb-3' name='lfm-bug' required id='librefm-debug-box-bug' placeholder='Describe your bug/feature request/suggestion here'></textarea>
           </label>
           <p>Do not submit any generative or third-party content. This will result in your Libre.fm account being closed.</p>
+{/literal}
+<input type='hidden' name='form-user' value='{$this_user->uniqueid}';
+{literal}
           <input class='btn btn-success btn-lg' type='submit' value='Submit bug (will open a new window/tab)'>
           </form>
           <div class='warning'>&nbsp;</div>
@@ -138,15 +141,6 @@
      });
 </script>
   {/literal}
-<script>
-  const formid = document.getElementById('debug-form');
-
- const debugCSS = document.createElement('input');
-       debugCSS.type = 'hidden';
-       debugCSS.value = '{$this_user->uniqueid}';
-
-       formid.append(debugCSS);
-</script>
 
 {/if}
 
