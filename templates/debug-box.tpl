@@ -43,11 +43,12 @@
      }
 
 
+     // Libre.fm specific code
+     // AGPLv3 or later, by Matt Lee <mattl@cnuk.org>
+
      const bugbutton = document.getElementById("bugbutton");
 
-
      bugbutton.addEventListener("click", () => {
-
 
        const debugCSS = document.createElement('link');
        debugCSS.rel = 'stylesheet';
@@ -68,6 +69,7 @@
           <p>Do not submit any generative or third-party content. This will result in your Libre.fm account being closed.</p>
 {/literal}
 <input type='hidden' name='lfm-user' value='{$this_user->uniqueid}'>
+<input type='hidden' name='lfm-url' value='{$smarty.server.REQUEST_URI}'>
 {literal}
           <input class='btn btn-success btn-lg' type='submit' value='Submit bug (will open a new window/tab)'>
           </form>
