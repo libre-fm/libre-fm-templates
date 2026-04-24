@@ -70,7 +70,7 @@
           <p>Please do not submit any generative or third-party content. This will result in your Libre.fm account being closed.</p>
 {/literal}
 <input type='hidden' name='lfm-user' value='{$this_user->uniqueid}'>
-<input type='hidden' name='lfm-url' value='{$smarty.server.REQUEST_URI}'>
+<input type='hidden' name='lfm-url' value='https://libre.fm{$smarty.server.REQUEST_URI}'>
 {literal}
           <input class='btn btn-success btn-lg' type='submit' value='Submit!'>
           <p>(will open a new window/tab)</p>
