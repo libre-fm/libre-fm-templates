@@ -42,7 +42,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/if}
 
 <p><small>Artist MBID: <a href="https://musicbrainz.org/mbid/{$artist->mbid}" target="_blank">{$artist->mbid}</a> | LFMID: {$artist->plainid}</small></p>
-<p><small>Album MBID: <a href="https://musicbrainz.org/mbid/{$album->mbid}" target="_blank">{$album->mbid}</a> | LFMID: {$album->id}</small></p>
+<p><small>Album MBID: <a href="https://musicbrainz.org/mbid/{$album->mbid}" target="_blank">{$album->mbid}</a> | LFMID: {$album->plainid}</small></p>
 
 
 </div>
