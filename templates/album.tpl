@@ -29,9 +29,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <li property="rdfs:comment">{t}Playcount {/t} <span class="badge">{$album->getPlayCount()}</span></li>
 </ul>
 
-<!-- <h4>Tracks</h4>
-{artisttracks artist=$album->artist_name album=$album->name}
-{include file='tracklistish.tpl' class=#table# items=$artisttracks fstream=true}  -->
+<h4>Tracks</h4>
+{include file='tracklistish.tpl' class=#table# items=$albumtracks fstream=true}  -->
 
 
 <!-- {if $add_track_link}<a href='{$add_track_link}'><strong>{t}Add new track{/t}</strong></a>{/if}
