@@ -25,12 +25,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
 {if $nowplaying}
-<div class="card mb-3 text-bg-secondary" style="width: 100%; max-width: 700px; margin: 1em auto;">
+<div class="card mb-3 text-bg-secondary" style="width: 100%; max-width: 500px; margin: 1em auto;">
   <div class="row g-0">
-    <div class="col-md-4">
+    <div class="col-md-3">
           <img class="img-thumbnail img-lazy" src="https://turtle.libre.fm/cover.php?mbid={$nowplaying[0].mbid}&artist={$nowplaying[0].artist|escape:'url'}&album={$nowplaying[0].album|escape:'url'}" loading="lazy" alt="" width="125" height="125">
     </div>
-    <div class="col-md-8">
+    <div class="col-md-9">
       <div class="card-body">
         <h5 class="card-title">
 Currently listening to:
