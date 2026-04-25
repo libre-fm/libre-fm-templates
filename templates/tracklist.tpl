@@ -45,16 +45,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {foreach from=$items item=i}
 {if ($i@iteration <=5)}
 
-<div class="card mb-3" style="width: 100%; max-width: 700px; margin: 1em auto;">
+<div class="card mb-3" style="width: 100%; max-width: 600px; margin: 1em auto;">
   <div class="row g-0">
-    <div class="col-md-4">
+    <div class="col-md-3 text-center">
       {if $linktoscrobbles}
 				<a href="/user/{$me->name}/scrobble/{$i.time}">
 				<img class="img-thumbnail img-lazy" src="https://turtle.libre.fm/cover.php?album={$i.album|escape:'url'}&artist={$i.artist|escape:'url'}" height="180" width="180" loading="lazy" alt>
 				</a>
 	            {/if}
     </div>
-    <div class="col-md-8">
+    <div class="col-md-9">
       <div class="card-body">
         <h5 class="card-title">
 {if $i.tracklibraryurl}
