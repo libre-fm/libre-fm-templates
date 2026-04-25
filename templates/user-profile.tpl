@@ -26,13 +26,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {if $nowplaying}
 <div class="alert alert-secondary">
-    <p><strong>{t name=$me->name}%1{/t} is currently listening to: </strong></p>
+    <p><strong>Currently listening to: </strong></p>
 
-	{if $nowplaying[0].mbid}
-    <p><img src="https://coverartarchive.org/release/{$nowplaying[0].mbid}/front-250" title="Image from Cover Art Archive" loading="lazy" alt="" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat; " width="120" height="120"></p>
-	{else}
-    <p><img src="https://turtle.libre.fm/cover.php?artist={$nowplaying[0].artist|escape:'url'}&album={$nowplaying[0].album|escape:'url'}" loading="lazy" alt="" style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat; " width="120" height="120"></p>
-    {/if}
+    <p><img class="img-thumbnail img-lazy" src="https://turtle.libre.fm/cover.php?mbid={$nowplaying[0].mbid}&artist={$nowplaying[0].artist|escape:'url'}&album={$nowplaying[0].album|escape:'url'}" loading="lazy" alt="" width="120" height="120"></p>
 
     <p><a class="alert-link" href="{$nowplaying[0].trackurl}">
             {$nowplaying[0].track}
