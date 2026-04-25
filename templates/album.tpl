@@ -29,6 +29,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <li property="rdfs:comment">{t}Playcount {/t} <span class="badge">{$album->getPlayCount()}</span></li>
 </ul>
 
+<p>This is a list from <a href="https://musicbrainz.org/mbid/{$album->mbid}" target="_blank">MusicBrainz</a>, so some (or even all) of these may not yet exist in the Libre.fm database yet until someone listens to them.</p>
+
 {if $albumtracks}
     <h4>Tracks</h4>
     <ol class="list-group list-group-numbered mb-3">
