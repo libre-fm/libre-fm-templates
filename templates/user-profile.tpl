@@ -53,7 +53,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p><a href="/user/{$me->name}/recent-tracks" class="btn btn-primary">More recent plays...</a></p>
 
 
-<h3>{t name=$me->name}Top artists over the last 7 days</h3>
+<h3>Top artists over the last 7 days</h3>
 
 <ul class="list-group">
 {foreach $topartists as $topartist}
