@@ -29,8 +29,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <li property="rdfs:comment">{t}Playcount {/t} <span class="badge">{$album->getPlayCount()}</span></li>
 </ul>
 
+{if $albumtracks}
 <h4>Tracks</h4>
-{include file='tracklistish.tpl' class=#table# items=$albumtracks fstream=true}
+<ol>
+{foreach $albumtracks as $track}
+<li>{$track.title}</li>
+{/foreach}
+</ol>
+{/if}
 
 
 
