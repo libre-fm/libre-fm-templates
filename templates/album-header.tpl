@@ -42,6 +42,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/if}
 
 <p><small>Artist MBID: {$artist->mbid} | LFMID: {$artist->plainid}</small></p>
+<p><small>Album MBID: {$album->mbid} | LFMID: {$album->plainid}</small></p>
+
 
 </div>
 </div>
