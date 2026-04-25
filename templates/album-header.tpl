@@ -41,8 +41,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p>Released on {$album->releasedate|date_format:"%Y-%m-%d"}</p>
 {/if}
 
-<p><small>Artist MBID: {$artist->mbid} | LFMID: {$artist->plainid}</small></p>
-<p><small>Album MBID: {$album->mbid} | LFMID: {$album->plainid}</small></p>
+<p><small>Artist MBID: <a href="https://musicbrainz.org/mbid/{$artist->mbid}" target="_blank">{$artist->mbid}</a> | LFMID: {$artist->plainid}</small></p>
+<p><small>Album MBID: <a href="https://musicbrainz.org/mbid/{$album->mbid}" target="_blank">{$album->mbid}</a> | LFMID: {$album->id}</small></p>
 
 
 </div>
