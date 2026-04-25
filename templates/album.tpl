@@ -30,7 +30,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </ul>
 
 <h4>Tracks</h4>
-{include file='tracklistish.tpl' class=#table# items=$albumtracks fstream=true}  -->
+{include file='tracklistish.tpl' class=#table# items=$albumtracks fstream=true}
+
+
 
 
 <!-- {if $add_track_link}<a href='{$add_track_link}'><strong>{t}Add new track{/t}</strong></a>{/if}
