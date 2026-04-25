@@ -44,6 +44,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h2 class="mb-3">Albums and compilations</h2>
 
+<p>This is a list from <a href="https://musicbrainz.org/mbid/{$artist->mbid}" target="_blank">MusicBrainz</a>, so some (or even all) of these may not yet exist in the Libre.fm database yet until someone listens to them.</p>
+
 <ul class="list-group h-feed mb-3">
 {foreach from=$mbdata item=i}
   <li class="list-group-item d-flex justify-content-between align-items-center">
@@ -84,7 +86,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     <div class="mb-3">
         {if $artist->mbid}
-        <p><a class="btn btn-primary" href="https://musicbrainz.org/artist/{$artist->mbid}">{$artist->name} on MusicBrainz</a> (<a href="https://musicbrainz.org/artist/{$artist->mbid}/edit#external-links-editor-container">Add/edit links on MusicBrainz</a>)</p>
+        <p><a class="btn btn-primary" href="https://musicbrainz.org/mbid/{$artist->mbid}">{$artist->name} on MusicBrainz</a> (<a href="https://musicbrainz.org/artist/{$artist->mbid}/edit#external-links-editor-container">Add/edit links on MusicBrainz</a>)</p>
         {/if}
         {if $image}
         <p><small>Image credit: <a href="https://en.wikipedia.org/wiki/{$artist->name}">{$artist->name} at Wikipedia</a></small></p>
