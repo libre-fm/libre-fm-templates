@@ -31,24 +31,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 {if $albumtracks}
     <h4>Tracks</h4>
-    <ol class="list-group list-group-numbered">
+    <ol class="list-group list-group-numbered mb-3">
     {foreach $albumtracks as $track}
         <li class="list-group-item"><a href="/artist/{$artist->name|replace:' ':'+'|escape:'html'}/album/{$album->name|replace:' ':'+'|escape:'html'}/track/{$track.title|replace:' ':'+'|escape:'html'}" rel="bookmark">{$track.title}</a></li>
     {/foreach}
     </ol>
 {/if}
 
-<!-- {if $add_track_link}<a href='{$add_track_link}'><strong>{t}Add new track{/t}</strong></a>{/if}
-
-{* Hack to get an album player for now, $album->isStreamable() would be better *}
-{if $artisttracks[0].streamable}
-{$streamable = true}
-{$album_station = "librefm://artist/{$album->artist_name}/album/{$album->name}"}
-{/if} -->
-
-
-
-<p>{if $album->mbid}<a href="https://musicbrainz.org/release-group/{$album->mbid}" class="btn btn-success" target="_blank">Show on MusicBrainz</a>{/if}</p>
+<p>{if $album->mbid}<a href="https://musicbrainz.org/mbid/{$album->mbid}" class="btn btn-success" target="_blank">Show on MusicBrainz</a>{/if}</p>
 
 
 </div>
