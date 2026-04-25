@@ -79,8 +79,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 	                {/if}
                 {/if}
           </p>
-        <p class="card-text"><small class="text-body-secondary"><time datetime="{$i.time|date_format:"%Y-%m-%d %H:%M:%S"}" title="{$i.time|date_format:"%c"}">{$i.timehuman}</time></small></p>
       </div>
+<div class="card-footer">
+        <p class="card-text"><small class="text-body-secondary"><time datetime="{$i.time|date_format:"%Y-%m-%d %H:%M:%S"}" title="{$i.time|date_format:"%c"}">{$i.timehuman}</time></small></p>
+</div>
     </div>
   </div>
 </div>
