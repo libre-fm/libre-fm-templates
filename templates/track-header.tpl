@@ -32,7 +32,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </h2>
 
 {if $album->mbid}
-<img class="img-thumbnail img-lazy" src="https://coverartarchive.org/release-group/{$album->mbid}/front-250" alt="" height="250" loading="lazy" />
+<img class="img-thumbnail img-lazy" src="https://coverartarchive.org/release-group/{$album->mbid}/front-250" alt="" width="250" height="250" loading="lazy" />
 {elseif $track->album_name}
 <p><img class="img-thumbnail img-lazy" width="250" height="250" src="https://turtle.libre.fm/cover.php?album={$track->album_name|escape:'url'}&artist={$artist->name|escape:'url'}" alt="" loading="lazy" /></p>
 {else}
