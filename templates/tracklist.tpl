@@ -45,16 +45,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {foreach from=$items item=i}
 {if ($i@iteration <=5)}
 
-<div class="card mb-3" style="width: 100%; max-width: 600px; margin: 1em auto;">
+<div class="card mb-3" style="width: 100%; max-width: 700px; margin: 1em auto;">
   <div class="row g-0">
-    <div class="col-md-3 text-center">
+    <div class="col-md-4 text-center">
       {if $linktoscrobbles}
 				<a href="/user/{$me->name}/scrobble/{$i.time}">
-				<img class="img-thumbnail img-lazy" src="https://turtle.libre.fm/cover.php?album={$i.album|escape:'url'}&artist={$i.artist|escape:'url'}" height="200" width="200" loading="lazy" alt>
+				<img class="img-thumbnail img-lazy" src="https://turtle.libre.fm/cover.php?album={$i.album|escape:'url'}&artist={$i.artist|escape:'url'}" height="250" width="250" loading="lazy" alt>
 				</a>
 	            {/if}
     </div>
-    <div class="col-md-9">
+    <div class="col-md-8">
       <div class="card-body">
         <h5 class="card-title">
 {if $i.tracklibraryurl}
@@ -79,10 +79,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 	                {/if}
                 {/if}
           </p>
-      </div>
-<div class="card-footer">
         <p class="card-text"><small class="text-body-secondary"><time datetime="{$i.time|date_format:"%Y-%m-%d %H:%M:%S"}" title="{$i.time|date_format:"%c"}">{$i.timehuman}</time></small></p>
-</div>
+      </div>
     </div>
   </div>
 </div>
