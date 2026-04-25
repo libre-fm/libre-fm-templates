@@ -50,7 +50,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <div class="col-md-4">
       {if $linktoscrobbles}
 				<a href="/user/{$me->name}/scrobble/{$i.time}">
-				<img class="img-thumbnail img-lazy" src="https://turtle.libre.fm/cover.php?album={$i.album|escape:'url'}&artist={$i.artist|escape:'url'}" height="250" width="250" loading="lazy" alt>
+				<img class="img-thumbnail img-lazy" src="https://turtle.libre.fm/cover.php?album={$i.album|escape:'url'}&artist={$i.artist|escape:'url'}" height="180" width="180" loading="lazy" alt>
 				</a>
 	            {/if}
     </div>
