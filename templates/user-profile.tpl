@@ -28,7 +28,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <div class="card mb-3" style="width: 100%; max-width: 700px; margin: 1em auto;">
   <div class="row g-0">
     <div class="col-md-4">
-          <img class="img-thumbnail img-lazy" src="https://turtle.libre.fm/cover.php?mbid={$nowplaying[0].mbid}&artist={$nowplaying[0].artist|escape:'url'}&album={$nowplaying[0].album|escape:'url'}" loading="lazy" alt="" width="250" height="250">
+          <img class="img-thumbnail img-lazy" src="https://turtle.libre.fm/cover.php?mbid={$nowplaying[0].mbid}&artist={$nowplaying[0].artist|escape:'url'}&album={$nowplaying[0].album|escape:'url'}" loading="lazy" alt="" width="125" height="125">
     </div>
     <div class="col-md-8">
       <div class="card-body">
