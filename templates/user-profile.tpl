@@ -57,7 +57,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p><a href="/user/{$me->name}/recent-tracks" class="btn btn-primary">More recent plays...</a></p>
 
 
-<h3>{t name=$me->name}%1{/t}'s top 5 artists</h3>
+<h3>{t name=$me->name}Top artists over the last 7 days</h3>
 
 <ul class="list-group">
 {foreach $topartists as $topartist}
@@ -68,7 +68,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/foreach}
 </ul>
 
-<h3 class="mt-3 mb-3">Plays over the last 7 days</h3>
+<h3 class="mt-3 mb-3">Top plays over the last 7 days</h3>
 
 <ul class="list-group mb-3">
         {foreach $topplaybydays as $day}
