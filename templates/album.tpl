@@ -33,7 +33,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <h4>Tracks</h4>
     <ol class="list-group list-group-numbered">
     {foreach $albumtracks as $track}
-        <li class="list-group-item"><a href="/artist/{$artist->name|replace:' ':'+'|escape:'html'}/album/{$album->name|replace:' ':'+'|escape:'html'}/track/{$track->title|replace:' ':'+'|escape:'html'}" rel="bookmark">{$track.title}</a></li>
+        <li class="list-group-item"><a href="/artist/{$artist->name|replace:' ':'+'|escape:'html'}/album/{$album->name|replace:' ':'+'|escape:'html'}/track/{$track.title|replace:' ':'+'|escape:'html'}" rel="bookmark">{$track.title}</a></li>
     {/foreach}
     </ol>
 {/if}
