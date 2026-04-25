@@ -44,7 +44,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h2 class="mb-3">Albums and compilations</h2>
 
-<p>This is a list from <a href="https://musicbrainz.org/mbid/{$artist->mbid}" target="_blank">MusicBrainz</a>, so some (or even all) of these may not yet exist in the Libre.fm database yet until someone listens to them.</p>
+<p>This is a list from <a title="MusicBrainz page for '{$artist->name}'" href="https://musicbrainz.org/mbid/{$artist->mbid}" target="_blank">MusicBrainz</a>, so some (or even all) of these may not yet exist in the Libre.fm database yet until someone listens to them.</p>
 
 <ul class="list-group h-feed mb-3">
 {foreach from=$mbdata item=i}
