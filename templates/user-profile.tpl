@@ -25,12 +25,17 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
 {if $nowplaying}
-<div class="alert alert-secondary">
-    <p><strong>Currently listening to: </strong></p>
-
-    <p><img class="img-thumbnail img-lazy" src="https://turtle.libre.fm/cover.php?mbid={$nowplaying[0].mbid}&artist={$nowplaying[0].artist|escape:'url'}&album={$nowplaying[0].album|escape:'url'}" loading="lazy" alt="" width="120" height="120"></p>
-
-    <p><a class="alert-link" href="{$nowplaying[0].trackurl}">
+<div class="card mb-3" style="width: 100%; max-width: 700px; margin: 1em auto;">
+  <div class="row g-0">
+    <div class="col-md-4">
+          <img class="img-thumbnail img-lazy" src="https://turtle.libre.fm/cover.php?mbid={$nowplaying[0].mbid}&artist={$nowplaying[0].artist|escape:'url'}&album={$nowplaying[0].album|escape:'url'}" loading="lazy" alt="" width="250" height="250">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">
+Currently listening to:
+</h5>
+<p class="card-text"><a class="alert-link" href="{$nowplaying[0].trackurl}">
             {$nowplaying[0].track}
         </a>
         by
@@ -38,11 +43,14 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             {$nowplaying[0].artist}
         </a>
     </p>
+		</div>
+    </div>
+  </div>
+</div>
+{/if}
 
     {if ($isme)}<a href="/user/{$this_user->name}/now">An image to embed this in another webpage</a><br><textarea class="form-control">&lt;a href="https://libre.fm/user/{$this_user->name}/"&gt;&lt;img src="https://libre.fm/user/{$this_user->name}/now" alt loading="lazy" style="width: 100%; max-width: 480px; height: auto;"&gt;&lt;/a&gt;</textarea>{/if}
 
-</div>
-{/if}
 
 <h3 class="mt-3 mb-3">Recent plays</h3>
 
