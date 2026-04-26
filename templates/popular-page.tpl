@@ -25,7 +25,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div id="tag-cloud-box">
 
-    {include file='popular.tpl'}
+{$stats}
 
 </div>
 
