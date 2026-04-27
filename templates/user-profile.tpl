@@ -50,7 +50,7 @@ Currently listening to:
 {/if}
 {if $nowplaying}
 
-    {if ($isme)}<div class="w-50 mt-2 mb-3"><a href="/user/{$this_user->name}/now">An image to embed this in another webpage</a><br><textarea class="form-control">&lt;a href="https://libre.fm/user/{$this_user->name}/"&gt;&lt;img src="https://libre.fm/user/{$this_user->name}/now" alt loading="lazy" style="width: 100%; max-width: 480px; height: auto;"&gt;&lt;/a&gt;</textarea></div>{/if}
+    {if ($isme)}<div class="w-50 mt-2 mb-3 mx-auto"><a href="/user/{$this_user->name}/now">An image to embed this in another webpage</a><br><textarea class="form-control">&lt;a href="https://libre.fm/user/{$this_user->name}/"&gt;&lt;img src="https://libre.fm/user/{$this_user->name}/now" alt loading="lazy" style="width: 100%; max-width: 480px; height: auto;"&gt;&lt;/a&gt;</textarea></div>{/if}
 {/if}
 
 <h3 class="mt-3 mb-3">Recent plays</h3>
