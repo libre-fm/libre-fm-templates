@@ -33,7 +33,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <p>This is called <em>scrobbling</em>.</p>
 
-<p class="lead">To get started you need to pick and then configure a piece of software we call a client. These are all independent pieces of software which can scrobble to Libre.fm on your behalf. There are lots of choices of client, some that we know work well for people starting out include:</p>
+<p class="lead">To get started you need to pick and then configure a piece of software <a target="_blank" href="https://wiki.libre.fm/Clients">we call a client</a>. These are all independent pieces of software which can scrobble to Libre.fm on your behalf. There are lots of choices of client, some that we know work well for people starting out include:</p>
 
 <ul style="text-align: left;">
     <li><a target="_blank" href="https://github.com/mattl/hacienda/wiki/Web-Scrobbler">Web Scrobbler</a> &mdash; this is perfect if you listen to music from <a href="http://open.spotify.com" target="_blank">Spotify</a> or <a href="https://music.apple.com" target="_blank">Apple Music</a> in a web browser (we like Firefox, but most browsers are supported)</li>
