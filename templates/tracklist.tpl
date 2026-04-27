@@ -80,7 +80,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                 {/if}
           </p>
         <p class="card-text"><small class="text-body-secondary"><time datetime="{$i.time|date_format:"%Y-%m-%d %H:%M:%S"}" title="{$i.time|date_format:"%c"}">
-		{if $linktoscrobbles}<a href="/user/{$me->name}/scrobble/{$i.time}">{$i.timehuman}</a>{/if}</time></small></p>
+		{if $linktoscrobbles}<a href="/user/{$me->name}/scrobble/{$i.time}">{$i.timehuman}</a>{else}{$i.timehuman}{/if}</time></small></p>
       </div>
     </div>
   </div>
@@ -132,7 +132,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
             <td class="time">
                 <time datetime="{$i.time|date_format:"%Y-%m-%d %H:%M:%S"}" title="{$i.time|date_format:"%c"}">{if $linktoscrobbles}
-				<a href="/user/{$me->name}/scrobble/{$i.time}">{$i.timehuman}</a></time>
+				<a href="/user/{$me->name}/scrobble/{$i.time}">{$i.timehuman}</a>{else}{$i.timehuman}{/if}</time>
             </td>
         </tr>
 {/if}
