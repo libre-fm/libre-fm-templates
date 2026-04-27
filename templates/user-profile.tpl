@@ -25,7 +25,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
 {if $nowplaying}
-<div class="card mb-3 text-bg-secondary w-50">
+<div class="card mb-3 text-bg-secondary w-50 mx-auto">
   <div class="row g-0">
     <div class="col-md-3">
           <img class="img-thumbnail img-lazy" src="https://turtle.libre.fm/cover.php?mbid={$nowplaying[0].mbid}&artist={$nowplaying[0].artist|escape:'url'}&album={$nowplaying[0].album|escape:'url'}" loading="lazy" alt="" width="125" height="125">
@@ -48,9 +48,10 @@ Currently listening to:
   </div>
 </div>
 {/if}
+{if $nowplaying}
 
     {if ($isme)}<a href="/user/{$this_user->name}/now">An image to embed this in another webpage</a><br><textarea class="form-control">&lt;a href="https://libre.fm/user/{$this_user->name}/"&gt;&lt;img src="https://libre.fm/user/{$this_user->name}/now" alt loading="lazy" style="width: 100%; max-width: 480px; height: auto;"&gt;&lt;/a&gt;</textarea>{/if}
-
+{/if}
 
 <h3 class="mt-3 mb-3">Recent plays</h3>
 
