@@ -76,6 +76,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <hr>
 {/if}
 
+{if ($inline)}
+{$inline}
+{/if}
+
 <!-- <div class="alert alert-dark">
     <h3>What's new?</h3>
 
