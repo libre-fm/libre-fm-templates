@@ -45,7 +45,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {foreach from=$items item=i}
 {if ($i@iteration <=5)}
 
-<div class="card mb-3" style="width: 100%; max-width: 700px; margin: 1em auto;">
+<div class="card mb-3 w-50">
   <div class="row g-0">
     <div class="col-md-4 text-center">
       {if $linktoscrobbles}
