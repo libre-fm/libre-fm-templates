@@ -95,7 +95,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 {/if}
 
 {if ($recents)}
-<h3 class="text-center text-balance">Songs listened to by the Libre.fm community in the last 5 minutes</h3>
+<h3 class="text-center text-balance">Songs listened to by the Libre.fm community in the last few minutes</h3>
 {$recents}
 {/if}
 
