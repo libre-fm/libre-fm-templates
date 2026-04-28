@@ -1,0 +1,141 @@
+{*
+
+Template based on 'Tracklist' Template for GNU FM
+Copyright (c) 2009 Free Software Foundation, Inc
+
+'Tracklist' Template for Libre.fm
+Copyright (c) 2026 Matt Lee <mattl@cnuk.org>
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the GNU Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+GNU Affero General Public License for more details.
+
+You should have received a copy of the GNU Affero General Public License
+along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+*}
+
+{*	------------------
+	tracklist.tpl
+	------------------
+	Dynamic smarty template intended to be used on any page with a list of tracks.
+
+	@param array  items           Array of tracks ((artist, track, streamable, loved, image, artistlibraryurl, tracklibraryurl, artisturl, trackurl, tagged, tag, freq) .. )
+	@param string class           CSS table class (if class equals 'library' *libraryurl will be used instead of *url)
+	@param bool   thead           Show table header
+	@param bool   fstream         Show streamable field, used by $i.streamable
+	@param bool   flove           Show loved field, used by $i.loved
+	@param bool   fartist         Show artist in name field, used by $i.artist
+	@param bool   fimage          Show image field, used by $i.image
+	@param bool   ftag            Show tag field, used by $i.tag
+	@param bool   fbutton         Show button field, used by button if page is owned by user
+	@param bool   fcount          Show count field, used by $i.freq
+	@param bool   ftime           Show time field, used by $i.timehuman
+	@param string url_sort_name   URL string to toggle sort order by name
+	@param string url_sort_count  URL string to toggle sort order by count
+	@param string type            Type of list, 'tagged' (used to show correct button)
+*}
+
+        {foreach from=$items item=i}
+{if ($i@iteration <=5)}
+
+<div class="card mb-3 w-50 mx-auto">
+  <div class="row g-0">
+    <div class="col-md-4 text-center">
+      {if $linktoscrobbles}
+				<a href="/user/{$me->name}/scrobble/{$i.time}">
+				<img class="img-thumbnail img-lazy" src="https://turtle.libre.fm/cover.php?album={$i.album|escape:'url'}&artist={$i.artist|escape:'url'}" height="250" width="250" loading="lazy" alt>
+				</a>
+	            {/if}
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">
+{if $i.tracklibraryurl}
+                		<a href="{$i.tracklibraryurl|escape:'html'}">{$i.track|unescape:'html'}</a>
+               		{else}
+                		<a href="{$i.trackurl|escape:'html'}">{$i.track|unescape:'html'}</a>
+                	{/if}
+</h5>
+<p class="card-text">{if $i.album}
+	                {if $i.albumlibraryurl}
+	                	<a href="{$i.albumlibraryurl|escape:'html'}">{$i.album|unescape:'html'}</a>
+					{else}
+	                	<a href="{$i.albumurl|escape:'html'}">{$i.album|unescape:'html'}</a>
+	                {/if}
+                {/if}
+          </p>
+        <p class="card-text">{if $i.artist}
+	                {if $i.artistlibraryurl}
+	                	<a href="{$i.artistlibraryurl|escape:'html'}">{$i.artist|unescape:'html'}</a>
+					{else}
+	                	<a href="{$i.artisturl|escape:'html'}">{$i.artist|unescape:'html'}</a>
+	                {/if}
+                {/if}
+          </p>
+        <p class="card-text"><small class="text-body-secondary"><time datetime="{$i.time|date_format:"%Y-%m-%d %H:%M:%S"}" title="{$i.time|date_format:"%c"}">
+		{if $linktoscrobbles}<a href="/user/{$me->name}/scrobble/{$i.time}">{$i.timehuman}</a>{else}{$i.timehuman}{/if}</time></small></p>
+      </div>
+    </div>
+  </div>
+</div>
+{/if}
+
+{if ($i@iteration == 6)}
+
+<table class="endtimes-table {$class} tracklist">
+    <thead>
+        <tr>
+            <th class="title w-50" scope="col">Track</th>
+            <th class="artist w-25" scope="col">Artist</th>
+            <th class="time w-25" scope="col">Time</th>
+        </tr>
+    </thead>
+    <tbody>
+{/if}
+
+{if ($i@iteration > 5)}
+        <tr>
+            <td class="name">
+				{if $linktoscrobbles}
+				<a href="/user/{$me->name}/scrobble/{$i.time}">
+				<img style="background: whitesmoke url(https://turtle.libre.fm/spinner.gif); background-position: center center; background-repeat: no-repeat;" src="https://turtle.libre.fm/cover.php?album={$i.album|escape:'url'}&artist={$i.artist|escape:'url'}" height="25" width="25" loading="lazy" alt>
+				</a>
+	            {/if}
+                {if $linktoscrobbles}
+                	<a href="/user/{$me->name}/scrobble/{$i.time}" title="{$i.album|unescape:'html'}" rel="bookmark">
+					{$i.track|unescape:'html'}
+					</a>
+                {else}
+                	{if $i.tracklibraryurl}
+                		<a href="{$i.tracklibraryurl|escape:'html'}">{$i.track|unescape:'html'}</a>
+               		{else}
+                		<a href="{$i.trackurl|escape:'html'}">{$i.track|unescape:'html'}</a>
+                	{/if}
+                {/if}
+            </td>
+            <td>
+                {if $i.artist}
+	                {if $i.artistlibraryurl}
+	                	<a href="{$i.artistlibraryurl|escape:'html'}">{$i.artist|unescape:'html'}</a>
+					{else}
+	                	<a href="{$i.artisturl|escape:'html'}">{$i.artist|unescape:'html'}</a>
+	                {/if}
+                {/if}
+            </td>
+
+            <td class="time">
+                <time datetime="{$i.time|date_format:"%Y-%m-%d %H:%M:%S"}" title="{$i.time|date_format:"%c"}">{if $linktoscrobbles}
+				<a href="/user/{$me->name}/scrobble/{$i.time}">{$i.timehuman}</a>{else}{$i.timehuman}{/if}</time>
+            </td>
+        </tr>
+{/if}
+        {/foreach}
+    </tbody>
+</table>
