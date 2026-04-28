@@ -50,7 +50,6 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             <th class="title w-50" scope="col">Track</th>
             <th class="artist w-25" scope="col">Artist</th>
             <th class="time w-25" scope="col">Time</th>
-			<th class="title" scope="col"><span title="Do we have MusicBrainz data for this track?">MB?</span></th>
         </tr>
     </thead>
     <tbody>
@@ -83,9 +82,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                 <time datetime="{$i.time|date_format:"%Y-%m-%d %H:%M:%S"}" title="{$i.time|date_format:"%c"}">{if $linktoscrobbles}
 				<a href="/user/{$me->name}/scrobble/{$i.time}">{$i.timehuman}</a>{else}{$i.timehuman}{/if}</time>
             </td>
-            <td>
-            {if $i.mbid}<span title="{$i.mbid}">&check;</span>{/if}
-            </td>
+           
         </tr>
         {/foreach}
     </tbody>
