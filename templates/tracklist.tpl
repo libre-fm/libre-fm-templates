@@ -56,17 +56,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         {foreach from=$items item=i}
         <tr>
             <td class="name">
-                {if $linktoscrobbles}
-                	<a href="/user/{$me->name}/scrobble/{$i.time}" title="{$i.album|unescape:'html'}" rel="bookmark">
-					{$i.track|unescape:'html'}
-					</a>
-                {else}
                 	{if $i.tracklibraryurl}
                 		<a href="{$i.tracklibraryurl|escape:'html'}">{$i.track|unescape:'html'}</a>
                		{else}
                 		<a href="{$i.trackurl|escape:'html'}">{$i.track|unescape:'html'}</a>
                 	{/if}
-                {/if}
             </td>
             <td>
                 {if $i.artist}
