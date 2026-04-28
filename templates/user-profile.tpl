@@ -55,7 +55,7 @@ Currently listening to:
 
 <h3 class="mt-3 mb-3">Recent plays</h3>
 
-{include file="tracklist.tpl" class=#table# items=$scrobbles fimage=true fstream=true fartist=true flove=true ftime=true}
+{include file="profile-tracklist.tpl" class=#table# items=$scrobbles fimage=true fstream=true fartist=true flove=true ftime=true}
 
 {if $topartists}
 
