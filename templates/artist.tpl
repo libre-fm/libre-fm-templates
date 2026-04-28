@@ -63,11 +63,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <ul class="list-group h-feed mb-3">
 {foreach from=$toptracks item=i}
   <li class="list-group-item d-flex justify-content-between align-items-center">
-    {if $i.albumurl}
-    <a href="{$i.albumurl}" rel="bookmark" title="Libre.fm track page for {$i.track}">{$i.track} on <em>{$i.album}</em></a>
-    {else}
     <a href="{$i.trackurl}" rel="bookmark" title="Libre.fm track page for {$i.track}">{$i.track}</a>
-  {/if}
     <span class="badge text-bg-primary rounded-pill">{$i.freq}</span>
   </li>{/foreach}
 </ul>
