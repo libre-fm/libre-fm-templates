@@ -42,7 +42,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
           </div>
           {if $track->artist_name}
           <h3 class="card-title" style="font-size: 1.25rem"><span class="p-music-track">{$track->name|escape:'html':'UTF-8'}</span></h3>
-              <p class="card-text">{if $track->artist_name}by <span class="p-music-artist">{$track->artist_name|escape:'html':'UTF-8'}</a></span>{/if}{if $album} on <span class="p-music-album">{$album->name|escape:'html':'UTF-8'}</span>{/if}</p>
+              <p class="card-text">{if $track->artist_name}by <span class="p-music-artist">{$track->artist_name|escape:'html':'UTF-8'}</span>{/if}{if $album} on <span class="p-music-album">{$album->name|escape:'html':'UTF-8'}</span>{/if}</p>
               <p><a href="{$track->getURL()}" class="btn btn-primary btn-sm"><i class="bi bi-file-music"></i> {$track->name}</a></p>
           {else}
               <h3 class="card-title" style="font-size: 1.25rem"><span class="p-music-track">{$scrobbledata['track']|escape:'html':'UTF-8'}</span></h3>
