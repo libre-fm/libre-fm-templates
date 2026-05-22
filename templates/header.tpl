@@ -126,11 +126,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             <div class="row justify-content-center">
                 <div class="col-12 mt-20">
 
-                    {if (!$logged_in)}
                     <div class="alert alert-success text-center text-wrap">
-                        Please consider <a href="/donate.php">making a donation</a> to help keep the lights on.
+                        Matt from Libre.fm here. I am looking for work and need to raise $2000 a month to have somewhere to live and be able to eat. Please consider <a href="/donate.php">making a donation</a> to help keep my lights on.
                     </div>
-                    {/if}
 
 {if $nosidebar}
                             <!-- nosb -->
