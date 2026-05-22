@@ -30,6 +30,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <p class="text-center"><a class="btn btn-success" href="#paypal">Pay with PayPal</a></p>
 
+<p class="text-center"><a class="btn btn-success" href="https://github.com/sponsors/mattl" target="_blank">Support me on GitHub</a></p>
+
 {include file='kofi-tip.tpl'}
 
 <div style="width: 100%; max-width: 500px; margin: 0 auto;" id="paypal">
