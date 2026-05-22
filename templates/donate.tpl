@@ -26,11 +26,16 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h2 class="text-center" style="text-wrap: balance">Please donate to keep Libre.fm alive</h2>
 
+<p class="text-center text-balance lead">Hello! This is Matt from Libre.fm. I do all the current work on Libre.fm, from answering support emails and adding new features to running the servers that keep everything working.</p>
+
 <p class="text-center pt-20" style="text-wrap: balance">You can make a one-time donation or set up a monthly recurring donation to Libre.fm.</p>
 
 <p class="text-center"><a class="btn btn-success" href="#paypal">Pay with PayPal</a></p>
 
 <p class="text-center"><a class="btn btn-success" href="https://github.com/sponsors/mattl" target="_blank">Support me on GitHub</a></p>
+
+<p class="text-center"><a class="btn btn-success" href="https://www.patreon.com/c/Librefm" target="_blank">Support me on Patreon</a></p>
+
 
 {include file='kofi-tip.tpl'}
 
