@@ -36,6 +36,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <p class="text-center"><a class="btn btn-success" href="https://www.patreon.com/c/Librefm" target="_blank">Support me on Patreon</a></p>
 
+<p class="text-center"><a class="btn btn-success" href="https://liberapay.com/libre.fm/" target="_blank">Support me on Liberapay</a></p>
+
 
 {include file='kofi-tip.tpl'}
 
