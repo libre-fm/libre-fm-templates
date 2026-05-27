@@ -40,6 +40,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <meta property="og:site_name" content="Libre.fm">
     <meta property="og:url" content="https://libre.fm">
     <meta property="og:image" content="https://libre.fm/themes/2024-end-times/social.png">
+    <link rel="me" href="https://social.lol/@librefm">
 
     <!--
 
