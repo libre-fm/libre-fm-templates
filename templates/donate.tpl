@@ -38,6 +38,8 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <p class="text-center"><a class="btn btn-success" href="https://liberapay.com/libre.fm/" target="_blank">Support me on Liberapay</a></p>
 
+<p class="text-center"><a class="btn btn-success" href="https://opencollective.com/librefm/" target="_blank">Support me on Open Collective</a></p>
+
 
 {include file='kofi-tip.tpl'}
 
