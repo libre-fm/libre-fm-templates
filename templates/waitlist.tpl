@@ -105,7 +105,7 @@ You'll get an email inviting you to pick a username later
         </div>
 
     <div class="mb-3" style="border: 1px solid black; background: #ffffbb; padding: 1em;">
-<p>Hello BTS fans! Welcome to Libre.fm!</p>
+<p>Hello BTS ARMY! Welcome to Libre.fm!</p>
 
 <p>Libre.fm is run by just one person -- that's me, Matt. I need to sleep, I also need to keep the site running...</p>
 
