@@ -103,6 +103,36 @@ You'll get an email inviting you to pick a username later
             <input class="form-check-input" type="checkbox" required value="remember-me" id="foo2-check" name="foo2-check">
             <label class="form-check-label" for="foo2-check">I understand Libre.fm is run by one person. I will be kind and patient.</label>
         </div>
+
+    <div class="mb-3" style="border: 1px solid black; background: #ffffbb; padding: 1em;">
+<p>Hello BTS fans! Welcome to Libre.fm!</p>
+
+<p>Libre.fm is run by just one person -- that's me, Matt. I need to sleep, I also need to keep the site running...</p>
+
+<p>Please only send me one support email at a time. If you send me more than one, you waste my time and your time. Wasting time is one of the worst things in the world.</p>
+
+<p>If you want me to import your Last.fm data, understand that I can only import the last 200 scrobbles, as well as any future scrobbles. Some of you have 700,000 scrobbles... I cannot import all of those today. Maybe soon.</p>
+
+<p>If you have multiple Last.fm accounts, you will need to make multiple Libre.fm accounts.</p>
+
+<p>I can only answer emails in English. I don't trust translation websites.</p>
+
+<p>Send me as much information as you can in your email. If you're having issues, please attach a screenshot if you can.</p>
+
+<p>Put a useful subject line on your email! Don't leave it blank. Those wind up in my spam folder.</p>
+
+<p>Please do not submit more than one song listen every few minutes. Libre.fm is for humans, not bots.</p>
+
+<p>If you can, <a href="/donate.php" target="_blank">please donate</a>.</p>
+
+<p>Please be kind and patient.</p>
+
+<p>Best,<br>matt</p>
+<p><a href="/user/mattl" target="_blank">You can see what I listen to</a></p>
+
+</div>
+
+
         <!-- <div class="mb-3 form-check">
           <input class="form-check-input" type="checkbox" required value="" id="foo-wait" name="foo-wait">
         <label class="form-check-label" for="foo-wait">I understand there may be a small delay to receive an invite.</label>
