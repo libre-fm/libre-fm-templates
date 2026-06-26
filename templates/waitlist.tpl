@@ -109,23 +109,25 @@ You'll get an email inviting you to pick a username later
 
 <p>Libre.fm is run by just one person -- that's me, Matt. I need to sleep, I also need to keep the site running...</p>
 
-<p>Please only send me one support email at a time. If you send me more than one, you waste my time and your time. Wasting time is one of the worst things in the world.</p>
+<ul>
+<li>Please only send me one support email at a time. If you send me more than one, you waste my time and your time. Wasting time is one of the worst things in the world.</li>
 
-<p>If you want me to import your Last.fm data, understand that I can only import the last 200 scrobbles, as well as any future scrobbles. Some of you have 700,000 scrobbles... I cannot import all of those today. Maybe soon.</p>
+<li>If you want me to import your Last.fm data, understand that I can only import the last 200 scrobbles, as well as any future scrobbles. Some of you have 700,000 scrobbles... I cannot import all of those today. Maybe soon.</li>
 
-<p>If you have multiple Last.fm accounts, you will need to make multiple Libre.fm accounts.</p>
+<li>If you have multiple Last.fm accounts, you will need to make multiple Libre.fm accounts.</li>
 
-<p>I can only answer emails in English. I don't trust translation websites.</p>
+<li>I can only answer emails in English. I don't trust translation websites.</li>
 
-<p>Send me as much information as you can in your email. If you're having issues, please attach a screenshot if you can.</p>
+<li>Send me as much information as you can in your email. If you're having issues, please attach a screenshot if you can.</li>
 
-<p>Put a useful subject line on your email! Don't leave it blank. Those wind up in my spam folder.</p>
+<li>Put a useful subject line on your email! Don't leave it blank. Those wind up in my spam folder.</li>
 
-<p>Please do not submit more than one song listen every few minutes. Libre.fm is for humans, not bots.</p>
+<li>Please do not submit more than one song listen every few minutes. Libre.fm is for humans, not bots.</li>
 
-<p>If you can, <a href="/donate.php" target="_blank">please donate</a>.</p>
+<li>If you can, <a href="/donate.php" target="_blank">please donate</a>.</li>
 
-<p>Please be kind and patient.</p>
+<li>Please be kind and patient.</li>
+</ul>
 
 <p>Best,<br>matt</p>
 <p><a href="/user/mattl" target="_blank">You can see what I listen to</a></p>
