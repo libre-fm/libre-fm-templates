@@ -104,8 +104,11 @@ We're currently having some issues sending email so registration is currently no
             <label class="form-check-label" for="foo2-check">I understand Libre.fm is run by one person. I will be kind and patient.</label>
         </div>
 
+
+<details>
+<summary>Hello BTS ARMY! Welcome to Libre.fm!</summary>
+
     <div class="mb-3" style="border: 1px solid black; background: #ffffbb; padding: 1em;">
-<p>Hello BTS ARMY! Welcome to Libre.fm!</p>
 
 <p>Libre.fm is run by just one person -- that's me, Matt. I need to sleep, I also need to keep the site running...</p>
 
@@ -135,6 +138,7 @@ We're currently having some issues sending email so registration is currently no
 <p><a href="https://b-cd.app/forum/switching-stream-tracking-apps?page=15&highlight=2163175" target="_blank">Please see my post on b-cd.app too</a>
 
 </div>
+</details>
 
 
         <!-- <div class="mb-3 form-check">
