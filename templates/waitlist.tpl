@@ -87,12 +87,12 @@ Expected time to get an account after joining the waitlist is currently a few mi
 
 
     <fieldset>
-        <!-- <div class="alert alert-warning">
-You'll get an email inviting you to pick a username later
-</div> -->
+        <div class="alert alert-warning">
+We're currently having some issues sending email so registration is currently not working. Things will be resolved ASAP. 
+</div>
         <div class="mb-3">
             <label class="form-label" for='email'>{t}Email address{/t}</label>
-            <input type="email" class="form-control form-control-lg" placeholder="{t}Your e-mail address:{/t}" id="email" name="email" required />
+            <input disabled type="email" class="form-control form-control-lg" placeholder="{t}Your e-mail address:{/t}" id="email" name="email" required />
         </div>
 
         <div class="mb-3 form-check">
