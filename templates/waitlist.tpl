@@ -132,6 +132,8 @@ You'll get an email inviting you to pick a username later
 <p>Best,<br>matt</p>
 <p><a href="/user/mattl" target="_blank">You can see what I listen to</a></p>
 
+<p><a href="https://b-cd.app/forum/switching-stream-tracking-apps?page=15&highlight=2163175" target="_blank">Please see my post on b-cd.app too</a>
+
 </div>
 
 
