@@ -27,9 +27,9 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h2>Weekly Libre.fm stats &mdash; updated every Sunday afternoon</h2>
 <ul>
-<li><a href="#top-tracks">Top 200 tracks</a></li>
-<li><a href="#artists">Top 100 artists</a></li>
-<li><a href="#listeners">Top Libre.fm accounts by song listens</a></li>
+<li><a href="#top-tracks">Top tracks</a></li>
+<li><a href="#artists">Top artists</a></li>
+<li><a href="#listeners">Top Libre.fm accounts by unique artists</a></li>
 <li><a href="#top-albums">Top albums of the week</a></li>
 </ul>
 
