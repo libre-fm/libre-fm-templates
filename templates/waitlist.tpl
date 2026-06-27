@@ -105,8 +105,8 @@ We're currently having some issues sending email so registration is currently no
         </div>
 
 
-<details>
-<summary>Hello BTS ARMY! Welcome to Libre.fm!</summary>
+<details style='background: whitesmoke;' >
+<summary style='font-size: large; text-align: center;'>Hello BTS ARMY! Welcome to Libre.fm!</summary>
 
     <div class="mb-3" style="border: 1px solid black; background: #ffffbb; padding: 1em;">
 
