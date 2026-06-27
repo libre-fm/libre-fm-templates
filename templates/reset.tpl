@@ -55,16 +55,20 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
             <p class="text-center">Need help? <a href="mailto:support@libre.fm">support@libre.fm</a></p>
 
+        <div class="alert alert-warning">
+We're currently having some issues sending email so password resets are currently not working. Things will be resolved ASAP. 
+</div>
+
             <div class="form-group mb-3">
                 <label for='username'>{t}Username{/t}</label>
-                <input class="form-control form-control-lg" id='username' name='user' placeholder="Your username:" type='text' value='' />
+                <input disabled class="form-control form-control-lg" id='username' name='user' placeholder="Your username:" type='text' value='' />
             </div>
 
             <p>{t}or{/t}:</p>
 
             <div class="form-group mb-3">
                 <label for='email'>{t}E-mail address{/t}</label>
-                <input class="form-control form-control-lg" id='email' name='email' type='email' placeholder="Your e-mail address:" value='' autofocus />
+                <input disabled class="form-control form-control-lg" id='email' name='email' type='email' placeholder="Your e-mail address:" value='' autofocus />
             </div>
 
             <div class="mb-3">
