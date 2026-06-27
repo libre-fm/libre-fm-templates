@@ -106,7 +106,7 @@ We're currently having some issues sending email so registration is currently no
 
 
 <details class="mb-3 mt-3" style='background: whitesmoke; border: 1px solid #111;' >
-<summary style='font-size: large; text-align: center;'>Hello BTS ARMY! Welcome to Libre.fm!</summary>
+<summary style='font-size: large; text-align: center;'>Hello BTS ARMY! Welcome to Libre.fm! Please read this...</summary>
 
     <div class="mb-3" style="border: 1px solid black; background: #ffffbb; padding: 1em;">
 
