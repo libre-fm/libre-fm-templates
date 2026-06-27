@@ -127,9 +127,11 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
         <div class="alert alert-danger mb-3 collapse" id="delete-account">
             <h3>Delete your account?</h3>
+            <p>If you have any issues deleting your account, or no longer have access to the email account, please email support@libre.fm</p>
             <div class="form-check">
                 <label for='delete' class="form-check-label">Danger Zone: {t}Delete my account{/t}</label>
                 <input type='checkbox' class="form-check-input" id='delete_account_broken' name='delete_account' id='delete'>
+                (Now click 'Update profile' to continue)
             </div>
         </div>
 
