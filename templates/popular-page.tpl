@@ -25,12 +25,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <div id="tag-cloud-box">
 
-<h2>Weekly Libre.fm stats &mdash; updated every Sunday afternoon</h2>
+<h2>Weekly Libre.fm stats &mdash; updated every Sunday</h2>
 <ul>
-<li><a href="#top-tracks">Top tracks</a></li>
-<li><a href="#artists">Top artists</a></li>
-<li><a href="#listeners">Top Libre.fm accounts by unique artists</a></li>
-<li><a href="#top-albums">Top albums of the week</a></li>
+<li><a href="#artists">Top artists by listeners</a></li>
+<li><a href="#listeners">Top Libre.fm listeners of unique artists</a></li>
+<li><a href="#top-tracks">Top tracks by listen count</a></li>
+<li><a href="#top-albums">Top albums of the week by listen count</a></li>
 </ul>
 
 {$stats}
