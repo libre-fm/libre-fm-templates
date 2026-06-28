@@ -105,7 +105,7 @@ We're currently having some issues sending email so registration is currently no
         </div>
 
 
-<details class="mb-3 mt-3" style='background: whitesmoke; border: 1px solid #111;' >
+<!-- <details class="mb-3 mt-3" style='background: whitesmoke; border: 1px solid #111;' >
 <summary style='font-size: large; text-align: center;'>Hello BTS ARMY! Welcome to Libre.fm! Please read this...</summary>
 
     <div class="mb-3" style="border: 1px solid black; background: #ffffbb; padding: 1em;">
@@ -138,7 +138,7 @@ We're currently having some issues sending email so registration is currently no
 <p><a href="https://b-cd.app/forum/switching-stream-tracking-apps?page=15&highlight=2163175" target="_blank">Please see my post on b-cd.app too</a>
 
 </div>
-</details>
+</details> -->
 
 
         <!-- <div class="mb-3 form-check">
