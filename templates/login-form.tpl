@@ -39,4 +39,4 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
       <p><button class="btn btn-success btn-lg" type='submit' name='login' value='{t}Login{/t}' />{t}Login{/t}</button></p>
   </fieldset>
 
-  <p><a href="/reset.php">Reset your password</a> or <a href="mailto:support@libre.fm">support@libre.fm</a> if you're having any issues</p>
+  <p><a href="/reset.php">Reset your password</a> or <a href="mailto:support@libre.fm?subject=Login%20issues">support@libre.fm</a> (please include a useful subject line!) if you're having any issues</p>

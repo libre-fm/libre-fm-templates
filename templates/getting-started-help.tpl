@@ -44,12 +44,12 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <h3>Do you use Last.fm?</h3>
 
-<p>If you use Last.fm, we can import your most recent and future scrobbles. Just email <a href="mailto:support@libre.fm">support@libre.fm</a> and let us know your Last.fm and Libre.fm usernames. This allows you to scrobble to Libre.fm using any app that can scrobble to Last.fm.</p>
+<p>If you use Last.fm, we can import your most recent and future scrobbles. Just email <a href="mailto:support@libre.fm?subject=Getting%20started%20with%20importing">support@libre.fm</a> (please include a useful subject line!) and let us know your Last.fm and Libre.fm usernames. This allows you to scrobble to Libre.fm using any app that can scrobble to Last.fm.</p>
 
 <h3>More options</h3>
 
 <p>More clients can be found on <a href="https://github.com/mattl/hacienda/wiki" target="_blank">the wiki</a> which also has instructions on contributing to the wiki if you know of other clients (or email them to support!).</p>
 <p>Finally, we have <a href="https://developer.libre.fm" target="_blank">information for developers who want to add Libre.fm support</a> to their existing clients or create new ones</p>
-<p>If none of these solutions work for you, please contact <a href="mailto:support@libre.fm">support@libre.fm</a> and we can try and help you find something.</p>
+<p>If none of these solutions work for you, please contact <a href="mailto:support@libre.fm?subject=Unique%20scrobbling%20setup">support@libre.fm</a> (please include a useful subject line!) and we can try and help you find something.</p>
 
 </div>

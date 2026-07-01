@@ -53,10 +53,10 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
             <div class="alert alert-info">Enter your username or e-mail address and we'll email you a link to reset your password. All passwords are encrypted in our database.</div>
 
-            <p class="text-center">Need help? <a href="mailto:support@libre.fm">support@libre.fm</a></p>
+            <p class="text-center">Need help? <a href="mailto:support@libre.fm?subject=Help">support@libre.fm</a> (please include a useful subject line!)</p>
 
        <!-- <div class="alert alert-warning">
-We're currently having some issues sending email so password resets are currently not working. Things will be resolved ASAP. 
+We're currently having some issues sending email so password resets are currently not working. Things will be resolved ASAP.
 </div> -->
 
             <div class="form-group mb-3">

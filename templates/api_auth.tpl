@@ -66,7 +66,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <input type="hidden" name="cb" value="{$cb}" />
         {/if}
 </form>
-<p><a target="_blank" href="/reset.php">Reset your password</a> or <a href="mailto:support@libre.fm">support@libre.fm</a> if you're having any issues</p>
+<p><a target="_blank" href="/reset.php">Reset your password</a> or <a href="mailto:support@libre.fm?subject=Password issues">support@libre.fm</a> (please include a useful subject line!) if you're having any issues</p>
 {/if}
 
 {include file='mini-footer.tpl'}

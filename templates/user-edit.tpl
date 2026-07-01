@@ -75,7 +75,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <div class="form-group mb-3">
         <label class="form-label" for='email'>{t}Email address:{/t}</label>
         <p>{$email|lower}</p>
-        <div class="form-text">If you need to change it, please email <a href="mailto:support@libre.fm">support@libre.fm</a></div>
+        <div class="form-text">If you need to change it, please email <a href="mailto:support@libre.fm?subject=Change%20my%20email%20address">support@libre.fm</a> (please include a useful subject line!)</div>
     </div>
 
     <div class="form-group mb-3">
@@ -127,7 +127,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
         <div class="alert alert-danger mb-3 collapse" id="delete-account">
             <h3>Delete your account?</h3>
-            <p>If you have any issues deleting your account, or no longer have access to the email account, please email support@libre.fm</p>
+            <p>If you have any issues deleting your account, or no longer have access to the email account, please email support@libre.fm (please include a useful subject line!)</p>
             <div class="form-check">
                 <label for='delete' class="form-check-label">Danger Zone: {t}Delete my account{/t}</label>
                 <input type='checkbox' class="form-check-input" id='delete_account_broken' name='delete_account' id='delete'>

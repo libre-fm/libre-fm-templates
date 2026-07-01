@@ -25,7 +25,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <h2 class="text-center">Page not found!</h2>
 
 <p class="text-center">Sorry about that. If the problem persists, you can email
-    <a href="mailto:support@libre.fm">support@libre.fm</a> and we'll get back to
+    <a href="mailto:support@libre.fm?subject=Page%20not%20found">support@libre.fm</a> (please include a useful subject line!) and I'll get back to
     you.
 </p>
 

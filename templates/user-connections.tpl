@@ -85,7 +85,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
     {if empty($lastfmimportusername)}
     <h3>How about importing from Last.fm?</h3>
-    <p>If you wish to use this please email <a href="mailto:support@libre.fm">support@libre.fm</a> and let us know your Libre.fm and Last.fm usernames.</p>
+    <p>If you wish to use this please email <a href="mailto:support@libre.fm?subject=User%20connections%20help">support@libre.fm</a> (please include a useful subject line!) and let me know your Libre.fm and Last.fm usernames.</p>
     <p>Recent scrobbles and future scrobbles will be imported to your Libre.fm account. Your historical scrobbles to Last.fm will be imported later.</p>
     </div>
     {else}
@@ -100,7 +100,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </ul>
     </div>
 
-    <p>Self service coming soon, but please email <a href="mailto:support@libre.fm">support@libre.fm</a> if you want to change this for now. Send both your Libre.fm and Last.fm usernames if you want to enable this on your account.</p>
+    <p>Self service coming soon, but please email <a href="mailto:support@libre.fm?subject=User%20connections%20help">support@libre.fm</a> (please include a useful subject line!) if you want to change this for now. Send both your Libre.fm and Last.fm usernames if you want to enable this on your account.</p>
 
     {/if}
 
@@ -125,7 +125,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
             <button class="btn btn-primary" type="submit">Connect</button>
         </form>
     </details>
-    
+
 </div>
 {/if}
 

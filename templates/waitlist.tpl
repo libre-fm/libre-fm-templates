@@ -42,7 +42,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 <p>An email was just sent to: <mark>{$emailaddress}</mark></p>
 <p>{t}Please follow the link in your email to activate your account!{/t}</p>
 
-<p>If you don't get an email please double check your email address and email <a href="mailto:support@libre.fm">support@libre.fm</a>.</p>
+<p>If you don't get an email please double check your email address and email <a href="mailto:support@libre.fm?subject=Waitlist%20help">support@libre.fm</a> (please include a useful subject line!).</p>
 
 {include file='kofi-tip.tpl'}
 
@@ -88,7 +88,7 @@ Expected time to get an account after joining the waitlist is currently a few mi
 
     <fieldset>
         <!-- <div class="alert alert-warning">
-We're currently having some issues sending email so registration is currently not working. Things will be resolved ASAP. 
+We're currently having some issues sending email so registration is currently not working. Things will be resolved ASAP.
 </div> -->
         <div class="mb-3">
             <label class="form-label" for='email'>{t}Email address{/t}</label>

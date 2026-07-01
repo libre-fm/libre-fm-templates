@@ -34,7 +34,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 <p><a href="https://developer.libre.fm">Developer documentation</a> but generally we implement the Last.fm API.</p>
 
-<p>Email me at <a href="mailto:support@libre.fm">support@libre.fm</a> if you want to remove an API key or have any questions.</p>
+<p>Email me at <a href="mailto:support@libre.fm?subject=API%20keys">support@libre.fm</a> (please include a useful subject line!) if you want to remove an API key or have any questions.</p>
 
 <p>Don't forget to let me know when you have something cool to show off!</p>
 

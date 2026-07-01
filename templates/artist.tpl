@@ -98,7 +98,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
 
 {else}
-<p>No MusicBrainz ID found for this artist. Work is underway to improve the matching of artists, if you'd like to help with your favorite artist please email <a href="mailto:support@libre.fm">support@libre.fm</a></p>
+<p>No MusicBrainz ID found for this artist. Work is underway to improve the matching of artists, if you'd like to help with your favorite artist please email <a href="mailto:support@libre.fm?subject=MusicBrainz%20help%20offer">support@libre.fm</a> (please include a useful subject line!)</p>
 
 <p><a href="https://musicbrainz.org/search?query={$artist->name|escape:html}&type=artist&method=indexed" class="btn btn-success" target="_blank">Search MusicBrainz for '{$artist->name}'</a></p>
 

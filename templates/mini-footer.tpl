@@ -30,7 +30,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
         <li>See <a href="https://wiki.libre.fm">the wiki for a list of known clients</a> and please add to it.</li>
         <li>Please consider using email privacy/relay services where possible. The less we know about you the better (said in the nicest of ways)</li>
         <li>Please consider using an ad-blocker on every browser and device you use. We don't show ads but others do.</li>
-        <li>Using Last.fm? We can import your recent and future scrobbles right now. Just email your Libre.fm and Last.fm usernames to <a href="mailto:support@libre.fm">support@libre.fm</a></li>
+        <li>Using Last.fm? We can import your recent and future scrobbles right now. Just email your Libre.fm and Last.fm usernames to <a href="mailto:support@libre.fm?subject=Last.fm%20import%20help">support@libre.fm</a> (please include a useful subject line!)</li>
     </ul>
 </div>
 

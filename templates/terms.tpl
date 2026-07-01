@@ -41,7 +41,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
     <li>Artist biography data is taken from Last.fm under the terms of <a href="http://creativecommons.org/licenses/by-sa/3.0/legalcode">CC BY SA 3.0</a>.</li>
 </ul>
 
-<p>If you are unhappy with any of the items in the terms and conditions, please do not create an account and existing users can email <a href="mailto:support@libre.fm">support@libre.fm</a> and we can help you export your data and close your account.</p>
+<p>If you are unhappy with any of the items in the terms and conditions, please do not create an account and existing users can email <a href="mailto:support@libre.fm?subject=Close%20my%20account">support@libre.fm</a> (please include a useful subject line!) and we can help you export your data and close your account.</p>
 {include file='tips.tpl'}
 
 {include file='mini-footer.tpl'}

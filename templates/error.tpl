@@ -29,7 +29,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
 </div>
 
 <div class="alert alert-secondary">
-    <p>Need help? <a href="mailto:support@libre.fm">support@libre.fm</a></p>
+    <p>Need help? <a href="mailto:support@libre.fm?subject=Help%20with%20">support@libre.fm</a> (please include a useful subject line!)</p>
 </div>
 
 <div class="alert alert-info">

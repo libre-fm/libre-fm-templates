@@ -45,7 +45,7 @@ float-lg-end m-1 p-1" style="width: 500px" alt loading="lazy" decoding="async"><
 
 <h3>Can I import my listening habits from Last.fm, etc?</h3>
 
-<p>Yes... just email your Libre.fm and Last.fm usernames to <a href="mailto:support@libre.fm">support@libre.fm</a>.</p>
+<p>Yes... just email your Libre.fm and Last.fm usernames to <a href="mailto:support@libre.fm?subject=Please%20import%20my%20Last.fm%scrobbles">support@libre.fm</a> (please include useful subject line!</p>
 
 <h3>Can I export my data?</h3>
 
@@ -65,7 +65,7 @@ float-lg-end m-1 p-1" style="width: 500px" alt loading="lazy" decoding="async"><
 
 <p><a href="https://youtube.com/@libre-fm" title="Visit the Libre.fm YouTube channel"><img src="https://libre.fm/themes/2024-end-times/librefm-video-thumbnail.png" alt="" loading="lazy"></a></p>
 
-<p><mark>What videos would you like to see next?</mark> Let me know in the YouTube comments or <a href="mailto:support@libre.fm">support@libre.fm</a></p>
+<p><mark>What videos would you like to see next?</mark> Let me know in the YouTube comments or <a href="mailto:support@libre.fm?subject=YouTube%20suggestions">support@libre.fm</a> (please include a useful subject line!)</p>
 
 <h3>I accidentally scrobbled something I want to get rid of...</h3>
 
@@ -74,7 +74,7 @@ float-lg-end m-1 p-1" style="width: 500px" alt loading="lazy" decoding="async"><
 
 <h3>How do I change my username or password?</h3>
 
-<p>Contact <a href="mailto:support@libre.fm">support@libre.fm</a>. I'll be
+<p>Contact <a href="mailto:support@libre.fm?subject=Change%20username">support@libre.fm</a> (please include a useful subject line!). I'll be
     happy to help you in any way possible.</p>
 
 <h3>Do you support...?</h3>
