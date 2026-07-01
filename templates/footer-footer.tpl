@@ -95,6 +95,7 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>.
                             <li><a target="_blank" href="https://tedium.co/">Tedium</a></li>
                             <li><a target="_blank" href="https://artlung.com">Artlung</a></li>
                             <li><a target="_blank" href="https://home.omg.lol/referred-by/mattl">omg.lol</a></li>
+                            <li><a target="_blank" href="https://lettersfromfrogby.beehiiv.com/">Letters from Frogby</a></li>
                         </ul>
                     </div>
                 </div>
