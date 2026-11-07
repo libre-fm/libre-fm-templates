@@ -61,7 +61,7 @@ We're currently having some issues sending email so password resets are currentl
 
             <div class="form-group mb-3">
                 <label for='username'>{t}Username{/t}</label>
-                <input class="form-control form-control-lg" id='username' name='user' placeholder="Your username:" type='text' value='' />
+                <input class="form-control form-control-lg" id='username' name='user' placeholder="Your username:" type='text' value='{$un}' />
             </div>
 
             <p>{t}or{/t}:</p>
