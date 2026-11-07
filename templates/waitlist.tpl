@@ -91,7 +91,7 @@ Expected time to get an account after joining the waitlist is currently a few mi
 We're currently having some issues sending email so registration is currently not working. Things will be resolved ASAP.
 </div> -->
         <div class="mb-3">
-            <label class="form-label" for='email'>{t}Email address{/t}</label>
+            <label class="form-label" for='email'>{t}Email address{/t} (<a href="https://pivot-to-ai.com/2026/10/30/proton-mail-goes-full-ai-slop-tuta-starts-going-slop/">Proton Mail is not recommended</a>, why not try <a href="https://join.fastmail.com/4e3bc13c">Fastmail</a> instead?)</label>
             <input type="email" class="form-control form-control-lg" placeholder="{t}Your e-mail address:{/t}" id="email" name="email" required />
         </div>
 
